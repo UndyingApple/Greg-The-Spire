@@ -10,6 +10,7 @@
         <AppOutputBase>$(MSBuildProjectDirectory)\</AppOutputBase>
         <PathMap>$(AppOutputBase)=.\</PathMap>
         <GodotDisabledSourceGenerators>GodotPluginsInitializer</GodotDisabledSourceGenerators>
+        <LangVersion>default</LangVersion>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -62,7 +63,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Folder Include="GregTheSpire\images\card_portraits\big\"/>
         <Folder Include="GregTheSpire\images\powers\big\"/>
         <Folder Include="GregTheSpire\images\relics\big\"/>
     </ItemGroup>
