@@ -47,7 +47,7 @@ public partial class NStashPile : NCombatCardPile
     public override void _Ready()
     {
         ConnectSignals();
-        _emptyPileMessage = new LocString("combat_messages", "OPEN_EMPTY_CARGO");
+        _emptyPileMessage = new LocString("combat_messages", "OPEN_EMPTY_STASH");
         _comboIcons = new ComboControllerIcons(
             GetNode<TextureRect>("%ControllerIcon2"), // LT
             GetNode<TextureRect>("%ControllerIcon"), // RT
@@ -55,9 +55,8 @@ public partial class NStashPile : NCombatCardPile
             MegaInput.viewDiscardPile,
             GetNode<GregTheSpireMegaLabel>("%AddSymbol"));
 
-        Visible = false;
-        SetAnimInOutPositions();
-        Disable();
+        Visible = true;
+        Enable();
         _comboIcons.Refresh();
     }
     
@@ -96,10 +95,4 @@ public partial class NStashPile : NCombatCardPile
     }
 
     private void OnControllerChanged() => _comboIcons?.Refresh();
-
-    protected override void SetAnimInOutPositions()
-    {
-        _showPosition = Position;
-        _hidePosition = Position + new Vector2(HideOffsetX, 0f);
-    }
 }

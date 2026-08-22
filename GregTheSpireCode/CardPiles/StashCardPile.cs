@@ -10,7 +10,7 @@ namespace GregTheSpire.GregTheSpireCode.CardPiles;
 public class StashCardPile() : CustomPile(StashPileType) {
     [CustomEnum] public static PileType StashPileType;
 
-    public override bool CardShouldBeVisible(CardModel card) => false;
+    public override bool CardShouldBeVisible(CardModel card) => true;
 
     public override Vector2 GetTargetPosition(CardModel model, Vector2 size) {
         return new Vector2(75, 765); // Stash pile position
