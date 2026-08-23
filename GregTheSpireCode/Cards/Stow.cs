@@ -1,4 +1,4 @@
-﻿using GregTheSpire.GregTheSpireCode.CardPiles;
+using GregTheSpire.GregTheSpireCode.CardPiles;
 using GregTheSpire.GregTheSpireCode.Cards;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
@@ -8,14 +8,11 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
-public class BagOfTricks() : GregTheSpireCard(
-    1,
+public class Stow() : GregTheSpireCard(1,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new CardsVar(1)
-    ];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -24,15 +21,12 @@ public class BagOfTricks() : GregTheSpireCard(
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         
         var stashedCards = (await CardSelectCmd.FromHand(choiceContext, Owner, 
-            new CardSelectorPrefs(StashSelectorPrefs.ToStashSelectionPrompt, 1, DynamicVars.Cards.IntValue),
+            new CardSelectorPrefs(StashSelectorPrefs.ToStashSelectionPrompt, 0, 2),
             null,
             this)).ToList();
         
         await CardPileCmd.Add(stashedCards, StashCardPile.StashPileType);
     }
 
-    protected override void OnUpgrade()
-    {
-        DynamicVars.Cards.UpgradeValueBy(1);
-    }
+    protected override void OnUpgrade() => this.EnergyCost.UpgradeBy(-1);
 }

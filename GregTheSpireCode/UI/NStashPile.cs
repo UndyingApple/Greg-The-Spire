@@ -16,7 +16,7 @@ namespace GregTheSpire.GregTheSpireCode.ui;
 
 public partial class NStashPile : NCombatCardPile
 {
-    private ComboControllerIcons _comboIcons = null;
+    private ComboControllerIcons? _comboIcons;
     private const float HideOffsetX = -150f;
     protected override PileType Pile => StashCardPile.StashPileType;
     private static readonly string _scenePath = GregTheSpireResources.StashPileScene;
@@ -44,26 +44,40 @@ public partial class NStashPile : NCombatCardPile
         return stashPileButton;
     });
     
+    /*
+     * Activates when the node is added to the scene tree
+     */
     public override void _Ready()
     {
         ConnectSignals();
         _emptyPileMessage = new LocString("combat_messages", "OPEN_EMPTY_STASH");
+        /*
+         Screw controller support until we can actually get it working
         _comboIcons = new ComboControllerIcons(
             GetNode<TextureRect>("%ControllerIcon2"), // LT
             GetNode<TextureRect>("%ControllerIcon"), // RT
             MegaInput.viewDrawPile,
-            MegaInput.viewDiscardPile,
+            MegaInput.viewDiscardPile, 
             GetNode<GregTheSpireMegaLabel>("%AddSymbol"));
-
-        Visible = true;
-        Enable();
         _comboIcons.Refresh();
+        */
+        SetAnimInOutPositions();
     }
     
+    /*
+     * Initializing on its own is pretty much fine, declares basic local variables
+     */
     public override void Initialize(Player player)
     {
         base.Initialize(player);
-        Visible = true;
+        /*Visible = true;*/
+    }
+    
+    
+    protected override void SetAnimInOutPositions()
+    {
+        _showPosition = Position;
+        _hidePosition = Position + new Vector2(HideOffsetX, 0f);
     }
 
     public override void _EnterTree()

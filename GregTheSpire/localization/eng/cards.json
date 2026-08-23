@@ -1,6 +1,10 @@
 {
   "GREGTHESPIRE-THIEVE.description": "",
   "GREGTHESPIRE-THIEVE.title": "Thieve",
+  
   "GREGTHESPIRE-BAG_OF_TRICKS.description": "",
-  "GREGTHESPIRE-BAG_OF_TRICKS.title": "BagOfTricks"
+  "GREGTHESPIRE-BAG_OF_TRICKS.title": "BagOfTricks",
+  
+  "GREGTHESPIRE-STOW.description": "",
+  "GREGTHESPIRE-STOW.title": "Stow"
 }
