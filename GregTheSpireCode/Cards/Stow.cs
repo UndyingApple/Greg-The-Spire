@@ -1,5 +1,6 @@
 using GregTheSpire.GregTheSpireCode.CardPiles;
 using GregTheSpire.GregTheSpireCode.Cards;
+using GregTheSpire.GregTheSpireCode.Commands;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -19,13 +20,8 @@ public class Stow() : GregTheSpireCard(1,
         CardPlay play)
     {
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
-        
-        var stashedCards = (await CardSelectCmd.FromHand(choiceContext, Owner, 
-            new CardSelectorPrefs(StashSelectorPrefs.ToStashSelectionPrompt, 0, 2),
-            null,
-            this)).ToList();
-        
-        await CardPileCmd.Add(stashedCards, StashCardPile.StashPileType);
+
+        PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 0, 2, this);
     }
 
     protected override void OnUpgrade() => this.EnergyCost.UpgradeBy(-1);

@@ -1,10 +1,12 @@
 ﻿using GregTheSpire.GregTheSpireCode.CardPiles;
 using GregTheSpire.GregTheSpireCode.Cards;
+using GregTheSpire.GregTheSpireCode.Commands;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
@@ -29,6 +31,8 @@ public class BagOfTricks() : GregTheSpireCard(
             this)).ToList();
         
         await CardPileCmd.Add(stashedCards, StashCardPile.StashPileType);
+
+        await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 1, 1,(CardModel)this);
     }
 
     protected override void OnUpgrade()

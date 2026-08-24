@@ -1,7 +1,9 @@
+using BaseLib.Patches.Content;
 using HarmonyLib;
 using GregTheSpire.GregTheSpireCode.ui;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Context;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Nodes.Combat;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
 
@@ -10,6 +12,8 @@ namespace GregTheSpire.GregTheSpireCode.Patches.CombatPiles;
 [HarmonyPatch(typeof(NCombatPilesContainer))]
 public static class NCombatPilesContainerPatch
 {
+    [CustomEnum] public static PileType StashPileType;
+    
     [HarmonyPatch("Enable")]
     [HarmonyPostfix]
     public static void EnablePostfix(NCombatPilesContainer __instance)

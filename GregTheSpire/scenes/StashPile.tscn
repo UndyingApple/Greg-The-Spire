@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://6eg3wyso673l"]
 
-[ext_resource type="Script" uid="uid://bbssk02w08our" path="res://GregTheSpireCode/UI/NStashPile.cs" id="1_nrwxg"]
-[ext_resource type="Texture2D" uid="uid://pjc3qjehft1w" path="res://GregTheSpire/images/combat_ui/stash_pile.png" id="2_sxrqi"]
-[ext_resource type="Texture2D" uid="uid://d2551oo4di0rp" path="res://GregTheSpire/images/relics/relic_outline.png" id="3_sxrqi"]
-[ext_resource type="Script" uid="uid://cdwygcc8hduxl" path="res://GregTheSpireCode/UI/GregTheSpireMegaLabel.cs" id="4_x0xmf"]
+[ext_resource type="Script" uid="uid://dejsmvxcy8fdw" path="res://GregTheSpireCode/UI/NStashPile.cs" id="1_nrwxg"]
+[ext_resource type="Texture2D" uid="uid://bec5p2tjr472a" path="res://GregTheSpire/images/combat_ui/stash_pile.png" id="2_sxrqi"]
+[ext_resource type="Texture2D" uid="uid://hf6uuls1lyxy" path="res://GregTheSpire/images/relics/relic_outline.png" id="3_sxrqi"]
+[ext_resource type="Script" uid="uid://cvy84jwiklar2" path="res://GregTheSpireCode/UI/GregTheSpireMegaLabel.cs" id="4_x0xmf"]
 
 [node name="StashPile" type="Control"]
 layout_mode = 3

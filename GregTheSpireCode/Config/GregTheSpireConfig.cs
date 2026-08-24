@@ -11,7 +11,7 @@ namespace GregTheSpire.GregTheSpireCode.Config;
 [ConfigHoverTipsByDefault]
 internal class GregTheSpireConfig : SimpleModConfig
 {
-    [ConfigSection("ShadowRegent")]
+    [ConfigSection("Greg")]
     public static bool ShowStashCardStack { get; set; } = true;
     public static bool ShowAmmoReminder { get; set; } = false;
 
