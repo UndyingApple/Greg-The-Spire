@@ -14,6 +14,8 @@ public class Thieve() : GregTheSpireCard(2,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
+    public override bool GainsBlock => true;
+
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new BlockVar(6M, ValueProp.Move)
     ];
@@ -24,7 +26,7 @@ public class Thieve() : GregTheSpireCard(2,
     {
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
         //public static async Task StealAsync(PlayerChoiceContext choiceContext, Player player, int amount, CardModel card_initial)
-        await StealCmd.StealAsync(choiceContext, this.Owner, 1);
+        await StealCmd.StealAsync(choiceContext, this.Owner, 2);
     }
 
     protected override void OnUpgrade()

@@ -1,3 +1,4 @@
+using BaseLib.Utils;
 using GregTheSpire.GregTheSpireCode.CardPiles;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
@@ -20,23 +21,18 @@ public static class StealCmd
             return;
         }
         
-        //variable that represents the card on top of the deck
-        CardModel topCard = PileType.Draw.GetPile(player).Cards.FirstOrDefault<CardModel>();
         //variable that represents the owner of the card
         //card_initial.Owner = player;
 
         for (int i = 0; i < amount; i++)
         {
+            //variable that represents the card on top of the deck
+            CardModel topCard = PileType.Draw.GetPile(player).Cards.FirstOrDefault<CardModel>();
             if (!player.PlayerCombatState.HasEnoughResourcesFor(topCard, out UnplayableReason reason)) continue;
             if (reason == UnplayableReason.None)
             {
+                Stolen.IsStolen.Set(topCard, true);
                 await CardPileCmd.AutoPlayFromDrawPile(choiceContext, player, 1, CardPilePosition.Top, false);
-                if (topCard.Owner.Creature.Player == player && topCard.Type != CardType.Power && !topCard.IsDupe)
-                {
-                    location.pileType = PileType.Discard;
-                    location.position = CardPilePosition.Top;
-                    location.player = this.Owner.Player;
-                }
                 /*Creature? target,
                     AutoPlayType type = AutoPlayType.Default,
                     bool skipXCapture = false,
@@ -52,4 +48,9 @@ public static class StealCmd
             }
         }
     }
+}
+
+public class Stolen
+{
+    public static readonly SpireField<CardModel, bool> IsStolen = new(() => false);
 }
