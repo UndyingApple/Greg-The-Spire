@@ -21,7 +21,7 @@ public class Stow() : GregTheSpireCard(1,
     {
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
 
-        PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 0, 2, this);
+        await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 0, 2, this);
     }
 
     protected override void OnUpgrade() => this.EnergyCost.UpgradeBy(-1);

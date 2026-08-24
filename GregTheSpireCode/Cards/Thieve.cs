@@ -24,7 +24,7 @@ public class Thieve() : GregTheSpireCard(2,
     {
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
         //public static async Task StealAsync(PlayerChoiceContext choiceContext, Player player, int amount, CardModel card_initial)
-        await StealCmd.StealAsync(choiceContext, this.Owner, 1, this);
+        await StealCmd.StealAsync(choiceContext, this.Owner, 1);
     }
 
     protected override void OnUpgrade()

@@ -48,7 +48,6 @@
         <Compile Remove="materials/**"/>
         <Compile Remove="shaders/**"/>
         <Compile Remove="images/**"/>
-        <Compile Include="GregTheSpire\CardPiles\StashCardPile.cs" />
         <EmbeddedResource Remove="GregTheSpire/**"/>
         <EmbeddedResource Remove="materials/**"/>
         <EmbeddedResource Remove="shaders/**"/>
