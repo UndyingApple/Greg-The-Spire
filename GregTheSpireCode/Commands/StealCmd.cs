@@ -28,7 +28,10 @@ public static class StealCmd
         {
             //variable that represents the card on top of the deck
             CardModel topCard = PileType.Draw.GetPile(player).Cards.FirstOrDefault<CardModel>();
-            if (!player.PlayerCombatState.HasEnoughResourcesFor(topCard, out UnplayableReason reason)) continue;
+            if (!player.PlayerCombatState.HasEnoughResourcesFor(topCard, out UnplayableReason reason))
+            {
+                await CardPileCmd.Add(topCard, StashCardPile.StashPileType);
+            }
             if (reason == UnplayableReason.None)
             {
                 Stolen.IsStolen.Set(topCard, true);
