@@ -29,8 +29,7 @@ public partial class NStashPile : NCombatCardPile
         var stashPileButton = ResourceLoader.Load<PackedScene>(_scenePath).Instantiate<NStashPile>();
         stashPileButton.Name = "%StashPile";
         stashPileButton.Position = new Vector2(35, 700);
-
-        /*
+        
         var background = stashPileButton.GetNode<TextureRect>("CountContainer/Background");
         background.Texture = ResourceLoader.Load<Texture2D>("res://images/packed/combat_ui/pile_button_count.png");
 
@@ -44,7 +43,6 @@ public partial class NStashPile : NCombatCardPile
         addSymbol.AddThemeFontOverride(ThemeConstants.Label.Font, font);
         addSymbol.MinFontSize = 20;
         addSymbol.MaxFontSize = 20;
-        */
 
         return stashPileButton;
     });

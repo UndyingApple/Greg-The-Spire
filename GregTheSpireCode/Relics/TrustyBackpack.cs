@@ -24,7 +24,7 @@ public class TrustyBackpack() : GregTheSpireRelic
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new IntVar("Rounds", 2),
+        new IntVar("Rounds", 1),
         new PowerVar<StoragePower>(3)
     ];
 

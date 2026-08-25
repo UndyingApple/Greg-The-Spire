@@ -18,14 +18,18 @@ public static class StashCmd
             null,
             card_initial)).ToList();
 
-        if ((Decimal) player.Creature.GetPowerAmount<StoragePower>() <= (Decimal) PileType.Draw.GetPile(player).Cards.Count)
+        var storage = player.Creature.GetPowerAmount<StoragePower>();
+        var totalStashed = StashCardPile.StashPileType.GetPile(player).Cards.Count;
+        for (var i = 1; i <= stashedCards.Count; i++)
         {
-            await CardPileCmd.Add(stashedCards, StashCardPile.StashPileType);
+            if (i + totalStashed <= storage)
+            {
+                await CardPileCmd.Add(stashedCards[i - 1], StashCardPile.StashPileType);
+            }
+            else
+            {
+                await CardCmd.Discard(choiceContext, stashedCards[i - 1]);
+            }
         }
-        else
-        {
-            await CardCmd.Discard(choiceContext, card_initial);
-        }
-        
     }
 }
