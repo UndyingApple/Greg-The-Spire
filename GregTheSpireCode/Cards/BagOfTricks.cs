@@ -32,7 +32,7 @@ public class BagOfTricks() : GregTheSpireCard(
         
         await CardPileCmd.Add(stashedCards, StashCardPile.StashPileType);
 
-        await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 1, 1,(CardModel)this);
+        await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 1, 1,this);
     }
 
     protected override void OnUpgrade()

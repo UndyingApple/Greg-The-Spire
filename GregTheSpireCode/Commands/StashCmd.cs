@@ -1,6 +1,8 @@
 using GregTheSpire.GregTheSpireCode.CardPiles;
+using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
@@ -15,7 +17,15 @@ public static class StashCmd
             new CardSelectorPrefs(StashSelectorPrefs.ToStashSelectionPrompt, min, max),
             null,
             card_initial)).ToList();
+
+        if ((Decimal) player.Creature.GetPowerAmount<StoragePower>() <= (Decimal) PileType.Draw.GetPile(player).Cards.Count)
+        {
+            await CardPileCmd.Add(stashedCards, StashCardPile.StashPileType);
+        }
+        else
+        {
+            await CardCmd.Discard(choiceContext, card_initial);
+        }
         
-        await CardPileCmd.Add(stashedCards, StashCardPile.StashPileType);
     }
 }

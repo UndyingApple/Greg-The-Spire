@@ -3,6 +3,7 @@ using BaseLib.Utils.NodeFactories;
 using GregTheSpire.GregTheSpireCode.Extensions;
 using Godot;
 using GregTheSpire.GregTheSpireCode.Cards;
+using GregTheSpire.GregTheSpireCode.Relics;
 using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
@@ -38,7 +39,7 @@ public class GregTheSpire : PlaceholderCharacterModel
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
     [
-        ModelDb.Relic<BurningBlood>()
+        ModelDb.Relic<TrustyBackpack>()
     ];
 
     public override CardPoolModel CardPool => ModelDb.CardPool<GregTheSpireCardPool>();

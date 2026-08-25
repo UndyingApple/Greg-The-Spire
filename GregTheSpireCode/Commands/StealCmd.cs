@@ -30,17 +30,17 @@ public static class StealCmd
             if (!player.PlayerCombatState.HasEnoughResourcesFor(topCard, out UnplayableReason reason)) continue;
             if (reason == UnplayableReason.None)
             {
-                await CardPileCmd.AutoPlayFromDrawPile(choiceContext, player, 1, CardPilePosition.Top, false);
+                //await CardPileCmd.AutoPlayFromDrawPile(choiceContext, player, 1, CardPilePosition.Top, false);
                 if (topCard.Owner.Creature.Player == player && topCard.Type != CardType.Power && !topCard.IsDupe)
                 {
-                    location.pileType = PileType.Discard;
-                    location.position = CardPilePosition.Top;
-                    location.player = this.Owner.Player;
+                    //Note: This is ASS. Change this later to be LESS ASS.
+                    await CardCmd.AutoPlay(choiceContext, (CardModel) topCard, null, AutoPlayType.Default, false, false);
+                    await CardCmd.Discard(choiceContext, topCard);
                 }
                 /*Creature? target,
                     AutoPlayType type = AutoPlayType.Default,
                     bool skipXCapture = false,
-                    bool skipCardPileVisuals = false)
+                    bool skipCardPileVisuals = false
                     */
             }
             /*implement this once the stash has a max size limit
