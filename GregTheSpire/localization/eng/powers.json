@@ -1,5 +1,9 @@
 {
   "GREGTHESPIRE-STORAGE_POWER.description": "",
   "GREGTHESPIRE-STORAGE_POWER.smartDescription": "",
-  "GREGTHESPIRE-STORAGE_POWER.title": "StoragePower"
+  "GREGTHESPIRE-STORAGE_POWER.title": "StoragePower",
+
+  "GREGTHESPIRE-CONFIDENCE_POWER.description": "",
+  "GREGTHESPIRE-CONFIDENCE_POWER.smartDescription": "",
+  "GREGTHESPIRE-CONFIDENCE_POWER.title": "Confidence"
 }
