@@ -17,6 +17,6 @@
   "GREGTHESPIRE-CRACKER.description": "",
   "GREGTHESPIRE-CRACKER.title": "Cracker",
   
-  "GREGTHESPIRE-HARDTACK.description": "Deals {Damage:diff()} damage.\nDeals 2 additional damage for every Cracker played this combat.",
+  "GREGTHESPIRE-HARDTACK.description": "Deals {CalculatedDamage:diff()} damage.\nDeals 2 additional damage for every Cracker played this combat.",
   "GREGTHESPIRE-HARDTACK.title": "Hardtack"
 }

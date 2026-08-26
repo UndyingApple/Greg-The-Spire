@@ -16,13 +16,14 @@ public class Hardtack() : GregTheSpireCard(1,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
-    private const string CalculatedDamageKey = "CalculatedDamage";
-    
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         //(DynamicVar) new DamageVar(7 + 2 * CombatManager.Instance.History.CardPlaysStarted.Count(e => e.CardPlay.Player == Owner && e.CardPlay.Card.Keywords.Contains(GregTheSpireKeywords.Snack)), ValueProp.Move)
         new CalculationBaseVar(7),
-        new CalculationExtraVar(2),
-        (DynamicVar) new CalculatedVar(CalculatedDamageKey).WithMultiplier((card, _) => CombatManager.Instance.History.CardPlaysStarted.Count(e => e.CardPlay.Player == Owner && e.CardPlay.Card is Cracker), ValueProp.Move))
+        new ExtraDamageVar(2),
+        new CalculatedDamageVar(ValueProp.Move).WithMultiplier((card, _) => 
+            CombatManager.Instance.History.CardPlaysStarted
+                .Count(e => e.CardPlay.Card.Owner == card.Owner
+                            && e.CardPlay.Card is Cracker))
     ];
 
     protected override async Task OnPlay(
@@ -30,11 +31,11 @@ public class Hardtack() : GregTheSpireCard(1,
         CardPlay play)
     {
         ArgumentNullException.ThrowIfNull((object) play.Target, "play.Target");
-        AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).Execute(choiceContext);
+        AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.CalculatedDamage).FromCard((CardModel) this, play).Targeting(play.Target).Execute(choiceContext);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.CalculatedDamage.BaseValue += 2;
+        DynamicVars.CalculationBase.UpgradeValueBy(2);
     }
 }
