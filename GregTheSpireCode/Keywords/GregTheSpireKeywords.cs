@@ -15,6 +15,7 @@ namespace GregTheSpire.GregTheSpireCode.Keywords;
 
 public class GregTheSpireKeywords
 {
-    [CustomEnum] [KeywordProperties(AutoKeywordPosition.Before)]
+    
+    [CustomEnum] [KeywordProperties(AutoKeywordPosition.After)]
     public static CardKeyword Snack;
 }

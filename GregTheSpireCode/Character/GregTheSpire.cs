@@ -17,11 +17,11 @@ public class GregTheSpire : PlaceholderCharacterModel
 {
     public const string CharacterId = "GregTheSpire";
 
-    public static readonly Color Color = new("ffffff");
+    public static readonly Color Color = new("00a86b");
 
     public override Color NameColor => Color;
     public override CharacterGender Gender => CharacterGender.Neutral;
-    public override int StartingHp => 70;
+    public override int StartingHp => 68;
 
     public override IEnumerable<CardModel> StartingDeck =>
     [
