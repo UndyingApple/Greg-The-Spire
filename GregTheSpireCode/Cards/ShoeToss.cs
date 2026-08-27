@@ -30,6 +30,10 @@ public class ShoeToss() : GregTheSpireCard(2,
         HoverTipFactory.FromCard<LeftShoe>(IsUpgraded),
         HoverTipFactory.FromCard<RightShoe>(IsUpgraded)
     ];
+    
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [
+        CardKeyword.Exhaust
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

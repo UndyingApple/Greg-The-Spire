@@ -20,6 +20,7 @@
   "GREGTHESPIRE-HARDTACK.description": "Deals {CalculatedDamage:diff()} damage.\nDeals 2 additional damage for every Cracker played this combat.",
   "GREGTHESPIRE-HARDTACK.title": "Hardtack",
 
+
   "GREGTHESPIRE-THE_LAST_SUPPER.description": "",
   "GREGTHESPIRE-THE_LAST_SUPPER.title": "The Last Supper",
   
@@ -33,5 +34,38 @@
   "GREGTHESPIRE-LEFT_SHOE.title": "Left Shoe",
 
   "GREGTHESPIRE-RIGHT_SHOE.description": "",
-  "GREGTHESPIRE-RIGHT_SHOE.title": "Right Shoe"
+  "GREGTHESPIRE-RIGHT_SHOE.title": "Right Shoe",
+
+  "GREGTHESPIRE-PUSH_THE_BUTTON.description": "",
+  "GREGTHESPIRE-PUSH_THE_BUTTON.title": "PUSH THE BUTTON!!",
+  
+  "GREGTHESPIRE-WATCH_OUT_FOR_THE_TRAPS.description": "",
+  "GREGTHESPIRE-WATCH_OUT_FOR_THE_TRAPS.title": "Watch Out For The Traps!",
+
+  "GREGTHESPIRE-INFLATED_EGO.description": "",
+  "GREGTHESPIRE-INFLATED_EGO.title": "Inflated Ego",
+
+  "GREGTHESPIRE-THERE_IS_NO_ACCIDENT.description": "",
+  "GREGTHESPIRE-THERE_IS_NO_ACCIDENT.title": "There Is (No) Accident!",
+
+  "GREGTHESPIRE-SMUG.description": "",
+  "GREGTHESPIRE-SMUG.title": "Smug",
+
+  "GREGTHESPIRE-CHILL_PILL.description": "",
+  "GREGTHESPIRE-CHILL_PILL.title": "Chill Pill",
+
+  "GREGTHESPIRE-SNACK_O_VISION.description": "",
+  "GREGTHESPIRE-SNACK_O_VISION.title": "Snack-O-Vision",
+
+  "GREGTHESPIRE-RANSACK.description": "",
+  "GREGTHESPIRE-RANSACK.title": "Ransack",
+  
+  "GREGTHESPIRE-PICKPOCKET.description": "",
+  "GREGTHESPIRE-PICKPOCKET.title": "Pickpocket",
+
+  "GREGTHESPIRE-STRIKE_GREG.description": "Deal {Damage:diff()} damage.",
+  "GREGTHESPIRE-STRIKE_GREG.title": "Strike",
+
+  "GREGTHESPIRE-DEFEND_GREG.description": "Gain {Block:diff()} block.",
+  "GREGTHESPIRE-DEFEND_GREG.title": "Defend"
 }

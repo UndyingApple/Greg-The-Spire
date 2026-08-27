@@ -22,6 +22,8 @@ public class Cracker() : GregTheSpireCard(0,
         GregTheSpireKeywords.Snack,
         CardKeyword.Exhaust
     ];
+    
+    public override bool GainsBlock => true;
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new BlockVar(3, ValueProp.Move)
