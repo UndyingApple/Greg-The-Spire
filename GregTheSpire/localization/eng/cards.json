@@ -1,39 +1,38 @@
 {
-  "GREGTHESPIRE-THIEVE.description": "",
+  "GREGTHESPIRE-THIEVE.description": "Gain {B:diff()} [gold]Block[/gold]. [gold]Steal[/gold] 1",
   "GREGTHESPIRE-THIEVE.title": "Thieve",
-  
-  "GREGTHESPIRE-BAG_OF_TRICKS.description": "",
+
+  "GREGTHESPIRE-BAG_OF_TRICKS.description": "Play 1 card from your [gold]Stash[/gold]. \n[gold]Stash[/gold]{IfUpgraded:show: up to|} {Cards:diff()} {Cards:plural:card|cards} in your [gold]Hand[/gold].",
   "GREGTHESPIRE-BAG_OF_TRICKS.title": "Bag Of Tricks",
-  
-  "GREGTHESPIRE-STOW.description": "",
+
+  "GREGTHESPIRE-STOW.description": "[gold]Stash[/gold] up to 2 cards in your [gold]hand[/gold].",
   "GREGTHESPIRE-STOW.title": "Stow",
 
-  "GREGTHESPIRE-CHEESE_AND_CRACKERS.description": "",
+  "GREGTHESPIRE-CHEESE_AND_CRACKERS.description": "Add a [gold]{IfUpgraded:show:Cheese+|Cheese}[/gold] and a [gold]{IfUpgraded:show:Cracker+|Cracker}[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-CHEESE_AND_CRACKERS.title": "Cheese & Crackers",
 
-  "GREGTHESPIRE-CHEESE.description": "",
+  "GREGTHESPIRE-CHEESE.description": "Gain {ConfidencePower:diff()} [gold]Confidence[/gold].",
   "GREGTHESPIRE-CHEESE.title": "Cheese",
 
-  "GREGTHESPIRE-CRACKER.description": "",
+  "GREGTHESPIRE-CRACKER.description": "Gain {Block:diff()} [gold]Block[/gold].",
   "GREGTHESPIRE-CRACKER.title": "Cracker",
-  
-  "GREGTHESPIRE-HARDTACK.description": "Deals {CalculatedDamage:diff()} damage.\nDeals 2 additional damage for every Cracker played this combat.",
+
+  "GREGTHESPIRE-HARDTACK.description": "Deal {CalculatedDamage:diff()} damage.\nDeals 2 additional damage for every [gold]Cracker[/gold] played this combat.",
   "GREGTHESPIRE-HARDTACK.title": "Hardtack",
-
-
+  
   "GREGTHESPIRE-THE_LAST_SUPPER.description": "",
   "GREGTHESPIRE-THE_LAST_SUPPER.title": "The Last Supper",
-  
-  "GREGTHESPIRE-SHOE_TOSS.description": "",
+
+  "GREGTHESPIRE-SHOE_TOSS.description": "Deal {Damage:diff()} damage. \nAdd a [gold]{IfUpgraded:show:Left Shoe+|Left Shoe}[/gold] and a [gold]{IfUpgraded:show:Right Shoe+|Right Shoe}[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-SHOE_TOSS.title": "Shoe Toss",
 
-  "GREGTHESPIRE-GREG_JUMP.description": "",
+  "GREGTHESPIRE-GREG_JUMP.description": "Gain {B:diff()} [gold]Block[/gold]. \nGain 1 [gold]Confidence[/gold].",
   "GREGTHESPIRE-GREG_JUMP.title": "Greg Jump",
 
-  "GREGTHESPIRE-LEFT_SHOE.description": "",
+  "GREGTHESPIRE-LEFT_SHOE.description": "Deal {Damage:diff()} damage. \nApply {VulnerablePower:diff()} [gold]Vulnerable[/gold]. \nPlace [gold]Right Shoe[/gold] on top of your [gold]Draw Pile[/gold] from anywhere.",
   "GREGTHESPIRE-LEFT_SHOE.title": "Left Shoe",
 
-  "GREGTHESPIRE-RIGHT_SHOE.description": "",
+  "GREGTHESPIRE-RIGHT_SHOE.description": "Deal {Damage:diff()} damage. \nApply {WeakPower:diff()} [gold]Weak[/gold]. \nPlace [gold]Left Shoe[/gold] on top of your [gold]Draw Pile[/gold] from anywhere.",
   "GREGTHESPIRE-RIGHT_SHOE.title": "Right Shoe",
 
   "GREGTHESPIRE-PUSH_THE_BUTTON.description": "",
