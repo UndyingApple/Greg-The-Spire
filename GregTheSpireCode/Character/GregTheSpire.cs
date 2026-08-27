@@ -25,16 +25,17 @@ public class GregTheSpire : PlaceholderCharacterModel
 
     public override IEnumerable<CardModel> StartingDeck =>
     [
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<BagOfTricks>()
+        ModelDb.Card<StrikeGreg>(),
+        ModelDb.Card<StrikeGreg>(),
+        ModelDb.Card<StrikeGreg>(),
+        ModelDb.Card<StrikeGreg>(),
+        ModelDb.Card<StrikeGreg>(),
+        ModelDb.Card<DefendGreg>(),
+        ModelDb.Card<DefendGreg>(),
+        ModelDb.Card<DefendGreg>(),
+        ModelDb.Card<DefendGreg>(),
+        ModelDb.Card<BagOfTricks>(),
+        ModelDb.Card<Thieve>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>

@@ -1,5 +1,5 @@
 {
-  "GREGTHESPIRE-THIEVE.description": "Gain {B:diff()} [gold]Block[/gold]. [gold]Steal[/gold] 1",
+  "GREGTHESPIRE-THIEVE.description": "Gain {Block:diff()} [gold]Block[/gold]. [gold]Steal[/gold] 1",
   "GREGTHESPIRE-THIEVE.title": "Thieve",
 
   "GREGTHESPIRE-BAG_OF_TRICKS.description": "Play 1 card from your [gold]Stash[/gold]. \n[gold]Stash[/gold]{IfUpgraded:show: up to|} {Cards:diff()} {Cards:plural:card|cards} in your [gold]Hand[/gold].",
@@ -26,7 +26,7 @@
   "GREGTHESPIRE-SHOE_TOSS.description": "Deal {Damage:diff()} damage. \nAdd a [gold]{IfUpgraded:show:Left Shoe+|Left Shoe}[/gold] and a [gold]{IfUpgraded:show:Right Shoe+|Right Shoe}[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-SHOE_TOSS.title": "Shoe Toss",
 
-  "GREGTHESPIRE-GREG_JUMP.description": "Gain {B:diff()} [gold]Block[/gold]. \nGain 1 [gold]Confidence[/gold].",
+  "GREGTHESPIRE-GREG_JUMP.description": "Gain {Block:diff()} [gold]Block[/gold]. \nGain 1 [gold]Confidence[/gold].",
   "GREGTHESPIRE-GREG_JUMP.title": "Greg Jump",
 
   "GREGTHESPIRE-LEFT_SHOE.description": "Deal {Damage:diff()} damage. \nApply {VulnerablePower:diff()} [gold]Vulnerable[/gold]. \nPlace [gold]Right Shoe[/gold] on top of your [gold]Draw Pile[/gold] from anywhere.",
