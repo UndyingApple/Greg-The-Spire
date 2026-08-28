@@ -1,7 +1,7 @@
 {
   "GREGTHESPIRE-STORAGE_POWER.description": "",
   "GREGTHESPIRE-STORAGE_POWER.smartDescription": "",
-  "GREGTHESPIRE-STORAGE_POWER.title": "StoragePower",
+  "GREGTHESPIRE-STORAGE_POWER.title": "Storage",
 
   "GREGTHESPIRE-CONFIDENCE_POWER.description": "",
   "GREGTHESPIRE-CONFIDENCE_POWER.smartDescription": "",
@@ -9,9 +9,13 @@
 
   "GREGTHESPIRE-SECONDS_POWER.description": "",
   "GREGTHESPIRE-SECONDS_POWER.smartDescription": "",
-  "GREGTHESPIRE-SECONDS_POWER.title": "SecondsPower",
+  "GREGTHESPIRE-SECONDS_POWER.title": "Seconds",
 
   "GREGTHESPIRE-THERES_A_FLY_IN_MY_SOUP_POWER.description": "",
   "GREGTHESPIRE-THERES_A_FLY_IN_MY_SOUP_POWER.smartDescription": "",
-  "GREGTHESPIRE-THERES_A_FLY_IN_MY_SOUP_POWER.title": "TheresAFlyInMySoupPower"
+  "GREGTHESPIRE-THERES_A_FLY_IN_MY_SOUP_POWER.title": "There's A Fly In My Soup!",
+
+  "GREGTHESPIRE-WOWIE_ZOWIE_POWER.description": "",
+  "GREGTHESPIRE-WOWIE_ZOWIE_POWER.smartDescription": "",
+  "GREGTHESPIRE-WOWIE_ZOWIE_POWER.title": "Wowie Zowie!"
 }

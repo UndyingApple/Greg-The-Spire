@@ -17,16 +17,15 @@ public class NegativeAffirmation() : GregTheSpireCard(1,
     TargetType.Self)
 {
     
-    private Decimal blockAmount = 2;
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new CalculationBaseVar(0),
-        new CalculationExtraVar(0),
+        new CalculationExtraVar(3),
             
         new CalculatedBlockVar(ValueProp.Move).WithMultiplier(((Func<CardModel, Creature, Decimal>) ((card, _) =>
         {
-            return ((Decimal)this.Owner.Creature.GetPowerAmount<ConfidencePower>() / 2) * blockAmount;
-        }))!)
+            return (Decimal) 1;
+        })))
     ];
     
     
@@ -37,18 +36,14 @@ public class NegativeAffirmation() : GregTheSpireCard(1,
         await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
         var confidenceAmount = this.Owner.Creature.GetPowerAmount<ConfidencePower>();
         Decimal change = confidenceAmount / 2;
-        Decimal blockTotal = blockAmount * change;
-        if ((confidenceAmount != null) && confidenceAmount > 1)
+        if (confidenceAmount != null)
         {
             ConfidencePower confidencePower = await PowerCmd.Apply<ConfidencePower>(choiceContext, this.Owner.Creature, -change, Owner.Creature, this);
         }
-        Decimal num = await CreatureCmd.GainBlock(this.Owner.Creature, this.DynamicVars.CalculatedBlock.Calculate(play.Target), this.DynamicVars.CalculatedBlock.Props, play);
+        Decimal num = await CreatureCmd.GainBlock(this.Owner.Creature, confidenceAmount / 2 * this.DynamicVars.CalculatedBlock.Calculate(play.Target), this.DynamicVars.CalculatedBlock.Props, play);
         
         
     }
 
-    protected override void OnUpgrade()
-    {
-
-    }
+    protected override void OnUpgrade() => DynamicVars.CalculationExtra.UpgradeValueBy(1);
 }
