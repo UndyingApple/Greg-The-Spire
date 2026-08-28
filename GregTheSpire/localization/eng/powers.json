@@ -5,5 +5,13 @@
 
   "GREGTHESPIRE-CONFIDENCE_POWER.description": "",
   "GREGTHESPIRE-CONFIDENCE_POWER.smartDescription": "",
-  "GREGTHESPIRE-CONFIDENCE_POWER.title": "Confidence"
+  "GREGTHESPIRE-CONFIDENCE_POWER.title": "Confidence",
+
+  "GREGTHESPIRE-SECONDS_POWER.description": "",
+  "GREGTHESPIRE-SECONDS_POWER.smartDescription": "",
+  "GREGTHESPIRE-SECONDS_POWER.title": "SecondsPower",
+
+  "GREGTHESPIRE-THERES_A_FLY_IN_MY_SOUP_POWER.description": "",
+  "GREGTHESPIRE-THERES_A_FLY_IN_MY_SOUP_POWER.smartDescription": "",
+  "GREGTHESPIRE-THERES_A_FLY_IN_MY_SOUP_POWER.title": "TheresAFlyInMySoupPower"
 }

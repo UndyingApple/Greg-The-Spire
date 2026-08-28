@@ -12,7 +12,7 @@ namespace GregTheSpire.GregTheSpireCode.Cards;
 
 public class BagOfTricks() : GregTheSpireCard(
     1,
-    CardType.Skill, CardRarity.Common,
+    CardType.Skill, CardRarity.Basic,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
@@ -25,14 +25,14 @@ public class BagOfTricks() : GregTheSpireCard(
     {
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         
+        await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 1, 1,this);
+        
         var stashedCards = (await CardSelectCmd.FromHand(choiceContext, Owner, 
             new CardSelectorPrefs(StashSelectorPrefs.ToStashSelectionPrompt, 1, DynamicVars.Cards.IntValue),
             null,
             this)).ToList();
         
         await CardPileCmd.Add(stashedCards, StashCardPile.StashPileType);
-
-        await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 1, 1,this);
     }
 
     protected override void OnUpgrade()

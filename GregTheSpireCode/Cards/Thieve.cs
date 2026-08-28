@@ -11,7 +11,7 @@ namespace GregTheSpire.GregTheSpireCode.Cards;
 
   
 public class Thieve() : GregTheSpireCard(2,
-    CardType.Skill, CardRarity.Common,
+    CardType.Skill, CardRarity.Basic,
     TargetType.Self)
 {
     public override bool GainsBlock => true;
