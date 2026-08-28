@@ -75,5 +75,20 @@
   "GREGTHESPIRE-WAITER_WAITER.title": "Waiter, waiter!",
 
   "GREGTHESPIRE-BUFFET.description": "Add a [gold]{IfUpgraded:show:Cheese+|Cheese}[/gold], a [gold]{IfUpgraded:show:Cracker+|Cracker}[/gold], and a [gold]{IfUpgraded:show:Fly+|Fly}[/gold] to your [gold]Hand[/gold].",
-  "GREGTHESPIRE-BUFFET.title": "Buffet"
+  "GREGTHESPIRE-BUFFET.title": "Buffet",
+
+  "GREGTHESPIRE-SECONDS.description": "",
+  "GREGTHESPIRE-SECONDS.title": "Seconds",
+
+  "GREGTHESPIRE-SOUP.description": "",
+  "GREGTHESPIRE-SOUP.title": "Soup",
+  
+  "GREGTHESPIRE-COOKING_POT.description": "",
+  "GREGTHESPIRE-COOKING_POT.title": "Cooking Pot",
+
+  "GREGTHESPIRE-EMERGENCY_RATIONS.description": "",
+  "GREGTHESPIRE-EMERGENCY_RATIONS.title": "EmergencyRations",
+  
+  "GREGTHESPIRE-THERES_A_FLY_IN_MY_SOUP.description": "",
+  "GREGTHESPIRE-THERES_A_FLY_IN_MY_SOUP.title": "Theres A Fly In My Soup!"
 }
