@@ -11,7 +11,7 @@ namespace GregTheSpire.GregTheSpireCode.Cards;
 
 public class StrikeGreg() : GregTheSpireCard(1,
     CardType.Attack, CardRarity.Basic,
-    TargetType.Self)
+    TargetType.AnyEnemy)
 {
 
     protected override HashSet<CardTag> CanonicalTags

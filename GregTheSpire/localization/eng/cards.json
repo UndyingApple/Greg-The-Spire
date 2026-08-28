@@ -65,6 +65,15 @@
   "GREGTHESPIRE-STRIKE_GREG.description": "Deal {Damage:diff()} damage.",
   "GREGTHESPIRE-STRIKE_GREG.title": "Strike",
 
-  "GREGTHESPIRE-DEFEND_GREG.description": "Gain {Block:diff()} block.",
-  "GREGTHESPIRE-DEFEND_GREG.title": "Defend"
+  "GREGTHESPIRE-DEFEND_GREG.description": "Gain {Block:diff()} [gold]Block[/gold].",
+  "GREGTHESPIRE-DEFEND_GREG.title": "Defend",
+
+  "GREGTHESPIRE-FLY.description": "",
+  "GREGTHESPIRE-FLY.title": "Fly",
+  
+  "GREGTHESPIRE-WAITER_WAITER.description": "",
+  "GREGTHESPIRE-WAITER_WAITER.title": "Waiter, waiter!",
+
+  "GREGTHESPIRE-BUFFET.description": "Add a [gold]{IfUpgraded:show:Cheese+|Cheese}[/gold], a [gold]{IfUpgraded:show:Cracker+|Cracker}[/gold], and a [gold]{IfUpgraded:show:Fly+|Fly}[/gold] to your [gold]Hand[/gold].",
+  "GREGTHESPIRE-BUFFET.title": "Buffet"
 }

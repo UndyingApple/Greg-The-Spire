@@ -40,13 +40,7 @@ public class ShoeToss() : GregTheSpireCard(2,
         CardPlay play)
     {
         ArgumentNullException.ThrowIfNull((object) play.Target, "play.Target");
-        NCombatRoom instance = NCombatRoom.Instance;
-        if (instance != null)
-            instance.CombatVfxContainer.AddChildSafely((Node) NThinSliceVfx.Create(play.Target));
-        float attackAnimDelay = this.Owner.Character.AttackAnimDelay;
-        if (SaveManager.Instance.PrefsSave.FastMode == FastModeType.Normal)
-            attackAnimDelay += 0.2f;
-        AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).WithAttackerAnim("Attack", attackAnimDelay).Execute(choiceContext);
+        AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).Execute(choiceContext);
         
         IEnumerable<CardModel> leftshoe = await LeftShoe.CreateInHand(Owner, 1, CombatState);
         if (IsUpgraded)

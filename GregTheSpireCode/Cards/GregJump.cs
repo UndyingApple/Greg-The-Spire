@@ -17,8 +17,6 @@ public class GregJump() : GregTheSpireCard(1,
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        (DynamicVar)new PowerVar<ConfidencePower>(1),
-
         new BlockVar(4, ValueProp.Move)
     ];
     
@@ -30,7 +28,7 @@ public class GregJump() : GregTheSpireCard(1,
     {
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
 
-        ConfidencePower confidencePower = await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature, DynamicVars.Power<ConfidencePower>().BaseValue, Owner.Creature, this);
+        ConfidencePower confidencePower = await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
