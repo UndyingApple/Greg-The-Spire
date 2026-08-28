@@ -66,5 +66,11 @@
   "GREGTHESPIRE-STRIKE_GREG.title": "Strike",
 
   "GREGTHESPIRE-DEFEND_GREG.description": "Gain {Block:diff()} block.",
-  "GREGTHESPIRE-DEFEND_GREG.title": "Defend"
+  "GREGTHESPIRE-DEFEND_GREG.title": "Defend",
+
+  "GREGTHESPIRE-HUMAN_MERRY_GO_ROUND.description": "",
+  "GREGTHESPIRE-HUMAN_MERRY_GO_ROUND.title": "Human Merry-Go Round",
+
+  "GREGTHESPIRE-NEGATIVE_AFFIRMATION.description": "",
+  "GREGTHESPIRE-NEGATIVE_AFFIRMATION.title": "Negative Affirmation"
 }
