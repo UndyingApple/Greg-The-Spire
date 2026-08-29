@@ -14,7 +14,7 @@ public class DefendGreg() : GregTheSpireCard(1,
     public override bool GainsBlock => true;
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new BlockVar(6, ValueProp.Move)
+        new BlockVar(5, ValueProp.Move)
     ];
 
     protected override async Task OnPlay(
