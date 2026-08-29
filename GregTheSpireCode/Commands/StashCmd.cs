@@ -1,4 +1,5 @@
 using GregTheSpire.GregTheSpireCode.CardPiles;
+using GregTheSpire.GregTheSpireCode.Keywords;
 using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
@@ -19,7 +20,16 @@ public static class StashCmd
             card_initial)).ToList();
 
         var storage = player.Creature.GetPowerAmount<StoragePower>();
-        var totalStashed = StashCardPile.StashPileType.GetPile(player).Cards.Count;
+        int totalStashed;
+        if (player.Creature.GetPowerAmount<BiteSizedPower>() == 1)
+        {
+            totalStashed = StashCardPile.StashPileType.GetPile(player).Cards.Where<CardModel>((Func<CardModel, bool>)(c =>
+                !c.Keywords.Contains(GregTheSpireKeywords.Snack))).Count();
+        }
+        else
+        {
+            totalStashed = StashCardPile.StashPileType.GetPile(player).Cards.Count;
+        }
         for (var i = 1; i <= stashedCards.Count; i++)
         {
             if (i + totalStashed <= storage)
