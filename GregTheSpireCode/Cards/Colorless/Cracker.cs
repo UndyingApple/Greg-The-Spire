@@ -26,7 +26,7 @@ public class Cracker() : GregTheSpireCard(0,
     public override bool GainsBlock => true;
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new BlockVar(3, ValueProp.Move)
+        new BlockVar(4, ValueProp.Move)
     ];
     
     public static async Task<IEnumerable<Cracker>> CreateInHand(

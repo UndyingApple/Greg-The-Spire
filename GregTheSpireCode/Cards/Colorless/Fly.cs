@@ -26,7 +26,7 @@ public class Fly() : GregTheSpireCard(0,
     ];
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DamageVar("Played", 2, ValueProp.Move),
+        new DamageVar("Played", 3, ValueProp.Move),
         new DamageVar("Retained", 2, ValueProp.Move)
     ];
 
@@ -67,7 +67,7 @@ public class Fly() : GregTheSpireCard(0,
 
     protected override void OnUpgrade()
     {
-        DynamicVars["Played"].UpgradeValueBy(2);
+        DynamicVars["Played"].UpgradeValueBy(1);
         DynamicVars["Retained"].UpgradeValueBy(1);
     }
 }

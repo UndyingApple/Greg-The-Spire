@@ -99,5 +99,17 @@
   "GREGTHESPIRE-NEGATIVE_AFFIRMATION.title": "Negative Affirmation",
   
   "GREGTHESPIRE-WOWIE_ZOWIE.description": "Gain {Block:diff()} [gold]Block[/gold]. \nIf you don’t play this card again in exactly 3 turns, gain [gold]Doom[/gold] equal to your Max HP",
-  "GREGTHESPIRE-WOWIE_ZOWIE.title": "Wowie Zowie!"
+  "GREGTHESPIRE-WOWIE_ZOWIE.title": "Wowie Zowie!",
+  
+  "GREGTHESPIRE-KICKFLIP.description": "Deal {CalculatedDamage:diff()} damage.",
+  "GREGTHESPIRE-KICKFLIP.title": "Kickflip",
+  
+  "GREGTHESPIRE-SOMETIMES_BACK_DOWN.description": "",
+  "GREGTHESPIRE-SOMETIMES_BACK_DOWN.title": "Sometimes Back Down",
+
+  "GREGTHESPIRE-NEVER_BACK_DOWN.description": "",
+  "GREGTHESPIRE-NEVER_BACK_DOWN.title": "Never Back Down",
+  
+  "GREGTHESPIRE-OLIVE.description": "",
+  "GREGTHESPIRE-OLIVE.title": "Olive"
 }
