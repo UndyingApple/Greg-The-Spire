@@ -97,6 +97,9 @@
 
   "GREGTHESPIRE-NEGATIVE_AFFIRMATION.description": "Lose half of your [gold]Confidence[/gold]. \nGain {CalculationExtra:diff()} [gold]Block[/gold] for every [gold]Confidence[/gold] lost.",
   "GREGTHESPIRE-NEGATIVE_AFFIRMATION.title": "Negative Affirmation",
+
+  "GREGTHESPIRE-BITE_SIZED.description": "",
+  "GREGTHESPIRE-BITE_SIZED.title": "Bite-Sized",
   
   "GREGTHESPIRE-WOWIE_ZOWIE.description": "Gain {Block:diff()} [gold]Block[/gold]. \nIf you don’t play this card again in exactly 3 turns, gain [gold]Doom[/gold] equal to your Max HP",
   "GREGTHESPIRE-WOWIE_ZOWIE.title": "Wowie Zowie!"
