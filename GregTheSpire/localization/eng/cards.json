@@ -100,16 +100,31 @@
   
   "GREGTHESPIRE-WOWIE_ZOWIE.description": "Gain {Block:diff()} [gold]Block[/gold]. \nIf you don’t play this card again in exactly 3 turns, gain [gold]Doom[/gold] equal to your Max HP",
   "GREGTHESPIRE-WOWIE_ZOWIE.title": "Wowie Zowie!",
-  
+
+  "GREGTHESPIRE-WOWIE_ZOWIE.description": "Gain {Block:diff()} [gold]Block[/gold]. \nIf you don’t play this card again in exactly 3 turns, gain [gold]Doom[/gold] equal to your Max HP",
+  "GREGTHESPIRE-WOWIE_ZOWIE.title": "Wowie Zowie!",
+
+  "GREGTHESPIRE-RUMMAGE.description": "Draw {Cards:diff()}. \n[gold]Stash[/gold] 1.",
+  "GREGTHESPIRE-RUMMAGE.title": "Rummage",
+
+  "GREGTHESPIRE-POCKET_KNIFE.description": "Deal {Damage:diff()} damage. \nPut this card into your [gold]Stash[/gold]",
+  "GREGTHESPIRE-POCKET_KNIFE.title": "Pocket Knife",
+
+  "GREGTHESPIRE-HAT_FORM.description": "At the start of each turn, [gold]Steal[/gold] 1.",
+  "GREGTHESPIRE-HAT_FORM.title": "Hat Form",
+
+  "GREGTHESPIRE-EXTRA_POCKETS.description": "Gain 2 [gold]Storage[/gold]",
+  "GREGTHESPIRE-EXTRA_POCKETS.title": "Extra Pockets",
+
   "GREGTHESPIRE-KICKFLIP.description": "Deal {CalculatedDamage:diff()} damage.",
   "GREGTHESPIRE-KICKFLIP.title": "Kickflip",
-  
+
   "GREGTHESPIRE-SOMETIMES_BACK_DOWN.description": "",
   "GREGTHESPIRE-SOMETIMES_BACK_DOWN.title": "Sometimes Back Down",
 
   "GREGTHESPIRE-NEVER_BACK_DOWN.description": "",
   "GREGTHESPIRE-NEVER_BACK_DOWN.title": "Never Back Down",
-  
+
   "GREGTHESPIRE-OLIVE.description": "",
   "GREGTHESPIRE-OLIVE.title": "Olive"
 }
