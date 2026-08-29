@@ -21,7 +21,7 @@ public class HatFormPower() : GregTheSpirePower
     {
         if (player != this.Owner.Player)
             return;
-        await StealCmd.StealAsync(choiceContext, player, 1);
+        await StealCmd.StealAsync(choiceContext, player, Amount);
     }
 }
 

@@ -97,20 +97,20 @@
 
   "GREGTHESPIRE-NEGATIVE_AFFIRMATION.description": "Lose half of your [gold]Confidence[/gold]. \nGain {CalculationExtra:diff()} [gold]Block[/gold] for every [gold]Confidence[/gold] lost.",
   "GREGTHESPIRE-NEGATIVE_AFFIRMATION.title": "Negative Affirmation",
-  
-  "GREGTHESPIRE-WOWIE_ZOWIE.description": "Gain {Block:diff()} [gold]Block[/gold]. \nIf you don’t play this card again in exactly 3 turns, gain [gold]Doom[/gold] equal to your Max HP",
-  "GREGTHESPIRE-WOWIE_ZOWIE.title": "Wowie Zowie!",
 
+  "GREGTHESPIRE-BITE_SIZED.description": "",
+  "GREGTHESPIRE-BITE_SIZED.title": "Bite-Sized",
+  
   "GREGTHESPIRE-WOWIE_ZOWIE.description": "Gain {Block:diff()} [gold]Block[/gold]. \nIf you don’t play this card again in exactly 3 turns, gain [gold]Doom[/gold] equal to your Max HP",
   "GREGTHESPIRE-WOWIE_ZOWIE.title": "Wowie Zowie!",
 
   "GREGTHESPIRE-RUMMAGE.description": "Draw {Cards:diff()}. \n[gold]Stash[/gold] 1.",
   "GREGTHESPIRE-RUMMAGE.title": "Rummage",
-
+  
   "GREGTHESPIRE-POCKET_KNIFE.description": "Deal {Damage:diff()} damage. \nPut this card into your [gold]Stash[/gold]",
   "GREGTHESPIRE-POCKET_KNIFE.title": "Pocket Knife",
 
-  "GREGTHESPIRE-HAT_FORM.description": "At the start of each turn, [gold]Steal[/gold] 1.",
+  "GREGTHESPIRE-HAT_FORM.description": "At the start of each turn, [gold]Steal[/gold] {IfUpgraded:show:2|1}.",
   "GREGTHESPIRE-HAT_FORM.title": "Hat Form",
 
   "GREGTHESPIRE-EXTRA_POCKETS.description": "Gain 2 [gold]Storage[/gold]",
@@ -126,5 +126,11 @@
   "GREGTHESPIRE-NEVER_BACK_DOWN.title": "Never Back Down",
 
   "GREGTHESPIRE-OLIVE.description": "",
-  "GREGTHESPIRE-OLIVE.title": "Olive"
+  "GREGTHESPIRE-OLIVE.title": "Olive",
+
+  "GREGTHESPIRE-RAT_FORM.description": "",
+  "GREGTHESPIRE-RAT_FORM.title": "Rat Form",
+
+  "GREGTHESPIRE-CHEESE_CLUB.description": "",
+  "GREGTHESPIRE-CHEESE_CLUB.title": "Cheese Club"
 }
