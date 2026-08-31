@@ -1,9 +1,11 @@
 ﻿using BaseLib.Extensions;
 using GregTheSpire.GregTheSpireCode.Cards;
+using GregTheSpire.GregTheSpireCode.Cards.Colorless;
 using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
@@ -22,6 +24,11 @@ public class MouseTrap() : GregTheSpireCard(1,
         new BlockVar(7, ValueProp.Move),
         (DynamicVar)new PowerVar<CheeseNextTurnPower>(1)
     ];
+    
+        protected override IEnumerable<IHoverTip> ExtraHoverTips =>
+        [
+            HoverTipFactory.FromCard<Cheese>()
+        ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

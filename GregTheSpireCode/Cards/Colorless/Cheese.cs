@@ -3,6 +3,7 @@ using BaseLib.Utils;
 using GregTheSpire.GregTheSpireCode.Cards;
 using GregTheSpire.GregTheSpireCode.Keywords;
 using GregTheSpire.GregTheSpireCode.Powers;
+using GregTheSpire.GregTheSpireCode.Tags;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -27,6 +28,11 @@ public class Cheese() : GregTheSpireCard(0,
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         (DynamicVar) new PowerVar<ConfidencePower>(1)
     ];
+    
+    protected override HashSet<CardTag> CanonicalTags
+    {
+        get => new HashSet<CardTag>() { GregTheSpireTags.Cheese };
+    }
     
     public static async Task<IEnumerable<Cheese>> CreateInHand(
         Player owner,

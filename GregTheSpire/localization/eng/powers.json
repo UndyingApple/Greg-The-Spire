@@ -17,7 +17,7 @@
 
   "GREGTHESPIRE-BITE_SIZED_POWER.description": "",
   "GREGTHESPIRE-BITE_SIZED_POWER.smartDescription": "",
-  "GREGTHESPIRE-BITE_SIZED_POWER.title": "BiteSizedPower",
+  "GREGTHESPIRE-BITE_SIZED_POWER.title": "Bite Sized ",
   
   "GREGTHESPIRE-WOWIE_ZOWIE_POWER.description": "",
   "GREGTHESPIRE-WOWIE_ZOWIE_POWER.smartDescription": "",
@@ -33,7 +33,7 @@
 
   "GREGTHESPIRE-CHEESE_CLUB_POWER.description": "",
   "GREGTHESPIRE-CHEESE_CLUB_POWER.smartDescription": "",
-  "GREGTHESPIRE-CHEESE_CLUB_POWER.title": "CheeseClubPower",
+  "GREGTHESPIRE-CHEESE_CLUB_POWER.title": "Cheese Club",
 
   "GREGTHESPIRE-SOMETIMES_BACK_DOWN_POWER.description": "",
   "GREGTHESPIRE-SOMETIMES_BACK_DOWN_POWER.smartDescription": "",
@@ -50,5 +50,13 @@
 
   "GREGTHESPIRE-CHEESE_NEXT_TURN_POWER.description": "",
   "GREGTHESPIRE-CHEESE_NEXT_TURN_POWER.smartDescription": "",
-  "GREGTHESPIRE-CHEESE_NEXT_TURN_POWER.title": "CheeseNextTurnPower"
+  "GREGTHESPIRE-CHEESE_NEXT_TURN_POWER.title": "Cheese Next Turn",
+
+  "GREGTHESPIRE-FLY_SWATTER_POWER.description": "",
+  "GREGTHESPIRE-FLY_SWATTER_POWER.smartDescription": "",
+  "GREGTHESPIRE-FLY_SWATTER_POWER.title": "Fly Swatter",
+  
+  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.description": "",
+  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.smartDescription": "",
+  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.title": "Dont You LIKE Gorgonzola?"
 }

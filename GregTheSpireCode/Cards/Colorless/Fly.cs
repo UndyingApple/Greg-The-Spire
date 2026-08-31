@@ -1,6 +1,7 @@
 ﻿using BaseLib.Utils;
 using GregTheSpire.GregTheSpireCode.Cards;
 using GregTheSpire.GregTheSpireCode.Keywords;
+using GregTheSpire.GregTheSpireCode.Tags;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Commands.Builders;
@@ -27,6 +28,13 @@ public class Fly() : GregTheSpireCard(0,
         GregTheSpireKeywords.Snack,
         CardKeyword.Exhaust
     ];
+    
+
+    protected override HashSet<CardTag> CanonicalTags
+    {
+        get => new HashSet<CardTag>() { GregTheSpireTags.Fly };
+    }
+    
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar("Played", 3, ValueProp.Move),
