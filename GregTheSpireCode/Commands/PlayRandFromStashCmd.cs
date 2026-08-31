@@ -10,9 +10,9 @@ namespace GregTheSpire.GregTheSpireCode.Commands;
 
 public static class PlayRandFromStashCmd
 {
-    /*
+    
     public static async Task PlayRandFromStashCmdAsync(PlayerChoiceContext choiceContext, Player player, int amount)
-    {
+    {/*
         if (amount <= 0) return;
         
         Decimal num = await CreatureCmd.GainBlock(this.Owner.Creature, this.DynamicVars.Block, cardPlay);
@@ -31,7 +31,7 @@ public static class PlayRandFromStashCmd
                 return;
             CardPileAddResult? nullable = await CardCmd.Exhaust(choiceContext, card); 
         }
-        
+        */
     }
-    */
+    
 }

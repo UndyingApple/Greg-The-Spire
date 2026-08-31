@@ -67,6 +67,47 @@
         <Folder Include="GregTheSpire\images\relics\big\"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="GregTheSpireCode\Cards\Buffet.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\CheeseAndCrackers.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\ChillPill.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\Colorless\Cheese.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\Colorless\Cracker.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\Colorless\Fly.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\Colorless\LeftShoe.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\Colorless\RightShoe.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\Colorless\Soup.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\CookingPot.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\DefendGreg.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\EmergencyRations.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\GregJump.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\Hardtack.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\HumanMerryGoRound.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\InflatedEgo.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\NegativeAffirmation.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\Pickpocket.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\PUSHTHEBUTTON!!.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\Ransack.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\Seconds.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\ShoeToss.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\Smug.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\SnackOVision.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\StrikeGreg.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\TheLastSupper.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\ThereIs(No)Accident.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\TheresAFlyInMySoup.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\WaiterWaiter.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\WatchOutForTheTraps.cs.uid" />
+      <Content Include="GregTheSpireCode\Cards\WowieZowie.cs.uid" />
+      <Content Include="GregTheSpireCode\Character\GregTheSpireEnchantment.cs.uid" />
+      <Content Include="GregTheSpireCode\Enchantments\Infested.cs.uid" />
+      <Content Include="GregTheSpireCode\Powers\ConfidencePower.cs.uid" />
+      <Content Include="GregTheSpireCode\Powers\SecondsPower.cs.uid" />
+      <Content Include="GregTheSpireCode\Powers\TheresAFlyInMySoupPower.cs.uid" />
+      <Content Include="GregTheSpireCode\Powers\WowieZowiePower.cs.uid" />
+      <Content Include="GregTheSpireCode\Singletons\StealExhaust.cs.uid" />
+    </ItemGroup>
+
     <Target Name="CheckDependencyPaths">
         <Error
                 Text=" Slay the Spire 2 data not found at path '$(Sts2DataDir)'"

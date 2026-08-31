@@ -1,5 +1,22 @@
 {
-  "GREGTHESPIRE-TRUSTY_BACKPACK.description": "At the start of each combat, gain 3 Storage.",
+  "GREGTHESPIRE-TRUSTY_BACKPACK.description": "At the start of each combat, gain 3 [gold]Storage[/gold].",
   "GREGTHESPIRE-TRUSTY_BACKPACK.flavor": "",
-  "GREGTHESPIRE-TRUSTY_BACKPACK.title": "Trusty Backpack"
+  "GREGTHESPIRE-TRUSTY_BACKPACK.title": "Trusty Backpack",
+  
+  
+  "GREGTHESPIRE-FANNY_PACK.description": "At the start of each combat, gain 1 [gold]Storage[/gold].",
+  "GREGTHESPIRE-FANNY_PACK.flavor": "",
+  "GREGTHESPIRE-FANNY_PACK.title": "Fanny Pack",
+
+  "GREGTHESPIRE-BONE_SAW.description": "",
+  "GREGTHESPIRE-BONE_SAW.flavor": "",
+  "GREGTHESPIRE-BONE_SAW.title": "Bone Saw",
+
+  "GREGTHESPIRE-MOLDY_SANDWICH.description": "",
+  "GREGTHESPIRE-MOLDY_SANDWICH.flavor": "",
+  "GREGTHESPIRE-MOLDY_SANDWICH.title": "MoldySandwich",
+
+  "GREGTHESPIRE-THICK_WALLET.description": "",
+  "GREGTHESPIRE-THICK_WALLET.flavor": "",
+  "GREGTHESPIRE-THICK_WALLET.title": "ThickWallet"
 }

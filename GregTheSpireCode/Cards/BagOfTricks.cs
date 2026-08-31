@@ -25,7 +25,7 @@ public class BagOfTricks() : GregTheSpireCard(
 	{
 		await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
 		
-		await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 1, 1,this);
+		await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 1, 1);
 		
 		var stashedCards = (await CardSelectCmd.FromHand(choiceContext, Owner, 
 			new CardSelectorPrefs(StashSelectorPrefs.ToStashSelectionPrompt, 1, DynamicVars.Cards.IntValue),

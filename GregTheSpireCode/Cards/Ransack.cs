@@ -19,7 +19,7 @@ public class Ransack() : GregTheSpireCard(3,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        StealCmd.StealAsync(choiceContext, this.Owner, DynamicVars["StealAmount"].IntValue);
+        await StealCmd.StealAsync(choiceContext, this.Owner, DynamicVars["StealAmount"].IntValue);
     }
 
     protected override void OnUpgrade()
