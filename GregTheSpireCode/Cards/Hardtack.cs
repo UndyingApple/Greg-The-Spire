@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
@@ -24,6 +25,11 @@ public class Hardtack() : GregTheSpireCard(1,
             CombatManager.Instance.History.CardPlaysStarted
                 .Count(e => e.CardPlay.Card.Owner == card.Owner
                             && e.CardPlay.Card is Cracker))
+    ];
+
+    protected override IEnumerable<IHoverTip> ExtraHoverTips =>
+    [
+        HoverTipFactory.FromCard<Cracker>()
     ];
 
     protected override async Task OnPlay(
