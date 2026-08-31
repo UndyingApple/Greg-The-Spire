@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
 public class NeverBackDown() : GregTheSpireCard(2,
-    CardType.Attack, CardRarity.Basic,
+    CardType.Power, CardRarity.Uncommon,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [

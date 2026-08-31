@@ -66,9 +66,13 @@
 
   "GREGTHESPIRE-NIMBLE_POWER.description": "",
   "GREGTHESPIRE-NIMBLE_POWER.smartDescription": "",
-  "GREGTHESPIRE-NIMBLE_POWER.title": "NimblePower",
+  "GREGTHESPIRE-NIMBLE_POWER.title": "Nimble",
 
   "GREGTHESPIRE-STEAL_NEXT_TURN.description": "",
   "GREGTHESPIRE-STEAL_NEXT_TURN.smartDescription": "",
-  "GREGTHESPIRE-STEAL_NEXT_TURN.title": "StealNextTurn"
+  "GREGTHESPIRE-STEAL_NEXT_TURN.title": "Steal Next Turn",
+  
+  "GREGTHESPIRE-THE_CITY_POWER.description": "",
+  "GREGTHESPIRE-THE_CITY_POWER.smartDescription": "",
+  "GREGTHESPIRE-THE_CITY_POWER.title": "The City"
 }

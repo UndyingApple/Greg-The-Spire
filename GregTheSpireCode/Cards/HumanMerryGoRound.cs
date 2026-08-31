@@ -11,11 +11,11 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
 public class HumanMerryGoRound() : GregTheSpireCard(1,
-    CardType.Attack, CardRarity.Basic,
+    CardType.Attack, CardRarity.Rare,
     TargetType.RandomEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DamageVar(1M, ValueProp.Move),  
+        new DamageVar(2, ValueProp.Move),  
         new RepeatVar(5)
     ];
 
