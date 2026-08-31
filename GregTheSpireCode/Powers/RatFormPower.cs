@@ -1,6 +1,7 @@
 ﻿
+using GregTheSpire.GregTheSpireCode.CardPiles;
 using MegaCrit.Sts2.Core.Commands;
-
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Powers;
@@ -24,13 +25,13 @@ public class RatFormPower() : GregTheSpirePower
         PlayerChoiceContext choiceContext,
         Player player)
     {
-        
         var flag = true;
         
-        foreach (CardModel card in this.Owner.Player.PlayerCombatState.none.Cards)
-                    
-        await CardCmd.AutoPlay(choiceContext, card, (Creature)null, skipCardPileVisuals: !flag);
-        flag = false;
+        foreach (CardModel card in StashCardPile.StashPileType.GetPile(player).Cards)
+        {
+            await CardCmd.AutoPlay(choiceContext, card, (Creature)null, skipCardPileVisuals: !flag);
+            flag = false;
+        }
     }
 
 }

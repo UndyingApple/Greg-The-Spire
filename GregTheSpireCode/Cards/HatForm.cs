@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using BaseLib.Extensions;
 using GregTheSpire.GregTheSpireCode.Cards;
 using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
@@ -10,7 +11,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
-public class HatForm() : GregTheSpireCard(3,
+public class HatForm() : GregTheSpireCard(2,
     CardType.Power, CardRarity.Rare,
     TargetType.Self)
 {
@@ -19,13 +20,14 @@ public class HatForm() : GregTheSpireCard(3,
         new PowerVar<HatFormPower>(1)
     ];
 
+    protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
+    {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
+        HatFormPower hatFormPower = await PowerCmd.Apply<HatFormPower>(choiceContext, this.Owner.Creature, this.DynamicVars["HatFormPower"].BaseValue, this.Owner.Creature, (CardModel) this);
+    }
 
-protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
-{
-    await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
-    HatFormPower hatFormPower = await PowerCmd.Apply<HatFormPower>(choiceContext, this.Owner.Creature, this.DynamicVars["HatFormPower"].BaseValue, this.Owner.Creature, (CardModel) this);
-}
-    
-
-    protected override void OnUpgrade() => this.EnergyCost.UpgradeBy(-1);
+    protected override void OnUpgrade()
+    {
+        DynamicVars.Power<HatFormPower>().UpgradeValueBy(1);
+    }
 }

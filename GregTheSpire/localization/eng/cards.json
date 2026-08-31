@@ -124,13 +124,16 @@
 
   "GREGTHESPIRE-OLIVE.description": "",
   "GREGTHESPIRE-OLIVE.title": "Olive",
-  
+
+  "GREGTHESPIRE-BITE_SIZED.description": "",
+  "GREGTHESPIRE-BITE_SIZED.title": "Bite-Sized",
+
   "GREGTHESPIRE-STARVATION.description": "",
   "GREGTHESPIRE-STARVATION.title": "Starvation",
 
   "GREGTHESPIRE-HONDA_CIVIC.description": "Deal {CalculatedDamage:diff()} damage to ALL enemies. \nDeals {IfUpgraded:show:2|3} less damage for each enemy. \nGain 1 [gold]Confidence[/gold].",
   "GREGTHESPIRE-HONDA_CIVIC.title": "Honda Civic",
 
-  "GREGTHESPIRE-BITE_SIZED.description": "[gold]Snacks[/gold] in you [gold]Stash[/gold] don't count towards your maximum [gold]Storage[/gold].",
-  "GREGTHESPIRE-BITE_SIZED.title": "Bite-Sized"
+  "GREGTHESPIRE-RAT_FORM.description": "",
+  "GREGTHESPIRE-RAT_FORM.title": "Rat Form"
 }
