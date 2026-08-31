@@ -22,7 +22,7 @@ public class InflatedEgo() : GregTheSpireCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        ConfidencePower confidencePower = await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature,
+      await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature,
             DynamicVars.Power<ConfidencePower>().BaseValue, Owner.Creature, this);
     }
 

@@ -1,10 +1,10 @@
 ﻿{
+  "GREGTHESPIRE-SNACK_POTION.description": "",
+  "GREGTHESPIRE-SNACK_POTION.title": "Trail Mix",
 
-
-  "GREGTHESPIRE-STEAL_POTION.description": "",
-  "GREGTHESPIRE-STEAL_POTION.title": "Steal Potion",
-
+  "GREGTHESPIRE-STEAL_POTION.description": "[gold]Steal[/gold] 2",
+  "GREGTHESPIRE-STEAL_POTION.title": "Smoke Bomb",
 
   "GREGTHESPIRE-STASH_POTION.description": "",
-  "GREGTHESPIRE-STASH_POTION.title": "Stash Potion"
+  "GREGTHESPIRE-STASH_POTION.title": "Bottled Vortex"
 }

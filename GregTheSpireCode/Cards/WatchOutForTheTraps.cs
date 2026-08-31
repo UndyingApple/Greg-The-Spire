@@ -29,7 +29,7 @@ public class WatchOutForTheTraps() : GregTheSpireCard(1,
         await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
         foreach (Creature hittableEnemy in (IEnumerable<Creature>) this.CombatState.HittableEnemies)
         {
-            ConfidencePower confidencePower = await PowerCmd.Apply<ConfidencePower>(choiceContext, hittableEnemy, this.DynamicVars["ConfidenceLoss"].BaseValue, this.Owner.Creature, (CardModel) this);
+            await PowerCmd.Apply<ConfidencePower>(choiceContext, hittableEnemy, this.DynamicVars["ConfidenceLoss"].BaseValue, this.Owner.Creature, (CardModel) this);
         }
     }
 

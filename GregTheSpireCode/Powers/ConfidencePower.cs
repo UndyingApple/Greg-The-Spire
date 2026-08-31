@@ -21,7 +21,7 @@ public class ConfidencePower() : GregTheSpirePower
     
     public override async Task BeforeApplied(Creature target, decimal amount, Creature? applier, CardModel? cardSource)
     {
-        StrengthPower strengthPower = await PowerCmd.Apply<StrengthPower>((PlayerChoiceContext) new ThrowingPlayerChoiceContext(), target, amount, applier, cardSource);
+        await PowerCmd.Apply<StrengthPower>((PlayerChoiceContext) new ThrowingPlayerChoiceContext(), target, amount, applier, cardSource);
     }
     
     public override async Task AfterPowerAmountChanged(
@@ -33,7 +33,7 @@ public class ConfidencePower() : GregTheSpirePower
     {
         if (amount == (Decimal) this.Amount || power != this)
             return;
-        StrengthPower strengthPower = await PowerCmd.Apply<StrengthPower>(choiceContext, this.Owner, amount, applier, cardSource, true);
+        await PowerCmd.Apply<StrengthPower>(choiceContext, this.Owner, amount, applier, cardSource, true);
     }
 
     public override async Task AfterDamageReceived(PlayerChoiceContext choiceContext, Creature target, DamageResult result, ValueProp props,
@@ -43,7 +43,7 @@ public class ConfidencePower() : GregTheSpirePower
             return;
         this.Flash();
         await PowerCmd.Remove((PowerModel) this);
-        StrengthPower strengthPower = await PowerCmd.Apply<StrengthPower>(choiceContext, this.Owner, -this.Amount, this.Owner, null);
-        WeakPower weakPower = await PowerCmd.Apply<WeakPower>(choiceContext, this.Owner, 1 + (int) (this.Amount / 5), this.Owner, null);
+        await PowerCmd.Apply<StrengthPower>(choiceContext, this.Owner, -this.Amount, this.Owner, null);
+        await PowerCmd.Apply<WeakPower>(choiceContext, this.Owner, 1 + (int) (this.Amount / 5), this.Owner, null);
     }
 }

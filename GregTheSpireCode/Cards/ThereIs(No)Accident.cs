@@ -30,7 +30,7 @@ public class There_Is_No_Accident() : GregTheSpireCard(0,
         CardModel card = this;
         ArgumentNullException.ThrowIfNull((object) play.Target, "play.Target");
         AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).Execute(choiceContext);
-        ConfidencePower confidencePower = await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature, DynamicVars.Power<ConfidencePower>().BaseValue, this.Owner.Creature, this);
+        await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature, DynamicVars.Power<ConfidencePower>().BaseValue, this.Owner.Creature, this);
     }
 
     protected override void OnUpgrade() => this.DynamicVars.Damage.UpgradeValueBy(3);

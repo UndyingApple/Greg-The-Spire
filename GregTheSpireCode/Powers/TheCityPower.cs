@@ -43,3 +43,4 @@ public class TheCityPower() : GregTheSpirePower
         this.Flash();
     }
 }
+    
