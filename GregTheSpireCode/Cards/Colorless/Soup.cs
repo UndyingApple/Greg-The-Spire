@@ -1,4 +1,5 @@
-﻿using GregTheSpire.GregTheSpireCode.Cards;
+﻿using BaseLib.Utils;
+using GregTheSpire.GregTheSpireCode.Cards;
 using GregTheSpire.GregTheSpireCode.Keywords;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
@@ -8,9 +9,11 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.CardPools;
 
 namespace GregTheSpire.GregTheSpireCode.Cards.Colorless;
 
+[Pool(typeof(TokenCardPool))]
 public class Soup() : GregTheSpireCard(0,
     CardType.Skill, CardRarity.Token,
     TargetType.Self)

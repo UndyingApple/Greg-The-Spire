@@ -1,3 +1,4 @@
+using BaseLib.Utils;
 using GregTheSpire.GregTheSpireCode.Cards;
 using GregTheSpire.GregTheSpireCode.Keywords;
 using MegaCrit.Sts2.Core.Commands;
@@ -6,10 +7,12 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.CardPools;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace GregTheSpire.GregTheSpireCode.Cards.Colorless;
 
+[Pool(typeof(TokenCardPool))]
 public class Strawberry() : GregTheSpireCard(0,
     CardType.Attack, CardRarity.Token,
     TargetType.RandomEnemy)
