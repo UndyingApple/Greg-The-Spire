@@ -1,4 +1,5 @@
 using GregTheSpire.GregTheSpireCode.Cards;
+using GregTheSpire.GregTheSpireCode.Keywords;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -11,8 +12,13 @@ namespace GregTheSpire.GregTheSpireCode.Cards.Colorless;
 
 public class Olive() : GregTheSpireCard(0,
     CardType.Attack, CardRarity.Token,
-    TargetType.Self)
+    TargetType.AnyEnemy)
 {
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [
+        GregTheSpireKeywords.Snack,
+        CardKeyword.Exhaust
+    ];
+    
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(3, ValueProp.Move),
     ];

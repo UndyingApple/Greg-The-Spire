@@ -101,9 +101,6 @@
   "GREGTHESPIRE-WOWIE_ZOWIE.description": "Gain {Block:diff()} [gold]Block[/gold]. \nIf you don’t play this card again in exactly 3 turns, gain [gold]Doom[/gold] equal to your Max HP",
   "GREGTHESPIRE-WOWIE_ZOWIE.title": "Wowie Zowie!",
 
-  "GREGTHESPIRE-WOWIE_ZOWIE.description": "Gain {Block:diff()} [gold]Block[/gold]. \nIf you don’t play this card again in exactly 3 turns, gain [gold]Doom[/gold] equal to your Max HP",
-  "GREGTHESPIRE-WOWIE_ZOWIE.title": "Wowie Zowie!",
-
   "GREGTHESPIRE-RUMMAGE.description": "Draw {Cards:diff()}. \n[gold]Stash[/gold] 1.",
   "GREGTHESPIRE-RUMMAGE.title": "Rummage",
 
@@ -126,5 +123,14 @@
   "GREGTHESPIRE-NEVER_BACK_DOWN.title": "Never Back Down",
 
   "GREGTHESPIRE-OLIVE.description": "",
-  "GREGTHESPIRE-OLIVE.title": "Olive"
+  "GREGTHESPIRE-OLIVE.title": "Olive",
+  
+  "GREGTHESPIRE-STARVATION.description": "",
+  "GREGTHESPIRE-STARVATION.title": "Starvation",
+
+  "GREGTHESPIRE-HONDA_CIVIC.description": "Deal {CalculatedDamage:diff()} damage to ALL enemies. \nDeals {IfUpgraded:show:2|3} less damage for each enemy. \nGain 1 [gold]Confidence[/gold].",
+  "GREGTHESPIRE-HONDA_CIVIC.title": "Honda Civic",
+
+  "GREGTHESPIRE-BITE_SIZED.description": "[gold]Snacks[/gold] in you [gold]Stash[/gold] don't count towards your maximum [gold]Storage[/gold].",
+  "GREGTHESPIRE-BITE_SIZED.title": "Bite-Sized"
 }

@@ -1,5 +1,6 @@
 ﻿{
   "GREGTHESPIRE-TO_STASH": "Choose {Amount:plural:a card|[blue]{}[/blue] cards} to move to your [gold]Stash[/gold].",
   "GREGTHESPIRE-FROM_STASH": "Choose {Amount:plural:a card|[blue]{}[/blue] cards} to move from your [gold]Stash[/gold].",
-  "GREGTHESPIRE-INFEST": "Choose {Amount:plural:a card|[blue]{}[/blue] cards} to enchant with [gold]Infest[/gold]."
+  "GREGTHESPIRE-INFEST": "Choose {Amount:plural:a card|[blue]{}[/blue] cards} to enchant with [gold]Infest[/gold].",
+  "GREGTHESPIRE-APPLY_SNACK": "Choose {Amount:plural:a card|[blue]{}[/blue] cards} to enchant with [gold]Snack[/gold]."
 }
