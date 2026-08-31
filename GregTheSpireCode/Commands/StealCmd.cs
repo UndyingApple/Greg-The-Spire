@@ -38,6 +38,7 @@ public static class StealCmd
             {
                 Stolen.IsStolen.Set(topCard, true);
                 await CardPileCmd.AutoPlayFromDrawPile(choiceContext, player, 1, CardPilePosition.Top, false);
+                Stolen.IsStolen.Set(topCard, false);
                 /*Creature? target,
                     AutoPlayType type = AutoPlayType.Default,
                     bool skipXCapture = false,

@@ -14,7 +14,6 @@ public class StealExhaust() : CustomSingletonModel(HookType.Combat)
             return location;
         location.pileType = PileType.Discard;
         location.position = CardPilePosition.Top;
-        Stolen.IsStolen.Set(card, false);
         return location;
     }
 }
