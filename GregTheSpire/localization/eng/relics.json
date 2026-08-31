@@ -22,5 +22,13 @@
 
   "GREGTHESPIRE-CLOCHE.description": "",
   "GREGTHESPIRE-CLOCHE.flavor": "",
-  "GREGTHESPIRE-CLOCHE.title": "Cloche"
+  "GREGTHESPIRE-CLOCHE.title": "Cloche",
+
+  "GREGTHESPIRE-MAGNIFYING_GLASS.description": "",
+  "GREGTHESPIRE-MAGNIFYING_GLASS.flavor": "",
+  "GREGTHESPIRE-MAGNIFYING_GLASS.title": "Magnifying Glass",
+  
+  "GREGTHESPIRE-DEAD_RINGER.description": "",
+  "GREGTHESPIRE-DEAD_RINGER.flavor": "",
+  "GREGTHESPIRE-DEAD_RINGER.title": "Dead Ringer"
 }
