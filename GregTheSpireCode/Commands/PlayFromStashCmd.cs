@@ -24,9 +24,6 @@ public static class PlayFromStashCmd
         CardModel card = (await CardSelectCmd.FromCombatPile(choiceContext, StashCardPile.StashPileType.GetPile(player), player, prefs)).FirstOrDefault<CardModel>();
         if (card == null)
             return;
-        else
-        {
-            await CardCmd.AutoPlay(choiceContext, card, (Creature) null);
-        }
+        await CardCmd.AutoPlay(choiceContext, card, (Creature) null);
     }
-}     
+}

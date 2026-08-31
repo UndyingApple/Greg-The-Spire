@@ -30,7 +30,9 @@ public static class StealCmd
             CardModel topCard = PileType.Draw.GetPile(player).Cards.FirstOrDefault<CardModel>();
             if (!player.PlayerCombatState.HasEnoughResourcesFor(topCard, out UnplayableReason reason))
             {
-                await CardPileCmd.Add(topCard, StashCardPile.StashPileType);
+                Stolen.IsStolen.Set(topCard, true);
+                await StashCmd.StashAsync(choiceContext, player, topCard);
+                Stolen.IsStolen.Set(topCard, false);
             }
             if (reason == UnplayableReason.None)
             {
@@ -45,10 +47,6 @@ public static class StealCmd
             /*implement this once the stash has a max size limit
                  * else if ( )
                  */
-            else
-            {
-                return;
-            }
         }
     }
 }

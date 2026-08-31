@@ -42,4 +42,27 @@ public static class StashCmd
             }
         }
     }
+    
+    public static async Task StashAsync(PlayerChoiceContext choiceContext, Player player, CardModel card)
+    {
+        var storage = player.Creature.GetPowerAmount<StoragePower>();
+        int totalStashed;
+        if (player.Creature.GetPowerAmount<BiteSizedPower>() == 1)
+        {
+            totalStashed = StashCardPile.StashPileType.GetPile(player).Cards.Where<CardModel>((Func<CardModel, bool>)(c =>
+                !c.Keywords.Contains(GregTheSpireKeywords.Snack))).Count();
+        }
+        else
+        {
+            totalStashed = StashCardPile.StashPileType.GetPile(player).Cards.Count;
+        }
+        if (totalStashed < storage)
+        {
+            await CardPileCmd.Add(card, StashCardPile.StashPileType);
+        }
+        else
+        {
+            await CardCmd.Discard(choiceContext, card);
+        }
+    }
 }  
