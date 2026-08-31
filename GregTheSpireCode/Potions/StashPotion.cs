@@ -27,11 +27,11 @@ public sealed class StashPotion : GregTheSpirePotion
     public override TargetType TargetType => TargetType.AnyPlayer;
     
 
-    //no work still, idk
+    //
     protected override async Task OnUse(PlayerChoiceContext choiceContext, Creature? target)
     {
         GregTheSpirePotion.AssertValidForTargetedPotion(target);
         NCombatRoom.Instance?.PlaySplashVfx(target, new Color("45e6d0"));
-        if (target.Player != null) await StashCmd.StashAsync(choiceContext, target.Player, 0, (target.GetPowerAmount<StoragePower>()), this);
+        if (target.Player != null) await StashCmd.StashAsync(choiceContext, target.Player, 0, (99999), this);
     }
 }
