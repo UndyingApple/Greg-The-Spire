@@ -10,20 +10,20 @@ public class Ransack() : GregTheSpireCard(3,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
-
-    private int stealAmount = 3;
-    
-    protected override IEnumerable<DynamicVar> CanonicalVars => [];
+    protected override IEnumerable<DynamicVar> CanonicalVars => 
+    [
+        new IntVar("StealAmount", 3)
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        StealCmd.StealAsync(choiceContext, this.Owner, this.stealAmount);
+        StealCmd.StealAsync(choiceContext, this.Owner, DynamicVars["StealAmount"].IntValue);
     }
 
     protected override void OnUpgrade()
     {
-        stealAmount += 1;
+        DynamicVars["StealAmount"].UpgradeValueBy(1);
     }
 }

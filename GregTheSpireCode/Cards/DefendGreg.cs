@@ -16,6 +16,11 @@ public class DefendGreg() : GregTheSpireCard(1,
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new BlockVar(5, ValueProp.Move)
     ];
+    
+    protected override HashSet<CardTag> CanonicalTags
+    {
+        get => new HashSet<CardTag>() { CardTag.Defend };
+    }
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

@@ -21,12 +21,8 @@ public class Pickpocket() : GregTheSpireCard(1,
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DamageVar(4, ValueProp.Move),
+        new DamageVar(4, ValueProp.Move)
     ];
-
-    private int stealAmount = 1;
-    
-    
     
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -37,7 +33,7 @@ public class Pickpocket() : GregTheSpireCard(1,
         if (SaveManager.Instance.PrefsSave.FastMode == FastModeType.Normal)
             attackAnimDelay += 0.2f;
         AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).WithAttackerAnim("Attack", attackAnimDelay).Execute(choiceContext);
-        StealCmd.StealAsync(choiceContext, this.Owner, this.stealAmount);
+        StealCmd.StealAsync(choiceContext, this.Owner, 1);
     }
 
     protected override void OnUpgrade() => this.DynamicVars.Damage.UpgradeValueBy(3);

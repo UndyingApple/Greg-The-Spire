@@ -12,12 +12,12 @@ namespace GregTheSpire.GregTheSpireCode.Commands;
 
 public static class StashCmd
 {
-    public static async Task StashAsync(PlayerChoiceContext choiceContext, Player player, int min, int max, CardModel card_initial)
+    public static async Task StashAsync(PlayerChoiceContext choiceContext, Player player, int min, int max, AbstractModel source)
     {
-        var stashedCards = (await CardSelectCmd.FromHand(choiceContext, card_initial.Owner, 
+        var stashedCards = (await CardSelectCmd.FromHand(choiceContext, player, 
             new CardSelectorPrefs(StashSelectorPrefs.ToStashSelectionPrompt, min, max),
             null,
-            card_initial)).ToList();
+            source)).ToList();
 
         var storage = player.Creature.GetPowerAmount<StoragePower>();
         int totalStashed;
