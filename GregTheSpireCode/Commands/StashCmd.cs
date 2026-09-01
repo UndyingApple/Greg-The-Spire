@@ -25,12 +25,11 @@ public static class StashCmd
         if (player.Creature.GetPowerAmount<BiteSizedPower>() == 1)
         {
             totalStashed = StashCardPile.StashPileType.GetPile(player).Cards.Where<CardModel>((Func<CardModel, bool>)(c =>
-                !c.Keywords.Contains(GregTheSpireKeywords.Snack) || (c.Enchantment is not Stowaway|| c.Enchantment == null) )).Count();
+                !c.Keywords.Contains(GregTheSpireKeywords.Snack) || (c.Enchantment is not Stowaway) )).Count();
         }
         else
         {
-            totalStashed = StashCardPile.StashPileType.GetPile(player).Cards.Where<CardModel>((Func<CardModel, bool>)(c => (
-                c.Enchantment is not Stowaway || c.Enchantment == null))).Count();
+            totalStashed = StashCardPile.StashPileType.GetPile(player).Cards.Where<CardModel>((Func<CardModel, bool>)(c => c.Enchantment is not Stowaway)).Count();
         }
         for (var i = 1; i <= stashedCards.Count; i++)
         {
@@ -52,12 +51,11 @@ public static class StashCmd
         if (player.Creature.GetPowerAmount<BiteSizedPower>() == 1)
         {
             totalStashed = StashCardPile.StashPileType.GetPile(player).Cards.Where<CardModel>((Func<CardModel, bool>)(c =>
-                !c.Keywords.Contains(GregTheSpireKeywords.Snack) || (c.Enchantment is not Stowaway|| c.Enchantment == null))).Count();
+                !c.Keywords.Contains(GregTheSpireKeywords.Snack) ||c.Enchantment is not Stowaway)).Count();
         }
         else
         {
-            totalStashed = StashCardPile.StashPileType.GetPile(player).Cards.Where<CardModel>((Func<CardModel, bool>)(c => (
-                c.Enchantment is not Stowaway|| c.Enchantment == null))).Count();
+            totalStashed = StashCardPile.StashPileType.GetPile(player).Cards.Where<CardModel>((Func<CardModel, bool>)(c => c.Enchantment is not Stowaway)).Count();
         }
         if (totalStashed < storage)
         {

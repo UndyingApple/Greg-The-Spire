@@ -78,5 +78,14 @@
 
   "GREGTHESPIRE-E_GO_MA_NI_A_POWER.description": "",
   "GREGTHESPIRE-E_GO_MA_NI_A_POWER.smartDescription": "",
-  "GREGTHESPIRE-E_GO_MA_NI_A_POWER.title": "EGOMANIAPower"
+  "GREGTHESPIRE-E_GO_MA_NI_A_POWER.title": "EGOMANIA",
+  
+  "GREGTHESPIRE-LEFTOVER_POWER.description": "",
+  "GREGTHESPIRE-LEFTOVER_POWER.smartDescription": "",
+  "GREGTHESPIRE-LEFTOVER_POWER.title": "Leftovers",
+
+
+  "GREGTHESPIRE-RECKLESSNESS_POWER.description": "",
+  "GREGTHESPIRE-RECKLESSNESS_POWER.smartDescription": "",
+  "GREGTHESPIRE-RECKLESSNESS_POWER.title": "Recklessness"
 }

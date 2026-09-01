@@ -189,9 +189,19 @@
   "GREGTHESPIRE-SPY_MASTER.title": "Spy Master",
 
   "GREGTHESPIRE-E_GO_MA_NI_A.description": "Gain 8 [gold]Confidence[/gold]. \nAt the start of your turn gain 4 [gold]Confidence[/gold]. \nWhen you lose [gold]Confidence[/gold], gain [gold]Vulnerable[/gold] equal to the amount of [gold]Weak[/gold] gained.",
-  "GREGTHESPIRE-E_GO_MA_NI_A.title": "EGOMANIA"
-  
-  
+  "GREGTHESPIRE-E_GO_MA_NI_A.title": "EGOMANIA",
+
+  "GREGTHESPIRE-LEFTOVER.description": "",
+  "GREGTHESPIRE-LEFTOVER.title": "Leftovers",
+
+  "GREGTHESPIRE-R_AN_DO_MB_UL_L____G_O.description": "",
+  "GREGTHESPIRE-R_AN_DO_MB_UL_L____G_O.title": "RANDOM BULL%#@$ GO!!!",
+
+  "GREGTHESPIRE-PRECISELY.description": "",
+  "GREGTHESPIRE-PRECISELY.title": "Precisely",
+
+  "GREGTHESPIRE-RECKLESSNESS.description": "",
+  "GREGTHESPIRE-RECKLESSNESS.title": "Recklessness"
 }
   
   
