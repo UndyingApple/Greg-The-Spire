@@ -98,7 +98,7 @@
   "GREGTHESPIRE-NEGATIVE_AFFIRMATION.description": "Lose half of your [gold]Confidence[/gold]. \nGain {CalculationExtra:diff()} [gold]Block[/gold] for every [gold]Confidence[/gold] lost.",
   "GREGTHESPIRE-NEGATIVE_AFFIRMATION.title": "Negative Affirmation",
   
-  "GREGTHESPIRE-BITE_SIZED.description": "",
+  "GREGTHESPIRE-BITE_SIZED.description": "[gold]Snacks[/gold] don't count towards your [gold]Max Storage[/gold].",
   "GREGTHESPIRE-BITE_SIZED.title": "Bite-Sized",
   
   "GREGTHESPIRE-WOWIE_ZOWIE.description": "Gain {Block:diff()} [gold]Block[/gold]. \nIf you don’t play this card again in exactly 3 turns, gain [gold]Doom[/gold] equal to your Max HP",
@@ -116,79 +116,79 @@
   "GREGTHESPIRE-EXTRA_POCKETS.description": "Gain 2 [gold]Storage[/gold]",
   "GREGTHESPIRE-EXTRA_POCKETS.title": "Extra Pockets",
   
-  "GREGTHESPIRE-KICKFLIP.description": "Deal {CalculatedDamage:diff()} damage. Conf",
+  "GREGTHESPIRE-KICKFLIP.description": "Deal {CalculatedDamage:diff()} damage. Confidence affects this card {IfUpgraded:show:3|2} times.",
   "GREGTHESPIRE-KICKFLIP.title": "Kickflip",
   
-  "GREGTHESPIRE-SOMETIMES_BACK_DOWN.description": "",
+  "GREGTHESPIRE-SOMETIMES_BACK_DOWN.description": "Whenever you lose [gold]Confidence[/gold], deal 2 damage to ALL enemies for every {IfUpgraded:show:1|2} [gold]Confidence[/gold] lost.",
   "GREGTHESPIRE-SOMETIMES_BACK_DOWN.title": "Sometimes Back Down",
   
-  "GREGTHESPIRE-NEVER_BACK_DOWN.description": "",
+  "GREGTHESPIRE-NEVER_BACK_DOWN.description": "Whenever you lose [gold]Confidence[/gold], gain {IfUpgraded:show:2|1} [gold]Confidence[/gold] for every {IfUpgraded:show:3|2} lost.",
   "GREGTHESPIRE-NEVER_BACK_DOWN.title": "Never Back Down",
   
-  "GREGTHESPIRE-OLIVE.description": "",
+  "GREGTHESPIRE-OLIVE.description": "Deal {Damage:diff()} damage.",
   "GREGTHESPIRE-OLIVE.title": "Olive",
   
-  "GREGTHESPIRE-STARVATION.description": "",
+  "GREGTHESPIRE-STARVATION.description": "Add [gold]Snack[/gold] to {IfUpgraded:show:2|1} {IfUpgraded:cards|card} in your [gold]Hand[/gold].",
   "GREGTHESPIRE-STARVATION.title": "Starvation",
   
   "GREGTHESPIRE-HONDA_CIVIC.description": "Deal {CalculatedDamage:diff()} damage to ALL enemies. \nDeals {IfUpgraded:show:2|3} less damage for each enemy. \nGain 1 [gold]Confidence[/gold].",
   "GREGTHESPIRE-HONDA_CIVIC.title": "Honda Civic",
   
-  "GREGTHESPIRE-RAT_FORM.description": "",
+  "GREGTHESPIRE-RAT_FORM.description": "Gain 3 [gold]Storage[/gold]. \nAt the start of your turn, play every card in your [gold]Stash[/gold].",
   "GREGTHESPIRE-RAT_FORM.title": "Rat Form",
   
-  "GREGTHESPIRE-CHEESE_CLUB.description": "",
+  "GREGTHESPIRE-CHEESE_CLUB.description": "At the start of your turn, add 1 [gold]Cheese[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-CHEESE_CLUB.title": "Cheese Club",
   
-  "GREGTHESPIRE-STRAWBERRY.description": "",
+  "GREGTHESPIRE-STRAWBERRY.description": " Gain {Block:diff()} [gold]Block[/gold]. \nDeal {Damage:diff()} damage to a random enemy.",
   "GREGTHESPIRE-STRAWBERRY.title": "Strawberry",
   
-  "GREGTHESPIRE-BLAND_FINALE_VERSION_A_B.description": "",
+  "GREGTHESPIRE-BLAND_FINALE_VERSION_A_B.description": "Can only be played if your [gold]Stash[/gold] is empty and there are 4 or fewer cards in your [gold]Draw Pile[/gold]. \nDeal {Damage:diff()} damage to ALL enemies.",
   "GREGTHESPIRE-BLAND_FINALE_VERSION_A_B.title": "Bland Finale: Version AB-",
   
-  "GREGTHESPIRE-THE_CITY.description": "",
+  "GREGTHESPIRE-THE_CITY.description": "At the start of your turn, add {TheCityPower:diff()} random [gold]Snacks[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-THE_CITY.title": "The City",
   
-  "GREGTHESPIRE-SODA.description": "",
+  "GREGTHESPIRE-SODA.description": "Draw {Cards:diff()} {Cards:plural:card|cards}.",
   "GREGTHESPIRE-SODA.title": "Soda",
   
-  "GREGTHESPIRE-OLIVE_CREAMS_AND_A_SODA.description": "",
-  "GREGTHESPIRE-OLIVE_CREAMS_AND_A_SODA.title": "Olive Creams And A Soda",
+  "GREGTHESPIRE-OLIVE_CREAMS_AND_A_SODA.description": "Add 1 [gold]{IfUpgraded:show:Soda+|Soda}[/gold] to your [gold]Hand[/gold]. \nFill your [gold]Hand[/gold] with [gold]{IfUpgraded:show:Olives+|Olives}[/gold].",
+  "GREGTHESPIRE-OLIVE_CREAMS_AND_A_SODA.title": "12 Olive Creams And A Soda",
   
-  "GREGTHESPIRE-TOUCH_OF_CHEESE.description": "",
+  "GREGTHESPIRE-TOUCH_OF_CHEESE.description": "Deal {Damage:diff()} damage. \nAdd a [gold]Cheese[/gold] to your [gold]Draw Pile[/gold].",
   "GREGTHESPIRE-TOUCH_OF_CHEESE.title": "Touch Of Cheese",
   
-  "GREGTHESPIRE-MOUSE_TRAP.description": "",
+  "GREGTHESPIRE-MOUSE_TRAP.description": "Gain {Block:diff()} [gold]Block[/gold]. \nIf the enemy intends to attack, gain {CheeseNextTurnPower:diff()} [gold]Cheese[/gold] next turn.",
   "GREGTHESPIRE-MOUSE_TRAP.title": "Mouse Trap",
   
-  "GREGTHESPIRE-FLY_SWATTER.description": "",
+  "GREGTHESPIRE-FLY_SWATTER.description": "[gold]Flies[/gold] deal {FlySwatterPower:diff()} additional damage.",
   "GREGTHESPIRE-FLY_SWATTER.title": "Fly Swatter",
   
-  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA.description": "",
+  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA.description": "Whenever you play a [gold]Cheese[/gold], draw 1 card.",
   "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA.title": "Dont You LIKE Gorgonzola?",
   
-  "GREGTHESPIRE-NIMBLE.description": "",
+  "GREGTHESPIRE-NIMBLE.description": "Whenever you play a card that costs {Energy:energyIcons()} or more, [gold]Steal[/gold] 1",
   "GREGTHESPIRE-NIMBLE.title": "Nimble",
   
-  "GREGTHESPIRE-HEIST.description": "",
+  "GREGTHESPIRE-HEIST.description": "Deal {Damage:diff()} damage. \nIf this kills an enemy, [gold]Steal[/gold] 3 next turn.",
   "GREGTHESPIRE-HEIST.title": "The Heist",
   
-  "GREGTHESPIRE-FRESH_STRAWBERRIES.description": "",
+  "GREGTHESPIRE-FRESH_STRAWBERRIES.description": "At the start of your next {FreshStrawberriesPower:diff()} turns, add a [gold]Strawberry[/gold] to your hand.",
   "GREGTHESPIRE-FRESH_STRAWBERRIES.title": "Fresh Strawberries",
   
-  "GREGTHESPIRE-SUGAR_RUSH.description": "",
+  "GREGTHESPIRE-SUGAR_RUSH.description": "Deal {Damage:diff()} damage for each [gold]Snack[/gold] played this turn.",
   "GREGTHESPIRE-SUGAR_RUSH.title": "Sugar Rush",
   
-  "GREGTHESPIRE-POCKET_SAND.description": "",
-  "GREGTHESPIRE-POCKET_SAND.title": "PocketSand",
+  "GREGTHESPIRE-POCKET_SAND.description": "Deal {Damage:diff()} damage. \nIf this card was played with [gold]Steal[/gold], [gold]Steal[/gold] 1.",
+  "GREGTHESPIRE-POCKET_SAND.title": "Pocket Sand",
   
-  "GREGTHESPIRE-STINKY.description": "",
+  "GREGTHESPIRE-STINKY.description": "Deal {Damage:diff()} damage to ALL enemies. \nAdd {IfUpgraded:show:2|1} [gold]{IfUpgraded:Flies|Fly}[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-STINKY.title": "Stinky",
   
   "GREGTHESPIRE-SPY_MASTER.description": "Gain {Block:diff()} [gold]Block[/gold]. \n[gold]Steal[/gold] 2.",
   "GREGTHESPIRE-SPY_MASTER.title": "Spy Master",
 
-  "GREGTHESPIRE-E_GO_MA_NI_A.description": "",
+  "GREGTHESPIRE-E_GO_MA_NI_A.description": "Gain 8 [gold]Confidence[/gold]. \nAt the start of your turn gain 4 [gold]Confidence[/gold]. \nWhen you lose [gold]Confidence[/gold], gain [gold]Vulnerable[/gold] equal to the amount of [gold]Weak[/gold] gained.",
   "GREGTHESPIRE-E_GO_MA_NI_A.title": "EGOMANIA"
   
   

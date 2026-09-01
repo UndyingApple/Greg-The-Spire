@@ -12,7 +12,9 @@ public class Nimble() : GregTheSpireCard(2,
     CardType.Power, CardRarity.Rare,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        (DynamicVar) new EnergyVar(3)
+        ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

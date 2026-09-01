@@ -26,23 +26,19 @@ public class EGOMANIAPower() : GregTheSpirePower
     {
         if (player != this.Owner.Player)
             return;
-       await PowerCmd.Apply<ConfidencePower>((PlayerChoiceContext) new ThrowingPlayerChoiceContext(), this.Owner, (Decimal) this.Amount, this.Owner, (CardModel) null);
+        await PowerCmd.Apply<ConfidencePower>((PlayerChoiceContext) new ThrowingPlayerChoiceContext(), this.Owner, (Decimal) this.Amount, this.Owner, (CardModel) null);
         ;
     }
-
-
-    public override async Task AfterPowerAmountChanged(
-        PlayerChoiceContext choiceContext,
-        PowerModel power,
-        Decimal amount,
-        Creature? applier,
-        CardModel? cardSource)
+    
+    
+    public override async Task AfterDamageReceived(PlayerChoiceContext choiceContext, Creature target, DamageResult result, ValueProp props,
+        Creature? dealer, CardModel? cardSource)
     {
-        if (!(power is ConfidencePower) || amount >= 0)
+        if (!CombatManager.Instance.IsInProgress || target != this.Owner || result.UnblockedDamage <= 0)
             return;
         this.Flash();
-        await PowerCmd.Apply<VulnerablePower>((PlayerChoiceContext)new ThrowingPlayerChoiceContext(), this.Owner,
-            (Decimal)(1 + (int)(amount) / 5), this.Owner, (CardModel)null);
+        var confidenceAmount = this.Owner.Player.Creature.GetPowerAmount<ConfidencePower>();
+        await PowerCmd.Apply<VulnerablePower>(choiceContext, this.Owner, 1 + (int) (confidenceAmount / 5), this.Owner, null);
 
     }
 }

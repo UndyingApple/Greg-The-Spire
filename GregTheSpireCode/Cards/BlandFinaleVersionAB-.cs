@@ -17,7 +17,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
 public class BlandFinaleVersionAB() : GregTheSpireCard(0,
-    CardType.Attack, CardRarity.Basic,
+    CardType.Attack, CardRarity.Uncommon,
     TargetType.AllEnemies)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(20M, ValueProp.Move)];
