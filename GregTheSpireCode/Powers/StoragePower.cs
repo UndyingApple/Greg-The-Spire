@@ -1,4 +1,5 @@
 using GregTheSpire.GregTheSpireCode.CardPiles;
+using GregTheSpire.GregTheSpireCode.Enchantments;
 using GregTheSpire.GregTheSpireCode.Keywords;
 using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -41,8 +42,9 @@ public class StoragePower() : GregTheSpirePower
             GetInternalData<Data>().storage += (int) amount;
         } else if (power is BiteSizedPower)
         {
-            StorageChanged?.Invoke(this.Owner.Player.PlayerCombatState, GetInternalData<Data>().storage + StashCardPile.StashPileType.GetPile(this.Owner.Player).Cards.Where<CardModel>((Func<CardModel, bool>)(c =>
-                c.Keywords.Contains(GregTheSpireKeywords.Snack))).Count());
+            StorageChanged?.Invoke(this.Owner.Player.PlayerCombatState, GetInternalData<Data>().storage + StashCardPile
+                .StashPileType.GetPile(this.Owner.Player).Cards.Where<CardModel>((Func<CardModel, bool>)(c =>
+                    c.Keywords.Contains(GregTheSpireKeywords.Snack) || (c.Enchantment is Stowaway && c.Enchantment != null))).Count());
         }
 
         return Task.CompletedTask;
@@ -53,7 +55,7 @@ public class StoragePower() : GregTheSpirePower
         if (card.Owner == this.Owner.Player && card.Keywords.Contains(GregTheSpireKeywords.Snack) && this.Owner.HasPower<BiteSizedPower>() && (card.Pile.Type == StashCardPile.StashPileType || oldPileType == StashCardPile.StashPileType))
         {
             StorageChanged?.Invoke(this.Owner.Player.PlayerCombatState, GetInternalData<Data>().storage + StashCardPile.StashPileType.GetPile(card.Owner).Cards.Where<CardModel>((Func<CardModel, bool>)(c =>
-                c.Keywords.Contains(GregTheSpireKeywords.Snack))).Count());
+                c.Keywords.Contains(GregTheSpireKeywords.Snack) || (c.Enchantment is Stowaway && c.Enchantment != null))).Count());
         }
     }
 }
