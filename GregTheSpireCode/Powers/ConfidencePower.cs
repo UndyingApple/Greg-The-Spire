@@ -33,6 +33,8 @@ public class ConfidencePower() : GregTheSpirePower
     {
         if (!CombatManager.Instance.IsInProgress || target != this.Owner || result.UnblockedDamage <= 0)
             return;
+        if (Owner.Player.Creature.GetPowerAmount<ObliviousPower>() > 0)
+            return;
         this.Flash();
         await PowerCmd.Apply<ConfidencePower>(choiceContext, this.Owner, -Amount, this.Owner,null);
         await PowerCmd.Apply<WeakPower>(choiceContext, this.Owner, 1 + (int) (this.Amount / 5), this.Owner, null);

@@ -26,7 +26,7 @@ public class Stumble() : GregTheSpireCard(1,
         if (card == null)
             return;
         CardPileAddResult? nullable = await CardCmd.Exhaust(choiceContext, card);
-        await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 0, DynamicVars["StashPlayAmt"].IntValue);
+        await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 0, DynamicVars["StashPlayAmt"].IntValue,null);
     }
 
     protected override void OnUpgrade()

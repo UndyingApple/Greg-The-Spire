@@ -31,7 +31,7 @@ public class Spoon() : GregTheSpireCard(0,
         if (SaveManager.Instance.PrefsSave.FastMode == FastModeType.Normal)
             attackAnimDelay += 0.2f;
         AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).WithAttackerAnim("Attack", attackAnimDelay).Execute(choiceContext);
-        await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 1, 1);
+        await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 1, 1,null);
     }
 
     protected override void OnUpgrade() => this.DynamicVars.Damage.UpgradeValueBy(2);

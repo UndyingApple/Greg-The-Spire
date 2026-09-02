@@ -105,5 +105,9 @@
 
   "GREGTHESPIRE-CHILL_PILL_POWER.description": "Lose all of your [gold]Confidence[/gold] at the end of this turn.",
   "GREGTHESPIRE-CHILL_PILL_POWER.smartDescription": "Lose all of your [gold]Confidence[/gold] at the end of this turn.",
-  "GREGTHESPIRE-CHILL_PILL_POWER.title": "Chill Pill"
+  "GREGTHESPIRE-CHILL_PILL_POWER.title": "Chill Pill",
+
+  "GREGTHESPIRE-OBLIVIOUS_POWER.description": "",
+  "GREGTHESPIRE-OBLIVIOUS_POWER.smartDescription": "",
+  "GREGTHESPIRE-OBLIVIOUS_POWER.title": "ObliviousPower"
 }

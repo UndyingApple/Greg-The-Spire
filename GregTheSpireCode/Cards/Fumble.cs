@@ -21,7 +21,7 @@ public class Fumble() : GregTheSpireCard(2,
     {
         IEnumerable<CardModel> cards = (await CardSelectCmd.FromHandForDiscard(choiceContext, this.Owner, new CardSelectorPrefs(CardSelectorPrefs.DiscardSelectionPrompt, 0,2), (Func<CardModel, bool>) null, (AbstractModel) this));
         await CardCmd.Discard(choiceContext, cards);
-        await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, cards.Count(), cards.Count());
+        await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, cards.Count(), cards.Count(),null);
     }
 
     protected override void OnUpgrade() => EnergyCost.UpgradeBy(-1);

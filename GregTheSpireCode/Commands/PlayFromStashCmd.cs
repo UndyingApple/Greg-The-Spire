@@ -13,7 +13,7 @@ namespace GregTheSpire.GregTheSpireCode.Commands;
 
 public static class PlayFromStashCmd
 {
-    public static async Task PlayFromStashCmdAsync(PlayerChoiceContext choiceContext, Player player, int min, int max)
+    public static async Task PlayFromStashCmdAsync(PlayerChoiceContext choiceContext, Player player, int min, int max, Func<CardModel, bool>? filt)
     {
         if (max <= 0) return;
 
@@ -22,7 +22,7 @@ public static class PlayFromStashCmd
             RequireManualConfirmation = true
         };
         IEnumerable<CardModel> cards = (await CardSelectCmd.FromCombatPile(choiceContext,
-            StashCardPile.StashPileType.GetPile(player), player, prefs));
+            StashCardPile.StashPileType.GetPile(player), player, prefs, filt));
         foreach (CardModel card in cards)
         {
             await CardCmd.AutoPlay(choiceContext, card, (Creature)null);

@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.Nodes.CommonUi;
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
 public class ItsSoBeautifulHere() : GregTheSpireCard(3,
-    CardType.Skill, CardRarity.Basic,
+    CardType.Skill, CardRarity.Rare,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];

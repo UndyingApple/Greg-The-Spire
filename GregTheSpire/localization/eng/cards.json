@@ -128,7 +128,7 @@
   "GREGTHESPIRE-OLIVE.description": "Deal {Damage:diff()} damage.",
   "GREGTHESPIRE-OLIVE.title": "Olive",
   
-  "GREGTHESPIRE-STARVATION.description": "Add [gold]Snack[/gold] to {IfUpgraded:show:2|1} {IfUpgraded:cards|card} in your [gold]Hand[/gold].",
+  "GREGTHESPIRE-STARVATION.description": "Add [gold]Snack[/gold] to {numCards:diff()} {numCards:plural:card|cards} in your [gold]Hand[/gold].",
   "GREGTHESPIRE-STARVATION.title": "Starvation",
   
   "GREGTHESPIRE-HONDA_CIVIC.description": "Deal {CalculatedDamage:diff()} damage to ALL enemies. \nDeals {IfUpgraded:show:2|3} less damage for each enemy. \nGain 1 [gold]Confidence[/gold].",
@@ -203,7 +203,7 @@
   "GREGTHESPIRE-RECKLESSNESS.description": " Double the [gold]Strength[/gold] gain by [gold]Confidence[/gold]. \nReceive double damage from enemy attacks.",
   "GREGTHESPIRE-RECKLESSNESS.title": "Recklessness",
 
-  "GREGTHESPIRE-STUMBLE.description": "[gold]Exhaust[/gold] 1 card in your [gold]Hand[/gold]. \nPlay {IfUpgraded:show:2|1} {IfUpgraded:show:cards|card} from your [gold]Stash[/gold].",
+  "GREGTHESPIRE-STUMBLE.description": "[gold]Exhaust[/gold] 1 card in your [gold]Hand[/gold]. \nPlay {StashPlayAmt:diff()} {StashPlayAmt:plural:card|cards} from your [gold]Stash[/gold].",
   "GREGTHESPIRE-STUMBLE.title": "Stumble",
 
   "GREGTHESPIRE-SLIP_UP.description": "Deal {Damage:diff()} damage. \n[gold]Discard[/gold] a random card in your [gold]Stash[/gold].",
@@ -237,7 +237,16 @@
   "GREGTHESPIRE-COFFEE.title": "Coffee",
 
   "GREGTHESPIRE-ITS_SO_BEAUTIFUL_HERE.description": "",
-  "GREGTHESPIRE-ITS_SO_BEAUTIFUL_HERE.title": "It's So Beautiful Here"
+  "GREGTHESPIRE-ITS_SO_BEAUTIFUL_HERE.title": "It's So Beautiful Here",
+
+  "GREGTHESPIRE-POWLOS_REVENGE.description": "",
+  "GREGTHESPIRE-POWLOS_REVENGE.title": "Powlos Revenge",
+
+  "GREGTHESPIRE-DEVIOUS_LITTLE_RAT.description": "",
+  "GREGTHESPIRE-DEVIOUS_LITTLE_RAT.title": "Devious Little Rat",
+
+  "GREGTHESPIRE-OBLIVIOUS.description": "",
+  "GREGTHESPIRE-OBLIVIOUS.title": "Oblivious"
 }
   
   

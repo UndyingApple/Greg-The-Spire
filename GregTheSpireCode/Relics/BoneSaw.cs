@@ -23,6 +23,6 @@ public class BoneSaw() : GregTheSpireRelic
         if (target.Side == this.Owner.Creature.Side)
           return;
         this.Flash();
-        await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 1, 1);
+        await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 1, 1,null);
       }
 }

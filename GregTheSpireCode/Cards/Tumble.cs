@@ -22,7 +22,7 @@ public class Tumble() : GregTheSpireCard(3,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 0, 9999);
+        await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 0, 9999, null);
         await StashCmd.StashAsync(choiceContext, this.Owner, 0, 99999, (CardModel) this);
     }
 

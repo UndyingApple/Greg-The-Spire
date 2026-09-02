@@ -53,5 +53,8 @@ public class Starvation() : GregTheSpireCard(1,
     public struct SnackSelectorPrefs {
         public static LocString SnackSelectionPrompt => new LocString("card_selection", "GREGTHESPIRE-APPLY_SNACK");
     }
-    
+    protected override void OnUpgrade()
+    {
+        DynamicVars["numCards"].UpgradeValueBy(1);
+    }
 }
