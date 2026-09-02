@@ -231,7 +231,13 @@
   "GREGTHESPIRE-FUMBLE.title": "Fumble",
 
   "GREGTHESPIRE-SPOON.description": "Deal {Damage:diff()} damage. \nPlay a card from your [gold]Stash[/gold].",
-  "GREGTHESPIRE-SPOON.title": "Spoon"
+  "GREGTHESPIRE-SPOON.title": "Spoon",
+
+  "GREGTHESPIRE-COFFEE.description": "Gain {Energy:energyIcons()}. \nYou can not [gold]Steal[/gold] this turn.",
+  "GREGTHESPIRE-COFFEE.title": "Coffee",
+
+  "GREGTHESPIRE-ITS_SO_BEAUTIFUL_HERE.description": "",
+  "GREGTHESPIRE-ITS_SO_BEAUTIFUL_HERE.title": "It's So Beautiful Here"
 }
   
   
