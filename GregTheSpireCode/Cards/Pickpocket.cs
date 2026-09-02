@@ -32,7 +32,7 @@ public class Pickpocket() : GregTheSpireCard(1,
         float attackAnimDelay = this.Owner.Character.AttackAnimDelay;
         if (SaveManager.Instance.PrefsSave.FastMode == FastModeType.Normal)
             attackAnimDelay += 0.2f;
-        AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).WithAttackerAnim("Attack", attackAnimDelay).Execute(choiceContext);
+        await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).WithAttackerAnim("Attack", attackAnimDelay).Execute(choiceContext);
         await StealCmd.StealAsync(choiceContext, this.Owner, 1);
     }
 
