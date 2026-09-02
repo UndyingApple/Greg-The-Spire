@@ -71,7 +71,7 @@
   "GREGTHESPIRE-FLY.description": "Deal {Played:diff()} damage to ALL enemies. \nIf this card is in your [gold]Hand[/gold] at the end of your turn, deal {Retained:diff()} damage to a random enemy.",
   "GREGTHESPIRE-FLY.title": "Fly",
   
-  "GREGTHESPIRE-WAITER_WAITER.description": "[gold]Enchant[/gold] a{IfUpgraded:show:| random} card in your [gold]Hand[/gold] with [gold]Infested[/gold].",
+  "GREGTHESPIRE-WAITER_WAITER.description": "[gold]Enchant[/gold] a{IfUpgraded:show:| random} card in your [gold]Hand[/gold] with [purple]Infested[/purple].",
   "GREGTHESPIRE-WAITER_WAITER.title": "Waiter, waiter!",
   
   "GREGTHESPIRE-BUFFET.description": "Add a [gold]{IfUpgraded:show:Cheese+|Cheese}[/gold], a [gold]{IfUpgraded:show:Cracker+|Cracker}[/gold], and a [gold]{IfUpgraded:show:Fly+|Fly}[/gold] to your [gold]Hand[/gold].",

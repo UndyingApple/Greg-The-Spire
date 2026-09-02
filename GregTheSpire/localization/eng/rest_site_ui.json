@@ -1,0 +1,4 @@
+﻿{
+  "OPTION_GREGTHESPIRE_STORE.name": "Store",
+  "OPTION_GREGTHESPIRE_STORE.description": "[gold]Enchant[/gold] {Cards:plural:a card|{Cards:diff()} Cards} with [purple]Stowaway[/purple]."
+}
