@@ -1,6 +1,6 @@
 {
-  "GREGTHESPIRE-STORAGE_POWER.description": "The max amount of cards that can be held in [gold]Stash[/gold].",
-  "GREGTHESPIRE-STORAGE_POWER.smartDescription": "The max amount of cards that can be held in [gold]Stash[/gold].",
+  "GREGTHESPIRE-STORAGE_POWER.description": "The maximum amount of cards that can be held in your [gold]Stash[/gold].",
+  "GREGTHESPIRE-STORAGE_POWER.smartDescription": "The maximum amount of cards that can be held in your [gold]Stash[/gold].",
   "GREGTHESPIRE-STORAGE_POWER.title": "Storage",
 
   "GREGTHESPIRE-CONFIDENCE_POWER.description": "Increases attack damage by. When you take unblocked attack damage, remove all [gold]Confidence[/gold] and gain 1 [gold]Weak[/gold] plus 1 additional [gold]Weak[/gold] for every 5 [gold]Confidence[/gold] lost.",
@@ -20,7 +20,7 @@
   "GREGTHESPIRE-BITE_SIZED_POWER.title": "Bite-Sized",
 
   "GREGTHESPIRE-WOWIE_ZOWIE_POWER.description": "If you don’t play [gold]Wowie Zowie[/gold] in turns, gain [gold]Doom[/gold] equal to your [gold]Max HP[/gold].",
-  "GREGTHESPIRE-WOWIE_ZOWIE_POWER.smartDescription": "If you don’t play [gold]Wowie Zowie[/gold] {Amount:plural:again in {Amount} turns|this turn}, gain [gold]Doom[/gold] equal to your [gold]Max HP[/gold].",
+  "GREGTHESPIRE-WOWIE_ZOWIE_POWER.smartDescription": "If you don’t play [gold]Wowie Zowie[/gold] {Amount:plural:this turn|again in {Amount} turns}, gain [gold]Doom[/gold] equal to your [gold]Max HP[/gold].",
   "GREGTHESPIRE-WOWIE_ZOWIE_POWER.title": "Wowie Zowie!",
 
   "GREGTHESPIRE-HAT_FORM_POWER.description": "At the start of your turn, [gold]Steal[/gold].",
@@ -36,15 +36,15 @@
   "GREGTHESPIRE-CHEESE_CLUB_POWER.title": "Cheese Club",
 
   "GREGTHESPIRE-SOMETIMES_BACK_DOWN_POWER.description": "Whenever you lose [gold]Confidence[/gold], deal damage to ALL enemies for every [gold]Confidence[/gold] lost.",
-  "GREGTHESPIRE-SOMETIMES_BACK_DOWN_POWER.smartDescription": "Whenever you lose [gold]Confidence[/gold], deal 2 damage to ALL enemies for every {Amount} [gold]Confidence[/gold] lost.",
+  "GREGTHESPIRE-SOMETIMES_BACK_DOWN_POWER.smartDescription": "Whenever you lose [gold]Confidence[/gold], deal {Amount} damage to ALL enemies for every 2 [gold]Confidence[/gold] lost.",
   "GREGTHESPIRE-SOMETIMES_BACK_DOWN_POWER.title": "Sometimes Back Down",
 
-  "GREGTHESPIRE-SOMETIMES_BACK_DOWN_UPGRADED_POWER.description": "",
-  "GREGTHESPIRE-SOMETIMES_BACK_DOWN_UPGRADED_POWER.smartDescription": "",
+  "GREGTHESPIRE-SOMETIMES_BACK_DOWN_UPGRADED_POWER.description": "Whenever you lose [gold]Confidence[/gold], deal damage to ALL enemies for every [gold]Confidence[/gold] lost.",
+  "GREGTHESPIRE-SOMETIMES_BACK_DOWN_UPGRADED_POWER.smartDescription": "Whenever you lose [gold]Confidence[/gold], deal {Amount} damage to ALL enemies for every [gold]Confidence[/gold] lost.",
   "GREGTHESPIRE-SOMETIMES_BACK_DOWN_UPGRADED_POWER.title": "Sometimes Back Down+",
 
-  "GREGTHESPIRE-NEVER_BACK_DOWN_POWER.description": "",
-  "GREGTHESPIRE-NEVER_BACK_DOWN_POWER.smartDescription": "Whenever you lose [gold]Confidence[/gold], gain {IfUpgraded:show:2|1} [gold]Confidence[/gold] for every {IfUpgraded:show:3|2} lost.",
+  "GREGTHESPIRE-NEVER_BACK_DOWN_POWER.description": "Whenever you lose confidence, gain Confidence for every lost.",
+  "GREGTHESPIRE-NEVER_BACK_DOWN_POWER.smartDescription": "Whenever you lose confidence, gain {Amount} Confidence for every 2 lost.",
   "GREGTHESPIRE-NEVER_BACK_DOWN_POWER.title": "Never Back Down",
 
   "GREGTHESPIRE-NEVER_BACK_DOWN_UPGRADED_POWER.description": "Whenever you lose confidence, gain Confidence for every lost.",
@@ -71,6 +71,10 @@
   "GREGTHESPIRE-NIMBLE_POWER.smartDescription": "Whenever you play a card that costs {energyPrefix:energyIcons(3)} or more, [gold]Steal[/gold] {Amount}",
   "GREGTHESPIRE-NIMBLE_POWER.title": "Nimble",
 
+  "GREGTHESPIRE-NIMBLE_UPGRADED_POWER.description": "Whenever you play a card that costs 2 or more Energy, [gold]Steal[/gold].",
+  "GREGTHESPIRE-NIMBLE_UPGRADED_POWER.smartDescription": "Whenever you play a card that costs {energyPrefix:energyIcons(2)} or more, [gold]Steal[/gold] {Amount}",
+  "GREGTHESPIRE-NIMBLE_UPGRADED_POWER.title": "Nimble+",
+
   "GREGTHESPIRE-STEAL_NEXT_TURN.description": "[gold]Steal[/gold] at the start of your next turn.",
   "GREGTHESPIRE-STEAL_NEXT_TURN.smartDescription": "[gold]Steal[/gold] {Amount} at the start of your next turn.",
   "GREGTHESPIRE-STEAL_NEXT_TURN.title": "Steal Next Turn",
@@ -91,8 +95,8 @@
   "GREGTHESPIRE-RECKLESSNESS_POWER.smartDescription": "Double the effects of [gold]Confidence[/gold]. Take double damage from enemies.",
   "GREGTHESPIRE-RECKLESSNESS_POWER.title": "Recklessness",
 
-  "GREGTHESPIRE-SWALLOW_POWER.description": "If you don’t take any unblocked damage this turn, blocked attack damage is converted to additional [gold]Block[/gold] at the start of your next turn.",
-  "GREGTHESPIRE-SWALLOW_POWER.smartDescription": "If you don’t take any unblocked damage this turn, blocked attack damage is converted to additional [gold]Block[/gold] at the start of your next turn.",
+  "GREGTHESPIRE-SWALLOW_POWER.description": "If you don’t take any unblocked damage from enemies this turn, gain [gold]Block Next Turn[/gold] equal to the amount of damage blocked.",
+  "GREGTHESPIRE-SWALLOW_POWER.smartDescription": "If you don’t take any unblocked damage from enemies this turn, gain [gold]Block Next Turn[/gold] equal to the amount of damage blocked.",
   "GREGTHESPIRE-SWALLOW_POWER.title": "Swallow",
 
   "GREGTHESPIRE-NO_STEAL_THIS_TURN.description": "You cannot [gold]Steal[/gold] cards this turn.",
@@ -101,9 +105,5 @@
 
   "GREGTHESPIRE-CHILL_PILL_POWER.description": "Lose all of your [gold]Confidence[/gold] at the end of this turn.",
   "GREGTHESPIRE-CHILL_PILL_POWER.smartDescription": "Lose all of your [gold]Confidence[/gold] at the end of this turn.",
-  "GREGTHESPIRE-CHILL_PILL_POWER.title": "Chill Pill",
-
-  "GREGTHESPIRE-NIMBLE_UPGRADED_POWER.description": "",
-  "GREGTHESPIRE-NIMBLE_UPGRADED_POWER.smartDescription": "",
-  "GREGTHESPIRE-NIMBLE_UPGRADED_POWER.title": "NimbleUpgradedPower"
+  "GREGTHESPIRE-CHILL_PILL_POWER.title": "Chill Pill"
 }
