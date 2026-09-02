@@ -26,7 +26,7 @@ public class RecklessnessPower() : GregTheSpirePower
     
     public override async Task BeforeApplied(Creature target, decimal amount, Creature? applier, CardModel? cardSource)
     {
-        await PowerCmd.Apply<StrengthPower>((PlayerChoiceContext) new ThrowingPlayerChoiceContext(), target, this.Owner.Player.Creature.GetPowerAmount<ConfidencePower>(), applier, cardSource);
+        await PowerCmd.Apply<StrengthPower>((PlayerChoiceContext) new ThrowingPlayerChoiceContext(), target, this.Owner.GetPowerAmount<ConfidencePower>(), applier, cardSource);
     }
     
     public override async Task AfterPowerAmountChanged(
@@ -48,10 +48,9 @@ public class RecklessnessPower() : GregTheSpirePower
             return;
         this.Flash();
        
-        await PowerCmd.Apply<StrengthPower>(choiceContext, this.Owner, -this.Owner.Player.Creature.GetPowerAmount<ConfidencePower>(), this.Owner, null);
+        await PowerCmd.Apply<StrengthPower>(choiceContext, this.Owner, -this.Owner.GetPowerAmount<ConfidencePower>(), this.Owner, null);
         
     }
-    
     public override Decimal ModifyDamageMultiplicative(
         Creature? target,
         Decimal amount,

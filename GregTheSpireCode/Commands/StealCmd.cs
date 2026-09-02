@@ -1,5 +1,6 @@
 using BaseLib.Utils;
 using GregTheSpire.GregTheSpireCode.CardPiles;
+using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -20,11 +21,18 @@ public static class StealCmd
         {
             return;
         }
-        
-        //variable that represents the owner of the card
-        //card_initial.Owner = player;
 
-        for (int i = 0; i < amount; i++)
+        //Checks if can steal this turn
+        if (player.Creature.GetPowerAmount<NoStealThisTurn>() == 1)
+        {
+            await PowerCmd.Apply<NoStealThisTurn>(choiceContext, player.Creature, 1, player.Creature,
+            null);
+            return;
+        }
+    //variable that represents the owner of the card
+    //card_initial.Owner = player;
+
+    for (int i = 0; i < amount; i++)
         {
             //variable that represents the card on top of the deck
             CardModel topCard = PileType.Draw.GetPile(player).Cards.FirstOrDefault<CardModel>();

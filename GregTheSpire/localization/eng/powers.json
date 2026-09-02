@@ -85,5 +85,9 @@
   
   "GREGTHESPIRE-RECKLESSNESS_POWER.description": "",
   "GREGTHESPIRE-RECKLESSNESS_POWER.smartDescription": "",
-  "GREGTHESPIRE-RECKLESSNESS_POWER.title": "Recklessness"
+  "GREGTHESPIRE-RECKLESSNESS_POWER.title": "Recklessness",
+
+  "GREGTHESPIRE-NO_STEAL_THIS_TURN.description": "",
+  "GREGTHESPIRE-NO_STEAL_THIS_TURN.smartDescription": "",
+  "GREGTHESPIRE-NO_STEAL_THIS_TURN.title": "NoStealThisTurn"
 }
