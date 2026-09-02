@@ -22,7 +22,7 @@ public class SecretGadget() : GregTheSpireCard(2,
         CardPlay play)
     {
         await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).Execute(choiceContext);
-        if (play.Card.EnergyCost.GetWithModifiers(CostModifiers.All) != 0)
+        if (play.Resources.EnergySpent > 0)
         {
             return;
         }
