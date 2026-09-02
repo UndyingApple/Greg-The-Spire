@@ -134,7 +134,7 @@
   "GREGTHESPIRE-HONDA_CIVIC.description": "Deal {CalculatedDamage:diff()} damage to ALL enemies. \nDeals {IfUpgraded:show:2|3} less damage for each enemy. \nGain 1 [gold]Confidence[/gold].",
   "GREGTHESPIRE-HONDA_CIVIC.title": "Honda Civic",
   
-  "GREGTHESPIRE-RAT_FORM.description": "Gain 3 [gold]Storage[/gold]. \nAt the start of your turn, play every card in your [gold]Stash[/gold].",
+  "GREGTHESPIRE-RAT_FORM.description": "{IfUpgraded:show:Gain 3 [gold]Storage[/gold]. \n|}At the start of your turn, play every card in your [gold]Stash[/gold].",
   "GREGTHESPIRE-RAT_FORM.title": "Rat Form",
   
   "GREGTHESPIRE-CHEESE_CLUB.description": "At the start of your turn, add {CheeseClubPower:diff()} [gold]Cheese[/gold] to your [gold]Hand[/gold].",

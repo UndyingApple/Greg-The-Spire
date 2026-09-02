@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
-public class RatForm() : GregTheSpireCard(3,
+public class RatForm() : GregTheSpireCard(2,
     CardType.Power, CardRarity.Rare,
     TargetType.Self)
 {
@@ -19,9 +19,10 @@ public class RatForm() : GregTheSpireCard(3,
         CardPlay play)
     {
         await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
-        StoragePower storagePower = await PowerCmd.Apply<StoragePower>(choiceContext, this.Owner.Creature, 3, this.Owner.Creature, (CardModel) this);
-        RatFormPower ratFormPower = await PowerCmd.Apply<RatFormPower>(choiceContext, this.Owner.Creature, 1, this.Owner.Creature, (CardModel) this);
+        if (this.IsUpgraded)
+            await PowerCmd.Apply<StoragePower>(choiceContext, this.Owner.Creature, 3, this.Owner.Creature, (CardModel) this);
+        await PowerCmd.Apply<RatFormPower>(choiceContext, this.Owner.Creature, 1, this.Owner.Creature, (CardModel) this);
     }
 
-    protected override void OnUpgrade() => EnergyCost.UpgradeBy(-1);
+    
 }
