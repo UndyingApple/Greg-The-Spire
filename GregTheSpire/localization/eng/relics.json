@@ -8,31 +8,31 @@
   "GREGTHESPIRE-FANNY_PACK.flavor": "",
   "GREGTHESPIRE-FANNY_PACK.title": "Fanny Pack",
 
-  "GREGTHESPIRE-BONE_SAW.description": "",
+  "GREGTHESPIRE-BONE_SAW.description": "Whenever an enemy dies, play a card in your [gold]Stash[/gold]",
   "GREGTHESPIRE-BONE_SAW.flavor": "",
   "GREGTHESPIRE-BONE_SAW.title": "Bone Saw",
 
-  "GREGTHESPIRE-MOLDY_SANDWICH.description": "",
+  "GREGTHESPIRE-MOLDY_SANDWICH.description": "Every time you play an Attack or Skill, [gold]Enchant[/gold] it with [gold]Infested[/gold] for the remainder of combat.\n",
   "GREGTHESPIRE-MOLDY_SANDWICH.flavor": "",
-  "GREGTHESPIRE-MOLDY_SANDWICH.title": "MoldySandwich",
+  "GREGTHESPIRE-MOLDY_SANDWICH.title": "Moldy Sandwich",
 
-  "GREGTHESPIRE-THICK_WALLET.description": "",
+  "GREGTHESPIRE-THICK_WALLET.description": "Whenever you [gold]Steal[/gold], gain 3 [gold]Block[/gold]",
   "GREGTHESPIRE-THICK_WALLET.flavor": "",
-  "GREGTHESPIRE-THICK_WALLET.title": "ThickWallet",
+  "GREGTHESPIRE-THICK_WALLET.title": "Thick Wallet",
 
-  "GREGTHESPIRE-CLOCHE.description": "",
+  "GREGTHESPIRE-CLOCHE.description": "The first [gold]Snack[/gold] you play each turn is played an extra time.",
   "GREGTHESPIRE-CLOCHE.flavor": "",
   "GREGTHESPIRE-CLOCHE.title": "Cloche",
 
-  "GREGTHESPIRE-MAGNIFYING_GLASS.description": "",
+  "GREGTHESPIRE-MAGNIFYING_GLASS.description": "Every 3 turns, put a card in your [gold]Draw Pile[/gold] on top of your deck",
   "GREGTHESPIRE-MAGNIFYING_GLASS.flavor": "",
   "GREGTHESPIRE-MAGNIFYING_GLASS.title": "Magnifying Glass",
   
-  "GREGTHESPIRE-DEAD_RINGER.description": "",
+  "GREGTHESPIRE-DEAD_RINGER.description": "If you take no unblocked attack damage during the enemy turn, gain 2 [gold]Confidence[/gold] at the start of your turn",
   "GREGTHESPIRE-DEAD_RINGER.flavor": "",
   "GREGTHESPIRE-DEAD_RINGER.title": "Dead Ringer",
 
-  "GREGTHESPIRE-STURDY_KNAPSACK.description": "",
+  "GREGTHESPIRE-STURDY_KNAPSACK.description": "At the start of each combat, gain 5 [gold]Storage[/gold]. \nYou may now [gold]Store[/gold] at rest sites.",
   "GREGTHESPIRE-STURDY_KNAPSACK.flavor": "",
   "GREGTHESPIRE-STURDY_KNAPSACK.title": "Sturdy Knapsack"
 }

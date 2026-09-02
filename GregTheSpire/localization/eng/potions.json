@@ -1,10 +1,10 @@
 ﻿{
-  "GREGTHESPIRE-SNACK_POTION.description": "",
+  "GREGTHESPIRE-SNACK_POTION.description": "Choose 1 of 3 [gold]Snacks[/gold] 2 times.",
   "GREGTHESPIRE-SNACK_POTION.title": "Trail Mix",
 
   "GREGTHESPIRE-STEAL_POTION.description": "[gold]Steal[/gold] 2",
   "GREGTHESPIRE-STEAL_POTION.title": "Smoke Bomb",
 
-  "GREGTHESPIRE-STASH_POTION.description": "",
+  "GREGTHESPIRE-STASH_POTION.description": "[gold]Stash[/gold] any number of cards in your [gold]Hand[/gold]",
   "GREGTHESPIRE-STASH_POTION.title": "Bottled Vortex"
 }

@@ -50,7 +50,7 @@
   "GREGTHESPIRE-SMUG.description": "Gain {ConfidencePower:diff()} [gold]Confidence[/gold]. \nAdd a copy of this card into your [gold]Discard Pile[/gold].",
   "GREGTHESPIRE-SMUG.title": "Smug",
   
-  "GREGTHESPIRE-CHILL_PILL.description": "Lose all [gold]Confidence[/gold].",
+  "GREGTHESPIRE-CHILL_PILL.description": "Lose all [gold]Confidence[/gold] at the end of your turn.",
   "GREGTHESPIRE-CHILL_PILL.title": "Chill Pill",
   
   "GREGTHESPIRE-SNACK_O_VISION.description": "Choose a card from your [gold]Deck[/gold] that isn’t in your [gold]Exhaust Pile[/gold] and place it on top of your [gold]Draw Pile[/gold]. \nIncrease the cost of this card by 1 this combat.",
@@ -116,7 +116,7 @@
   "GREGTHESPIRE-EXTRA_POCKETS.description": "Gain 2 [gold]Storage[/gold]",
   "GREGTHESPIRE-EXTRA_POCKETS.title": "Extra Pockets",
   
-  "GREGTHESPIRE-KICKFLIP.description": "Deal {CalculatedDamage:diff()} damage. Confidence affects this card {IfUpgraded:show:3|2} times.",
+  "GREGTHESPIRE-KICKFLIP.description": "Deal {CalculatedDamage:diff()} damage. \n[gold]Confidence[/gold] affects this card {IfUpgraded:show:3|2} times.",
   "GREGTHESPIRE-KICKFLIP.title": "Kickflip",
   
   "GREGTHESPIRE-SOMETIMES_BACK_DOWN.description": "Whenever you lose [gold]Confidence[/gold], deal 2 damage to ALL enemies for every {IfUpgraded:show:1|2} [gold]Confidence[/gold] lost.",
@@ -191,46 +191,46 @@
   "GREGTHESPIRE-E_GO_MA_NI_A.description": "Gain 8 [gold]Confidence[/gold]. \nAt the start of your turn gain 4 [gold]Confidence[/gold]. \nWhen you lose [gold]Confidence[/gold], gain [gold]Vulnerable[/gold] equal to the amount of [gold]Weak[/gold] gained.",
   "GREGTHESPIRE-E_GO_MA_NI_A.title": "EGOMANIA",
 
-  "GREGTHESPIRE-LEFTOVER.description": "",
+  "GREGTHESPIRE-LEFTOVER.description": "Whenever you play a [gold]Snack[/gold] from your [gold]Hand[/gold], add a copy of that [gold]Snack[/gold] to your [gold]Stash[/gold].",
   "GREGTHESPIRE-LEFTOVER.title": "Leftovers",
 
-  "GREGTHESPIRE-R_AN_DO_MB_UL_L____G_O.description": "",
+  "GREGTHESPIRE-R_AN_DO_MB_UL_L____G_O.description": "Gain {Energy:energyIcons()}. \n[gold]Steal[/gold] {IfUpgraded:show:X+1|X}.",
   "GREGTHESPIRE-R_AN_DO_MB_UL_L____G_O.title": "RANDOM BULL%#@$ GO!!!",
 
-  "GREGTHESPIRE-PRECISELY.description": "",
+  "GREGTHESPIRE-PRECISELY.description": "Gain 1 [gold]Confidence[/gold]. \nGain 1 [gold]Confidence[/gold] for every {IfUpgraded:show:1|2} [gold]Confidence[/gold] you have",
   "GREGTHESPIRE-PRECISELY.title": "Precisely",
 
-  "GREGTHESPIRE-RECKLESSNESS.description": "",
+  "GREGTHESPIRE-RECKLESSNESS.description": " Double the [gold]Strength[/gold] gain by [gold]Confidence[/gold]. \nReceive double damage from enemy attacks.",
   "GREGTHESPIRE-RECKLESSNESS.title": "Recklessness",
 
-  "GREGTHESPIRE-STUMBLE.description": "",
+  "GREGTHESPIRE-STUMBLE.description": "[gold]Exhaust[/gold] 1 card in your [gold]Hand[/gold]. \nPlay {IfUpgraded:show:2|1} {IfUpgraded:show:cards|card} from your [gold]Stash[/gold].",
   "GREGTHESPIRE-STUMBLE.title": "Stumble",
 
-  "GREGTHESPIRE-SLIP_UP.description": "",
+  "GREGTHESPIRE-SLIP_UP.description": "Deal {Damage:diff()} damage. \n[gold]Discard[/gold] a random card in your [gold]Stash[/gold].",
   "GREGTHESPIRE-SLIP_UP.title": "Slip Up",
   
-  "GREGTHESPIRE-SECRET_GADGET.description": "",
-  "GREGTHESPIRE-SECRET_GADGET.title": "SecretGadget",
+  "GREGTHESPIRE-SECRET_GADGET.description": "Deal {Damage:diff()} damage. \nIf this card is played for free, draw {Cards:diff()} {Cards:plural:card|cards}.",
+  "GREGTHESPIRE-SECRET_GADGET.title": "Secret Gadget",
 
-  "GREGTHESPIRE-TUMBLE.description": "",
+  "GREGTHESPIRE-TUMBLE.description": "Play any amount of cards from your [gold]Stash[/gold]. \n[gold]Stash[/gold] any amount of cards in your [gold]Hand[/gold].",
   "GREGTHESPIRE-TUMBLE.title": "Tumble",
 
-  "GREGTHESPIRE-TAIL_SWIPE.description": "",
+  "GREGTHESPIRE-TAIL_SWIPE.description": "Deal {Damage:diff()} damage to ALL enemies. \nDraw a card for each card in your [gold]Stash[/gold].",
   "GREGTHESPIRE-TAIL_SWIPE.title": "Tail Swipe",
   
-  "GREGTHESPIRE-GRAPPLING_HOOK.description": "",
-  "GREGTHESPIRE-GRAPPLING_HOOK.title": "GrapplingHook",
+  "GREGTHESPIRE-GRAPPLING_HOOK.description": "If this is the first time this card has been played this turn, [gold]Steal[/gold] 1.",
+  "GREGTHESPIRE-GRAPPLING_HOOK.title": "Grappling Hook",
 
-  "GREGTHESPIRE-I_M_ALSO_VERY_PARTIAL_TO_PLASTIC.description": "",
-  "GREGTHESPIRE-I_M_ALSO_VERY_PARTIAL_TO_PLASTIC.title": "I_mAlsoVeryPartialToPlastic",
+  "GREGTHESPIRE-I_M_ALSO_VERY_PARTIAL_TO_PLASTIC.description": "Add 3 [gold]Olives[/gold] to your [gold]Hand[/gold]. \nDraw {Cards:diff()} {Cards:plural:card|cards}.",
+  "GREGTHESPIRE-I_M_ALSO_VERY_PARTIAL_TO_PLASTIC.title": "I'm Also Very Partial To Plastic",
 
-  "GREGTHESPIRE-SWALLOW.description": "",
+  "GREGTHESPIRE-SWALLOW.description": "Gain {Block:diff()} [gold]Block[/gold]. \nIf you don’t take any unblocked damage this turn, blocked attack damage is converted to additional [gold]Block[/gold] at the start of your next turn.",
   "GREGTHESPIRE-SWALLOW.title": "Swallow",
 
-  "GREGTHESPIRE-FUMBLE.description": "",
+  "GREGTHESPIRE-FUMBLE.description": "[gold]Discard[/gold] up to 2 cards in your [gold]Hand[/gold]. \nFor each card discarded this way, play a card from your [gold]Stash[/gold].",
   "GREGTHESPIRE-FUMBLE.title": "Fumble",
 
-  "GREGTHESPIRE-SPOON.description": "",
+  "GREGTHESPIRE-SPOON.description": "Deal {Damage:diff()} damage. \nPlay a card from your [gold]Stash[/gold].",
   "GREGTHESPIRE-SPOON.title": "Spoon"
 }
   
