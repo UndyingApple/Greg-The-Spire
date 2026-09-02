@@ -137,7 +137,7 @@
   "GREGTHESPIRE-RAT_FORM.description": "Gain 3 [gold]Storage[/gold]. \nAt the start of your turn, play every card in your [gold]Stash[/gold].",
   "GREGTHESPIRE-RAT_FORM.title": "Rat Form",
   
-  "GREGTHESPIRE-CHEESE_CLUB.description": "At the start of your turn, add 1 [gold]Cheese[/gold] to your [gold]Hand[/gold].",
+  "GREGTHESPIRE-CHEESE_CLUB.description": "At the start of your turn, add {CheeseClubPower:diff()} [gold]Cheese[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-CHEESE_CLUB.title": "Cheese Club",
   
   "GREGTHESPIRE-STRAWBERRY.description": " Gain {Block:diff()} [gold]Block[/gold]. \nDeal {Damage:diff()} damage to a random enemy.",

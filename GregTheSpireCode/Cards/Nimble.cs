@@ -20,12 +20,21 @@ public class Nimble() : GregTheSpireCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        
         await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
-        NimblePower flyswatterPower = await PowerCmd.Apply<NimblePower>(choiceContext, this.Owner.Creature,1, this.Owner.Creature, (CardModel) this);
+        if (this.IsUpgraded)
+        {
+            await PowerCmd.Apply<NimbleUpgradedPower>(choiceContext, this.Owner.Creature,1, this.Owner.Creature, (CardModel) this);
+        }
+        else
+                {
+                    await PowerCmd.Apply<NimblePower>(choiceContext, this.Owner.Creature,1, this.Owner.Creature, (CardModel) this);
+                }
+        
     }
 
     protected override void OnUpgrade()
     {
-        this.EnergyCost.UpgradeBy(-1);
+        DynamicVars.Energy.UpgradeValueBy(-1);
     }
 }
