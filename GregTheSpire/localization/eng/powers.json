@@ -89,5 +89,9 @@
 
   "GREGTHESPIRE-NO_STEAL_THIS_TURN.description": "",
   "GREGTHESPIRE-NO_STEAL_THIS_TURN.smartDescription": "",
-  "GREGTHESPIRE-NO_STEAL_THIS_TURN.title": "NoStealThisTurn"
+  "GREGTHESPIRE-NO_STEAL_THIS_TURN.title": "NoStealThisTurn",
+
+  "GREGTHESPIRE-CHILL_PILL_POWER.description": "",
+  "GREGTHESPIRE-CHILL_PILL_POWER.smartDescription": "",
+  "GREGTHESPIRE-CHILL_PILL_POWER.title": "ChillPillPower"
 }

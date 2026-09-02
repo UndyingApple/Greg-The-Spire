@@ -23,11 +23,7 @@ public class ChillPill() : GregTheSpireCard(0,
         CardPlay play)
     {
         await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
-        var confidenceAmount = this.Owner.Creature.GetPowerAmount<ConfidencePower>();
-        if (confidenceAmount != null)
-        {
-            ConfidencePower confidencePower = await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature, -confidenceAmount, Owner.Creature, this);
-        }
+        await PowerCmd.Apply<ChillPillPower>(choiceContext, this.Owner.Creature, 1, this.Owner.Creature, this);
     }
 
     protected override void OnUpgrade() => this.AddKeyword(CardKeyword.Retain);

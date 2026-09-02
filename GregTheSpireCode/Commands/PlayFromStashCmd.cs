@@ -16,14 +16,16 @@ public static class PlayFromStashCmd
     public static async Task PlayFromStashCmdAsync(PlayerChoiceContext choiceContext, Player player, int min, int max)
     {
         if (max <= 0) return;
-        
+
         CardSelectorPrefs prefs = new CardSelectorPrefs(StashSelectorPrefs.FromStashSelectionPrompt, min, max)
         {
             RequireManualConfirmation = true
         };
-        CardModel card = (await CardSelectCmd.FromCombatPile(choiceContext, StashCardPile.StashPileType.GetPile(player), player, prefs)).FirstOrDefault<CardModel>();
-        if (card == null)
-            return;
-        await CardCmd.AutoPlay(choiceContext, card, (Creature) null);
+        IEnumerable<CardModel> cards = (await CardSelectCmd.FromCombatPile(choiceContext,
+            StashCardPile.StashPileType.GetPile(player), player, prefs));
+        foreach (CardModel card in cards)
+        {
+            await CardCmd.AutoPlay(choiceContext, card, (Creature)null);
+        }
     }
 }

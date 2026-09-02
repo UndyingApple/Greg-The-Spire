@@ -1,4 +1,7 @@
 ﻿{
   "GREGTHESPIRE-INFESTED.title": "Infested",
-  "GREGTHESPIRE-INFESTED.description": "When this card is played, add a [gold]Fly[/gold] to your [gold]Hand[/gold]."
+  "GREGTHESPIRE-INFESTED.description": "When this card is played, add a [gold]Fly[/gold] to your [gold]Hand[/gold].",
+  
+  "GREGTHESPIRE-STOWAWAY.title": "Stowaway",
+  "GREGTHESPIRE-STOWAWAY.description": "At the start of combat, place this card in your Stash. This card does not count towards your Stash limit."
 }

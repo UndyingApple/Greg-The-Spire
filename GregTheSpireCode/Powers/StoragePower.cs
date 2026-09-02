@@ -38,7 +38,8 @@ public class StoragePower() : GregTheSpirePower
     {
         if (power is StoragePower)
         {
-            StorageChanged?.Invoke(this.Owner.Player.PlayerCombatState, GetInternalData<Data>().storage + (int) amount);
+            StorageChanged?.Invoke(this.Owner.Player.PlayerCombatState, GetInternalData<Data>().storage + (int) amount + StashCardPile.StashPileType.GetPile(this.Owner.Player).Cards.Where<CardModel>((Func<CardModel, bool>)(c =>
+                c.Enchantment is Stowaway)).Count());
             GetInternalData<Data>().storage += (int) amount;
         } else if (power is BiteSizedPower)
         {
@@ -51,7 +52,7 @@ public class StoragePower() : GregTheSpirePower
 
     public async override Task AfterCardChangedPiles(CardModel card, PileType oldPileType, AbstractModel? clonedBy)
     {
-        if (card.Owner == this.Owner.Player && (card.Keywords.Contains(GregTheSpireKeywords.Snack) || card.Enchantment is Stowaway)&& this.Owner.HasPower<BiteSizedPower>() && (card.Pile.Type == StashCardPile.StashPileType || oldPileType == StashCardPile.StashPileType))
+        if (card.Owner == this.Owner.Player && ((card.Keywords.Contains(GregTheSpireKeywords.Snack) && this.Owner.HasPower<BiteSizedPower>()) || card.Enchantment is Stowaway) && (card.Pile.Type == StashCardPile.StashPileType || oldPileType == StashCardPile.StashPileType))
         {
             StorageChanged?.Invoke(this.Owner.Player.PlayerCombatState, GetInternalData<Data>().storage + StashCardPile.StashPileType.GetPile(card.Owner).Cards.Where<CardModel>((Func<CardModel, bool>)(c =>
                 c.Keywords.Contains(GregTheSpireKeywords.Snack) || (c.Enchantment is Stowaway))).Count());
