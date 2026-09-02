@@ -201,7 +201,19 @@
   "GREGTHESPIRE-PRECISELY.title": "Precisely",
 
   "GREGTHESPIRE-RECKLESSNESS.description": "",
-  "GREGTHESPIRE-RECKLESSNESS.title": "Recklessness"
+  "GREGTHESPIRE-RECKLESSNESS.title": "Recklessness",
+
+  "GREGTHESPIRE-STUMBLE.description": "",
+  "GREGTHESPIRE-STUMBLE.title": "Stumble",
+
+  "GREGTHESPIRE-SLIP_UP.description": "",
+  "GREGTHESPIRE-SLIP_UP.title": "Slip Up",
+  
+  "GREGTHESPIRE-SECRET_GADGET.description": "",
+  "GREGTHESPIRE-SECRET_GADGET.title": "SecretGadget",
+
+  "GREGTHESPIRE-TUMBLE.description": "",
+  "GREGTHESPIRE-TUMBLE.title": "Tumble"
 }
   
   
