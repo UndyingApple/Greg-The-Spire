@@ -26,7 +26,7 @@ public class SometimesBackDownUpgradedPower() : GregTheSpirePower
         if (!(power is ConfidencePower) || amount >= 0)
             return;
         this.Flash();
-        await CreatureCmd.Damage(choiceContext, (IEnumerable<Creature>) this.CombatState.HittableEnemies, Amount * -amount, ValueProp.Unpowered, this.Owner);
+        await CreatureCmd.Damage(choiceContext, (IEnumerable<Creature>) this.CombatState.HittableEnemies, Math.Abs(Amount * amount), ValueProp.Unpowered, this.Owner);
         //IEnumerable<DamageResult> damageResults = await CreatureCmd.Damage(choiceContext, (IEnumerable<Creature>) this.CombatState.HittableEnemies, (Decimal) this.Amount * amount * -1, ValueProp.Unpowered, this.Owner);
     }
 }

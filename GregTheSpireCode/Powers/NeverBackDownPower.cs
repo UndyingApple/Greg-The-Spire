@@ -28,6 +28,8 @@ public class NeverBackDownPower() : GregTheSpirePower
             return;
         this.Flash();
 
-        await PowerCmd.Apply<ConfidencePower>((PlayerChoiceContext) new ThrowingPlayerChoiceContext(), this.Owner, (Decimal) this.Amount * amount / -2, this.Owner, (CardModel) null);
+        await PowerCmd.Apply<ConfidencePower>(choiceContext, this.Owner,
+            (Decimal) Math.Abs(this.Owner.GetPowerAmount<NeverBackDownPower>() * amount / 2),
+            this.Owner, null);
     }
 }

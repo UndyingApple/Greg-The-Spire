@@ -3,6 +3,7 @@ using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
@@ -34,23 +35,29 @@ public class SwallowPower() : GregTheSpirePower
     {
         if (target != this.Owner || !props.IsPoweredAttack() || dealer == null || result.TotalDamage == 0)
             return;
-        else if (result.UnblockedDamage > 0)
+        if (result.UnblockedDamage > 0)
         {
             this.Flash();
-            await PowerCmd.Remove((PowerModel) this);
+            DynamicVars.Block.BaseValue = 0;
         }
-        this.Flash();
-        this.DynamicVars.Block.UpgradeValueBy(result.BlockedDamage);
+        else
+        {
+            DynamicVars.Block.BaseValue += result.BlockedDamage;
+        }
     }
-    
-    public override async Task AfterBlockCleared(Creature creature)
+
+    public override async Task AfterSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {
-        if (creature != Owner)
-            return;
-        this.Flash();
-        Decimal num = await CreatureCmd.GainBlock(Owner, this.DynamicVars.Block, (CardPlay) null);
-        await PowerCmd.Remove((PowerModel) this);
+        if (side == CombatSide.Enemy)
+        {
+            Flash();
+            await PowerCmd.Apply<BlockNextTurnPower>(choiceContext, this.Owner, DynamicVars.Block.BaseValue, this.Owner, null);
+        }
     }
-    
-    
+
+    public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
+    {
+        DynamicVars.Block.BaseValue = 0;
+        await PowerCmd.Decrement(this);
+    }
 }

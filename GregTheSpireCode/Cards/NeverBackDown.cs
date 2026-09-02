@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
-public class NeverBackDown() : GregTheSpireCard(2,
+public class NeverBackDown() : GregTheSpireCard(1,
     CardType.Power, CardRarity.Uncommon,
     TargetType.Self)
 {
@@ -32,6 +32,4 @@ public class NeverBackDown() : GregTheSpireCard(2,
                 DynamicVars.Power<NeverBackDownPower>().BaseValue, Owner.Creature, this);
         }
     }
-
-    protected override void OnUpgrade() => this.EnergyCost.UpgradeBy(-1);
 }

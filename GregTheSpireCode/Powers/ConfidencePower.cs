@@ -19,21 +19,13 @@ public class ConfidencePower() : GregTheSpirePower
 
     public override bool AllowNegative => true;
     
-    public override async Task BeforeApplied(Creature target, decimal amount, Creature? applier, CardModel? cardSource)
+    public override async Task AfterPowerAmountChanged(PlayerChoiceContext choiceContext, PowerModel power, Decimal amount, Creature? applier, CardModel? cardSource)
     {
-        await PowerCmd.Apply<StrengthPower>((PlayerChoiceContext) new ThrowingPlayerChoiceContext(), target, target.GetPowerAmount<RecklessnessPower>() > 0 ? amount * 2 : amount, applier, cardSource);
-    }
-    
-    public override async Task AfterPowerAmountChanged(
-        PlayerChoiceContext choiceContext,
-        PowerModel power,
-        Decimal amount,
-        Creature? applier,
-        CardModel? cardSource)
-    {
-        if (amount == (Decimal) this.Amount || power != this)
+        if (power != this)
             return;
-        await PowerCmd.Apply<StrengthPower>(choiceContext, this.Owner, this.Owner.GetPowerAmount<RecklessnessPower>() > 0 ? amount * 2 : amount, applier, cardSource, true);
+        await PowerCmd.Apply<StrengthPower>(choiceContext, this.Owner,
+            this.Owner.GetPowerAmount<RecklessnessPower>() > 0 ? amount * 2 : amount, // this is + 2N when recklessness is over 0, N otherwise
+            applier, cardSource, true);
     }
 
     public override async Task AfterDamageReceived(PlayerChoiceContext choiceContext, Creature target, DamageResult result, ValueProp props,
@@ -42,8 +34,7 @@ public class ConfidencePower() : GregTheSpirePower
         if (!CombatManager.Instance.IsInProgress || target != this.Owner || result.UnblockedDamage <= 0)
             return;
         this.Flash();
-        await PowerCmd.Remove((PowerModel) this);
-        await PowerCmd.Apply<StrengthPower>(choiceContext, this.Owner, this.Owner.GetPowerAmount<RecklessnessPower>() > 0 ? -this.Amount * 2 : -this.Amount, this.Owner, null);
+        await PowerCmd.Apply<ConfidencePower>(choiceContext, this.Owner, -Amount, this.Owner,null);
         await PowerCmd.Apply<WeakPower>(choiceContext, this.Owner, 1 + (int) (this.Amount / 5), this.Owner, null);
     }
 }

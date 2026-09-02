@@ -14,7 +14,7 @@ public class SometimesBackDown() : GregTheSpireCard(1,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new PowerVar<SometimesBackDownPower>(1)
+        new PowerVar<SometimesBackDownPower>(2)
     ];
 
     protected override async Task OnPlay(
