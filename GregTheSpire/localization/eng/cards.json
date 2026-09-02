@@ -213,7 +213,13 @@
   "GREGTHESPIRE-SECRET_GADGET.title": "SecretGadget",
 
   "GREGTHESPIRE-TUMBLE.description": "",
-  "GREGTHESPIRE-TUMBLE.title": "Tumble"
+  "GREGTHESPIRE-TUMBLE.title": "Tumble",
+
+  "GREGTHESPIRE-TAIL_SWIPE.description": "",
+  "GREGTHESPIRE-TAIL_SWIPE.title": "Tail Swipe",
+  
+  "GREGTHESPIRE-GRAPPLING_HOOK.description": "",
+  "GREGTHESPIRE-GRAPPLING_HOOK.title": "GrapplingHook"
 }
   
   
