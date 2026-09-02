@@ -33,7 +33,8 @@ public class RightShoe() : GregTheSpireCard(0,
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
-        HoverTipFactory.FromCard<RightShoe>(IsUpgraded)
+        HoverTipFactory.FromPower<WeakPower>(),
+        HoverTipFactory.FromCard<RightShoe>()
     ];
     
     public static async Task<IEnumerable<RightShoe>> CreateInHand(

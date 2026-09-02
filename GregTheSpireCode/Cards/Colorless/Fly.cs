@@ -25,8 +25,8 @@ public class Fly() : GregTheSpireCard(0,
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [
         CardKeyword.Retain,
-        GregTheSpireKeywords.Snack,
-        CardKeyword.Exhaust
+        CardKeyword.Exhaust,
+        GregTheSpireKeywords.Snack
     ];
     
 

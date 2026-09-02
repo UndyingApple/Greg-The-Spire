@@ -1,4 +1,10 @@
 {
   "GREGTHESPIRE-SNACK.description": "This card is considered a Snack.",
-  "GREGTHESPIRE-SNACK.title": "Snack"
+  "GREGTHESPIRE-SNACK.title": "Snack",
+  
+  "GREGTHESPIRE-STASH.description": "Cards in your [gold]Stash[/gold] stay in your [gold]Stash[/gold] between turns. \nIf your [gold]Stash[/gold] is full, [gold]Discard[/gold] any card attempted to pe placed in your [gold]Stash[/gold]",
+  "GREGTHESPIRE-STASH.title": "Stash",
+  
+  "GREGTHESPIRE-STEAL.description": "Play the top card of your [gold]Draw Pile[/gold] if you have [gold]Energy[/gold] equal to or greater that its cost. \nIf you don't have the [gold]Energy[/gold] to play the top card, place that card into your [gold]Stash[/gold]. \nCards played this way wont [gold]Exhaust[/gold]. \nIf your [gold]Draw Pile[/gold] is empty you can't [gold]Steal[/gold].",
+  "GREGTHESPIRE-STEAL.title": "Steal"
 }

@@ -20,14 +20,13 @@ public class Olive() : GregTheSpireCard(0,
     TargetType.AnyEnemy)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [
-        GregTheSpireKeywords.Snack,
-        CardKeyword.Exhaust
+        CardKeyword.Exhaust,
+        GregTheSpireKeywords.Snack
     ];
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(3, ValueProp.Move),
     ];
-    
     
     public static async Task<IEnumerable<Olive>> CreateInHand(
         Player owner,

@@ -21,8 +21,8 @@ public class Soda() : GregTheSpireCard(0,
     TargetType.Self)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [
-        GregTheSpireKeywords.Snack,
-        CardKeyword.Exhaust
+        CardKeyword.Exhaust,
+        GregTheSpireKeywords.Snack
     ];
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [

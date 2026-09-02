@@ -20,8 +20,8 @@ public class Strawberry() : GregTheSpireCard(0,
     TargetType.RandomEnemy)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [
-        GregTheSpireKeywords.Snack,
-        CardKeyword.Exhaust
+        CardKeyword.Exhaust,
+        GregTheSpireKeywords.Snack
     ];
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
@@ -29,6 +29,8 @@ public class Strawberry() : GregTheSpireCard(0,
         new BlockVar(4, ValueProp.Move)
     ];
     
+    public override bool GainsBlock => true;
+
     public static async Task<IEnumerable<Strawberry>> CreateInHand(
         Player owner,
         int amount,
