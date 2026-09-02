@@ -32,7 +32,7 @@ public class MagnifyingGlass() : GregTheSpireRelic
 
   public override string FlashSfx => "event:/sfx/ui/relic_activate_draw";
 
-  public override RelicRarity Rarity => RelicRarity.Common;
+  public override RelicRarity Rarity => RelicRarity.Rare;
 
   public override bool ShowCounter => true;
 

@@ -28,13 +28,10 @@ public class NimblePower() : GregTheSpirePower
         }
     }
 
-    protected override IEnumerable<IHoverTip> ExtraHoverTips
-    {
-        get
-        {
-            return (IEnumerable<IHoverTip>) (HoverTipFactory.ForEnergy((PowerModel) this));
-        }
-    }
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => 
+    [
+        HoverTipFactory.ForEnergy((PowerModel) this)
+    ];
 
     public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {

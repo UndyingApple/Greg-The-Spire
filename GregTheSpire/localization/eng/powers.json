@@ -1,101 +1,105 @@
 {
-  "GREGTHESPIRE-STORAGE_POWER.description": "",
-  "GREGTHESPIRE-STORAGE_POWER.smartDescription": "",
+  "GREGTHESPIRE-STORAGE_POWER.description": "The max amount of cards that can be held in [gold]Stash[/gold].",
+  "GREGTHESPIRE-STORAGE_POWER.smartDescription": "The max amount of cards that can be held in [gold]Stash[/gold].",
   "GREGTHESPIRE-STORAGE_POWER.title": "Storage",
 
-  "GREGTHESPIRE-CONFIDENCE_POWER.description": "",
-  "GREGTHESPIRE-CONFIDENCE_POWER.smartDescription": "",
+  "GREGTHESPIRE-CONFIDENCE_POWER.description": "Increases attack damage by. When you take unblocked attack damage, remove all [gold]Confidence[/gold] and gain 1 [gold]Weak[/gold] plus 1 additional [gold]Weak[/gold] for every 5 [gold]Confidence[/gold] lost.",
+  "GREGTHESPIRE-CONFIDENCE_POWER.smartDescription": "Increases attack damage by {Amount}. When you take unblocked attack damage, remove all [gold]Confidence[/gold] and gain 1 [gold]Weak[/gold] plus 1 additional [gold]Weak[/gold] for every 5 [gold]Confidence[/gold] lost.",
   "GREGTHESPIRE-CONFIDENCE_POWER.title": "Confidence",
 
-  "GREGTHESPIRE-SECONDS_POWER.description": "",
-  "GREGTHESPIRE-SECONDS_POWER.smartDescription": "",
+  "GREGTHESPIRE-SECONDS_POWER.description": "The next time you play a [gold]Snack[/gold], add a copy of it to your hand.",
+  "GREGTHESPIRE-SECONDS_POWER.smartDescription": "The next time you play a [gold]Snack[/gold], add {Amount:plural:{Amount} copies|a copy} of it to your hand.",
   "GREGTHESPIRE-SECONDS_POWER.title": "Seconds",
 
-  "GREGTHESPIRE-THERES_A_FLY_IN_MY_SOUP_POWER.description": "",
-  "GREGTHESPIRE-THERES_A_FLY_IN_MY_SOUP_POWER.smartDescription": "",
+  "GREGTHESPIRE-THERES_A_FLY_IN_MY_SOUP_POWER.description": "The first time you play a [gold]Snack[/gold] each turn, add 1 [gold]Fly[/gold] to your hand.",
+  "GREGTHESPIRE-THERES_A_FLY_IN_MY_SOUP_POWER.smartDescription": "The first time you play a [gold]Snack[/gold] each turn, add {Amount:plural:{Amount} [gold]Flies[/gold]|a [gold]Fly[/gold]} to your hand.",
   "GREGTHESPIRE-THERES_A_FLY_IN_MY_SOUP_POWER.title": "There's A Fly In My Soup!",
 
-  "GREGTHESPIRE-BITE_SIZED_POWER.description": "",
-  "GREGTHESPIRE-BITE_SIZED_POWER.smartDescription": "",
-  "GREGTHESPIRE-BITE_SIZED_POWER.title": "Bite Sized ",
-  
-  "GREGTHESPIRE-WOWIE_ZOWIE_POWER.description": "",
-  "GREGTHESPIRE-WOWIE_ZOWIE_POWER.smartDescription": "",
+  "GREGTHESPIRE-BITE_SIZED_POWER.description": "[gold]Snacks[/gold] in your [gold]Stash[/gold] don’t count towards the card limit.",
+  "GREGTHESPIRE-BITE_SIZED_POWER.smartDescription": "[gold]Snacks[/gold] in your [gold]Stash[/gold] don’t count towards the card limit.",
+  "GREGTHESPIRE-BITE_SIZED_POWER.title": "Bite-Sized",
+
+  "GREGTHESPIRE-WOWIE_ZOWIE_POWER.description": "If you don’t play [gold]Wowie Zowie[/gold] in turns, gain [gold]Doom[/gold] equal to your [gold]Max HP[/gold].",
+  "GREGTHESPIRE-WOWIE_ZOWIE_POWER.smartDescription": "If you don’t play [gold]Wowie Zowie[/gold] {Amount:plural:again in {Amount} turns|this turn}, gain [gold]Doom[/gold] equal to your [gold]Max HP[/gold].",
   "GREGTHESPIRE-WOWIE_ZOWIE_POWER.title": "Wowie Zowie!",
 
-  "GREGTHESPIRE-HAT_FORM_POWER.description": "",
-  "GREGTHESPIRE-HAT_FORM_POWER.smartDescription": "",
+  "GREGTHESPIRE-HAT_FORM_POWER.description": "At the start of your turn, [gold]Steal[/gold].",
+  "GREGTHESPIRE-HAT_FORM_POWER.smartDescription": "At the start of your turn, [gold]Steal[/gold] {Amount}.",
   "GREGTHESPIRE-HAT_FORM_POWER.title": "Hat Form",
-  
-  "GREGTHESPIRE-RAT_FORM_POWER.description": "",
-  "GREGTHESPIRE-RAT_FORM_POWER.smartDescription": "",
+
+  "GREGTHESPIRE-RAT_FORM_POWER.description": "At the start of your turn, play every card in your [gold]Stash[/gold].",
+  "GREGTHESPIRE-RAT_FORM_POWER.smartDescription": "At the start of your turn, play every card in your [gold]Stash[/gold].",
   "GREGTHESPIRE-RAT_FORM_POWER.title": "Rat Form",
 
-  "GREGTHESPIRE-CHEESE_CLUB_POWER.description": "",
-  "GREGTHESPIRE-CHEESE_CLUB_POWER.smartDescription": "",
+  "GREGTHESPIRE-CHEESE_CLUB_POWER.description": "Add a [gold]Cheese[/gold] to your [gold]Hand[/gold] at the start of your turn.",
+  "GREGTHESPIRE-CHEESE_CLUB_POWER.smartDescription": "Add {Amount:plural:{Amount}|a} [gold]Cheese[/gold] to your [gold]Hand[/gold] at the start of your turn.",
   "GREGTHESPIRE-CHEESE_CLUB_POWER.title": "Cheese Club",
 
-  "GREGTHESPIRE-SOMETIMES_BACK_DOWN_POWER.description": "",
-  "GREGTHESPIRE-SOMETIMES_BACK_DOWN_POWER.smartDescription": "",
+  "GREGTHESPIRE-SOMETIMES_BACK_DOWN_POWER.description": "Whenever you lose [gold]Confidence[/gold], deal damage to ALL enemies for every [gold]Confidence[/gold] lost.",
+  "GREGTHESPIRE-SOMETIMES_BACK_DOWN_POWER.smartDescription": "Whenever you lose [gold]Confidence[/gold], deal 2 damage to ALL enemies for every {Amount} [gold]Confidence[/gold] lost.",
   "GREGTHESPIRE-SOMETIMES_BACK_DOWN_POWER.title": "Sometimes Back Down",
 
+  "GREGTHESPIRE-SOMETIMES_BACK_DOWN_UPGRADED_POWER.description": "",
+  "GREGTHESPIRE-SOMETIMES_BACK_DOWN_UPGRADED_POWER.smartDescription": "",
+  "GREGTHESPIRE-SOMETIMES_BACK_DOWN_UPGRADED_POWER.title": "Sometimes Back Down+",
+
   "GREGTHESPIRE-NEVER_BACK_DOWN_POWER.description": "",
-  "GREGTHESPIRE-NEVER_BACK_DOWN_POWER.smartDescription": "",
+  "GREGTHESPIRE-NEVER_BACK_DOWN_POWER.smartDescription": "Whenever you lose [gold]Confidence[/gold], gain {IfUpgraded:show:2|1} [gold]Confidence[/gold] for every {IfUpgraded:show:3|2} lost.",
   "GREGTHESPIRE-NEVER_BACK_DOWN_POWER.title": "Never Back Down",
 
-  "GREGTHESPIRE-NEVER_BACK_DOWN_UPGRADED_POWER.description": "",
-  "GREGTHESPIRE-NEVER_BACK_DOWN_UPGRADED_POWER.smartDescription": "",
+  "GREGTHESPIRE-NEVER_BACK_DOWN_UPGRADED_POWER.description": "Whenever you lose confidence, gain Confidence for every lost.",
+  "GREGTHESPIRE-NEVER_BACK_DOWN_UPGRADED_POWER.smartDescription": "Whenever you lose confidence, gain {Amount} Confidence for every 3 lost.",
   "GREGTHESPIRE-NEVER_BACK_DOWN_UPGRADED_POWER.title": "Never Back Down+",
   
-  "GREGTHESPIRE-CHEESE_NEXT_TURN_POWER.description": "",
-  "GREGTHESPIRE-CHEESE_NEXT_TURN_POWER.smartDescription": "",
+  "GREGTHESPIRE-CHEESE_NEXT_TURN_POWER.description": "At the start of your next turns, add a [gold]Cheese[/gold] to your hand.",
+  "GREGTHESPIRE-CHEESE_NEXT_TURN_POWER.smartDescription": "At the start of your next {Amount:plural:turn|{Amount} turns}, add a [gold]Cheese[/gold] to your hand",
   "GREGTHESPIRE-CHEESE_NEXT_TURN_POWER.title": "Cheese Next Turn",
 
-  "GREGTHESPIRE-FLY_SWATTER_POWER.description": "",
-  "GREGTHESPIRE-FLY_SWATTER_POWER.smartDescription": "",
+  "GREGTHESPIRE-FLY_SWATTER_POWER.description": "[gold]Flies[/gold] do additional damage.",
+  "GREGTHESPIRE-FLY_SWATTER_POWER.smartDescription": "[gold]Flies[/gold] do {Amount} additional damage.",
   "GREGTHESPIRE-FLY_SWATTER_POWER.title": "Fly Swatter",
   
-  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.description": "",
-  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.smartDescription": "",
+  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.description": "When you play a [gold]Cheese[/gold], draw card.",
+  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.smartDescription": "When you play a [gold]Cheese[/gold], draw {Amount} {Amount:plural:card|cards}.",
   "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.title": "Dont You LIKE Gorgonzola?",
   
-  "GREGTHESPIRE-FRESH_STRAWBERRIES_POWER.description": "",
-  "GREGTHESPIRE-FRESH_STRAWBERRIES_POWER.smartDescription": "",
-  "GREGTHESPIRE-FRESH_STRAWBERRIES_POWER.title": "FreshStrawberriesPower",
+  "GREGTHESPIRE-FRESH_STRAWBERRIES_POWER.description": "At the start of your next turns, add a [gold]Strawberry[/gold] to your hand.",
+  "GREGTHESPIRE-FRESH_STRAWBERRIES_POWER.smartDescription": "At the start of your next {Amount:plural:turn|{Amount} turns}, add a [gold]Strawberry[/gold] to your hand",
+  "GREGTHESPIRE-FRESH_STRAWBERRIES_POWER.title": "Fresh Strawberries",
 
-  "GREGTHESPIRE-NIMBLE_POWER.description": "",
-  "GREGTHESPIRE-NIMBLE_POWER.smartDescription": "",
+  "GREGTHESPIRE-NIMBLE_POWER.description": "Whenever you play a card that costs 3 or more Energy, [gold]Steal[/gold].",
+  "GREGTHESPIRE-NIMBLE_POWER.smartDescription": "Whenever you play a card that costs {energyPrefix:energyIcons(3)} or more, [gold]Steal[/gold] {Amount}",
   "GREGTHESPIRE-NIMBLE_POWER.title": "Nimble",
 
-  "GREGTHESPIRE-STEAL_NEXT_TURN.description": "",
-  "GREGTHESPIRE-STEAL_NEXT_TURN.smartDescription": "",
+  "GREGTHESPIRE-STEAL_NEXT_TURN.description": "[gold]Steal[/gold] at the start of your next turn.",
+  "GREGTHESPIRE-STEAL_NEXT_TURN.smartDescription": "[gold]Steal[/gold] {Amount} at the start of your next turn.",
   "GREGTHESPIRE-STEAL_NEXT_TURN.title": "Steal Next Turn",
   
-  "GREGTHESPIRE-THE_CITY_POWER.description": "",
-  "GREGTHESPIRE-THE_CITY_POWER.smartDescription": "",
+  "GREGTHESPIRE-THE_CITY_POWER.description": "At the start of your turn, add random [gold]Snack[/gold] tokens to your hand.",
+  "GREGTHESPIRE-THE_CITY_POWER.smartDescription": "At the start of your turn, add {Amount} random [gold]Snack[/gold] {Amount:plural:token|tokens} to your hand.",
   "GREGTHESPIRE-THE_CITY_POWER.title": "The City",
 
-  "GREGTHESPIRE-E_GO_MA_NI_A_POWER.description": "",
-  "GREGTHESPIRE-E_GO_MA_NI_A_POWER.smartDescription": "",
+  "GREGTHESPIRE-E_GO_MA_NI_A_POWER.description": "At the start of your turn, gain [gold]Confidence[/gold]. When you lose [gold]Confidence[/gold] from taking attack damage, gain 1 [gold]Vulnerable[/gold] for every 5 [gold]Confidence[/gold] lost.",
+  "GREGTHESPIRE-E_GO_MA_NI_A_POWER.smartDescription": "At the start of your turn, gain {Amount} [gold]Confidence[/gold]. When you lose [gold]Confidence[/gold] from taking attack damage, gain 1 [gold]Vulnerable[/gold] for every 5 [gold]Confidence[/gold] lost.",
   "GREGTHESPIRE-E_GO_MA_NI_A_POWER.title": "EGOMANIA",
   
-  "GREGTHESPIRE-LEFTOVER_POWER.description": "",
-  "GREGTHESPIRE-LEFTOVER_POWER.smartDescription": "",
+  "GREGTHESPIRE-LEFTOVER_POWER.description": "Whenever you play a [gold]Snack[/gold] from your hand, add a copy of it to your [gold]Stash[/gold].",
+  "GREGTHESPIRE-LEFTOVER_POWER.smartDescription": "Whenever you play a [gold]Snack[/gold] from your hand, add {Amount:plural:a copy|{Amount} copies} of it to your [gold]Stash[/gold].",
   "GREGTHESPIRE-LEFTOVER_POWER.title": "Leftovers",
   
-  "GREGTHESPIRE-RECKLESSNESS_POWER.description": "",
-  "GREGTHESPIRE-RECKLESSNESS_POWER.smartDescription": "",
+  "GREGTHESPIRE-RECKLESSNESS_POWER.description": "Double the effects of [gold]Confidence[/gold]. Take double damage from enemies.",
+  "GREGTHESPIRE-RECKLESSNESS_POWER.smartDescription": "Double the effects of [gold]Confidence[/gold]. Take double damage from enemies.",
   "GREGTHESPIRE-RECKLESSNESS_POWER.title": "Recklessness",
 
-  "GREGTHESPIRE-SWALLOW_POWER.description": "",
-  "GREGTHESPIRE-SWALLOW_POWER.smartDescription": "",
-  "GREGTHESPIRE-SWALLOW_POWER.title": "Swallow Power",
+  "GREGTHESPIRE-SWALLOW_POWER.description": "If you don’t take any unblocked damage this turn, blocked attack damage is converted to additional [gold]Block[/gold] at the start of your next turn.",
+  "GREGTHESPIRE-SWALLOW_POWER.smartDescription": "If you don’t take any unblocked damage this turn, blocked attack damage is converted to additional [gold]Block[/gold] at the start of your next turn.",
+  "GREGTHESPIRE-SWALLOW_POWER.title": "Swallow",
 
-  "GREGTHESPIRE-NO_STEAL_THIS_TURN.description": "",
-  "GREGTHESPIRE-NO_STEAL_THIS_TURN.smartDescription": "",
-  "GREGTHESPIRE-NO_STEAL_THIS_TURN.title": "NoStealThisTurn",
+  "GREGTHESPIRE-NO_STEAL_THIS_TURN.description": "You cannot [gold]Steal[/gold] cards this turn.",
+  "GREGTHESPIRE-NO_STEAL_THIS_TURN.smartDescription": "You cannot [gold]Steal[/gold] cards this turn.",
+  "GREGTHESPIRE-NO_STEAL_THIS_TURN.title": "No Steal This Turn",
 
-  "GREGTHESPIRE-CHILL_PILL_POWER.description": "",
-  "GREGTHESPIRE-CHILL_PILL_POWER.smartDescription": "",
-  "GREGTHESPIRE-CHILL_PILL_POWER.title": "ChillPillPower"
+  "GREGTHESPIRE-CHILL_PILL_POWER.description": "Lose all of your [gold]Confidence[/gold] at the end of this turn.",
+  "GREGTHESPIRE-CHILL_PILL_POWER.smartDescription": "Lose all of your [gold]Confidence[/gold] at the end of this turn.",
+  "GREGTHESPIRE-CHILL_PILL_POWER.title": "Chill Pill"
 }

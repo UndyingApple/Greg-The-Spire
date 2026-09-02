@@ -19,14 +19,11 @@ public class CheeseNextTurnPower() : GregTheSpirePower
     public override PowerStackType StackType =>
         PowerStackType.Counter;
 
-    protected override IEnumerable<IHoverTip> ExtraHoverTips
-    {
-        get
-        {
-            return (IEnumerable<IHoverTip>) (HoverTipFactory.FromCard<Cheese>());
-        }
-    }
-
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => 
+    [
+        HoverTipFactory.FromCard<Cheese>()
+    ];
+        
     public override async Task BeforeHandDraw(
         Player player,
         PlayerChoiceContext choiceContext,

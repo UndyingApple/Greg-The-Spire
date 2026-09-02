@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace GregTheSpire.GregTheSpireCode.Powers;
 
-public class NeverBackDownPower() : GregTheSpirePower
+public class NeverBackDownUpgradedPower() : GregTheSpirePower
 {
     public override PowerType Type =>
         PowerType.Buff;
@@ -28,6 +28,10 @@ public class NeverBackDownPower() : GregTheSpirePower
             return;
         this.Flash();
 
-        await PowerCmd.Apply<ConfidencePower>((PlayerChoiceContext) new ThrowingPlayerChoiceContext(), this.Owner, (Decimal) this.Amount * amount / -2, this.Owner, (CardModel) null);
+        await PowerCmd.Apply<ConfidencePower>((PlayerChoiceContext) new ThrowingPlayerChoiceContext(), this.Owner, (Decimal) this.Amount * -amount / 3, this.Owner, (CardModel) null);
+
+
     }
+
+    
 }

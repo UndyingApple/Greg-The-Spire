@@ -1,5 +1,4 @@
-using BaseLib.Extensions;
-using GregTheSpire.GregTheSpireCode.Powers;
+﻿using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
@@ -9,7 +8,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace GregTheSpire.GregTheSpireCode.Powers;
 
-public class NeverBackDownUpgradedPower() : GregTheSpirePower
+public class SometimesBackDownUpgradedPower() : GregTheSpirePower
 {
     public override PowerType Type =>
         PowerType.Buff;
@@ -27,11 +26,7 @@ public class NeverBackDownUpgradedPower() : GregTheSpirePower
         if (!(power is ConfidencePower) || amount >= 0)
             return;
         this.Flash();
-
-        await PowerCmd.Apply<ConfidencePower>((PlayerChoiceContext) new ThrowingPlayerChoiceContext(), this.Owner, (Decimal) this.Amount * amount * -2 / 3, this.Owner, (CardModel) null);
-
-
+        await CreatureCmd.Damage(choiceContext, (IEnumerable<Creature>) this.CombatState.HittableEnemies, Amount * -amount, ValueProp.Unpowered, this.Owner);
+        //IEnumerable<DamageResult> damageResults = await CreatureCmd.Damage(choiceContext, (IEnumerable<Creature>) this.CombatState.HittableEnemies, (Decimal) this.Amount * amount * -1, ValueProp.Unpowered, this.Owner);
     }
-
-    
 }

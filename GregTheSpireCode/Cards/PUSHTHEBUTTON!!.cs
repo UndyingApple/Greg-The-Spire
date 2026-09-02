@@ -21,7 +21,7 @@ public class PushTheButton() : GregTheSpireCard(2,
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
-        HoverTipFactory.FromCard<Dazed>(IsUpgraded)
+        HoverTipFactory.FromCard<Dazed>()
     ];
     
     protected override IEnumerable<DynamicVar> CanonicalVars =>

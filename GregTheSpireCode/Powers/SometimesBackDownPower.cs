@@ -18,22 +18,4 @@ public class SometimesBackDownPower() : GregTheSpirePower
     public override PowerStackType StackType =>
         PowerStackType.Counter;
 
-    public override async Task AfterPowerAmountChanged(
-        PlayerChoiceContext choiceContext,
-        PowerModel power,
-        Decimal amount,
-        Creature? applier,
-        CardModel? cardSource)
-    {
-        if (!(power is ConfidencePower) || amount >= 0)
-            return;
-        this.Flash();
-        IEnumerable<DamageResult> damageResults = await CreatureCmd.Damage(choiceContext, (IEnumerable<Creature>) this.CombatState.HittableEnemies, (Decimal) this.Amount * amount * -1, ValueProp.Unpowered, this.Owner);
-        
-        
-    }
-    
-    
-
-    
 }

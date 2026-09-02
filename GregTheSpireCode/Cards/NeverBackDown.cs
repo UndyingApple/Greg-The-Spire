@@ -15,7 +15,7 @@ public class NeverBackDown() : GregTheSpireCard(2,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new PowerVar<NeverBackDownPower>(1),
-        new PowerVar<NeverBackDownUpgradedPower>(1)
+        new PowerVar<NeverBackDownUpgradedPower>(2)
     ];
 
     protected override async Task OnPlay(
