@@ -25,14 +25,19 @@ public class RatFormPower() : GregTheSpirePower
         PlayerChoiceContext choiceContext,
         Player player)
     {
+        List<CardModel> list1 = StashCardPile.StashPileType.GetPile(player).Cards.ToList<CardModel>();
+        int playCount = list1.Count;
         var flag = true;
-        
-        foreach (CardModel card in StashCardPile.StashPileType.GetPile(player).Cards)
+        foreach (CardModel card in list1)
         {
-            await CardCmd.AutoPlay(choiceContext, card, (Creature)null, skipCardPileVisuals: !flag);
+            flag = true;
+            await CardCmd.AutoPlay(choiceContext, card, null, skipCardPileVisuals: !flag);
             flag = false;
         }
+           
+        }
+        
     }
 
-}
+
 

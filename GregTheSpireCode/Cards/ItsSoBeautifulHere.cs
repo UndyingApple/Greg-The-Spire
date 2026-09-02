@@ -34,16 +34,20 @@ public class ItsSoBeautifulHere() : GregTheSpireCard(3,
             List<CardModel> list2 = CardFactory.GetForCombat(this.Owner, this.Owner.Character.CardPool.GetUnlockedCards(this.Owner.UnlockState, this.Owner.RunState.CardMultiplayerConstraint), exhaustCount, this.Owner.RunState.Rng.CombatCardGeneration).ToList<CardModel>();
             if (this.IsUpgraded)
               CardCmd.Upgrade((IEnumerable<CardModel>) list2, CardPreviewStyle.None);
+            
             IReadOnlyList<CardPileAddResult> combat = await CardPileCmd.AddGeneratedCardsToCombat((IEnumerable<CardModel>) list2, StashCardPile.StashPileType, this.Owner);
+            
+            List<CardModel> list3 = StashCardPile.StashPileType.GetPile(Owner).Cards.ToList<CardModel>();
+            int playCount = list3.Count;
             var flag = true;
-        
-            foreach (CardModel card in StashCardPile.StashPileType.GetPile(Owner).Cards)
+            foreach (CardModel card in list3)
             {
-                await CardCmd.AutoPlay(choiceContext, card, (Creature)null, skipCardPileVisuals: !flag);
+                flag = true;
+                await CardCmd.AutoPlay(choiceContext, card, null, skipCardPileVisuals: !flag);
                 flag = false;
             }
     }
-    public override void ModifyShuffleOrder(
+    public override async void ModifyShuffleOrder(
         Player player,
         List<CardModel> cards,
         bool isInitialShuffle)
@@ -51,7 +55,7 @@ public class ItsSoBeautifulHere() : GregTheSpireCard(3,
         if (isInitialShuffle || !cards.Contains(this))
             return;
         cards.Remove(this);
-        cards.Insert(999, this);
+        cards.Add(this);
     }
     protected override void OnUpgrade()
     {
