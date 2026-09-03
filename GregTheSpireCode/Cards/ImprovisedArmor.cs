@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
 public class ImprovisedArmor() : GregTheSpireCard(2,
-    CardType.Skill, CardRarity.Basic,
+    CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
     public override bool GainsBlock => true;
