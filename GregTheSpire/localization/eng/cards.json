@@ -254,23 +254,8 @@
   "GREGTHESPIRE-RATATOINGING_IT.description": "",
   "GREGTHESPIRE-RATATOINGING_IT.title": "Ratatoing-ing It",
 
-  "GREGTHESPIRE-HUGE_CAKE.description": "Gain {Block:diff()} [gold]Block[/gold].",
-  "GREGTHESPIRE-HUGE_CAKE.title": "HUUUGE CAKE",
-
-  "GREGTHESPIRE-IMPROVISED_ARMOR.description": "Gain {CalculatedBlock:diff()} [gold]Block[/gold].\nGains {CalculationExtra:diff()} additional [gold]Block[/gold] for each card in your Stash.",
-  "GREGTHESPIRE-IMPROVISED_ARMOR.title": "Improvised Armor",
-
-  "GREGTHESPIRE-SWEET_LOOT.description": "",
-  "GREGTHESPIRE-SWEET_LOOT.title": "Sweet Loot",
-
-  "GREGTHESPIRE-DUMP.description": "",
-  "GREGTHESPIRE-DUMP.title": "Dump",
-
-  "GREGTHESPIRE-SALIVATE.description": "",
-  "GREGTHESPIRE-SALIVATE.title": "Salivate",
-
-  "GREGTHESPIRE-GOURMAND.description": "",
-  "GREGTHESPIRE-GOURMAND.title": "Gourmand"
+  "GREGTHESPIRE-HUGE_CAKE.description": "",
+  "GREGTHESPIRE-HUGE_CAKE.title": "HUGE CAKE"
 }
   
   
