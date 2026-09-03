@@ -266,7 +266,10 @@
   "GREGTHESPIRE-GOURMAND.description": "",
   "GREGTHESPIRE-GOURMAND.title": "Gourmand",
 
-  "GREGTHESPIRE-SALIVATE.description": "",
+  "GREGTHESPIRE-DUMP.description": "",
+  "GREGTHESPIRE-DUMP.title": "Dump",
+
+  "GREGTHESPIRE-SALIVATE.description": "Gain {totalBlock:diff()} [gold]Block[/gold].",
   "GREGTHESPIRE-SALIVATE.title": "Salivate",
 
   "GREGTHESPIRE-DUMP.description": "[gold]Discard[/gold] your [gold]Stash[/gold].\nDeal {Damage:diff()} damage for every card [gold]Discarded[/gold].",
@@ -282,7 +285,11 @@
   "GREGTHESPIRE-CAT_BURGLAR.title": "Cat Burglar",
 
   "GREGTHESPIRE-GREGLOGABGALAB.description": "Draw 1 card.\n[gold]Stash[/gold] a random card in your [gold]Hand[/gold].\nPlay a random card in your [gold]Hand[/gold].\nPlay a random card in your [gold]Stash[/gold].\n[gold]Steal[/gold] 1.\nEnd your turn.",
-  "GREGTHESPIRE-GREGLOGABGALAB.title": "Greglogabgalab"
+  "GREGTHESPIRE-GREGLOGABGALAB.title": "Greglogabgalab",
+  
+  
+  "GREGTHESPIRE-GOURMAND.description": "Deal {Damage:diff()} [gold]Block[/gold]",
+  "GREGTHESPIRE-GOURMAND.title": "Gourmand"
 }
   
   
