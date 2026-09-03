@@ -23,7 +23,7 @@ public class ThickWallet() : GregTheSpireRelic
 
     public override async Task AfterCardChangedPiles(CardModel card, PileType oldPileType, AbstractModel? clonedBy)
     {
-        if (Stolen.IsStolen.Get(card))
+        if (card.Owner == this.Owner && Stolen.IsStolen.Get(card) && oldPileType == PileType.Draw)
         {
             await CreatureCmd.GainBlock(this.Owner.Creature, this.DynamicVars.Block, (CardPlay) null, true);
         }

@@ -2,7 +2,7 @@
   "GREGTHESPIRE-THIEVE.description": "Gain {Block:diff()} [gold]Block[/gold]. [gold]Steal[/gold] 1",
   "GREGTHESPIRE-THIEVE.title": "Thieve",
   
-  "GREGTHESPIRE-BAG_OF_TRICKS.description": "Play 1 card from your [gold]Stash[/gold]. \n[gold]Stash[/gold]{IfUpgraded:show: up to|} {Cards:diff()} {Cards:plural:card|cards} in your [gold]Hand[/gold].",
+  "GREGTHESPIRE-BAG_OF_TRICKS.description": "Play 1 card from your [gold]Stash[/gold].\n[gold]Stash[/gold]{IfUpgraded:show: up to|} {Cards:diff()} {Cards:plural:card|cards} in your [gold]Hand[/gold].",
   "GREGTHESPIRE-BAG_OF_TRICKS.title": "Bag Of Tricks",
   
   "GREGTHESPIRE-STOW.description": "[gold]Stash[/gold] up to 2 cards in your [gold]hand[/gold].",
@@ -23,19 +23,19 @@
   "GREGTHESPIRE-THE_LAST_SUPPER.description": "{IfUpgraded:show:Upgrade and |}Play every [gold]Snack[/gold] in your [gold]Exahust Pile[/gold]",
   "GREGTHESPIRE-THE_LAST_SUPPER.title": "The Last Supper",
   
-  "GREGTHESPIRE-SHOE_TOSS.description": "Deal {Damage:diff()} damage. \nAdd a [gold]{IfUpgraded:show:Left Shoe+|Left Shoe}[/gold] and a [gold]{IfUpgraded:show:Right Shoe+|Right Shoe}[/gold] to your [gold]Hand[/gold].",
+  "GREGTHESPIRE-SHOE_TOSS.description": "Deal {Damage:diff()} damage.\nAdd a [gold]{IfUpgraded:show:Left Shoe+|Left Shoe}[/gold] and a [gold]{IfUpgraded:show:Right Shoe+|Right Shoe}[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-SHOE_TOSS.title": "Shoe Toss",
   
-  "GREGTHESPIRE-GREG_JUMP.description": "Gain {Block:diff()} [gold]Block[/gold]. \nGain 1 [gold]Confidence[/gold].",
+  "GREGTHESPIRE-GREG_JUMP.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain 1 [gold]Confidence[/gold].",
   "GREGTHESPIRE-GREG_JUMP.title": "Greg Jump",
   
-  "GREGTHESPIRE-LEFT_SHOE.description": "Deal {Damage:diff()} damage. \nApply {VulnerablePower:diff()} [gold]Vulnerable[/gold]. \nPlace [gold]Right Shoe[/gold] on top of your [gold]Draw Pile[/gold] from anywhere.",
+  "GREGTHESPIRE-LEFT_SHOE.description": "Deal {Damage:diff()} damage.\nApply {VulnerablePower:diff()} [gold]Vulnerable[/gold].\nPlace [gold]Right Shoe[/gold] on top of your [gold]Draw Pile[/gold] from anywhere.",
   "GREGTHESPIRE-LEFT_SHOE.title": "Left Shoe",
   
-  "GREGTHESPIRE-RIGHT_SHOE.description": "Deal {Damage:diff()} damage. \nApply {WeakPower:diff()} [gold]Weak[/gold]. \nPlace [gold]Left Shoe[/gold] on top of your [gold]Draw Pile[/gold] from anywhere.",
+  "GREGTHESPIRE-RIGHT_SHOE.description": "Deal {Damage:diff()} damage.\nApply {WeakPower:diff()} [gold]Weak[/gold].\nPlace [gold]Left Shoe[/gold] on top of your [gold]Draw Pile[/gold] from anywhere.",
   "GREGTHESPIRE-RIGHT_SHOE.title": "Right Shoe",
   
-  "GREGTHESPIRE-PUSH_THE_BUTTON.description": "Gain {Block:diff()} [gold]Block[/gold]. \nAdd a [gold]Dazed[/gold] to your [gold]Draw Pile[/gold].",
+  "GREGTHESPIRE-PUSH_THE_BUTTON.description": "Gain {Block:diff()} [gold]Block[/gold].\nAdd a [gold]Dazed[/gold] to your [gold]Draw Pile[/gold].",
   "GREGTHESPIRE-PUSH_THE_BUTTON.title": "PUSH THE BUTTON!!",
   
   "GREGTHESPIRE-WATCH_OUT_FOR_THE_TRAPS.description": "ALL enemies lose {IfUpgraded:show:7|5} [gold]Confidence[/gold].",
@@ -44,22 +44,22 @@
   "GREGTHESPIRE-INFLATED_EGO.description": "Gain {ConfidencePower:diff()} [gold]Confidence[/gold].",
   "GREGTHESPIRE-INFLATED_EGO.title": "Inflated Ego",
   
-  "GREGTHESPIRE-THERE_IS_NO_ACCIDENT.description": "Deal {Damage:diff()} damage. \nLose 2 [gold]Confidence[/gold].",
+  "GREGTHESPIRE-THERE_IS_NO_ACCIDENT.description": "Deal {Damage:diff()} damage.\nLose 2 [gold]Confidence[/gold].",
   "GREGTHESPIRE-THERE_IS_NO_ACCIDENT.title": "There Is (No) Accident!",
   
-  "GREGTHESPIRE-SMUG.description": "Gain {ConfidencePower:diff()} [gold]Confidence[/gold]. \nAdd a copy of this card into your [gold]Discard Pile[/gold].",
+  "GREGTHESPIRE-SMUG.description": "Gain {ConfidencePower:diff()} [gold]Confidence[/gold].\nAdd a copy of this card into your [gold]Discard Pile[/gold].",
   "GREGTHESPIRE-SMUG.title": "Smug",
   
   "GREGTHESPIRE-CHILL_PILL.description": "Lose all [gold]Confidence[/gold] at the end of your turn.",
   "GREGTHESPIRE-CHILL_PILL.title": "Chill Pill",
   
-  "GREGTHESPIRE-SNACK_O_VISION.description": "Choose a card from your [gold]Deck[/gold] that isn’t in your [gold]Exhaust Pile[/gold] and place it on top of your [gold]Draw Pile[/gold]. \nIncrease the cost of this card by 1 this combat.",
+  "GREGTHESPIRE-SNACK_O_VISION.description": "Choose a card from your [gold]Deck[/gold] that isn’t in your [gold]Exhaust Pile[/gold] and place it on top of your [gold]Draw Pile[/gold].\nIncrease the cost of this card by 1 this combat.",
   "GREGTHESPIRE-SNACK_O_VISION.title": "Snack-O-Vision",
   
   "GREGTHESPIRE-RANSACK.description": "[gold]Steal[/gold] {StealAmount:diff()}.",
   "GREGTHESPIRE-RANSACK.title": "Ransack",
   
-  "GREGTHESPIRE-PICKPOCKET.description": "Deal {Damage:diff()} damage. \n[gold]Steal[/gold] 1.",
+  "GREGTHESPIRE-PICKPOCKET.description": "Deal {Damage:diff()} damage.\n[gold]Steal[/gold] 1.",
   "GREGTHESPIRE-PICKPOCKET.title": "Pickpocket",
   
   "GREGTHESPIRE-STRIKE_GREG.description": "Deal {Damage:diff()} damage.",
@@ -68,7 +68,7 @@
   "GREGTHESPIRE-DEFEND_GREG.description": "Gain {Block:diff()} [gold]Block[/gold].",
   "GREGTHESPIRE-DEFEND_GREG.title": "Defend",
   
-  "GREGTHESPIRE-FLY.description": "Deal {Played:diff()} damage to ALL enemies. \nIf this card is in your [gold]Hand[/gold] at the end of your turn, deal {Retained:diff()} damage to a random enemy.",
+  "GREGTHESPIRE-FLY.description": "Deal {Played:diff()} damage to ALL enemies.\nIf this card is in your [gold]Hand[/gold] at the end of your turn, deal {Retained:diff()} damage to a random enemy.",
   "GREGTHESPIRE-FLY.title": "Fly",
   
   "GREGTHESPIRE-WAITER_WAITER.description": "[gold]Enchant[/gold] a{IfUpgraded:show:| random} card in your [gold]Hand[/gold] with [purple]Infested[/purple].",
@@ -77,37 +77,37 @@
   "GREGTHESPIRE-BUFFET.description": "Add a [gold]{IfUpgraded:show:Cheese+|Cheese}[/gold], a [gold]{IfUpgraded:show:Cracker+|Cracker}[/gold], and a [gold]{IfUpgraded:show:Fly+|Fly}[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-BUFFET.title": "Buffet",
   
-  "GREGTHESPIRE-SECONDS.description": "Add 1 [gold]Cracker[/gold] to your [gold]Hand[/gold]. \nThe next time you play a [gold]Snack[/gold], add a copy of it to your [gold]Hand[/gold].",
+  "GREGTHESPIRE-SECONDS.description": "Add 1 [gold]Cracker[/gold] to your [gold]Hand[/gold].\nThe next time you play a [gold]Snack[/gold], add a copy of it to your [gold]Hand[/gold].",
   "GREGTHESPIRE-SECONDS.title": "Seconds",
   
   "GREGTHESPIRE-SOUP.description": "Gain {Energy:energyIcons()}.",
   "GREGTHESPIRE-SOUP.title": "Soup",
   
-  "GREGTHESPIRE-COOKING_POT.description": "Gain {Block:diff()} [gold]Block[/gold]. \nDeal {Damage:diff()} damage. \nAdd 1 [gold]Soup[/gold] to your [gold]Hand[/gold].",
+  "GREGTHESPIRE-COOKING_POT.description": "Gain {Block:diff()} [gold]Block[/gold].\nDeal {Damage:diff()} damage.\nAdd 1 [gold]Soup[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-COOKING_POT.title": "Cooking Pot",
   
-  "GREGTHESPIRE-EMERGENCY_RATIONS.description": "Discard your [gold]Hand[/gold]. \nAdd 1 [gold]{IfUpgraded:show:Cracker+|Cracker}[/gold] into your [gold]Hand[/gold] for every card discarded.",
+  "GREGTHESPIRE-EMERGENCY_RATIONS.description": "Discard your [gold]Hand[/gold].\nAdd 1 [gold]{IfUpgraded:show:Cracker+|Cracker}[/gold] into your [gold]Hand[/gold] for every card discarded.",
   "GREGTHESPIRE-EMERGENCY_RATIONS.title": "Emergency Rations",
   
   "GREGTHESPIRE-THERES_A_FLY_IN_MY_SOUP.description": "The first time you play a [gold]Snack[/gold] each turn, add 1 [gold]Fly[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-THERES_A_FLY_IN_MY_SOUP.title": "Theres A Fly In My Soup!",
   
-  "GREGTHESPIRE-HUMAN_MERRY_GO_ROUND.description": "Deal {Damage:diff()} damage to a random enemy {Repeat:diff()} times. \nLose all [gold]Confidence[/gold].",
+  "GREGTHESPIRE-HUMAN_MERRY_GO_ROUND.description": "Deal {Damage:diff()} damage to a random enemy {Repeat:diff()} times.\nLose all [gold]Confidence[/gold].",
   "GREGTHESPIRE-HUMAN_MERRY_GO_ROUND.title": "Human Merry-Go Round",
   
-  "GREGTHESPIRE-NEGATIVE_AFFIRMATION.description": "Lose half of your [gold]Confidence[/gold]. \nGain {CalculationExtra:diff()} [gold]Block[/gold] for every [gold]Confidence[/gold] lost.",
+  "GREGTHESPIRE-NEGATIVE_AFFIRMATION.description": "Lose half of your [gold]Confidence[/gold].\nGain {CalculationExtra:diff()} [gold]Block[/gold] for every [gold]Confidence[/gold] lost.",
   "GREGTHESPIRE-NEGATIVE_AFFIRMATION.title": "Negative Affirmation",
   
   "GREGTHESPIRE-BITE_SIZED.description": "[gold]Snacks[/gold] don't count towards your [gold]Max Storage[/gold].",
   "GREGTHESPIRE-BITE_SIZED.title": "Bite-Sized",
   
-  "GREGTHESPIRE-WOWIE_ZOWIE.description": "Gain {Block:diff()} [gold]Block[/gold]. \nIf you don’t play this card again in exactly 3 turns, gain [gold]Doom[/gold] equal to your Max HP",
+  "GREGTHESPIRE-WOWIE_ZOWIE.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you don’t play this card again in exactly 3 turns, gain [gold]Doom[/gold] equal to your Max HP",
   "GREGTHESPIRE-WOWIE_ZOWIE.title": "Wowie Zowie!",
   
-  "GREGTHESPIRE-RUMMAGE.description": "Draw {Cards:diff()}. \n[gold]Stash[/gold] 1.",
+  "GREGTHESPIRE-RUMMAGE.description": "Draw {Cards:diff()}.\n[gold]Stash[/gold] 1.",
   "GREGTHESPIRE-RUMMAGE.title": "Rummage",
   
-  "GREGTHESPIRE-POCKET_KNIFE.description": "Deal {Damage:diff()} damage. \nPut this card into your [gold]Stash[/gold]",
+  "GREGTHESPIRE-POCKET_KNIFE.description": "Deal {Damage:diff()} damage.\nPut this card into your [gold]Stash[/gold]",
   "GREGTHESPIRE-POCKET_KNIFE.title": "Pocket Knife",
   
   "GREGTHESPIRE-HAT_FORM.description": "At the start of each turn, [gold]Steal[/gold] {IfUpgraded:show:2|1}.",
@@ -116,7 +116,7 @@
   "GREGTHESPIRE-EXTRA_POCKETS.description": "Gain 2 [gold]Storage[/gold]",
   "GREGTHESPIRE-EXTRA_POCKETS.title": "Extra Pockets",
   
-  "GREGTHESPIRE-KICKFLIP.description": "Deal {CalculatedDamage:diff()} damage. \n[gold]Confidence[/gold] affects this card {IfUpgraded:show:3|2} times.",
+  "GREGTHESPIRE-KICKFLIP.description": "Deal {CalculatedDamage:diff()} damage.\n[gold]Confidence[/gold] affects this card {IfUpgraded:show:3|2} times.",
   "GREGTHESPIRE-KICKFLIP.title": "Kickflip",
   
   "GREGTHESPIRE-SOMETIMES_BACK_DOWN.description": "Whenever you lose [gold]Confidence[/gold], deal 2 damage to ALL enemies for every {IfUpgraded:show:1|2} [gold]Confidence[/gold] lost.",
@@ -131,19 +131,19 @@
   "GREGTHESPIRE-STARVATION.description": "Add [gold]Snack[/gold] to {numCards:diff()} {numCards:plural:card|cards} in your [gold]Hand[/gold].",
   "GREGTHESPIRE-STARVATION.title": "Starvation",
   
-  "GREGTHESPIRE-HONDA_CIVIC.description": "Deal {CalculatedDamage:diff()} damage to ALL enemies. \nDeals {IfUpgraded:show:2|3} less damage for each enemy. \nGain 1 [gold]Confidence[/gold].",
+  "GREGTHESPIRE-HONDA_CIVIC.description": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals {IfUpgraded:show:2|3} less damage for each enemy.\nGain 1 [gold]Confidence[/gold].",
   "GREGTHESPIRE-HONDA_CIVIC.title": "Honda Civic",
   
-  "GREGTHESPIRE-RAT_FORM.description": "{IfUpgraded:show:Gain 3 [gold]Storage[/gold]. \n|}At the start of your turn, play every card in your [gold]Stash[/gold].",
+  "GREGTHESPIRE-RAT_FORM.description": "{IfUpgraded:show:Gain 3 [gold]Storage[/gold].\n|}At the start of your turn, play every card in your [gold]Stash[/gold].",
   "GREGTHESPIRE-RAT_FORM.title": "Rat Form",
   
   "GREGTHESPIRE-CHEESE_CLUB.description": "At the start of your turn, add {CheeseClubPower:diff()} [gold]Cheese[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-CHEESE_CLUB.title": "Cheese Club",
   
-  "GREGTHESPIRE-STRAWBERRY.description": " Gain {Block:diff()} [gold]Block[/gold]. \nDeal {Damage:diff()} damage to a random enemy.",
+  "GREGTHESPIRE-STRAWBERRY.description": " Gain {Block:diff()} [gold]Block[/gold].\nDeal {Damage:diff()} damage to a random enemy.",
   "GREGTHESPIRE-STRAWBERRY.title": "Strawberry",
   
-  "GREGTHESPIRE-BLAND_FINALE_VERSION_A_B.description": "Can only be played if your [gold]Stash[/gold] is empty and there are 4 or fewer cards in your [gold]Draw Pile[/gold]. \nDeal {Damage:diff()} damage to ALL enemies.",
+  "GREGTHESPIRE-BLAND_FINALE_VERSION_A_B.description": "Can only be played if your [gold]Stash[/gold] is empty and there are 4 or fewer cards in your [gold]Draw Pile[/gold].\nDeal {Damage:diff()} damage to ALL enemies.",
   "GREGTHESPIRE-BLAND_FINALE_VERSION_A_B.title": "Bland Finale: Version AB-",
   
   "GREGTHESPIRE-THE_CITY.description": "At the start of your turn, add {TheCityPower:diff()} random [gold]Snacks[/gold] to your [gold]Hand[/gold].",
@@ -152,13 +152,13 @@
   "GREGTHESPIRE-SODA.description": "Draw {Cards:diff()} {Cards:plural:card|cards}.",
   "GREGTHESPIRE-SODA.title": "Soda",
   
-  "GREGTHESPIRE-OLIVE_CREAMS_AND_A_SODA.description": "Add 1 [gold]{IfUpgraded:show:Soda+|Soda}[/gold] to your [gold]Hand[/gold]. \nFill your [gold]Hand[/gold] with [gold]{IfUpgraded:show:Olives+|Olives}[/gold].",
+  "GREGTHESPIRE-OLIVE_CREAMS_AND_A_SODA.description": "Add 1 [gold]{IfUpgraded:show:Soda+|Soda}[/gold] to your [gold]Hand[/gold].\nFill your [gold]Hand[/gold] with [gold]{IfUpgraded:show:Olives+|Olives}[/gold].",
   "GREGTHESPIRE-OLIVE_CREAMS_AND_A_SODA.title": "12 Olive Creams And A Soda",
   
-  "GREGTHESPIRE-TOUCH_OF_CHEESE.description": "Deal {Damage:diff()} damage. \nAdd a [gold]Cheese[/gold] to your [gold]Draw Pile[/gold].",
+  "GREGTHESPIRE-TOUCH_OF_CHEESE.description": "Deal {Damage:diff()} damage.\nAdd a [gold]Cheese[/gold] to your [gold]Draw Pile[/gold].",
   "GREGTHESPIRE-TOUCH_OF_CHEESE.title": "Touch Of Cheese",
   
-  "GREGTHESPIRE-MOUSE_TRAP.description": "Gain {Block:diff()} [gold]Block[/gold]. \nIf the enemy intends to attack, gain {CheeseNextTurnPower:diff()} [gold]Cheese[/gold] next turn.",
+  "GREGTHESPIRE-MOUSE_TRAP.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf the enemy intends to attack, gain {CheeseNextTurnPower:diff()} [gold]Cheese[/gold] next turn.",
   "GREGTHESPIRE-MOUSE_TRAP.title": "Mouse Trap",
   
   "GREGTHESPIRE-FLY_SWATTER.description": "[gold]Flies[/gold] deal {FlySwatterPower:diff()} additional damage.",
@@ -170,97 +170,97 @@
   "GREGTHESPIRE-NIMBLE.description": "Whenever you play a card that costs {Energy:energyIcons()} or more, [gold]Steal[/gold] 1",
   "GREGTHESPIRE-NIMBLE.title": "Nimble",
   
-  "GREGTHESPIRE-HEIST.description": "Deal {Damage:diff()} damage. \nIf this kills an enemy, [gold]Steal[/gold] 3 next turn.",
+  "GREGTHESPIRE-HEIST.description": "Deal {Damage:diff()} damage.\nIf this kills an enemy, [gold]Steal[/gold] 3 next turn.",
   "GREGTHESPIRE-HEIST.title": "The Heist",
   
   "GREGTHESPIRE-FRESH_STRAWBERRIES.description": "At the start of your next {FreshStrawberriesPower:diff()} turns, add a [gold]Strawberry[/gold] to your hand.",
   "GREGTHESPIRE-FRESH_STRAWBERRIES.title": "Fresh Strawberries",
   
-  "GREGTHESPIRE-SUGAR_RUSH.description": "Deal {Damage:diff()} damage for each [gold]Snack[/gold] played this turn.{InCombat:(Hits {CalculatedHits:diff()} times)",
+  "GREGTHESPIRE-SUGAR_RUSH.description": "Deal {Damage:diff()} damage for each [gold]Snack[/gold] played this turn.\n{InCombat:(Hits {CalculatedHits:diff()} times)}",
   "GREGTHESPIRE-SUGAR_RUSH.title": "Sugar Rush",
   
-  "GREGTHESPIRE-POCKET_SAND.description": "Deal {Damage:diff()} damage. \nIf this card was played with [gold]Steal[/gold], [gold]Steal[/gold] 1.",
+  "GREGTHESPIRE-POCKET_SAND.description": "Deal {Damage:diff()} damage.\nIf this card was played with [gold]Steal[/gold], [gold]Steal[/gold] 1.",
   "GREGTHESPIRE-POCKET_SAND.title": "Pocket Sand",
   
-  "GREGTHESPIRE-STINKY.description": "Deal {Damage:diff()} damage to ALL enemies. \nAdd {IfUpgraded:show:2|1} [gold]{IfUpgraded:Flies|Fly}[/gold] to your [gold]Hand[/gold].",
+  "GREGTHESPIRE-STINKY.description": "Deal {Damage:diff()} damage to ALL enemies.\nAdd {IfUpgraded:show:2|1} [gold]{IfUpgraded:Flies|Fly}[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-STINKY.title": "Stinky",
   
-  "GREGTHESPIRE-SPY_MASTER.description": "Gain {Block:diff()} [gold]Block[/gold]. \n[gold]Steal[/gold] 2.",
+  "GREGTHESPIRE-SPY_MASTER.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Steal[/gold] 2.",
   "GREGTHESPIRE-SPY_MASTER.title": "Spy Master",
 
-  "GREGTHESPIRE-E_GO_MA_NI_A.description": "Gain 8 [gold]Confidence[/gold]. \nAt the start of your turn gain 4 [gold]Confidence[/gold]. \nWhen you lose [gold]Confidence[/gold], gain [gold]Vulnerable[/gold] equal to the amount of [gold]Weak[/gold] gained.",
+  "GREGTHESPIRE-E_GO_MA_NI_A.description": "Gain 8 [gold]Confidence[/gold].\nAt the start of your turn gain 4 [gold]Confidence[/gold].\nWhen you lose [gold]Confidence[/gold], gain [gold]Vulnerable[/gold] equal to the amount of [gold]Weak[/gold] gained.",
   "GREGTHESPIRE-E_GO_MA_NI_A.title": "EGOMANIA",
 
   "GREGTHESPIRE-LEFTOVER.description": "Whenever you play a [gold]Snack[/gold] from your [gold]Hand[/gold], add a copy of that [gold]Snack[/gold] to your [gold]Stash[/gold].",
   "GREGTHESPIRE-LEFTOVER.title": "Leftovers",
 
-  "GREGTHESPIRE-R_AN_DO_MB_UL_L____G_O.description": "Gain {Energy:energyIcons()}. \n[gold]Steal[/gold] {IfUpgraded:show:X+1|X}.",
+  "GREGTHESPIRE-R_AN_DO_MB_UL_L____G_O.description": "Gain {Energy:energyIcons()}.\n[gold]Steal[/gold] {IfUpgraded:show:X+1|X}.",
   "GREGTHESPIRE-R_AN_DO_MB_UL_L____G_O.title": "RANDOM BULL%#@$ GO!!!",
 
-  "GREGTHESPIRE-PRECISELY.description": "Gain 1 [gold]Confidence[/gold]. \nGain 1 [gold]Confidence[/gold] for every {IfUpgraded:show:1|2} [gold]Confidence[/gold] you have",
+  "GREGTHESPIRE-PRECISELY.description": "Gain 1 [gold]Confidence[/gold].\nGain 1 [gold]Confidence[/gold] for every {IfUpgraded:show:1|2} [gold]Confidence[/gold] you have",
   "GREGTHESPIRE-PRECISELY.title": "Precisely",
 
-  "GREGTHESPIRE-RECKLESSNESS.description": " Double the [gold]Strength[/gold] gain by [gold]Confidence[/gold]. \nReceive double damage from enemy attacks.",
+  "GREGTHESPIRE-RECKLESSNESS.description": " Double the [gold]Strength[/gold] gain by [gold]Confidence[/gold].\nReceive double damage from enemy attacks.",
   "GREGTHESPIRE-RECKLESSNESS.title": "Recklessness",
 
-  "GREGTHESPIRE-STUMBLE.description": "[gold]Exhaust[/gold] 1 card in your [gold]Hand[/gold]. \nPlay {StashPlayAmt:diff()} {StashPlayAmt:plural:card|cards} from your [gold]Stash[/gold].",
+  "GREGTHESPIRE-STUMBLE.description": "[gold]Exhaust[/gold] 1 card in your [gold]Hand[/gold].\nPlay {StashPlayAmt:diff()} {StashPlayAmt:plural:card|cards} from your [gold]Stash[/gold].",
   "GREGTHESPIRE-STUMBLE.title": "Stumble",
 
-  "GREGTHESPIRE-SLIP_UP.description": "Deal {Damage:diff()} damage. \n[gold]Discard[/gold] a random card in your [gold]Stash[/gold].",
+  "GREGTHESPIRE-SLIP_UP.description": "Deal {Damage:diff()} damage.\n[gold]Discard[/gold] a random card in your [gold]Stash[/gold].",
   "GREGTHESPIRE-SLIP_UP.title": "Slip Up",
   
-  "GREGTHESPIRE-SECRET_GADGET.description": "Deal {Damage:diff()} damage. \nIf this card is played for free, draw {Cards:diff()} {Cards:plural:card|cards}.",
+  "GREGTHESPIRE-SECRET_GADGET.description": "Deal {Damage:diff()} damage.\nIf this card is played for free, draw {Cards:diff()} {Cards:plural:card|cards}.",
   "GREGTHESPIRE-SECRET_GADGET.title": "Secret Gadget",
 
-  "GREGTHESPIRE-TUMBLE.description": "Play any amount of cards from your [gold]Stash[/gold]. \n[gold]Stash[/gold] any amount of cards in your [gold]Hand[/gold].",
+  "GREGTHESPIRE-TUMBLE.description": "Play any amount of cards from your [gold]Stash[/gold].\n[gold]Stash[/gold] any amount of cards in your [gold]Hand[/gold].",
   "GREGTHESPIRE-TUMBLE.title": "Tumble",
 
-  "GREGTHESPIRE-TAIL_SWIPE.description": "Deal {Damage:diff()} damage to ALL enemies. \nDraw a card for each card in your [gold]Stash[/gold].",
+  "GREGTHESPIRE-TAIL_SWIPE.description": "Deal {Damage:diff()} damage to ALL enemies.\nDraw a card for each card in your [gold]Stash[/gold].",
   "GREGTHESPIRE-TAIL_SWIPE.title": "Tail Swipe",
   
   "GREGTHESPIRE-GRAPPLING_HOOK.description": "If this is the first time this card has been played this turn, [gold]Steal[/gold] 1.",
   "GREGTHESPIRE-GRAPPLING_HOOK.title": "Grappling Hook",
 
-  "GREGTHESPIRE-I_M_ALSO_VERY_PARTIAL_TO_PLASTIC.description": "Add 3 [gold]Olives[/gold] to your [gold]Hand[/gold]. \nDraw {Cards:diff()} {Cards:plural:card|cards}.",
+  "GREGTHESPIRE-I_M_ALSO_VERY_PARTIAL_TO_PLASTIC.description": "Add 3 [gold]Olives[/gold] to your [gold]Hand[/gold].\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
   "GREGTHESPIRE-I_M_ALSO_VERY_PARTIAL_TO_PLASTIC.title": "I'm Also Very Partial To Plastic",
 
-  "GREGTHESPIRE-SWALLOW.description": "Gain {Block:diff()} [gold]Block[/gold]. \nIf you don’t take any unblocked damage this turn, blocked attack damage is converted to additional [gold]Block[/gold] at the start of your next turn.",
+  "GREGTHESPIRE-SWALLOW.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you don’t take any unblocked damage this turn, blocked attack damage is converted to additional [gold]Block[/gold] at the start of your next turn.",
   "GREGTHESPIRE-SWALLOW.title": "Swallow",
 
-  "GREGTHESPIRE-FUMBLE.description": "[gold]Discard[/gold] up to 2 cards in your [gold]Hand[/gold]. \nFor each card discarded this way, play a card from your [gold]Stash[/gold].",
+  "GREGTHESPIRE-FUMBLE.description": "[gold]Discard[/gold] up to 2 cards in your [gold]Hand[/gold].\nFor each card discarded this way, play a card from your [gold]Stash[/gold].",
   "GREGTHESPIRE-FUMBLE.title": "Fumble",
 
-  "GREGTHESPIRE-SPOON.description": "Deal {Damage:diff()} damage. \nPlay a card from your [gold]Stash[/gold].",
+  "GREGTHESPIRE-SPOON.description": "Deal {Damage:diff()} damage.\nPlay a card from your [gold]Stash[/gold].",
   "GREGTHESPIRE-SPOON.title": "Spoon",
 
-  "GREGTHESPIRE-COFFEE.description": "Gain {Energy:energyIcons()}. \nYou can not [gold]Steal[/gold] this turn.",
+  "GREGTHESPIRE-COFFEE.description": "Gain {Energy:energyIcons()}.\nYou can not [gold]Steal[/gold] this turn.",
   "GREGTHESPIRE-COFFEE.title": "Coffee",
 
-  "GREGTHESPIRE-ITS_SO_BEAUTIFUL_HERE.description": "[gold]Exhaust[/gold] your [gold]Stash[/gold]. \nAdd a random {IfUpgraded:show:upgraded|} card to your [gold]Stash[/gold] for each card exhausted, then play every card in your [gold]Stash[/gold]. \nWhen this card is shuffled into your deck, place it on the bottom.",
+  "GREGTHESPIRE-ITS_SO_BEAUTIFUL_HERE.description": "[gold]Exhaust[/gold] your [gold]Stash[/gold].\nAdd a random {IfUpgraded:show:upgraded|} card to your [gold]Stash[/gold] for each card exhausted, then play every card in your [gold]Stash[/gold].\nWhen this card is shuffled into your deck, place it on the bottom.",
   "GREGTHESPIRE-ITS_SO_BEAUTIFUL_HERE.title": "It's So Beautiful Here",
 
-  "GREGTHESPIRE-POWLOS_REVENGE.description": "Deal {Damage:diff()} damage. \nIf this card was played from your [gold]Stash[/gold], gain 2 [gold]Vulnerable[/gold].",
+  "GREGTHESPIRE-POWLOS_REVENGE.description": "Deal {Damage:diff()} damage.\nIf this card was played from your [gold]Stash[/gold], gain 2 [gold]Vulnerable[/gold].",
   "GREGTHESPIRE-POWLOS_REVENGE.title": "Powlo's Revenge",
 
-  "GREGTHESPIRE-DEVIOUS_LITTLE_RAT.description": "[gold]Steal[/gold] 1. \nPlay {IfUpgraded:show:any number of attacks|1 attack} from your [gold]Stash[/gold]. \nDeal {Damage:diff()} damage.",
+  "GREGTHESPIRE-DEVIOUS_LITTLE_RAT.description": "[gold]Steal[/gold] 1.\nPlay {IfUpgraded:show:any number of attacks|1 attack} from your [gold]Stash[/gold].\nDeal {Damage:diff()} damage.",
   "GREGTHESPIRE-DEVIOUS_LITTLE_RAT.title": "Devious Little Rat",
 
-  "GREGTHESPIRE-OBLIVIOUS.description": "Apply 2 [gold]Weak[/gold] to ALL enemies. \nYou can not lose [gold]Confidence[/gold] by taking damage this turn.",
+  "GREGTHESPIRE-OBLIVIOUS.description": "Apply 2 [gold]Weak[/gold] to ALL enemies.\nYou can not lose [gold]Confidence[/gold] by taking damage this turn.",
   "GREGTHESPIRE-OBLIVIOUS.title": "Oblivious",
 
   "GREGTHESPIRE-POSITIVE_AFFIRMATION.description": "If you end your turn with [gold]Weak[/gold], gain {PositiveAffirmationPower:diff()} [gold]Confidence[/gold] at the start of your next turn.",
   "GREGTHESPIRE-POSITIVE_AFFIRMATION.title": "Positive Affirmation",
 
-  "GREGTHESPIRE-RATATOINGING_IT.description": "Deal {Damage:diff()} damage. \nGive every card, except Ratatoing-ing It, in your deck [gold]Replay[/gold] {Replay:diff()}. \nYou can no longer play Skills this combat. ",
+  "GREGTHESPIRE-RATATOINGING_IT.description": "Deal {Damage:diff()} damage.\nGive every card, except Ratatoing-ing It, in your deck [gold]Replay[/gold] {Replay:diff()}.\nYou can no longer play Skills this combat. ",
   "GREGTHESPIRE-RATATOINGING_IT.title": "Ratatoing-ing It",
 
-  "GREGTHESPIRE-HUGE_CAKE.description": "Gain {Block:diff()} [gold]Block[/gold]. \nIncrease this card’s [gold]Block[/gold] by the number of cards in your [gold]Discard Pile[/gold] this combat. \nWhen this card is shuffled into your deck, place it on the bottom.",
+  "GREGTHESPIRE-HUGE_CAKE.description": "Gain {Block:diff()} [gold]Block[/gold].\nIncrease this card’s [gold]Block[/gold] by the number of cards in your [gold]Discard Pile[/gold] this combat.\nWhen this card is shuffled into your deck, place it on the bottom.",
   "GREGTHESPIRE-HUGE_CAKE.title": "HUUUGE CAKE",
 
   "GREGTHESPIRE-PEP_TALK.description": "Another player gains {ConfidencePower:diff()} [gold]Confidence[/gold].",
   "GREGTHESPIRE-PEP_TALK.title": "Pep Talk",
 
-  "GREGTHESPIRE-IMPROVISED_ARMOR.description": "Gain {CalculationExtra:diff()} [gold]Block[/gold] for each card in your [gold]Stash[/gold]. \n{InCombat:(Gain {CalculatedBlock:diff()} [gold]Block[/gold])}",
+  "GREGTHESPIRE-IMPROVISED_ARMOR.description": "Gain {CalculationExtra:diff()} [gold]Block[/gold] for each card in your [gold]Stash[/gold].\n{InCombat:(Gain {CalculatedBlock:diff()} [gold]Block[/gold])}",
   "GREGTHESPIRE-IMPROVISED_ARMOR.title": "Improvised Armor",
   
   "GREGTHESPIRE-GOURMAND.description": "",
@@ -269,14 +269,20 @@
   "GREGTHESPIRE-SALIVATE.description": "",
   "GREGTHESPIRE-SALIVATE.title": "Salivate",
 
-  "GREGTHESPIRE-DUMP.description": "[gold]Discard[/gold] your [gold]Stash[/gold]. \nDeal {Damage:diff()} damage for every card [gold]Discarded[/gold].",
+  "GREGTHESPIRE-DUMP.description": "[gold]Discard[/gold] your [gold]Stash[/gold].\nDeal {Damage:diff()} damage for every card [gold]Discarded[/gold].",
   "GREGTHESPIRE-DUMP.title": "Dump",
 
-  "GREGTHESPIRE-SWEET_LOOT.description": "Gain {Block:diff()} [gold]Block[/gold]. \nPlace a card in your [gold]Draw Pile[/gold] into your [gold]Stash[/gold].",
+  "GREGTHESPIRE-SWEET_LOOT.description": "Gain {Block:diff()} [gold]Block[/gold].\nPlace a card in your [gold]Draw Pile[/gold] into your [gold]Stash[/gold].",
   "GREGTHESPIRE-SWEET_LOOT.title": "Sweet Loot",
 
   "GREGTHESPIRE-CAMEMBERT_WHEEL.description": "At the start of your next turn, deal {Damage:diff()} damage to ALL enemies. The first time you play a [gold]Cheese[/gold] each turn, permanently increase this card’s damage by {IfUpgraded:show:2|1}.",
-  "GREGTHESPIRE-CAMEMBERT_WHEEL.title": "Camembert Wheel"
+  "GREGTHESPIRE-CAMEMBERT_WHEEL.title": "Camembert Wheel",
+
+  "GREGTHESPIRE-CAT_BURGLAR.description": "Deal {Damage:diff()} damage for each card played using [gold]Steal[/gold] this combat.\n{InCombat:(Hits {HitCount:diff()} times)}",
+  "GREGTHESPIRE-CAT_BURGLAR.title": "Cat Burglar",
+
+  "GREGTHESPIRE-GREGLOGABGALAB.description": "Draw 1 card.\n[gold]Stash[/gold] a random card in your [gold]Hand[/gold].\nPlay a random card in your [gold]Hand[/gold].\nPlay a random card in your [gold]Stash[/gold].\n[gold]Steal[/gold] 1.\nEnd your turn.",
+  "GREGTHESPIRE-GREGLOGABGALAB.title": "Greglogabgalab"
 }
   
   

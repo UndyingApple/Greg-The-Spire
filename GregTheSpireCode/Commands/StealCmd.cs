@@ -29,10 +29,10 @@ public static class StealCmd
             null);
             return;
         }
-    //variable that represents the owner of the card
-    //card_initial.Owner = player;
+        //variable that represents the owner of the card
+        //card_initial.Owner = player;
 
-    for (int i = 0; i < amount; i++)
+        for (int i = 0; i < amount; i++)
         {
             //variable that represents the card on top of the deck
             CardModel topCard = PileType.Draw.GetPile(player).Cards.FirstOrDefault<CardModel>();

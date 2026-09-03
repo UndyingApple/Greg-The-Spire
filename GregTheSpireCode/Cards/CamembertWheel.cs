@@ -10,6 +10,7 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Hooks;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
@@ -58,6 +59,10 @@ public class CamembertWheel() : GregTheSpireCard(1,
         GregTheSpireKeywords.Snack
     ];
 
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromCard<Cheese>()
+    ];
+    
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         Decimal damage = Hook.ModifyDamage(this.RunState, this.CombatState, cardPlay.Target, this.Owner.Creature, DynamicVars.Damage.BaseValue, DynamicVars.Damage.Props, (CardModel) this, cardPlay, ModifyDamageHookType.All, CardPreviewMode.MultiCreatureTargeting, out IEnumerable<AbstractModel> _);
