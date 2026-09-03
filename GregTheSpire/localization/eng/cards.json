@@ -258,7 +258,13 @@
   "GREGTHESPIRE-HUGE_CAKE.title": "HUUUGE CAKE",
 
   "GREGTHESPIRE-IMPROVISED_ARMOR.description": "Gain {CalculatedBlock:diff()} [gold]Block[/gold].\nGains {CalculationExtra:diff()} additional [gold]Block[/gold] for each card in your Stash.",
-  "GREGTHESPIRE-IMPROVISED_ARMOR.title": "Improvised Armor"
+  "GREGTHESPIRE-IMPROVISED_ARMOR.title": "Improvised Armor",
+
+  "GREGTHESPIRE-SWEET_LOOT.description": "",
+  "GREGTHESPIRE-SWEET_LOOT.title": "Sweet Loot",
+
+  "GREGTHESPIRE-DUMP.description": "",
+  "GREGTHESPIRE-DUMP.title": "Dump"
 }
   
   
