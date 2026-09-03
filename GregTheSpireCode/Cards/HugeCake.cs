@@ -1,10 +1,18 @@
 ﻿using GregTheSpire.GregTheSpireCode.Cards;
+using GregTheSpire.GregTheSpireCode.Cards.Colorless;
+using GregTheSpire.GregTheSpireCode.Keywords;
+using GregTheSpire.GregTheSpireCode.Powers;
+using MegaCrit.Sts2.Core.Combat;
+using MegaCrit.Sts2.Core.Combat.History.Entries;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
+
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
@@ -18,13 +26,16 @@ public class HugeCake() : GregTheSpireCard(2,
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new BlockVar(10, ValueProp.Move)
     ];
+    
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        
+        await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
+        DynamicVars.Block.BaseValue += PileType.Discard.GetPile(Owner).Cards.Count;
     }
+    
     
     public override async void ModifyShuffleOrder(
         Player player,
@@ -41,4 +52,5 @@ public class HugeCake() : GregTheSpireCard(2,
     {
         this.DynamicVars.Block.UpgradeValueBy(5);
     }
+
 }
