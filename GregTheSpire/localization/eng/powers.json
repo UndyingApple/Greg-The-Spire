@@ -121,5 +121,9 @@
 
   "GREGTHESPIRE-NO_SKILLS_PLAYED.description": "",
   "GREGTHESPIRE-NO_SKILLS_PLAYED.smartDescription": "",
-  "GREGTHESPIRE-NO_SKILLS_PLAYED.title": "NoSkillsPlayed"
+  "GREGTHESPIRE-NO_SKILLS_PLAYED.title": "NoSkillsPlayed",
+
+  "GREGTHESPIRE-CAMEMBERT_WHEEL_POWER.description": "Next turn, deal damage;",
+  "GREGTHESPIRE-CAMEMBERT_WHEEL_POWER.smartDescription": "Next turn, deal {Amount} damage.",
+  "GREGTHESPIRE-CAMEMBERT_WHEEL_POWER.title": "Camembert Wheel"
 }

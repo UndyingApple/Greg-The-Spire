@@ -258,7 +258,10 @@
   "GREGTHESPIRE-HUGE_CAKE.title": "HUGE CAKE",
 
   "GREGTHESPIRE-IMPROVISED_ARMOR.description": "Gain {CalculatedBlock:diff()} [gold]Block[/gold].\nGains {CalculationExtra:diff()} additional [gold]Block[/gold] for each card in your Stash.",
-  "GREGTHESPIRE-IMPROVISED_ARMOR.title": "Improvised Armor"
+  "GREGTHESPIRE-IMPROVISED_ARMOR.title": "Improvised Armor",
+
+  "GREGTHESPIRE-CAMEMBERT_WHEEL.description": "At the start of your next turn, deal {Damage:diff()} damage to ALL enemies. The first time you play a [gold]Cheese[/gold] each turn, permanently increase this card’s damage by {IfUpgraded:show:2|1}.",
+  "GREGTHESPIRE-CAMEMBERT_WHEEL.title": "Camembert Wheel"
 }
   
   
