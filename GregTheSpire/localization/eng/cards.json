@@ -176,7 +176,7 @@
   "GREGTHESPIRE-FRESH_STRAWBERRIES.description": "At the start of your next {FreshStrawberriesPower:diff()} turns, add a [gold]Strawberry[/gold] to your hand.",
   "GREGTHESPIRE-FRESH_STRAWBERRIES.title": "Fresh Strawberries",
   
-  "GREGTHESPIRE-SUGAR_RUSH.description": "Deal {Damage:diff()} damage for each [gold]Snack[/gold] played this turn.",
+  "GREGTHESPIRE-SUGAR_RUSH.description": "Deal {Damage:diff()} damage for each [gold]Snack[/gold] played this turn.{InCombat:(Hits {CalculatedHits:diff()} times)",
   "GREGTHESPIRE-SUGAR_RUSH.title": "Sugar Rush",
   
   "GREGTHESPIRE-POCKET_SAND.description": "Deal {Damage:diff()} damage. \nIf this card was played with [gold]Steal[/gold], [gold]Steal[/gold] 1.",
@@ -236,26 +236,45 @@
   "GREGTHESPIRE-COFFEE.description": "Gain {Energy:energyIcons()}. \nYou can not [gold]Steal[/gold] this turn.",
   "GREGTHESPIRE-COFFEE.title": "Coffee",
 
-  "GREGTHESPIRE-ITS_SO_BEAUTIFUL_HERE.description": "",
+  "GREGTHESPIRE-ITS_SO_BEAUTIFUL_HERE.description": "[gold]Exhaust[/gold] your [gold]Stash[/gold]. \nAdd a random {IfUpgraded:show:upgraded|} card to your [gold]Stash[/gold] for each card exhausted, then play every card in your [gold]Stash[/gold]. \nWhen this card is shuffled into your deck, place it on the bottom.",
   "GREGTHESPIRE-ITS_SO_BEAUTIFUL_HERE.title": "It's So Beautiful Here",
 
-  "GREGTHESPIRE-POWLOS_REVENGE.description": "",
+  "GREGTHESPIRE-POWLOS_REVENGE.description": "Deal {Damage:diff()} damage. \nIf this card was played from your [gold]Stash[/gold], gain 2 [gold]Vulnerable[/gold].",
   "GREGTHESPIRE-POWLOS_REVENGE.title": "Powlo's Revenge",
 
-  "GREGTHESPIRE-DEVIOUS_LITTLE_RAT.description": "",
+  "GREGTHESPIRE-DEVIOUS_LITTLE_RAT.description": "[gold]Steal[/gold] 1. \nPlay {IfUpgraded:show:any number of attacks|1 attack} from your [gold]Stash[/gold]. \nDeal {Damage:diff()} damage.",
   "GREGTHESPIRE-DEVIOUS_LITTLE_RAT.title": "Devious Little Rat",
 
-  "GREGTHESPIRE-OBLIVIOUS.description": "",
+  "GREGTHESPIRE-OBLIVIOUS.description": "Apply 2 [gold]Weak[/gold] to ALL enemies. \nYou can not lose [gold]Confidence[/gold] by taking damage this turn.",
   "GREGTHESPIRE-OBLIVIOUS.title": "Oblivious",
 
-  "GREGTHESPIRE-POSITIVE_AFFIRMATION.description": "",
+  "GREGTHESPIRE-POSITIVE_AFFIRMATION.description": "If you end your turn with [gold]Weak[/gold], gain {PositiveAffirmationPower:diff()} [gold]Confidence[/gold] at the start of your next turn.",
   "GREGTHESPIRE-POSITIVE_AFFIRMATION.title": "Positive Affirmation",
 
-  "GREGTHESPIRE-RATATOINGING_IT.description": "",
+  "GREGTHESPIRE-RATATOINGING_IT.description": "Deal {Damage:diff()} damage. \nGive every card, except Ratatoing-ing It, in your deck [gold]Replay[/gold] {Replay:diff()}. \nYou can no longer play Skills this combat. ",
   "GREGTHESPIRE-RATATOINGING_IT.title": "Ratatoing-ing It",
 
-  "GREGTHESPIRE-HUGE_CAKE.description": "",
-  "GREGTHESPIRE-HUGE_CAKE.title": "HUGE CAKE"
+  "GREGTHESPIRE-HUGE_CAKE.description": "Gain {Block:diff()} [gold]Block[/gold]. \nIncrease this card’s [gold]Block[/gold] by the number of cards in your [gold]Discard Pile[/gold] this combat. \nWhen this card is shuffled into your deck, place it on the bottom.",
+  "GREGTHESPIRE-HUGE_CAKE.title": "HUUUGE CAKE",
+
+  "GREGTHESPIRE-PEP_TALK.description": "Another player gains {ConfidencePower:diff()} [gold]Confidence[/gold].",
+  "GREGTHESPIRE-PEP_TALK.title": "Pep Talk",
+
+  "GREGTHESPIRE-IMPROVISED_ARMOR.description": "Gain {CalculationExtra:diff()} [gold]Block[/gold] for each card in your [gold]Stash[/gold]. \n{InCombat:(Gain {CalculatedBlock:diff()} [gold]Block[/gold])}",
+  "GREGTHESPIRE-IMPROVISED_ARMOR.title": "Improvised Armor",
+  
+  "GREGTHESPIRE-GOURMAND.description": "",
+  "GREGTHESPIRE-GOURMAND.title": "Gourmand",
+
+  "GREGTHESPIRE-SALIVATE.description": "",
+  "GREGTHESPIRE-SALIVATE.title": "Salivate",
+
+  "GREGTHESPIRE-DUMP.description": "[gold]Discard[/gold] your [gold]Stash[/gold]. \nDeal {Damage:diff()} damage for every card [gold]Discarded[/gold].",
+  "GREGTHESPIRE-DUMP.title": "Dump",
+
+  "GREGTHESPIRE-SWEET_LOOT.description": "Gain {Block:diff()} [gold]Block[/gold]. \nPlace a card in your [gold]Draw Pile[/gold] into your [gold]Stash[/gold].",
+  "GREGTHESPIRE-SWEET_LOOT.title": "Sweet Loot"
+  
 }
   
   
