@@ -63,8 +63,13 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Folder Include="GregTheSpire\images\powers\big\"/>
         <Folder Include="GregTheSpire\images\relics\big\"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\..\Dropbox\PC\Downloads\rat_form.png">
+        <Link>GregTheSpire\images\card_portraits\big\rat_form.png</Link>
+      </Content>
     </ItemGroup>
 
     <Target Name="CheckDependencyPaths">
