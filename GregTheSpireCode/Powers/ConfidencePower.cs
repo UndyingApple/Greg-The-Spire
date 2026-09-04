@@ -36,7 +36,8 @@ public class ConfidencePower() : GregTheSpirePower
         if (Owner.GetPowerAmount<ObliviousPower>() > 0)
             return;
         this.Flash();
-        await PowerCmd.Apply<ConfidencePower>(choiceContext, this.Owner, -Amount, this.Owner,null);
         await PowerCmd.Apply<WeakPower>(choiceContext, this.Owner, 1 + (int) (this.Amount / 5), this.Owner, null);
+        await PowerCmd.Apply<ConfidencePower>(choiceContext, this.Owner, -Amount, this.Owner,null);
+        
     }
 }
