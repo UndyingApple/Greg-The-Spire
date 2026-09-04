@@ -31,12 +31,7 @@ public class BagOfTricks() : GregTheSpireCard(
 		
 		await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 1, 1,null);
 		
-		var stashedCards = (await CardSelectCmd.FromHand(choiceContext, Owner, 
-			new CardSelectorPrefs(StashSelectorPrefs.ToStashSelectionPrompt, 1, DynamicVars.Cards.IntValue),
-			null,
-			this)).ToList();
-		
-		await CardPileCmd.Add(stashedCards, StashCardPile.StashPileType);
+		await StashCmd.StashAsync(choiceContext, this.Owner, 0, IsUpgraded ? 2 : 1, this);
 	}
 
 	protected override void OnUpgrade()
