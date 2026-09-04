@@ -1,5 +1,6 @@
 ﻿using GregTheSpire.GregTheSpireCode.CardPiles;
 using GregTheSpire.GregTheSpireCode.Cards;
+using GregTheSpire.GregTheSpireCode.Commands;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -24,17 +25,10 @@ public class PocketKnife() : GregTheSpireCard(1,
         CardPlay play)
     {
         AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).Execute(choiceContext);
-        
-        
+        await StashCmd.StashAsync( choiceContext, this.Owner, this);
+
     }
 
-    protected override CardLocation GetResultLocationForCardPlay()
-    {
-        CardLocation locationForCardPlay = base.GetResultLocationForCardPlay();
-        if (locationForCardPlay.pileType == PileType.Discard)
-            locationForCardPlay.pileType = StashCardPile.StashPileType;
-        return locationForCardPlay;
-    }
     
     protected override void OnUpgrade()
     {
