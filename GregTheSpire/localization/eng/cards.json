@@ -224,7 +224,7 @@
   "GREGTHESPIRE-I_M_ALSO_VERY_PARTIAL_TO_PLASTIC.description": "Add 3 [gold]Olives[/gold] to your [gold]Hand[/gold].\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
   "GREGTHESPIRE-I_M_ALSO_VERY_PARTIAL_TO_PLASTIC.title": "I'm Also Very Partial To Plastic",
 
-  "GREGTHESPIRE-SWALLOW.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you don’t take any unblocked damage this turn, gain 9 [gold]Block[/gold] at the start of your next turn.",
+  "GREGTHESPIRE-SWALLOW.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you don’t take any unblocked damage this turn, gain {Block:diff()} [gold]Block[/gold] at the start of your next turn.",
   "GREGTHESPIRE-SWALLOW.title": "Swallow",
 
   "GREGTHESPIRE-FUMBLE.description": "[gold]Discard[/gold] up to 2 cards in your [gold]Hand[/gold].\nFor each card discarded this way, play a card from your [gold]Stash[/gold].",
