@@ -42,5 +42,5 @@ public class GrapplingHook() : GregTheSpireCard(0,
         else await StealCmd.StealAsync(choiceContext, this.Owner, 1);
     }
 
-    protected override void OnUpgrade() => this.AddKeyword(CardKeyword.Innate);
-}
+
+}  

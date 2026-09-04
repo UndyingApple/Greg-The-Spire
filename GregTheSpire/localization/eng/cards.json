@@ -218,7 +218,7 @@
   "GREGTHESPIRE-TAIL_SWIPE.description": "Deal {Damage:diff()} damage to ALL enemies.\nDraw a card for each card in your [gold]Stash[/gold].",
   "GREGTHESPIRE-TAIL_SWIPE.title": "Tail Swipe",
   
-  "GREGTHESPIRE-GRAPPLING_HOOK.description": "If this is the first time this card has been played this turn, [gold]Steal[/gold] 1.",
+  "GREGTHESPIRE-GRAPPLING_HOOK.description": "If this is the first time this card has been played this turn, [gold]Steal[/gold] {IfUpgraded:show:2|1}.",
   "GREGTHESPIRE-GRAPPLING_HOOK.title": "Grappling Hook",
 
   "GREGTHESPIRE-I_M_ALSO_VERY_PARTIAL_TO_PLASTIC.description": "Add 3 [gold]Olives[/gold] to your [gold]Hand[/gold].\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
@@ -263,7 +263,7 @@
   "GREGTHESPIRE-IMPROVISED_ARMOR.description": "Gain {CalculationExtra:diff()} [gold]Block[/gold] for each card in your [gold]Stash[/gold].{InCombat:\n(gain {CalculatedBlock:diff()} [gold]Block[/gold]])|}",
   "GREGTHESPIRE-IMPROVISED_ARMOR.title": "Improvised Armor",
 
-  "GREGTHESPIRE-SALIVATE.description": "Gain {totalBlock:diff()} [gold]Block[/gold].",
+  "GREGTHESPIRE-SALIVATE.description": "Gain {CalculatedBlock:diff()} [gold]Block[/gold], Gain {CalculationExtra:diff()} additional [gold]Block[/gold] for every unique [gold]Snack[/gold] in your [gold]Exhaust Pile[/gold].",
   "GREGTHESPIRE-SALIVATE.title": "Salivate",
 
   "GREGTHESPIRE-DUMP.description": "[gold]Discard[/gold] your [gold]Stash[/gold].\nDeal {Damage:diff()} damage for every card [gold]Discarded[/gold].",
