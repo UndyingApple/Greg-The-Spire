@@ -74,7 +74,7 @@
   "GREGTHESPIRE-WAITER_WAITER.description": "[gold]Enchant[/gold] a{IfUpgraded:show:| random} card in your [gold]Hand[/gold] with [purple]Infested[/purple].",
   "GREGTHESPIRE-WAITER_WAITER.title": "Waiter, waiter!",
   
-  "GREGTHESPIRE-BUFFET.description": "Add a [gold]{IfUpgraded:show:Cheese+|Cheese}[/gold], a [gold]{IfUpgraded:show:Cracker+|Cracker}[/gold], and a [gold]{IfUpgraded:show:Fly+|Fly}[/gold] to your [gold]Hand[/gold].",
+  "GREGTHESPIRE-BUFFET.description": "Add 2 [gold]{IfUpgraded:show:Cheeses+|Cheeses}[/gold], 2 [gold]{IfUpgraded:show:Crackers+|Crackers}[/gold], and a [gold]{IfUpgraded:show:Flys+|Flys}[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-BUFFET.title": "Buffet",
   
   "GREGTHESPIRE-SECONDS.description": "Add 1 [gold]Cracker[/gold] to your [gold]Hand[/gold].\nThe next time you play a [gold]Snack[/gold], add a copy of it to your [gold]Hand[/gold].",
@@ -215,7 +215,7 @@
   "GREGTHESPIRE-TUMBLE.description": "Gain 1 [gold]Storage[/gold].\nPlay any amount of cards from your [gold]Stash[/gold].\n[gold]Stash[/gold] any amount of cards in your [gold]Hand[/gold].",
   "GREGTHESPIRE-TUMBLE.title": "Tumble",
 
-  "GREGTHESPIRE-TAIL_SWIPE.description": "Deal {Damage:diff()} damage to ALL enemies.\nDraw a card for each card in your [gold]Stash[/gold].",
+  "GREGTHESPIRE-TAIL_SWIPE.description": "Deal {Damage:diff()} damage to ALL enemies.\nDraw cards equal to your [gold]Storage[/gold].",
   "GREGTHESPIRE-TAIL_SWIPE.title": "Tail Swipe",
   
   "GREGTHESPIRE-GRAPPLING_HOOK.description": "If this is the first time this card has been played this turn, [gold]Steal[/gold] {IfUpgraded:show:2|1}.",
@@ -282,7 +282,10 @@
   "GREGTHESPIRE-GREGLOGABGALAB.title": "Greglogabgalab",
   
   "GREGTHESPIRE-GOURMAND.description": "Deal {Damage:diff()} [gold]Block[/gold]",
-  "GREGTHESPIRE-GOURMAND.title": "Gourmand"
+  "GREGTHESPIRE-GOURMAND.title": "Gourmand",
+  
+  "GREGTHESPIRE-HI.description": "",
+  "GREGTHESPIRE-HI.title": ""
 }
   
   

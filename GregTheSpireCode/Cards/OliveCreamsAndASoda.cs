@@ -37,13 +37,7 @@ protected override async Task OnPlay(
     List<CardModel> cards = new List<CardModel>();
     for (int index = 0; index < num; ++index)
          cards.Add((CardModel) this.CombatState.CreateCard<Olive>(this.Owner));
-    if (IsUpgraded)
-    {
-        foreach (Soda card in cards)
-        {
-            CardCmd.Upgrade(card);
-        }
-    }
+    
     IReadOnlyList<CardPileAddResult> combat = await CardPileCmd.AddGeneratedCardsToCombat((IEnumerable<CardModel>) cards, PileType.Hand, this.Owner);
 }
 
