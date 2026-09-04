@@ -48,5 +48,6 @@ public class MouseTrap() : GregTheSpireCard(1,
     protected override void OnUpgrade()
     {
         DynamicVars.Power<BlockNextTurnPower>().UpgradeValueBy(3);
+        DynamicVars.Power<BlockNextTurnPower>().UpgradeValueBy(2);
     }
 }

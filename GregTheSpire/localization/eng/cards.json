@@ -1,5 +1,5 @@
 {
-  "GREGTHESPIRE-THIEVE.description": "Gain {Block:diff()} [gold]Block[/gold]. [gold]Steal[/gold] 1",
+  "GREGTHESPIRE-THIEVE.description": "Gain {Block:diff()} [gold]Block[/gold]. [gold]Steal[/gold] 2",
   "GREGTHESPIRE-THIEVE.title": "Thieve",
   
   "GREGTHESPIRE-BAG_OF_TRICKS.description": "{IfUpgraded:show:Draw 1.\n}Play 1 card from your [gold]Stash[/gold].\n[gold]Stash[/gold]{IfUpgraded:show: up to|} {Cards:diff()} {Cards:plural:card|cards} in your [gold]Hand[/gold].",
@@ -179,7 +179,7 @@
   "GREGTHESPIRE-SUGAR_RUSH.description": "Deal {Damage:diff()} damage for each [gold]Snack[/gold] played this turn.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
   "GREGTHESPIRE-SUGAR_RUSH.title": "Sugar Rush",
   
-  "GREGTHESPIRE-POCKET_SAND.description": "Deal {Damage:diff()} damage.\nIf this card was played with [gold]Steal[/gold], [gold]Steal[/gold] 1.",
+  "GREGTHESPIRE-POCKET_SAND.description": "Apply {WeakPower:diff()}.\n[gold]Steal[/gold] 1.\nIf this card was played with [gold]Steal[/gold], [gold]Steal[/gold] 2 instead.",
   "GREGTHESPIRE-POCKET_SAND.title": "Pocket Sand",
   
   "GREGTHESPIRE-STINKY.description": "Deal {Damage:diff()} damage to ALL enemies.\nAdd {IfUpgraded:show:2|1} [gold]{IfUpgraded:Flies|Fly}[/gold] to your [gold]Hand[/gold].",
@@ -212,7 +212,7 @@
   "GREGTHESPIRE-SECRET_GADGET.description": "Deal {Damage:diff()} damage.\nIf this card is played for free, draw {Cards:diff()} {Cards:plural:card|cards}.",
   "GREGTHESPIRE-SECRET_GADGET.title": "Secret Gadget",
 
-  "GREGTHESPIRE-TUMBLE.description": "Play any amount of cards from your [gold]Stash[/gold].\n[gold]Stash[/gold] any amount of cards in your [gold]Hand[/gold].",
+  "GREGTHESPIRE-TUMBLE.description": "Gain 1 [gold]Storage[/gold].\nPlay any amount of cards from your [gold]Stash[/gold].\n[gold]Stash[/gold] any amount of cards in your [gold]Hand[/gold].",
   "GREGTHESPIRE-TUMBLE.title": "Tumble",
 
   "GREGTHESPIRE-TAIL_SWIPE.description": "Deal {Damage:diff()} damage to ALL enemies.\nDraw a card for each card in your [gold]Stash[/gold].",
@@ -224,7 +224,7 @@
   "GREGTHESPIRE-I_M_ALSO_VERY_PARTIAL_TO_PLASTIC.description": "Add 3 [gold]Olives[/gold] to your [gold]Hand[/gold].\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
   "GREGTHESPIRE-I_M_ALSO_VERY_PARTIAL_TO_PLASTIC.title": "I'm Also Very Partial To Plastic",
 
-  "GREGTHESPIRE-SWALLOW.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you don’t take any unblocked damage this turn, blocked attack damage is converted to additional [gold]Block[/gold] at the start of your next turn.",
+  "GREGTHESPIRE-SWALLOW.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you don’t take any unblocked damage this turn, gain 9 [gold]Block[/gold] at the start of your next turn.",
   "GREGTHESPIRE-SWALLOW.title": "Swallow",
 
   "GREGTHESPIRE-FUMBLE.description": "[gold]Discard[/gold] up to 2 cards in your [gold]Hand[/gold].\nFor each card discarded this way, play a card from your [gold]Stash[/gold].",

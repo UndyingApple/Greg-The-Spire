@@ -22,7 +22,7 @@ public class SwallowPower() : GregTheSpirePower
         PowerStackType.Counter;
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new BlockVar(0, ValueProp.Move)
+        new BlockVar(9, ValueProp.Move)
     ];
     
     public override async Task AfterDamageReceived(
@@ -39,10 +39,6 @@ public class SwallowPower() : GregTheSpirePower
         {
             this.Flash();
             DynamicVars.Block.BaseValue = 0;
-        }
-        else
-        {
-            DynamicVars.Block.BaseValue += result.BlockedDamage;
         }
     }
 

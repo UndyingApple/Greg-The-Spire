@@ -95,8 +95,8 @@
   "GREGTHESPIRE-RECKLESSNESS_POWER.smartDescription": "Double the effects of [gold]Confidence[/gold]. Take double damage from enemies.",
   "GREGTHESPIRE-RECKLESSNESS_POWER.title": "Recklessness",
 
-  "GREGTHESPIRE-SWALLOW_POWER.description": "If you don’t take any unblocked damage from enemies this turn, gain [gold]Block Next Turn[/gold] equal to the amount of damage blocked.",
-  "GREGTHESPIRE-SWALLOW_POWER.smartDescription": "If you don’t take any unblocked damage from enemies this turn, gain [gold]Block Next Turn[/gold] equal to the amount of damage blocked.",
+  "GREGTHESPIRE-SWALLOW_POWER.description": "If you don’t take any unblocked damage from enemies this turn, gain 9 [gold]Block Next Turn[/gold].",
+  "GREGTHESPIRE-SWALLOW_POWER.smartDescription": "If you don’t take any unblocked damage from enemies this turn, gain {Block:Diff()} [gold]Block Next Turn[/gold].",
   "GREGTHESPIRE-SWALLOW_POWER.title": "Swallow",
 
   "GREGTHESPIRE-NO_STEAL_THIS_TURN.description": "You cannot [gold]Steal[/gold] cards this turn.",
