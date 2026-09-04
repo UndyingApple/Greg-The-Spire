@@ -20,7 +20,7 @@ public class Thieve() : GregTheSpireCard(2,
     public override bool GainsBlock => true;
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new BlockVar(6M, ValueProp.Move)
+        new BlockVar(8M, ValueProp.Move)
     ];
 
     protected override async Task OnPlay(
@@ -29,7 +29,7 @@ public class Thieve() : GregTheSpireCard(2,
     {
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
         //public static async Task StealAsync(PlayerChoiceContext choiceContext, Player player, int amount, CardModel card_initial)
-        await StealCmd.StealAsync(choiceContext, this.Owner, 1);
+        await StealCmd.StealAsync(choiceContext, this.Owner, 2);
     }
     
  
@@ -39,6 +39,6 @@ public class Thieve() : GregTheSpireCard(2,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Block.UpgradeValueBy(3M);
+        DynamicVars.Block.UpgradeValueBy(4M);
     }
 }

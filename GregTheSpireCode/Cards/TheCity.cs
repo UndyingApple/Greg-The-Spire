@@ -11,8 +11,8 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
-public class TheCity() : GregTheSpireCard(3,
-    CardType.Power, CardRarity.Rare,
+public class TheCity() : GregTheSpireCard(2,
+    CardType.Power, CardRarity.Uncommon,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [

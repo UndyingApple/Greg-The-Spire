@@ -36,7 +36,7 @@ public class TheresAFlyInMySoupPower() : GregTheSpirePower
     {
         if (cardPlay.Card.Owner.Creature != this.Owner || !cardPlay.Card.Keywords.Contains(GregTheSpireKeywords.Snack) || cardPlay.Card.IsDupe || this.GetInternalData<TheresAFlyInMySoupPower.Data>().snacksPlayed >= this.Amount)
             return;
-        await Cracker.CreateInHand(Owner.Player, 1, CombatState);
+        await Fly.CreateInHand(Owner.Player, 1, CombatState);
         this.Flash();
         this.SetSnacksPlayed(this.GetInternalData<Data>().snacksPlayed + 1);
         this.InvokeDisplayAmountChanged();

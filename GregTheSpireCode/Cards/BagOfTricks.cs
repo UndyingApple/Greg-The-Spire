@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Models;
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
 public class BagOfTricks() : GregTheSpireCard(
-	1,
+	0,
 	CardType.Skill, CardRarity.Basic,
 	TargetType.Self)
 {
@@ -24,6 +24,10 @@ public class BagOfTricks() : GregTheSpireCard(
 		CardPlay play)
 	{
 		await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
+		if (IsUpgraded)
+		{
+			await CardPileCmd.Draw(choiceContext, this.DynamicVars.Cards.BaseValue, this.Owner);
+		}
 		
 		await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 1, 1,null);
 		

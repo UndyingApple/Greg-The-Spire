@@ -34,5 +34,5 @@ public class Spoon() : GregTheSpireCard(0,
         await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 1, 1,null);
     }
 
-    protected override void OnUpgrade() => this.DynamicVars.Damage.UpgradeValueBy(2);
+    protected override void OnUpgrade() => this.DynamicVars.Damage.UpgradeValueBy(3);
 }

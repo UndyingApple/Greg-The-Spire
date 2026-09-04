@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
-public class Ransack() : GregTheSpireCard(3,
+public class Ransack() : GregTheSpireCard(2,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {

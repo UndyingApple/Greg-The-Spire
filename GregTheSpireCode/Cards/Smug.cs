@@ -13,7 +13,7 @@ public class Smug() : GregTheSpireCard(0,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        (DynamicVar) new PowerVar<ConfidencePower>(1)
+        (DynamicVar) new PowerVar<ConfidencePower>(2)
     ];
 
     protected override async Task OnPlay(

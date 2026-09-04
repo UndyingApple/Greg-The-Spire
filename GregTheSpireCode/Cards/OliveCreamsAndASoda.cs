@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.Models.Cards;
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
 public class OliveCreamsAndASoda() : GregTheSpire.GregTheSpireCode.Cards.GregTheSpireCard(2,
-    CardType.Skill, CardRarity.Uncommon,
+    CardType.Skill, CardRarity.Rare,
     TargetType.Self) {
 protected override IEnumerable<DynamicVar> CanonicalVars => [];
 
@@ -39,7 +39,7 @@ protected override async Task OnPlay(
          cards.Add((CardModel) this.CombatState.CreateCard<Olive>(this.Owner));
     if (IsUpgraded)
     {
-        foreach (CardModel card in cards)
+        foreach (Soda card in cards)
         {
             CardCmd.Upgrade(card);
         }

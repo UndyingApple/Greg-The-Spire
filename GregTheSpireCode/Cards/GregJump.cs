@@ -17,7 +17,7 @@ public class GregJump() : GregTheSpireCard(1,
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new BlockVar(4, ValueProp.Move)
+        new BlockVar(7, ValueProp.Move)
     ];
     
     public override bool GainsBlock => true;

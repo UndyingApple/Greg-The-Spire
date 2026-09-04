@@ -13,6 +13,9 @@ public class InflatedEgo() : GregTheSpireCard(2,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [
+        CardKeyword.Exhaust,
+    ];
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         (DynamicVar)new PowerVar<ConfidencePower>(5)

@@ -14,7 +14,7 @@ public class TailSwipe() : GregTheSpireCard(1,
     CardType.Attack, CardRarity.Common,
     TargetType.AllEnemies)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [ new DamageVar(4, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [ new DamageVar(6, ValueProp.Move)];
     
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

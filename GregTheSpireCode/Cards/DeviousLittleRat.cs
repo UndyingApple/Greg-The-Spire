@@ -24,7 +24,7 @@ public class DeviousLittleRat() : GregTheSpireCard(2,
         CardPlay play)
     {
         var player = this.Owner;
-        await StealCmd.StealAsync(choiceContext, this.Owner, 1);
+        await StealCmd.StealAsync(choiceContext, this.Owner, 2);
         //play stash
         if (this.IsUpgraded)
         {

@@ -25,7 +25,7 @@ public class Buffet() : GregTheSpireCard(2,
         CardPlay play)
     {
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
-        IEnumerable<CardModel> cheese = await Cheese.CreateInHand(Owner, 1, CombatState);
+        IEnumerable<CardModel> cheese = await Cheese.CreateInHand(Owner, 2, CombatState);
         if (IsUpgraded)
         {
             foreach (CardModel card in cheese)
@@ -34,7 +34,7 @@ public class Buffet() : GregTheSpireCard(2,
             }
         }
         await Cmd.Wait(0.1f);
-        IEnumerable<CardModel> cracker = await Cracker.CreateInHand(Owner, 1, CombatState);
+        IEnumerable<CardModel> cracker = await Cracker.CreateInHand(Owner, 2, CombatState);
         if (IsUpgraded)
         {
             foreach (CardModel card in cracker)
@@ -43,7 +43,7 @@ public class Buffet() : GregTheSpireCard(2,
             }
         }
         await Cmd.Wait(0.1f);
-        IEnumerable<CardModel> fly = await Fly.CreateInHand(Owner, 1, CombatState);
+        IEnumerable<CardModel> fly = await Fly.CreateInHand(Owner, 2, CombatState);
         if (IsUpgraded)
         {
             foreach (CardModel card in fly)

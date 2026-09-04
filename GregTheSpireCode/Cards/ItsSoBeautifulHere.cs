@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Nodes.CommonUi;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
-public class ItsSoBeautifulHere() : GregTheSpireCard(3,
+public class ItsSoBeautifulHere() : GregTheSpireCard(2,
     CardType.Skill, CardRarity.Rare,
     TargetType.Self)
 {

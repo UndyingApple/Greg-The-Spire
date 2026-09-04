@@ -15,7 +15,7 @@ public class Stinky() : GregTheSpireCard(1,
     TargetType.AllEnemies)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DamageVar(5, ValueProp.Move),
+        new DamageVar(7, ValueProp.Move),
         new DynamicVar("flies", 1)
     ];
 

@@ -29,21 +29,15 @@ public class CheeseAndCrackers() : GregTheSpireCard(1,
     {
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         IEnumerable<CardModel> cheese = await Cheese.CreateInHand(Owner, 1, CombatState);
-        if (IsUpgraded)
-        {
-            foreach (CardModel card in cheese)
-            {
-                CardCmd.Upgrade(card);
-            }
-        }
+        
         await Cmd.Wait(0.1f);
-        IEnumerable<CardModel> cracker = await Cracker.CreateInHand(Owner, 1, CombatState);
         if (IsUpgraded)
         {
-            foreach (CardModel card in cracker)
-            {
-                CardCmd.Upgrade(card);
-            }
+            await Cracker.CreateInHand(Owner, 2, CombatState);
+        }
+        else
+        {
+            await Cracker.CreateInHand(Owner, 1, CombatState);
         }
     }
 

@@ -31,7 +31,7 @@ public class Starvation() : GregTheSpireCard(1,
         if (IsUpgraded)
         {
             foreach (CardModel card in await CardSelectCmd.FromHand(choiceContext, Owner, 
-                new CardSelectorPrefs(SnackSelectorPrefs.SnackSelectionPrompt, 2),
+                new CardSelectorPrefs(SnackSelectorPrefs.SnackSelectionPrompt, 3),
                 (Func<CardModel, bool>) (c => !c.GetKeywordsWithSources(KeywordSources.Local).Contains(GregTheSpireKeywords.Snack)),
                 this))
             {
@@ -41,7 +41,7 @@ public class Starvation() : GregTheSpireCard(1,
         else
         {
             foreach (CardModel card in await CardSelectCmd.FromHand(choiceContext, Owner, 
-                         new CardSelectorPrefs(SnackSelectorPrefs.SnackSelectionPrompt, 1),
+                         new CardSelectorPrefs(SnackSelectorPrefs.SnackSelectionPrompt, 2),
                          (Func<CardModel, bool>) (c => !c.GetKeywordsWithSources(KeywordSources.Local).Contains(GregTheSpireKeywords.Snack)),
                          this))
             {

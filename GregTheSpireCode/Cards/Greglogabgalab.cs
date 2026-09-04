@@ -39,7 +39,7 @@ public class Greglogabgalab() : GregTheSpireCard(3,
         await StealCmd.StealAsync(choiceContext, this.Owner, 1);
         await Cmd.Wait(0.1f);
         
-        PlayerCmd.EndTurn(Owner, false);
+        //PlayerCmd.EndTurn(Owner, false);
     }
 
     protected override void OnUpgrade() => EnergyCost.UpgradeBy(-1);
