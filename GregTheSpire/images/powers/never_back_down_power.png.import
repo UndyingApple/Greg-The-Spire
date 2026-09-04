@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vynue2qxxl4r"
-path="res://.godot/imported/never_back_down_power.png-59a39ae92cba778119d59b51a412744c.ctex"
+path="res://.godot/imported/never_back_down_power.png-db3a3cf966d5aa4f21e46c76fd835c50.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/powers/big/never_back_down_power.png"
-dest_files=["res://.godot/imported/never_back_down_power.png-59a39ae92cba778119d59b51a412744c.ctex"]
+source_file="res://GregTheSpire/images/powers/never_back_down_power.png"
+dest_files=["res://.godot/imported/never_back_down_power.png-db3a3cf966d5aa4f21e46c76fd835c50.ctex"]
 
 [params]
 

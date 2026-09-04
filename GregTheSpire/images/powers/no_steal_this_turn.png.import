@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdu7js28q18dw"
-path="res://.godot/imported/no_steal_this_turn.png-678b9f7f0afbd1950d3736a6cb0782a5.ctex"
+path="res://.godot/imported/no_steal_this_turn.png-723696a2d187d5e7d64267d140268257.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/powers/big/no_steal_this_turn.png"
-dest_files=["res://.godot/imported/no_steal_this_turn.png-678b9f7f0afbd1950d3736a6cb0782a5.ctex"]
+source_file="res://GregTheSpire/images/powers/no_steal_this_turn.png"
+dest_files=["res://.godot/imported/no_steal_this_turn.png-723696a2d187d5e7d64267d140268257.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkisvgfpwu26"
-path="res://.godot/imported/seconds_power.png-4a714ca2f79ecbb1e20a201a8db46c50.ctex"
+path="res://.godot/imported/seconds_power.png-5f150f5bcd16a1116bc37dd6ec53930c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/powers/big/seconds_power.png"
-dest_files=["res://.godot/imported/seconds_power.png-4a714ca2f79ecbb1e20a201a8db46c50.ctex"]
+source_file="res://GregTheSpire/images/powers/seconds_power.png"
+dest_files=["res://.godot/imported/seconds_power.png-5f150f5bcd16a1116bc37dd6ec53930c.ctex"]
 
 [params]
 

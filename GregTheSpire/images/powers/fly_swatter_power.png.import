@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ggevntb3syvy"
-path="res://.godot/imported/fly_swatter_power.png-53375062123065194446906a37559641.ctex"
+path="res://.godot/imported/fly_swatter_power.png-2dba461924b9b75b320b6162a92699ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/powers/big/fly_swatter_power.png"
-dest_files=["res://.godot/imported/fly_swatter_power.png-53375062123065194446906a37559641.ctex"]
+source_file="res://GregTheSpire/images/powers/fly_swatter_power.png"
+dest_files=["res://.godot/imported/fly_swatter_power.png-2dba461924b9b75b320b6162a92699ec.ctex"]
 
 [params]
 

@@ -2,7 +2,7 @@
   "GREGTHESPIRE-THIEVE.description": "Gain {Block:diff()} [gold]Block[/gold]. [gold]Steal[/gold] 1",
   "GREGTHESPIRE-THIEVE.title": "Thieve",
   
-  "GREGTHESPIRE-BAG_OF_TRICKS.description": "{IfUpgraded:show:Draw 1.}Play 1 card from your [gold]Stash[/gold].\n[gold]Stash[/gold]{IfUpgraded:show: up to|} {Cards:diff()} {Cards:plural:card|cards} in your [gold]Hand[/gold].",
+  "GREGTHESPIRE-BAG_OF_TRICKS.description": "{IfUpgraded:show:Draw 1.\n}Play 1 card from your [gold]Stash[/gold].\n[gold]Stash[/gold]{IfUpgraded:show: up to|} {Cards:diff()} {Cards:plural:card|cards} in your [gold]Hand[/gold].",
   "GREGTHESPIRE-BAG_OF_TRICKS.title": "Bag Of Tricks",
   
   "GREGTHESPIRE-STOW.description": "[gold]Stash[/gold] up to 2 cards in your [gold]hand[/gold].",

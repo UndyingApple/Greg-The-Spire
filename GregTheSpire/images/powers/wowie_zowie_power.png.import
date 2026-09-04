@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcrbmrdy3h5y7"
-path="res://.godot/imported/wowie_zowie_power.png-6f86249fa957a66d403e761686454a6e.ctex"
+path="res://.godot/imported/wowie_zowie_power.png-e791e5e83f9d73aa8781790553ef0977.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/powers/big/wowie_zowie_power.png"
-dest_files=["res://.godot/imported/wowie_zowie_power.png-6f86249fa957a66d403e761686454a6e.ctex"]
+source_file="res://GregTheSpire/images/powers/wowie_zowie_power.png"
+dest_files=["res://.godot/imported/wowie_zowie_power.png-e791e5e83f9d73aa8781790553ef0977.ctex"]
 
 [params]
 

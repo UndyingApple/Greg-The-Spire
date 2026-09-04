@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdmb511rku18p"
-path="res://.godot/imported/the_city_power.png-e9e3a9734fc7985b9d992a1f402c1e7c.ctex"
+path="res://.godot/imported/the_city_power.png-7fe6a7a5cf7ad7d50280e60f19fea7d0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/powers/big/the_city_power.png"
-dest_files=["res://.godot/imported/the_city_power.png-e9e3a9734fc7985b9d992a1f402c1e7c.ctex"]
+source_file="res://GregTheSpire/images/powers/the_city_power.png"
+dest_files=["res://.godot/imported/the_city_power.png-7fe6a7a5cf7ad7d50280e60f19fea7d0.ctex"]
 
 [params]
 

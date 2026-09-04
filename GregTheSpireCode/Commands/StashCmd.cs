@@ -59,10 +59,12 @@ public static class StashCmd
         {
             totalStashed = StashCardPile.StashPileType.GetPile(player).Cards.Where<CardModel>((Func<CardModel, bool>)(c => c.Enchantment is not Stowaway)).Count();
         }
+
         if (totalStashed < storage)
         {
             await CardPileCmd.Add(card, StashCardPile.StashPileType);
         }
+    
         else
         {
             await CardCmd.Discard(choiceContext, card);

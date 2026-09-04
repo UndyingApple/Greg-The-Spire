@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7scfv56qy1fs"
-path="res://.godot/imported/chill_pill_power.png-6c3a7979f9ae9d9239443323c2d7577b.ctex"
+path="res://.godot/imported/chill_pill_power.png-794418f605a669d339cf0a1a44e1bdcc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/powers/big/chill_pill_power.png"
-dest_files=["res://.godot/imported/chill_pill_power.png-6c3a7979f9ae9d9239443323c2d7577b.ctex"]
+source_file="res://GregTheSpire/images/powers/chill_pill_power.png"
+dest_files=["res://.godot/imported/chill_pill_power.png-794418f605a669d339cf0a1a44e1bdcc.ctex"]
 
 [params]
 

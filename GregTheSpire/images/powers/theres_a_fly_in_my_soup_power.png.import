@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvo1lwb6p34rt"
-path="res://.godot/imported/theres_a_fly_in_my_soup_power.png-ae8b2551d4b5ad824036bf6b0352c974.ctex"
+path="res://.godot/imported/theres_a_fly_in_my_soup_power.png-3df2cead9dd4423f18342fa02cedd6bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/powers/big/theres_a_fly_in_my_soup_power.png"
-dest_files=["res://.godot/imported/theres_a_fly_in_my_soup_power.png-ae8b2551d4b5ad824036bf6b0352c974.ctex"]
+source_file="res://GregTheSpire/images/powers/theres_a_fly_in_my_soup_power.png"
+dest_files=["res://.godot/imported/theres_a_fly_in_my_soup_power.png-3df2cead9dd4423f18342fa02cedd6bd.ctex"]
 
 [params]
 

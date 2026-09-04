@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnjmkwjjj706w"
-path="res://.godot/imported/fresh_strawberries_power.png-01396c3d36b3d5a0020c2096af5ae6f5.ctex"
+path="res://.godot/imported/fresh_strawberries_power.png-6f0a50af37c39da4e2ca7b57722b7d09.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/powers/big/fresh_strawberries_power.png"
-dest_files=["res://.godot/imported/fresh_strawberries_power.png-01396c3d36b3d5a0020c2096af5ae6f5.ctex"]
+source_file="res://GregTheSpire/images/powers/fresh_strawberries_power.png"
+dest_files=["res://.godot/imported/fresh_strawberries_power.png-6f0a50af37c39da4e2ca7b57722b7d09.ctex"]
 
 [params]
 

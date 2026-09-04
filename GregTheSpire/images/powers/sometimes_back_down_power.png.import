@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ca4elj5ew4y5h"
-path="res://.godot/imported/sometimes_back_down_power.png-95aad2312887c5f20bf001605ef11b23.ctex"
+path="res://.godot/imported/sometimes_back_down_power.png-86ff20d2719c7d26b1080b882b88c004.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/powers/big/sometimes_back_down_power.png"
-dest_files=["res://.godot/imported/sometimes_back_down_power.png-95aad2312887c5f20bf001605ef11b23.ctex"]
+source_file="res://GregTheSpire/images/powers/sometimes_back_down_power.png"
+dest_files=["res://.godot/imported/sometimes_back_down_power.png-86ff20d2719c7d26b1080b882b88c004.ctex"]
 
 [params]
 
