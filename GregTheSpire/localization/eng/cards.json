@@ -176,7 +176,7 @@
   "GREGTHESPIRE-FRESH_STRAWBERRIES.description": "At the start of your next {FreshStrawberriesPower:diff()} turns, add a [gold]Strawberry[/gold] to your hand.",
   "GREGTHESPIRE-FRESH_STRAWBERRIES.title": "Fresh Strawberries",
   
-  "GREGTHESPIRE-SUGAR_RUSH.description": "Deal {Damage:diff()} damage for each [gold]Snack[/gold] played this turn.\n{InCombat:(Hits {CalculatedHits:diff()} times)}",
+  "GREGTHESPIRE-SUGAR_RUSH.description": "Deal {Damage:diff()} damage for each [gold]Snack[/gold] played this turn.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
   "GREGTHESPIRE-SUGAR_RUSH.title": "Sugar Rush",
   
   "GREGTHESPIRE-POCKET_SAND.description": "Deal {Damage:diff()} damage.\nIf this card was played with [gold]Steal[/gold], [gold]Steal[/gold] 1.",
@@ -260,14 +260,8 @@
   "GREGTHESPIRE-PEP_TALK.description": "Another player gains {ConfidencePower:diff()} [gold]Confidence[/gold].",
   "GREGTHESPIRE-PEP_TALK.title": "Pep Talk",
 
-  "GREGTHESPIRE-IMPROVISED_ARMOR.description": "Gain {CalculationExtra:diff()} [gold]Block[/gold] for each card in your [gold]Stash[/gold].\n{InCombat:(Gain {CalculatedBlock:diff()} [gold]Block[/gold])}",
+  "GREGTHESPIRE-IMPROVISED_ARMOR.description": "Gain {CalculationExtra:diff()} [gold]Block[/gold] for each card in your [gold]Stash[/gold].{InCombat:\n(gain {CalculatedBlock:diff()} [gold]Block[/gold]])|}",
   "GREGTHESPIRE-IMPROVISED_ARMOR.title": "Improvised Armor",
-  
-  "GREGTHESPIRE-GOURMAND.description": "",
-  "GREGTHESPIRE-GOURMAND.title": "Gourmand",
-
-  "GREGTHESPIRE-DUMP.description": "",
-  "GREGTHESPIRE-DUMP.title": "Dump",
 
   "GREGTHESPIRE-SALIVATE.description": "Gain {totalBlock:diff()} [gold]Block[/gold].",
   "GREGTHESPIRE-SALIVATE.title": "Salivate",
@@ -286,7 +280,6 @@
 
   "GREGTHESPIRE-GREGLOGABGALAB.description": "Draw 1 card.\n[gold]Stash[/gold] a random card in your [gold]Hand[/gold].\nPlay a random card in your [gold]Hand[/gold].\nPlay a random card in your [gold]Stash[/gold].\n[gold]Steal[/gold] 1.\nEnd your turn.",
   "GREGTHESPIRE-GREGLOGABGALAB.title": "Greglogabgalab",
-  
   
   "GREGTHESPIRE-GOURMAND.description": "Deal {Damage:diff()} [gold]Block[/gold]",
   "GREGTHESPIRE-GOURMAND.title": "Gourmand"
