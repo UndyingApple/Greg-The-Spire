@@ -1,5 +1,6 @@
 ﻿using GregTheSpire.GregTheSpireCode.CardPiles;
 using GregTheSpire.GregTheSpireCode.Cards;
+using GregTheSpire.GregTheSpireCode.Commands;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -25,27 +26,30 @@ public class ItsSoBeautifulHere() : GregTheSpireCard(2,
         CardPlay play)
     {
         await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
-            List<CardModel> list1 = StashCardPile.StashPileType.GetPile(this.Owner).Cards.ToList<CardModel>();
-            int exhaustCount = list1.Count;
-            foreach (CardModel card in list1)
-            {
-              CardPileAddResult? nullable = await CardCmd.Exhaust(choiceContext, card);
-            }
-            List<CardModel> list2 = CardFactory.GetForCombat(this.Owner, this.Owner.Character.CardPool.GetUnlockedCards(this.Owner.UnlockState, this.Owner.RunState.CardMultiplayerConstraint), exhaustCount, this.Owner.RunState.Rng.CombatCardGeneration).ToList<CardModel>();
-            if (this.IsUpgraded)
-              CardCmd.Upgrade((IEnumerable<CardModel>) list2, CardPreviewStyle.None);
+        if (this.IsUpgraded)
+        {
+            await StashCmd.StashAsync(choiceContext, this.Owner, 0, 3, this);
+        }
+        List<CardModel> list1 = StashCardPile.StashPileType.GetPile(this.Owner).Cards.ToList<CardModel>();
+        int exhaustCount = list1.Count;
+        foreach (CardModel card in list1)
+        {
+            CardPileAddResult? nullable = await CardCmd.Exhaust(choiceContext, card);
+        }
+        List<CardModel> list2 = CardFactory.GetForCombat(this.Owner, this.Owner.Character.CardPool.GetUnlockedCards(this.Owner.UnlockState, this.Owner.RunState.CardMultiplayerConstraint), exhaustCount, this.Owner.RunState.Rng.CombatCardGeneration).ToList<CardModel>();
+         
+      
+        IReadOnlyList<CardPileAddResult> combat = await CardPileCmd.AddGeneratedCardsToCombat((IEnumerable<CardModel>) list2, StashCardPile.StashPileType, this.Owner);
             
-            IReadOnlyList<CardPileAddResult> combat = await CardPileCmd.AddGeneratedCardsToCombat((IEnumerable<CardModel>) list2, StashCardPile.StashPileType, this.Owner);
-            
-            List<CardModel> list3 = StashCardPile.StashPileType.GetPile(Owner).Cards.ToList<CardModel>();
-            int playCount = list3.Count;
-            var flag = true;
-            foreach (CardModel card in list3)
-            {
-                flag = true;
-                await CardCmd.AutoPlay(choiceContext, card, null, skipCardPileVisuals: !flag);
-                flag = false;
-            }
+        List<CardModel> list3 = StashCardPile.StashPileType.GetPile(Owner).Cards.ToList<CardModel>();
+        int playCount = list3.Count;
+        var flag = true;
+        foreach (CardModel card in list3)
+        {
+            flag = true;
+            await CardCmd.AutoPlay(choiceContext, card, null, skipCardPileVisuals: !flag);
+            flag = false;
+        }
     }
     public override async void ModifyShuffleOrder(
         Player player,

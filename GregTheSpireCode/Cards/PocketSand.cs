@@ -27,9 +27,9 @@ public class PocketSand() : GregTheSpireCard(1,
 
         if (Stolen.IsStolen.Get(this))
         {
-            await StealCmd.StealAsync(choiceContext, this.Owner, 2);
+            await StealCmd.StealAsync(choiceContext, this.Owner, 1);
         }
-        else await StealCmd.StealAsync(choiceContext, this.Owner, 1);
+
 
 
 

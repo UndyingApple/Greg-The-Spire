@@ -23,7 +23,7 @@ public class MouseTrap() : GregTheSpireCard(1,
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         new BlockVar(7, ValueProp.Move),
-        (DynamicVar)new PowerVar<BlockNextTurnPower>(5)
+        
     ];
     
         protected override IEnumerable<IHoverTip> ExtraHoverTips =>
@@ -36,18 +36,16 @@ public class MouseTrap() : GregTheSpireCard(1,
         CardPlay play)
     {
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
-
         if (!play.Target.Monster.IntendsToAttack)
             return;
         CheeseNextTurnPower? cheeseNextTurnPower = await PowerCmd.Apply<CheeseNextTurnPower>(choiceContext,
-            this.Owner.Creature, DynamicVars.Power<BlockNextTurnPower>().BaseValue, this.Owner.Creature,
+            this.Owner.Creature,1, this.Owner.Creature,
             (CardModel)this);
     }
 
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Power<BlockNextTurnPower>().UpgradeValueBy(3);
-        DynamicVars.Power<BlockNextTurnPower>().UpgradeValueBy(2);
+        DynamicVars.Block.UpgradeValueBy(3);
     }
 }

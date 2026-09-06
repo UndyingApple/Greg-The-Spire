@@ -16,7 +16,7 @@ namespace GregTheSpire.GregTheSpireCode.Cards;
 
 
 public class Kickflip() : GregTheSpireCard(2,
-    CardType.Attack, CardRarity.Uncommon,
+    CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {
     

@@ -2,6 +2,7 @@
 using GregTheSpire.GregTheSpireCode.Cards.Colorless;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Factories;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
@@ -15,9 +16,21 @@ public class Buffet() : GregTheSpireCard(2,
 {
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
-        HoverTipFactory.FromCard<Cheese>(IsUpgraded),
-        HoverTipFactory.FromCard<Cracker>(IsUpgraded),
-        HoverTipFactory.FromCard<Fly>(IsUpgraded)
+
+    ];
+
+    public IEnumerable<CardModel> SnackTokens =>
+    [
+        ModelDb.Card<Strawberry>(),
+        ModelDb.Card<Soda>(),
+        ModelDb.Card<Olive>(),
+        ModelDb.Card<Cheese>(),
+        ModelDb.Card<Cracker>(),
+        ModelDb.Card<Fly>(),
+        ModelDb.Card<Soup>()
+    ];
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [
+        CardKeyword.Exhaust
     ];
 
     protected override async Task OnPlay(
@@ -25,31 +38,17 @@ public class Buffet() : GregTheSpireCard(2,
         CardPlay play)
     {
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
-        IEnumerable<CardModel> cheese = await Cheese.CreateInHand(Owner, 2, CombatState);
-        if (IsUpgraded)
-        {
-            foreach (CardModel card in cheese)
-            {
-                CardCmd.Upgrade(card);
-            }
-        }
-        await Cmd.Wait(0.1f);
-        IEnumerable<CardModel> cracker = await Cracker.CreateInHand(Owner, 2, CombatState);
-        if (IsUpgraded)
-        {
-            foreach (CardModel card in cracker)
-            {
-                CardCmd.Upgrade(card);
-            }
-        }
-        await Cmd.Wait(0.1f);
-        IEnumerable<CardModel> fly = await Fly.CreateInHand(Owner, 2, CombatState);
-        if (IsUpgraded)
-        {
-            foreach (CardModel card in fly)
-            {
-                CardCmd.Upgrade(card);
-            }
-        }
+
+        int num = CardPile.MaxCardsInHand - CardPile.GetCards(this.Owner, PileType.Hand).Count<CardModel>();
+        List<CardModel> cards = new List<CardModel>();
+        for (int index = 0; index < num; ++index)
+            await CardPileCmd.AddGeneratedCardsToCombat(
+                (IEnumerable<CardModel>)CardFactory
+                    .GetDistinctForCombat(this.Owner, SnackTokens, 1, Owner.RunState.Rng.CombatCardGeneration)
+                    .ToList<CardModel>(), PileType.Hand, this.Owner);
+
+
+
+
     }
 }

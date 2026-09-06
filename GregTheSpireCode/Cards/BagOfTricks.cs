@@ -24,10 +24,6 @@ public class BagOfTricks() : GregTheSpireCard(
 		CardPlay play)
 	{
 		await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
-		if (IsUpgraded)
-		{
-			await CardPileCmd.Draw(choiceContext, 1, this.Owner);
-		}
 		
 		await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 1, 1,null);
 		

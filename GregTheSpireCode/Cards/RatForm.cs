@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
-public class RatForm() : GregTheSpireCard(2,
+public class RatForm() : GregTheSpireCard(3,
     CardType.Power, CardRarity.Rare,
     TargetType.Self)
 {

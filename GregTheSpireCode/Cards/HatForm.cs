@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
-public class HatForm() : GregTheSpireCard(2,
+public class HatForm() : GregTheSpireCard(3,
     CardType.Power, CardRarity.Rare,
     TargetType.Self)
 {

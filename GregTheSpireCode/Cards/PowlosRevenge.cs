@@ -17,7 +17,7 @@ public class PowlosRevenge() : GregTheSpireCard(4,
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DamageVar(50, ValueProp.Move)
+        new DamageVar(40, ValueProp.Move)
     ];
     
     private PileType? _sourcePile;
@@ -43,6 +43,6 @@ public class PowlosRevenge() : GregTheSpireCard(4,
 
     protected override void OnUpgrade()
     {
-        this.DynamicVars.Damage.UpgradeValueBy(15);
+        this.DynamicVars.Damage.UpgradeValueBy(10);
     }
 }

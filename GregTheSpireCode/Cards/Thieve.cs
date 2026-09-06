@@ -20,7 +20,8 @@ public class Thieve() : GregTheSpireCard(2,
     public override bool GainsBlock => true;
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new BlockVar(8M, ValueProp.Move)
+        new BlockVar(7, ValueProp.Move),
+        new IntVar("StealAmount", 1)
     ];
 
     protected override async Task OnPlay(
@@ -39,6 +40,6 @@ public class Thieve() : GregTheSpireCard(2,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Block.UpgradeValueBy(4M);
+        DynamicVars["StealAmount"].UpgradeValueBy(1);
     }
 }

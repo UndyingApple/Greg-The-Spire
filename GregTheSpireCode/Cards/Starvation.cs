@@ -15,7 +15,7 @@ public class Starvation() : GregTheSpireCard(1,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("numCards", 1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("numCards", 2)];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [
         CardKeyword.Exhaust
@@ -28,26 +28,14 @@ public class Starvation() : GregTheSpireCard(1,
 
       
 
-        if (IsUpgraded)
-        {
             foreach (CardModel card in await CardSelectCmd.FromHand(choiceContext, Owner, 
-                new CardSelectorPrefs(SnackSelectorPrefs.SnackSelectionPrompt, 3),
+                new CardSelectorPrefs(SnackSelectorPrefs.SnackSelectionPrompt, DynamicVars["numCards"].IntValue),
                 (Func<CardModel, bool>) (c => !c.GetKeywordsWithSources(KeywordSources.Local).Contains(GregTheSpireKeywords.Snack)),
                 this))
             {
                 CardCmd.ApplyKeyword(card, GregTheSpireKeywords.Snack);
             }
-        }
-        else
-        {
-            foreach (CardModel card in await CardSelectCmd.FromHand(choiceContext, Owner, 
-                         new CardSelectorPrefs(SnackSelectorPrefs.SnackSelectionPrompt, 2),
-                         (Func<CardModel, bool>) (c => !c.GetKeywordsWithSources(KeywordSources.Local).Contains(GregTheSpireKeywords.Snack)),
-                         this))
-            {
-                CardCmd.ApplyKeyword(card, GregTheSpireKeywords.Snack);
-            }
-        }
+
     }
     
     public struct SnackSelectorPrefs {

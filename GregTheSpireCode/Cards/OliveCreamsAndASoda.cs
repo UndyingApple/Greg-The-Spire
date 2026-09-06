@@ -24,20 +24,24 @@ protected override async Task OnPlay(
     PlayerChoiceContext choiceContext,
     CardPlay play)
 {
-    IEnumerable<CardModel> soda = await Soda.CreateInHand(Owner, 1, CombatState);
-    if (IsUpgraded)
-    {
-        foreach (CardModel card in soda)
+
+    IEnumerable<Soda> soda = Soda.Create(this.Owner, 1, this.CombatState);
+    CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardsToCombat((IEnumerable<CardModel>)soda, PileType.Draw, this.Owner,
+        CardPilePosition.Random));
+   if (IsUpgraded)
         {
-            CardCmd.Upgrade(card);
+            foreach (CardModel card in soda)
+            {
+                CardCmd.Upgrade(card);
+            }
         }
-    }
+   
+   
     await Cmd.Wait(0.1f);
     int num = CardPile.MaxCardsInHand - CardPile.GetCards(this.Owner, PileType.Hand).Count<CardModel>();
     List<CardModel> cards = new List<CardModel>();
     for (int index = 0; index < num; ++index)
          cards.Add((CardModel) this.CombatState.CreateCard<Olive>(this.Owner));
-    
     IReadOnlyList<CardPileAddResult> combat = await CardPileCmd.AddGeneratedCardsToCombat((IEnumerable<CardModel>) cards, PileType.Hand, this.Owner);
 }
 

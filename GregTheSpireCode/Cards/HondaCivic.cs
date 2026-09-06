@@ -16,7 +16,7 @@ public class HondaCivic() : GregTheSpireCard(2,
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         //(DynamicVar) new DamageVar(7 + 2 * CombatManager.Instance.History.CardPlaysStarted.Count(e => e.CardPlay.Player == Owner && e.CardPlay.Card.Keywords.Contains(GregTheSpireKeywords.Snack)), ValueProp.Move)
-        new CalculationBaseVar(26),
+        new CalculationBaseVar(20),
         new ExtraDamageVar(-3),
         new CalculatedDamageVar(ValueProp.Move).WithMultiplier((Func<CardModel, Creature, Decimal>) ((card, _) => (Decimal) card.CombatState.HittableEnemies.Count))    
     ];
