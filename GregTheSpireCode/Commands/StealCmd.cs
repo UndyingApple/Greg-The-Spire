@@ -48,6 +48,7 @@ public static class StealCmd
                 Stolen.IsStolen.Set(topCard, true);
                 await CardPileCmd.AutoPlayFromDrawPile(choiceContext, player, 1, CardPilePosition.Top, false);
                 Stolen.IsStolen.Set(topCard, false);
+                Stolen.NumStolenCombat.Set(player, Stolen.NumStolenCombat.Get(player) + 1);
                 /*Creature? target,
                     AutoPlayType type = AutoPlayType.Default,
                     bool skipXCapture = false,
@@ -61,7 +62,8 @@ public static class StealCmd
     }
 }
 
-public class Stolen
+public static class Stolen
 {
     public static readonly SpireField<CardModel, bool> IsStolen = new(() => false);
+    public static readonly SpireField<Player, int> NumStolenCombat = new(() => 0);
 }
