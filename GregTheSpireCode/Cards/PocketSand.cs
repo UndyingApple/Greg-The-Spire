@@ -16,6 +16,7 @@ public class PocketSand() : GregTheSpireCard(1,
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new DamageVar(7, ValueProp.Move),
         new PowerVar<WeakPower>(1)
     ];
 
@@ -23,6 +24,7 @@ public class PocketSand() : GregTheSpireCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).Execute(choiceContext);
         await PowerCmd.Apply<WeakPower>(choiceContext, play.Target, this.DynamicVars.Weak.BaseValue, this.Owner.Creature, (CardModel) this);
 
         if (Stolen.IsStolen.Get(this))
