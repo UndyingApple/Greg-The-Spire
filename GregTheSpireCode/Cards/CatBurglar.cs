@@ -31,12 +31,18 @@ public class CatBurglar() : GregTheSpireCard(2,
         AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).WithHitCount(DynamicVars["HitCount"].IntValue).FromCard((CardModel) this, play).Targeting(play.Target).Execute(choiceContext);
     }
     
-    public override async Task AfterCardChangedPiles(CardModel card, PileType oldPileType, AbstractModel? clonedBy)
+    public override Task AfterCardEnteredCombat(CardModel card)
     {
-        if (Stolen.IsStolen.Get(card) && oldPileType == PileType.Draw)
-        {
-            DynamicVars["HitCount"].BaseValue += 1;
-        }
+        if (card != this || this.IsClone)
+            return Task.CompletedTask;
+        DynamicVars["HitCount"].BaseValue = Stolen.NumStolenCombat.Get(card.Owner);
+        return Task.CompletedTask;
+    }
+    
+    public override Task AfterCardChangedPiles(CardModel card, PileType oldPileType, AbstractModel? clonedBy)
+    {
+        DynamicVars["HitCount"].BaseValue = Stolen.NumStolenCombat.Get(card.Owner);
+        return Task.CompletedTask;
     }
 
     protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(2);
