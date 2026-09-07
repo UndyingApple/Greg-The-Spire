@@ -179,7 +179,7 @@
   "GREGTHESPIRE-SUGAR_RUSH.description": "Deal {Damage:diff()} damage for each [gold]Snack[/gold] played this turn.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
   "GREGTHESPIRE-SUGAR_RUSH.title": "Sugar Rush",
   
-  "GREGTHESPIRE-POCKET_SAND.description": "Apply {WeakPower:diff()}.\n[gold]Steal[/gold] 1.\nIf this card was played with [gold]Steal[/gold], [gold]Steal[/gold] 2 instead.",
+  "GREGTHESPIRE-POCKET_SAND.description": "Deal {Damage:diff()} damage and apply {WeakPower:diff()} [gold]Weak[/gold].\nIf this card was played with [gold]Steal[/gold], [gold]Steal[/gold] 1.",
   "GREGTHESPIRE-POCKET_SAND.title": "Pocket Sand",
   
   "GREGTHESPIRE-STINKY.description": "Deal {Damage:diff()} damage to ALL enemies.\nAdd {IfUpgraded:show:2|1} [gold]{IfUpgraded:Flies|Fly}[/gold] to your [gold]Hand[/gold].",
@@ -203,7 +203,7 @@
   "GREGTHESPIRE-RECKLESSNESS.description": " Double the [gold]Strength[/gold] gain by [gold]Confidence[/gold].\nReceive double damage from enemy attacks.",
   "GREGTHESPIRE-RECKLESSNESS.title": "Recklessness",
 
-  "GREGTHESPIRE-STUMBLE.description": "[gold]Exhaust[/gold] 1 card in your [gold]Hand[/gold].\nPlay {StashPlayAmt:diff()} {StashPlayAmt:plural:card|cards} from your [gold]Stash[/gold].",
+  "GREGTHESPIRE-STUMBLE.description": "Gain {Block:diff()} [gold]Block[/gold].\nAdd a {IfUpgraded:show:Fumble+|Fumble} to your [gold]Draw Pile[/gold].",
   "GREGTHESPIRE-STUMBLE.title": "Stumble",
 
   "GREGTHESPIRE-SLIP_UP.description": "Deal {Damage:diff()} damage.\n[gold]Discard[/gold] a random card in your [gold]Stash[/gold].",
@@ -212,10 +212,10 @@
   "GREGTHESPIRE-SECRET_GADGET.description": "Deal {Damage:diff()} damage.\nIf this card is played for free, draw {Cards:diff()} {Cards:plural:card|cards}.",
   "GREGTHESPIRE-SECRET_GADGET.title": "Secret Gadget",
 
-  "GREGTHESPIRE-TUMBLE.description": "Gain 1 [gold]Storage[/gold].\nPlay any amount of cards from your [gold]Stash[/gold].\n[gold]Stash[/gold] any amount of cards in your [gold]Hand[/gold].",
+  "GREGTHESPIRE-TUMBLE.description": "When you play a card from your [gold]Stash[/gold], play it an additional time.",
   "GREGTHESPIRE-TUMBLE.title": "Tumble",
 
-  "GREGTHESPIRE-TAIL_SWIPE.description": "Draw cards equal to the number of cards in your [gold]Storage[/gold].{IfUpgraded:show:\nPlay a card from your [gold]Stash[/gold]}",
+  "GREGTHESPIRE-TAIL_SWIPE.description": "Draw cards equal to the number of cards in your [gold]Stash[/gold].{IfUpgraded:show:\nPlay a card from your [gold]Stash[/gold]}",
   "GREGTHESPIRE-TAIL_SWIPE.title": "Tail Swipe",
   
   "GREGTHESPIRE-GRAPPLING_HOOK.description": "If this is the first time this card has been played this turn, [gold]Steal[/gold] {IfUpgraded:show:2|1}.",
@@ -227,7 +227,7 @@
   "GREGTHESPIRE-SWALLOW.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you don’t take any unblocked damage this turn, gain {Block:diff()} [gold]Block[/gold] at the start of your next turn.",
   "GREGTHESPIRE-SWALLOW.title": "Swallow",
 
-  "GREGTHESPIRE-FUMBLE.description": "[gold]Discard[/gold] up to 2 cards in your [gold]Hand[/gold].\nFor each card discarded this way, play a card from your [gold]Stash[/gold].",
+  "GREGTHESPIRE-FUMBLE.description": "Draw cards until your [gold]Hand[/gold] is full.\nDeals 3 damage for each card drawn.\nAdd a {IfUpgraded:show:Tumble+|Tumble} to your [gold]Draw Pile[/gold].",
   "GREGTHESPIRE-FUMBLE.title": "Fumble",
 
   "GREGTHESPIRE-SPOON.description": "Deal {Damage:diff()} damage.\nPlay a card from your [gold]Stash[/gold].",
@@ -236,7 +236,7 @@
   "GREGTHESPIRE-COFFEE.description": "Gain {Energy:energyIcons()}.\nYou can not [gold]Steal[/gold] this turn.",
   "GREGTHESPIRE-COFFEE.title": "Coffee",
 
-  "GREGTHESPIRE-ITS_SO_BEAUTIFUL_HERE.description": "[gold]Exhaust[/gold] your [gold]Stash[/gold].\nAdd a random {IfUpgraded:show:upgraded|} card to your [gold]Stash[/gold] for each card exhausted, then play every card in your [gold]Stash[/gold].\nWhen this card is shuffled into your deck, place it on the bottom.",
+  "GREGTHESPIRE-ITS_SO_BEAUTIFUL_HERE.description": "[gold]Exhaust[/gold] your [gold]Stash[/gold].\nFill your [gold]Stash[/gold] with random {IfUpgraded:show:upgraded|} cards, then play every card in your [gold]Stash[/gold].",
   "GREGTHESPIRE-ITS_SO_BEAUTIFUL_HERE.title": "It's So Beautiful Here",
 
   "GREGTHESPIRE-POWLOS_REVENGE.description": "Deal {Damage:diff()} damage.\nIf this card was played from your [gold]Stash[/gold], gain 2 [gold]Vulnerable[/gold].",
@@ -263,7 +263,7 @@
   "GREGTHESPIRE-IMPROVISED_ARMOR.description": "Gain {CalculationExtra:diff()} [gold]Block[/gold] for each card in your [gold]Stash[/gold].{InCombat:\n(gain {CalculatedBlock:diff()} [gold]Block[/gold]])|}",
   "GREGTHESPIRE-IMPROVISED_ARMOR.title": "Improvised Armor",
 
-  "GREGTHESPIRE-SALIVATE.description": "Gain {CalculatedBlock:diff()} [gold]Block[/gold], Gain {CalculationExtra:diff()} additional [gold]Block[/gold] for every unique [gold]Snack[/gold] in your [gold]Exhaust Pile[/gold].",
+  "GREGTHESPIRE-SALIVATE.description": "Gain {CalculatedBlock:diff()} [gold]Block[/gold].\nGain {CalculationExtra:diff()} additional [gold]Block[/gold] for every unique [gold]Snack[/gold] in your [gold]Exhaust Pile[/gold].",
   "GREGTHESPIRE-SALIVATE.title": "Salivate",
 
   "GREGTHESPIRE-DUMP.description": "[gold]Discard[/gold] your [gold]Stash[/gold].\nDeal {Damage:diff()} damage for every card [gold]Discarded[/gold].",
@@ -280,15 +280,12 @@
 
   "GREGTHESPIRE-GREGLOGABGALAB.description": "Draw 1 card.\n[gold]Stash[/gold] a random card in your [gold]Hand[/gold].\nPlay a random card in your [gold]Hand[/gold].\nPlay a random card in your [gold]Stash[/gold].\n[gold]Steal[/gold] 1.",
   "GREGTHESPIRE-GREGLOGABGALAB.title": "Greglogabgalab",
-  
-  "GREGTHESPIRE-GOURMAND.description": "Deal {Damage:diff()} [gold]Block[/gold]",
-  "GREGTHESPIRE-GOURMAND.title": "Gourmand",
 
   "GREGTHESPIRE-DARKENED_CHOCOLATE.description": "Apply 3 [gold]Weak[/gold] and [gold]Vulnerable[/gold] to ALL enemies.\nCosts {Energy:energyIcons()} less for each card played using [gold]Steal[/gold] this combat.\nYou cannot [gold]Stash[/gold] this card.",
   "GREGTHESPIRE-DARKENED_CHOCOLATE.title": "Darkened Chocolate",
 
-  "GREGTHESPIRE-LAST_DITCH_EFFORT.description": "",
-  "GREGTHESPIRE-LAST_DITCH_EFFORT.title": "LastDitchEffort",
+  "GREGTHESPIRE-LAST_DITCH_EFFORT.description": "Deal {Damage:diff()} damage.",
+  "GREGTHESPIRE-LAST_DITCH_EFFORT.title": "Last-Ditch Effort",
 
   "GREGTHESPIRE-LINT_BALL.description": "Deal {Damage:diff()} damage.\nIf this is in your [gold]Stash[/gold] at the end of your turn, increase this card's damage by {Increase:diff()} this combat.",
   "GREGTHESPIRE-LINT_BALL.title": "Lint Ball",

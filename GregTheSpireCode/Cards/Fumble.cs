@@ -10,6 +10,7 @@ using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.ValueProps;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
@@ -17,7 +18,9 @@ public class Fumble() : GregTheSpireCard(2,
     CardType.Attack, CardRarity.Token,
     TargetType.AllEnemies)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new DamageVar(3, ValueProp.Move),
+    ];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [
         CardKeyword.Exhaust,
@@ -48,9 +51,9 @@ public class Fumble() : GregTheSpireCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        Decimal cardsDrawn = CardPile.MaxCardsInHand - this.Owner.PlayerCombatState.Hand.Cards.Count;
+        int cardsDrawn = CardPile.MaxCardsInHand - this.Owner.PlayerCombatState.Hand.Cards.Count;
         await CardPileCmd.Draw(choiceContext, cardsDrawn, this.Owner);
-        await DamageCmd.Attack(cardsDrawn * 3).FromCard((CardModel) this, play).TargetingAllOpponents(this.CombatState).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
+        await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).WithHitCount(cardsDrawn).FromCard((CardModel) this, play).Targeting(play.Target).Execute(choiceContext);
         IEnumerable<CardModel> cards = await Tumble.CreateInDraw(Owner, 1, CombatState);
         if (IsUpgraded)
         {
