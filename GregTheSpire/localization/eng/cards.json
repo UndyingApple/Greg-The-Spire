@@ -215,7 +215,7 @@
   "GREGTHESPIRE-TUMBLE.description": "Gain 1 [gold]Storage[/gold].\nPlay any amount of cards from your [gold]Stash[/gold].\n[gold]Stash[/gold] any amount of cards in your [gold]Hand[/gold].",
   "GREGTHESPIRE-TUMBLE.title": "Tumble",
 
-  "GREGTHESPIRE-TAIL_SWIPE.description": "Deal {Damage:diff()} damage to ALL enemies.\nDraw cards equal to your [gold]Storage[/gold].",
+  "GREGTHESPIRE-TAIL_SWIPE.description": "Draw cards equal to the number of cards in your [gold]Storage[/gold].{IfUpgraded:show:\nPlay a card from your [gold]Stash[/gold]}",
   "GREGTHESPIRE-TAIL_SWIPE.title": "Tail Swipe",
   
   "GREGTHESPIRE-GRAPPLING_HOOK.description": "If this is the first time this card has been played this turn, [gold]Steal[/gold] {IfUpgraded:show:2|1}.",

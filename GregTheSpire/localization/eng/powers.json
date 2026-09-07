@@ -109,21 +109,25 @@
 
   "GREGTHESPIRE-OBLIVIOUS_POWER.description": "",
   "GREGTHESPIRE-OBLIVIOUS_POWER.smartDescription": "",
-  "GREGTHESPIRE-OBLIVIOUS_POWER.title": "ObliviousPower",
+  "GREGTHESPIRE-OBLIVIOUS_POWER.title": "Oblivious",
 
   "GREGTHESPIRE-CONFIDENCE_NEXT_TURN_POWER.description": "",
   "GREGTHESPIRE-CONFIDENCE_NEXT_TURN_POWER.smartDescription": "",
-  "GREGTHESPIRE-CONFIDENCE_NEXT_TURN_POWER.title": "ConfidenceNextTurnPower",
+  "GREGTHESPIRE-CONFIDENCE_NEXT_TURN_POWER.title": "Confidence Next Turn",
 
   "GREGTHESPIRE-POSITIVE_AFFIRMATION_POWER.description": "",
   "GREGTHESPIRE-POSITIVE_AFFIRMATION_POWER.smartDescription": "",
-  "GREGTHESPIRE-POSITIVE_AFFIRMATION_POWER.title": "PositiveAffirmationPower",
+  "GREGTHESPIRE-POSITIVE_AFFIRMATION_POWER.title": "Positive Affirmation",
 
   "GREGTHESPIRE-NO_SKILLS_PLAYED.description": "",
   "GREGTHESPIRE-NO_SKILLS_PLAYED.smartDescription": "",
-  "GREGTHESPIRE-NO_SKILLS_PLAYED.title": "NoSkillsPlayed",
+  "GREGTHESPIRE-NO_SKILLS_PLAYED.title": "No Skills Played",
 
   "GREGTHESPIRE-CAMEMBERT_WHEEL_POWER.description": "Next turn, deal damage;",
   "GREGTHESPIRE-CAMEMBERT_WHEEL_POWER.smartDescription": "Next turn, deal {Amount} damage.",
-  "GREGTHESPIRE-CAMEMBERT_WHEEL_POWER.title": "Camembert Wheel"
+  "GREGTHESPIRE-CAMEMBERT_WHEEL_POWER.title": "Camembert Wheel",
+
+  "GREGTHESPIRE-TUMBLE_POWER.description": "",
+  "GREGTHESPIRE-TUMBLE_POWER.smartDescription": "",
+  "GREGTHESPIRE-TUMBLE_POWER.title": "TumblePower"
 }
