@@ -16,7 +16,7 @@ public class FlySwatter() : GregTheSpireCard(1,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-         new PowerVar<FlySwatterPower>(4)
+         new PowerVar<FlySwatterPower>(3)
     ];
 
     protected override async Task OnPlay(
