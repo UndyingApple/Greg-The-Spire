@@ -107,27 +107,27 @@
   "GREGTHESPIRE-CHILL_PILL_POWER.smartDescription": "Lose all of your [gold]Confidence[/gold] at the end of this turn.",
   "GREGTHESPIRE-CHILL_PILL_POWER.title": "Chill Pill",
 
-  "GREGTHESPIRE-OBLIVIOUS_POWER.description": "",
-  "GREGTHESPIRE-OBLIVIOUS_POWER.smartDescription": "",
+  "GREGTHESPIRE-OBLIVIOUS_POWER.description": "You can't lose [gold]Confidence[/gold] through damage this turn",
+  "GREGTHESPIRE-OBLIVIOUS_POWER.smartDescription": "You can't lose [gold]Confidence[/gold] through damage {Amount:plural:this turn|for {Amount} turns}",
   "GREGTHESPIRE-OBLIVIOUS_POWER.title": "Oblivious",
 
-  "GREGTHESPIRE-CONFIDENCE_NEXT_TURN_POWER.description": "",
-  "GREGTHESPIRE-CONFIDENCE_NEXT_TURN_POWER.smartDescription": "",
+  "GREGTHESPIRE-CONFIDENCE_NEXT_TURN_POWER.description": "Gain [gold]Confidence[/gold] at the start of your next turn",
+  "GREGTHESPIRE-CONFIDENCE_NEXT_TURN_POWER.smartDescription": "Gain {Amount} [gold]Confidence[/gold] at the start of your next turn",
   "GREGTHESPIRE-CONFIDENCE_NEXT_TURN_POWER.title": "Confidence Next Turn",
 
-  "GREGTHESPIRE-POSITIVE_AFFIRMATION_POWER.description": "",
-  "GREGTHESPIRE-POSITIVE_AFFIRMATION_POWER.smartDescription": "",
+  "GREGTHESPIRE-POSITIVE_AFFIRMATION_POWER.description": "If you have [gold]Weak[/gold] at the end of your turn, gain [gold]Confidence[/gold] next turn.",
+  "GREGTHESPIRE-POSITIVE_AFFIRMATION_POWER.smartDescription": "If you have [gold]Weak[/gold] at the end of your turn, gain {Amount} [gold]Confidence[/gold] next turn.",
   "GREGTHESPIRE-POSITIVE_AFFIRMATION_POWER.title": "Positive Affirmation",
 
-  "GREGTHESPIRE-NO_SKILLS_PLAYED.description": "",
-  "GREGTHESPIRE-NO_SKILLS_PLAYED.smartDescription": "",
+  "GREGTHESPIRE-NO_SKILLS_PLAYED.description": "You can no longer play Skills this combat.",
+  "GREGTHESPIRE-NO_SKILLS_PLAYED.smartDescription": "You can no longer play Skills this combat.",
   "GREGTHESPIRE-NO_SKILLS_PLAYED.title": "No Skills Played",
 
   "GREGTHESPIRE-CAMEMBERT_WHEEL_POWER.description": "Next turn, deal damage;",
   "GREGTHESPIRE-CAMEMBERT_WHEEL_POWER.smartDescription": "Next turn, deal {Amount} damage.",
   "GREGTHESPIRE-CAMEMBERT_WHEEL_POWER.title": "Camembert Wheel",
 
-  "GREGTHESPIRE-TUMBLE_POWER.description": "",
-  "GREGTHESPIRE-TUMBLE_POWER.smartDescription": "",
-  "GREGTHESPIRE-TUMBLE_POWER.title": "TumblePower"
+  "GREGTHESPIRE-TUMBLE_POWER.description": "Cards played from your [gold]Stash[/gold] are played an additional time.",
+  "GREGTHESPIRE-TUMBLE_POWER.smartDescription": "Cards played from your [gold]Stash[/gold] are played {Amount:plural:an additional time|{Amount}additional times}.",
+  "GREGTHESPIRE-TUMBLE_POWER.title": "Tumble"
 }
