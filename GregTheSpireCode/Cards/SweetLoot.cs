@@ -5,18 +5,19 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
 public class SweetLoot() : GregTheSpireCard(1,
-    CardType.Skill, CardRarity.Uncommon,
-    TargetType.Self)
+    CardType.Attack, CardRarity.Uncommon,
+    TargetType.AnyEnemy)
 {
-    public override bool GainsBlock => true;
+
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new BlockVar(8, ValueProp.Move)
+        new DamageVar(8, ValueProp.Move)
     ];
     
     protected override async Task OnPlay(
@@ -24,7 +25,7 @@ public class SweetLoot() : GregTheSpireCard(1,
         CardPlay play)
     {
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
-        await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
+        await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).Execute(choiceContext);
         
         var stashedCards = (await CardSelectCmd.FromCombatPile(choiceContext, PileType.Draw.GetPile(this.Owner), this.Owner, 
             new CardSelectorPrefs(StashSelectorPrefs.ToStashSelectionPrompt, 1),
@@ -34,6 +35,6 @@ public class SweetLoot() : GregTheSpireCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Block.UpgradeValueBy(3);
+        DynamicVars.Damage.UpgradeValueBy(3);
     }
 }

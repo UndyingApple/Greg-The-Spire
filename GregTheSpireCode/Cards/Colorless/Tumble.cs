@@ -1,4 +1,5 @@
-﻿using GregTheSpire.GregTheSpireCode.Cards;
+﻿using BaseLib.Utils;
+using GregTheSpire.GregTheSpireCode.Cards;
 using GregTheSpire.GregTheSpireCode.Commands;
 using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.Combat;
@@ -8,11 +9,13 @@ using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.CardPools;
 
 namespace GregTheSpire.GregTheSpireCode.Cards.Colorless;
 
+[Pool(typeof(TokenCardPool))]
 public class Tumble() : GregTheSpireCard(3,
-    CardType.Power, CardRarity.Rare,
+    CardType.Power, CardRarity.Token,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];

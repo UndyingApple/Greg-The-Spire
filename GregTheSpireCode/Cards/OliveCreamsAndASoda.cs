@@ -17,7 +17,7 @@ protected override IEnumerable<DynamicVar> CanonicalVars => [];
 protected override IEnumerable<IHoverTip> ExtraHoverTips =>
 [
     HoverTipFactory.FromCard<Soda>(IsUpgraded),
-    HoverTipFactory.FromCard<Olive>(IsUpgraded),
+    HoverTipFactory.FromCard<Olive>(),
 ];
 
 protected override async Task OnPlay(

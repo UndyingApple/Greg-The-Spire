@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
 
-public class EGOMANIA() : GregTheSpireCard(2,
+public class EGOMANIA() : GregTheSpireCard(1,
    CardType.Power, CardRarity.Ancient,
    TargetType.Self)
 {
@@ -20,16 +20,21 @@ public class EGOMANIA() : GregTheSpireCard(2,
        PlayerChoiceContext choiceContext,
        CardPlay play)
    {
-       await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature,
-                   8, Owner.Creature, this);
-      
-       await PowerCmd.Apply<EGOMANIAPower>(choiceContext, Owner.Creature,
+       if (this.IsUpgraded)
+       {
+       
+
+            await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature,
+           8, Owner.Creature, this);
+       };
+
+   await PowerCmd.Apply<EGOMANIAPower>(choiceContext, Owner.Creature,
            4, Owner.Creature, this);
    }
 
 
    protected override void OnUpgrade()
    {
-       this.EnergyCost.UpgradeBy(-1);
+       
    }
 }
