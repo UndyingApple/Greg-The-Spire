@@ -8,7 +8,7 @@
   "GREGTHESPIRE-STOW.description": "[gold]Stash[/gold] up to {IfUpgraded:show:3|2} cards in your [gold]Hand[/gold].",
   "GREGTHESPIRE-STOW.title": "Stow",
   
-  "GREGTHESPIRE-CHEESE_AND_CRACKERS.description": "Add a [gold]Cheese[/gold] and {IfUpgraded:show:2 [gold]Crackers[/gold]|a [gold]Cracker[/gold} to your [gold]Hand[/gold].",
+  "GREGTHESPIRE-CHEESE_AND_CRACKERS.description": "Add a [gold]Cheese[/gold] and {IfUpgraded:show:2 [gold]Crackers[/gold]|a [gold]Cracker[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-CHEESE_AND_CRACKERS.title": "Cheese & Crackers",
   
   "GREGTHESPIRE-CHEESE.description": "Gain {ConfidencePower:diff()} [gold]Confidence[/gold].",
