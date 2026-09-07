@@ -285,7 +285,10 @@
   "GREGTHESPIRE-GOURMAND.title": "Gourmand",
 
   "GREGTHESPIRE-DARKENED_CHOCOLATE.description": "Apply 3 [gold]Weak[/gold] and [gold]Vulnerable[/gold] to ALL enemies.\nCosts {Energy:energyIcons()} less for each card played using [gold]Steal[/gold] this combat.\nYou cannot [gold]Stash[/gold] this card.",
-  "GREGTHESPIRE-DARKENED_CHOCOLATE.title": "Darkened Chocolate"
+  "GREGTHESPIRE-DARKENED_CHOCOLATE.title": "Darkened Chocolate",
+
+  "GREGTHESPIRE-LAST_DITCH_EFFORT.description": "",
+  "GREGTHESPIRE-LAST_DITCH_EFFORT.title": "LastDitchEffort"
 }
   
   
