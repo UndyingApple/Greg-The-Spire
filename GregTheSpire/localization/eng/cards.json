@@ -278,7 +278,7 @@
   "GREGTHESPIRE-CAT_BURGLAR.description": "Deal {Damage:diff()} damage for each card played using [gold]Steal[/gold] this combat.\n{InCombat:(Hits {HitCount:diff()} times)|}",
   "GREGTHESPIRE-CAT_BURGLAR.title": "Cat Burglar",
 
-  "GREGTHESPIRE-GREGLOGABGALAB.description": "Draw 1 card.\n[gold]Stash[/gold] a random card in your [gold]Hand[/gold].\nPlay a random card in your [gold]Hand[/gold].\nPlay a random card in your [gold]Stash[/gold].\n[gold]Steal[/gold] 1.\nEnd your turn.",
+  "GREGTHESPIRE-GREGLOGABGALAB.description": "Draw 1 card.\n[gold]Stash[/gold] a random card in your [gold]Hand[/gold].\nPlay a random card in your [gold]Hand[/gold].\nPlay a random card in your [gold]Stash[/gold].\n[gold]Steal[/gold] 1.",
   "GREGTHESPIRE-GREGLOGABGALAB.title": "Greglogabgalab",
   
   "GREGTHESPIRE-GOURMAND.description": "Deal {Damage:diff()} [gold]Block[/gold]",
@@ -288,7 +288,16 @@
   "GREGTHESPIRE-DARKENED_CHOCOLATE.title": "Darkened Chocolate",
 
   "GREGTHESPIRE-LAST_DITCH_EFFORT.description": "",
-  "GREGTHESPIRE-LAST_DITCH_EFFORT.title": "LastDitchEffort"
+  "GREGTHESPIRE-LAST_DITCH_EFFORT.title": "LastDitchEffort",
+
+  "GREGTHESPIRE-LINT_BALL.description": "Deal {Damage:diff()} damage.\nIf this is in your [gold]Stash[/gold] at the end of your turn, increase this card's damage by {Increase:diff()} this combat.",
+  "GREGTHESPIRE-LINT_BALL.title": "Lint Ball",
+
+  "GREGTHESPIRE-QUICK_LICK.description": "Fill your [gold]Stash[/gold] with random cards from your [gold]Draw Pile[/gold].",
+  "GREGTHESPIRE-QUICK_LICK.title": "Quick Lick",
+
+  "GREGTHESPIRE-HOLSTER.description": "Gain {Block:diff()} [gold]Block[/gold].\nPlay a card from your [gold]Stash[/gold].",
+  "GREGTHESPIRE-HOLSTER.title": "Holster"
 }
   
   

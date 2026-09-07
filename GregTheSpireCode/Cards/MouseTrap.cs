@@ -36,6 +36,7 @@ public class MouseTrap() : GregTheSpireCard(1,
         CardPlay play)
     {
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
+        
         if (!play.Target.Monster.IntendsToAttack)
             return;
         CheeseNextTurnPower? cheeseNextTurnPower = await PowerCmd.Apply<CheeseNextTurnPower>(choiceContext,

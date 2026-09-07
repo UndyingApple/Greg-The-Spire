@@ -33,7 +33,7 @@ public class Greglogabgalab() : GregTheSpireCard(3,
         if (autoPlayedCard != null) await CardCmd.AutoPlay(choiceContext, autoPlayedCard, null);
         await Cmd.Wait(0.1f);
         
-        await PlayRandFromStashCmd.PlayRandFromStashCmdAsync(choiceContext, this.Owner, 1);
+        await PlayRandFromStashCmd.PlayRandFromStashCmdAsync(choiceContext, this.Owner);
         await Cmd.Wait(0.1f);
         
         await StealCmd.StealAsync(choiceContext, this.Owner, 1);
