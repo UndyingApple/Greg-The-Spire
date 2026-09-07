@@ -1,10 +1,12 @@
 ﻿using GregTheSpire.GregTheSpireCode.CardPiles;
 using GregTheSpire.GregTheSpireCode.Cards;
 using GregTheSpire.GregTheSpireCode.Commands;
+using GregTheSpire.GregTheSpireCode.Keywords;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 
@@ -18,6 +20,10 @@ public class Rummage() : GregTheSpireCard(1,
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new CardsVar(3)
         ];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(GregTheSpireKeywords.Steal)
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

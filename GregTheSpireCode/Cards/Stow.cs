@@ -1,10 +1,12 @@
 using GregTheSpire.GregTheSpireCode.CardPiles;
 using GregTheSpire.GregTheSpireCode.Cards;
 using GregTheSpire.GregTheSpireCode.Commands;
+using GregTheSpire.GregTheSpireCode.Keywords;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 
@@ -22,6 +24,10 @@ public class Stow() : GregTheSpireCard(0,
     [
         CardKeyword.Retain,
 
+    ];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(GregTheSpireKeywords.Stash)
     ];
     
     protected override async Task OnPlay(

@@ -1,4 +1,5 @@
 ﻿using GregTheSpire.GregTheSpireCode.Cards;
+using GregTheSpire.GregTheSpireCode.Keywords;
 using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -20,10 +21,8 @@ public class Coffee() : GregTheSpireCard(0,
         CardKeyword.Exhaust
     ];
     
-    protected override IEnumerable<IHoverTip> ExtraHoverTips =>
-    [
-        
-        EnergyHoverTip, 
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(GregTheSpireKeywords.Steal)
     ];
 
     protected override async Task OnPlay(

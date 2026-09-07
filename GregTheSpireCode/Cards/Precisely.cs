@@ -3,6 +3,7 @@ using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
@@ -19,6 +20,10 @@ public class Precisely() : GregTheSpireCard(1,
     public override IEnumerable<CardKeyword> CanonicalKeywords => 
     [
         CardKeyword.Exhaust
+    ];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromPower<ConfidencePower>()
     ];
 
     protected override async Task OnPlay(

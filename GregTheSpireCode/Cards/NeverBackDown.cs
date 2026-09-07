@@ -4,6 +4,7 @@ using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
 
@@ -16,6 +17,10 @@ public class NeverBackDown() : GregTheSpireCard(1,
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new PowerVar<NeverBackDownPower>(1),
         new PowerVar<NeverBackDownUpgradedPower>(2)
+    ];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromPower<ConfidencePower>()
     ];
 
     protected override async Task OnPlay(

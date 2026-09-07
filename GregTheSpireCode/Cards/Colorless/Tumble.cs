@@ -1,12 +1,14 @@
 ﻿using BaseLib.Utils;
 using GregTheSpire.GregTheSpireCode.Cards;
 using GregTheSpire.GregTheSpireCode.Commands;
+using GregTheSpire.GregTheSpireCode.Keywords;
 using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
@@ -20,8 +22,8 @@ public class Tumble() : GregTheSpireCard(3,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
     
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [
-        CardKeyword.Exhaust,
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(GregTheSpireKeywords.Stash)
     ];
     
     public static async Task<IEnumerable<Tumble>> CreateInDraw(

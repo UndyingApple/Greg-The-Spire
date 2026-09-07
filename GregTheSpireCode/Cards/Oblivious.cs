@@ -23,8 +23,8 @@ public class Oblivious() : GregTheSpireCard(1,
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
-
         HoverTipFactory.FromPower<WeakPower>(),
+        HoverTipFactory.FromPower<ConfidencePower>()
     ];
     
     protected override async Task OnPlay(
