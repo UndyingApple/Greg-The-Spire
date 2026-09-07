@@ -16,7 +16,8 @@ public class SpyMaster() : GregTheSpireCard(1,
     public override bool GainsBlock => true;
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new BlockVar(10, ValueProp.Move)
+        new BlockVar(10, ValueProp.Move),
+        new IntVar("StealAmount", 2)
     ];
 
     protected override async Task OnPlay(
@@ -25,12 +26,12 @@ public class SpyMaster() : GregTheSpireCard(1,
     {
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
         //public static async Task StealAsync(PlayerChoiceContext choiceContext, Player player, int amount, CardModel card_initial)
-        await StealCmd.StealAsync(choiceContext, this.Owner, 2);
+        await StealCmd.StealAsync(choiceContext, this.Owner, DynamicVars["StealAmount"].IntValue);
     }
     
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Block.UpgradeValueBy(5);
+        DynamicVars["StealAmount"].UpgradeValueBy(1);
     }
 }
