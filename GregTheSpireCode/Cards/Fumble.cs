@@ -16,7 +16,7 @@ namespace GregTheSpire.GregTheSpireCode.Cards;
 
 public class Fumble() : GregTheSpireCard(2,
     CardType.Attack, CardRarity.Token,
-    TargetType.AllEnemies)
+    TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(3, ValueProp.Move),

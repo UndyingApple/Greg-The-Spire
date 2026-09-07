@@ -1,14 +1,14 @@
 {
-  "GREGTHESPIRE-THIEVE.description": "Gain {Block:diff()} [gold]Block[/gold]. [gold]Steal[/gold] 2",
+  "GREGTHESPIRE-THIEVE.description": "Gain {Block:diff()} [gold]Block[/gold]. [gold]Steal[/gold] {StealAmount:diff()}",
   "GREGTHESPIRE-THIEVE.title": "Thieve",
   
-  "GREGTHESPIRE-BAG_OF_TRICKS.description": "{IfUpgraded:show:Draw 1.\n}Play 1 card from your [gold]Stash[/gold].\n[gold]Stash[/gold]{IfUpgraded:show: up to|} {Cards:diff()} {Cards:plural:card|cards} in your [gold]Hand[/gold].",
+  "GREGTHESPIRE-BAG_OF_TRICKS.description": "Play 1 card from your [gold]Stash[/gold].\n[gold]Stash[/gold]{IfUpgraded:show: up to|} {Cards:diff()} {Cards:plural:card|cards} in your [gold]Hand[/gold].",
   "GREGTHESPIRE-BAG_OF_TRICKS.title": "Bag Of Tricks",
   
-  "GREGTHESPIRE-STOW.description": "[gold]Stash[/gold] up to 2 cards in your [gold]hand[/gold].",
+  "GREGTHESPIRE-STOW.description": "[gold]Stash[/gold] up to {IfUpgraded:show:3|2} cards in your [gold]Hand[/gold].",
   "GREGTHESPIRE-STOW.title": "Stow",
   
-  "GREGTHESPIRE-CHEESE_AND_CRACKERS.description": "Add a [gold]{IfUpgraded:show:Cheese+|Cheese}[/gold] and a [gold]{IfUpgraded:show:Cracker+|Cracker}[/gold] to your [gold]Hand[/gold].",
+  "GREGTHESPIRE-CHEESE_AND_CRACKERS.description": "Add a [gold]Cheese[/gold] and {IfUpgraded:show:2 [gold]Crackers[/gold]|a [gold]Cracker[/gold} to your [gold]Hand[/gold].",
   "GREGTHESPIRE-CHEESE_AND_CRACKERS.title": "Cheese & Crackers",
   
   "GREGTHESPIRE-CHEESE.description": "Gain {ConfidencePower:diff()} [gold]Confidence[/gold].",
@@ -74,7 +74,7 @@
   "GREGTHESPIRE-WAITER_WAITER.description": "[gold]Enchant[/gold] a{IfUpgraded:show:| random} card in your [gold]Hand[/gold] with [purple]Infested[/purple].",
   "GREGTHESPIRE-WAITER_WAITER.title": "Waiter, waiter!",
   
-  "GREGTHESPIRE-BUFFET.description": "Add 2 [gold]{IfUpgraded:show:Cheeses+|Cheeses}[/gold], 2 [gold]{IfUpgraded:show:Crackers+|Crackers}[/gold], and a [gold]{IfUpgraded:show:Flys+|Flys}[/gold] to your [gold]Hand[/gold].",
+  "GREGTHESPIRE-BUFFET.description": "Fill your [gold]Hand[/gold] with random [gold]Snacks[/gold].",
   "GREGTHESPIRE-BUFFET.title": "Buffet",
   
   "GREGTHESPIRE-SECONDS.description": "Add 1 [gold]Cracker[/gold] to your [gold]Hand[/gold].\nThe next time you play a [gold]Snack[/gold], add a copy of it to your [gold]Hand[/gold].",
@@ -152,19 +152,19 @@
   "GREGTHESPIRE-SODA.description": "Draw {Cards:diff()} {Cards:plural:card|cards}.",
   "GREGTHESPIRE-SODA.title": "Soda",
   
-  "GREGTHESPIRE-OLIVE_CREAMS_AND_A_SODA.description": "Add 1 [gold]{IfUpgraded:show:Soda+|Soda}[/gold] to your [gold]Hand[/gold].\nFill your [gold]Hand[/gold] with [gold]{IfUpgraded:show:Olives+|Olives}[/gold].",
+  "GREGTHESPIRE-OLIVE_CREAMS_AND_A_SODA.description": "Add 1 [gold]{IfUpgraded:show:Soda+|Soda}[/gold] to your [gold]Draw Pile[/gold].\nFill your [gold]Hand[/gold] with [gold]{IfUpgraded:show:Olives+|Olives}[/gold].",
   "GREGTHESPIRE-OLIVE_CREAMS_AND_A_SODA.title": "12 Olive Creams And A Soda",
   
   "GREGTHESPIRE-TOUCH_OF_CHEESE.description": "Deal {Damage:diff()} damage.\nAdd a [gold]Cheese[/gold] to your [gold]Draw Pile[/gold].",
   "GREGTHESPIRE-TOUCH_OF_CHEESE.title": "Touch Of Cheese",
   
-  "GREGTHESPIRE-MOUSE_TRAP.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf the enemy intends to attack, gain {CheeseNextTurnPower:diff()} [gold]Cheese[/gold] next turn.",
+  "GREGTHESPIRE-MOUSE_TRAP.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf the enemy intends to attack, gain 1 [gold]Cheese[/gold] next turn.",
   "GREGTHESPIRE-MOUSE_TRAP.title": "Mouse Trap",
   
-  "GREGTHESPIRE-FLY_SWATTER.description": "[gold]Flies[/gold] deal {FlySwatterPower:diff()} additional damage.",
+  "GREGTHESPIRE-FLY_SWATTER.description": "[gold]Flies[/gold] deal {FlySwatterPower:diff()} additional damage.\nAdd a [gold]Fly[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-FLY_SWATTER.title": "Fly Swatter",
   
-  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA.description": "Whenever you play a [gold]Cheese[/gold], draw 1 card.",
+  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA.description": "Whenever you play a [gold]Snack[/gold], draw 1 card.",
   "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA.title": "Dont You LIKE Gorgonzola?",
   
   "GREGTHESPIRE-NIMBLE.description": "Whenever you play a card that costs {Energy:energyIcons()} or more, [gold]Steal[/gold] 1",
@@ -185,7 +185,7 @@
   "GREGTHESPIRE-STINKY.description": "Deal {Damage:diff()} damage to ALL enemies.\nAdd {IfUpgraded:show:2|1} [gold]{IfUpgraded:Flies|Fly}[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-STINKY.title": "Stinky",
   
-  "GREGTHESPIRE-SPY_MASTER.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Steal[/gold] 2.",
+  "GREGTHESPIRE-SPY_MASTER.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Steal[/gold] {StealAmount:diff()}.",
   "GREGTHESPIRE-SPY_MASTER.title": "Spy Master",
 
   "GREGTHESPIRE-E_GO_MA_NI_A.description": "Gain 8 [gold]Confidence[/gold].\nAt the start of your turn gain 4 [gold]Confidence[/gold].\nWhen you lose [gold]Confidence[/gold], gain [gold]Vulnerable[/gold] equal to the amount of [gold]Weak[/gold] gained.",
