@@ -1,5 +1,6 @@
 ﻿using BaseLib.Extensions;
 using BaseLib.Utils;
+using Godot;
 using GregTheSpire.GregTheSpireCode.Cards;
 using GregTheSpire.GregTheSpireCode.Keywords;
 using GregTheSpire.GregTheSpireCode.Powers;
@@ -64,7 +65,25 @@ public class Cheese() : GregTheSpireCard(0,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature, DynamicVars.Power<ConfidencePower>().BaseValue, Owner.Creature, this);
+        List<CheeseBall> cheeseBallsInHand = this.Owner.PlayerCombatState.AllCards.OfType<CheeseBall>().Where<CheeseBall>(
+            (Func<CheeseBall, bool>)(c =>
+            {
+                CardPile pile = c.Pile;
+                return pile != null && pile.Type == PileType.Hand;
+            })).ToList<CheeseBall>();
+        
+        if (cheeseBallsInHand.Count > 0)
+        {
+            foreach(CheeseBall cheeseBall in cheeseBallsInHand)
+            {
+                cheeseBall.IncreaseConfidence();
+            }
+        }
+        else
+        {
+            await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature,
+                DynamicVars.Power<ConfidencePower>().BaseValue, Owner.Creature, this);
+        }
     }
 
     protected override void OnUpgrade()

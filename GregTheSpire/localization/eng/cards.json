@@ -137,7 +137,7 @@
   "GREGTHESPIRE-RAT_FORM.description": "{IfUpgraded:show:Gain 3 [gold]Storage[/gold].\n|}At the start of your turn, play every card in your [gold]Stash[/gold].",
   "GREGTHESPIRE-RAT_FORM.title": "Rat Form",
   
-  "GREGTHESPIRE-CHEESE_CLUB.description": "At the start of your turn, add {CheeseClubPower:diff()} [gold]Cheese[/gold] to your [gold]Hand[/gold].",
+  "GREGTHESPIRE-CHEESE_CLUB.description": "Add a [gold]Cheese Ball[/gold] to your [gold]Hand[/gold]. If there is no [gold]Cheese Ball[/gold] in your [gold]Hand[/gold] at the start of your turn,, add a [gold]Cheese Ball[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-CHEESE_CLUB.title": "Cheese Club",
   
   "GREGTHESPIRE-STRAWBERRY.description": " Gain {Block:diff()} [gold]Block[/gold].\nDeal {Damage:diff()} damage to a random enemy.",
@@ -294,7 +294,11 @@
   "GREGTHESPIRE-QUICK_LICK.title": "Quick Lick",
 
   "GREGTHESPIRE-HOLSTER.description": "Gain {Block:diff()} [gold]Block[/gold].\nPlay a card from your [gold]Stash[/gold].",
-  "GREGTHESPIRE-HOLSTER.title": "Holster"
+  "GREGTHESPIRE-HOLSTER.title": "Holster",
+
+
+  "GREGTHESPIRE-CHEESE_BALL.description": "Gain {ConfidencePower:diff()} [gold]Confidence[/gold].\nIf you play a [gold]Cheese[/gold] while this card is in your [gold]Hand[/gold], increase the [gold]Confidence[/gold] gained by this card by {IfUpgraded:show:2|1} instead of gaining [gold]Confidence[/gold].",
+  "GREGTHESPIRE-CHEESE_BALL.title": "Cheese Ball"
 }
   
   

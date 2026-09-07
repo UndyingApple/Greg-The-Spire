@@ -31,8 +31,8 @@
   "GREGTHESPIRE-RAT_FORM_POWER.smartDescription": "At the start of your turn, play every card in your [gold]Stash[/gold].",
   "GREGTHESPIRE-RAT_FORM_POWER.title": "Rat Form",
 
-  "GREGTHESPIRE-CHEESE_CLUB_POWER.description": "Add a [gold]Cheese[/gold] to your [gold]Hand[/gold] at the start of your turn.",
-  "GREGTHESPIRE-CHEESE_CLUB_POWER.smartDescription": "Add {Amount:plural:{Amount}|a} [gold]Cheese[/gold] to your [gold]Hand[/gold] at the start of your turn.",
+  "GREGTHESPIRE-CHEESE_CLUB_POWER.description": "If there is no [gold]Cheese Ball[/gold] in your [gold]Hand[/gold] at the start of your turn,, add a [gold]Cheese Ball[/gold] to your [gold]Hand[/gold].",
+  "GREGTHESPIRE-CHEESE_CLUB_POWER.smartDescription": "If there is no [gold]Cheese Ball[/gold] in your [gold]Hand[/gold] at the start of your turn,, add a [gold]Cheese Ball[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-CHEESE_CLUB_POWER.title": "Cheese Club",
 
   "GREGTHESPIRE-SOMETIMES_BACK_DOWN_POWER.description": "Whenever you lose [gold]Confidence[/gold], deal damage to ALL enemies for every [gold]Confidence[/gold] lost.",

@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace GregTheSpire.GregTheSpireCode.Cards;
+namespace GregTheSpire.GregTheSpireCode.Cards.Colorless;
 
 public class Fumble() : GregTheSpireCard(2,
     CardType.Attack, CardRarity.Token,

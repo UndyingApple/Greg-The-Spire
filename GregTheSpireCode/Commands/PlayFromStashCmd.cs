@@ -1,6 +1,7 @@
 using GregTheSpire.GregTheSpireCode.CardPiles;
 using GregTheSpire.GregTheSpireCode.ui;
 using GregTheSpire.GregTheSpireCode.CardPiles;
+using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -26,6 +27,10 @@ public static class PlayFromStashCmd
         foreach (CardModel card in cards)
         {
             await CardCmd.AutoPlay(choiceContext, card, (Creature)null);
+            if (player.Creature.GetPowerAmount<TumblePower>() > 0)
+            {
+                
+            }
         }
     }
 }
