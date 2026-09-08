@@ -20,7 +20,9 @@ public sealed class Stowaway : GregTheSpireEnchantment
 {
    public override bool HasExtraCardText => false;
 
-
+    protected override string? CustomIconPath =>
+        $"{MainFile.ResPath}/images/enchantments/stowaway.png";
+    
    public override bool ShowAmount => false;
 
 

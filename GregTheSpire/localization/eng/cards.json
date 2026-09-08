@@ -188,7 +188,7 @@
   "GREGTHESPIRE-SPY_MASTER.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Steal[/gold] {StealAmount:diff()}.",
   "GREGTHESPIRE-SPY_MASTER.title": "Spy Master",
 
-  "GREGTHESPIRE-E_GO_MA_NI_A.description": "Gain 8 [gold]Confidence[/gold].\nAt the start of your turn gain 4 [gold]Confidence[/gold].\nWhen you lose [gold]Confidence[/gold], gain [gold]Vulnerable[/gold] equal to the amount of [gold]Weak[/gold] gained.",
+  "GREGTHESPIRE-E_GO_MA_NI_A.description": "{IfUpgraded:show:Gain 8 [gold]Confidence[/gold].\n|}At the start of your turn gain 4 [gold]Confidence[/gold].\nWhen you lose [gold]Confidence[/gold], gain [gold]Vulnerable[/gold] equal to the amount of [gold]Weak[/gold] gained.",
   "GREGTHESPIRE-E_GO_MA_NI_A.title": "EGOMANIA",
 
   "GREGTHESPIRE-LEFTOVER.description": "Whenever you play a [gold]Snack[/gold] from your [gold]Hand[/gold], add a copy of that [gold]Snack[/gold] to your [gold]Stash[/gold].",

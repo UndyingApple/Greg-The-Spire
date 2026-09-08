@@ -10,6 +10,9 @@ public sealed class Infested : GregTheSpireEnchantment
 {
     public override bool HasExtraCardText => false;
 
+        protected override string? CustomIconPath =>
+            $"{MainFile.ResPath}/images/enchantments/infested.png";
+        
     public override bool ShowAmount => false;
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
