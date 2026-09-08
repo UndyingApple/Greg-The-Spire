@@ -63,6 +63,10 @@
     </ItemGroup>
 
     <ItemGroup>
+        <Folder Include="GregTheSpire\images\characters\greg\char_select\" />
+        <Folder Include="GregTheSpire\images\characters\greg\merchant\" />
+        <Folder Include="GregTheSpire\images\characters\greg\rest_site\" />
+        <Folder Include="GregTheSpire\images\greg\" />
         <Folder Include="GregTheSpire\images\relics\big\"/>
     </ItemGroup>
 

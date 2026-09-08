@@ -31,7 +31,7 @@ public class Fumble() : GregTheSpireCard(2,
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromCard<Tumble>()
+        HoverTipFactory.FromCard<Tumble>(IsUpgraded)
     ];
     
     public static async Task<IEnumerable<Fumble>> CreateInDraw(

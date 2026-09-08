@@ -19,10 +19,13 @@ public class GregTheSpire : PlaceholderCharacterModel
 
     public static readonly Color Color = new("00a86b");
 
-    public override Color NameColor => Color;
-    public override CharacterGender Gender => CharacterGender.Neutral;
+    public override Color NameColor => new("00a86b");
+    public override CharacterGender Gender => CharacterGender.Masculine;
     public override int StartingHp => 68;
 
+
+    
+    
     public override IEnumerable<CardModel> StartingDeck =>
     [
         ModelDb.Card<StrikeGreg>(),
@@ -65,4 +68,13 @@ public class GregTheSpire : PlaceholderCharacterModel
     public override string CustomCharacterSelectIconPath => "char_select_char_name.png".CharacterUiPath();
     public override string CustomCharacterSelectLockedIconPath => "char_select_char_name_locked.png".CharacterUiPath();
     public override string CustomMapMarkerPath => "map_marker_char_name.png".CharacterUiPath();
+    
+    //public override string CustomIconPath => "res://IntoTheSpireverse/scenes/character_icons/greg_icon.tscn"; needs to be made
+    //public override string CustomIconTexturePath => "character_icon_regent.png".GregPath();
+    //public override string CustomCharacterSelectIconPath => "char_select_regent.png".GregPath();
+    //public override string CustomArmPointingTexturePath => "multiplayer_hand_regent_point.png".GregPath();
+    //public override string CustomArmRockTexturePath => "multiplayer_hand_regent_rock.png".GregPath();
+    //public override string CustomArmPaperTexturePath => "multiplayer_hand_regent_paper.png".GregPath();
+    // public override string CustomArmScissorsTexturePath => "multiplayer_hand_regent_scissors.png".GregPath();
+    // public override string CustomMapMarkerPath => "map_marker_regent.png".GregPath();
 }
