@@ -17,7 +17,7 @@ public class RatForm() : GregTheSpireCard(3,
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromKeyword(GregTheSpireKeywords.Stash)
+        HoverTipFactory.FromKeyword(GregTheSpireKeywords.Stash),
     ];
 
     protected override async Task OnPlay(
