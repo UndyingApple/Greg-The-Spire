@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cngas77q1g78m"
-path="res://.godot/imported/fly.png-6c7c292850995c162cb6748dd961f4eb.ctex"
+path="res://.godot/imported/fly.png-efc56b82c82333a25826751f4ddf3737.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/card_portraits/big/fly.png"
-dest_files=["res://.godot/imported/fly.png-6c7c292850995c162cb6748dd961f4eb.ctex"]
+source_file="res://GregTheSpire/images/card_portraits/fly.png"
+dest_files=["res://.godot/imported/fly.png-efc56b82c82333a25826751f4ddf3737.ctex"]
 
 [params]
 

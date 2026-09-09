@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://54gm8yv4uvp4"
-path="res://.godot/imported/thieve.png-5b4f938895b6c60fd324dc3e9aeaa5a3.ctex"
+uid="uid://b8acmqyrva1eq"
+path="res://.godot/imported/bag_of_tricks.png-a7adfd20e11c6575dc957b4a65192229.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/card_portraits/big/thieve.png"
-dest_files=["res://.godot/imported/thieve.png-5b4f938895b6c60fd324dc3e9aeaa5a3.ctex"]
+source_file="res://GregTheSpire/images/card_portraits/bag_of_tricks.png"
+dest_files=["res://.godot/imported/bag_of_tricks.png-a7adfd20e11c6575dc957b4a65192229.ctex"]
 
 [params]
 

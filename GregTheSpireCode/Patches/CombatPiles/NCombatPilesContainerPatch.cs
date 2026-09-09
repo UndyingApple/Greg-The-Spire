@@ -28,7 +28,7 @@ public static class NCombatPilesContainerPatch
         __instance.GetNodeOrNull<NStashPile>("_StashPile")?.Disable();
     }
 }
-
+/*
 [HarmonyPatch(typeof(NCombatUi), "Activate")]
 public static class NCombatUiActivatePatch
 {
@@ -42,4 +42,4 @@ public static class NCombatUiActivatePatch
 
         stashPile?.Initialize(player);
     }
-}
+}*/

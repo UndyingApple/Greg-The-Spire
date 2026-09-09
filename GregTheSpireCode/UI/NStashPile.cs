@@ -26,6 +26,8 @@ public partial class NStashPile : NCombatCardPile
 	private const float HideOffsetX = -150f;
 	protected override PileType Pile => StashCardPile.StashPileType;
 	private static readonly string _scenePath = GregTheSpireResources.StashPileScene;
+	protected bool _initialized;
+	public bool Initialized => _initialized;
 	
 	/*
 	 * 
@@ -74,6 +76,7 @@ public partial class NStashPile : NCombatCardPile
 		_comboIcons.Refresh();
 		*/
 		SetAnimInOutPositions();
+		Visible = false;
 	}
 	
 	protected override void ConnectSignals()
@@ -90,6 +93,8 @@ public partial class NStashPile : NCombatCardPile
 		base.Initialize(player);
 		_currentStorage = player.Creature.GetPowerAmount<StoragePower>();
 		_storageLabel.SetTextAutoSize(_currentStorage.ToString());
+		Visible = true;
+		_initialized = true;
 	}
 	
 	protected override void SetAnimInOutPositions()

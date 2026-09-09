@@ -16,12 +16,17 @@ public static class StashCmd
     // Card choosing menu from hand
     public static async Task StashAsync(PlayerChoiceContext choiceContext, Player player, int min, int max, AbstractModel source)
     {
+        var storage = player.Creature.GetPowerAmount<StoragePower>();
+        if (storage == 0)
+        {
+            await PowerCmd.Apply<StoragePower>(choiceContext, player.Creature, 1, player.Creature, null, true);
+            storage = player.Creature.GetPowerAmount<StoragePower>();
+        }
         var stashedCards = (await CardSelectCmd.FromHand(choiceContext, player, 
             new CardSelectorPrefs(StashSelectorPrefs.ToStashSelectionPrompt, min, max),
             null,
             source)).ToList();
-
-        var storage = player.Creature.GetPowerAmount<StoragePower>();
+        
         int totalStashed;
         if (player.Creature.GetPowerAmount<BiteSizedPower>() == 1)
         {
@@ -49,6 +54,11 @@ public static class StashCmd
     public static async Task StashAsync(PlayerChoiceContext choiceContext, Player player, CardModel card)
     {
         var storage = player.Creature.GetPowerAmount<StoragePower>();
+        if (storage == 0)
+        {
+            await PowerCmd.Apply<StoragePower>(choiceContext, player.Creature, 1, player.Creature, null, true);
+            storage = player.Creature.GetPowerAmount<StoragePower>();
+        }
         int totalStashed;
         if (player.Creature.GetPowerAmount<BiteSizedPower>() == 1)
         {
