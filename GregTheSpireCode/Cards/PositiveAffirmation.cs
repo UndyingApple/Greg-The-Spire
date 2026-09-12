@@ -40,3 +40,4 @@ public class PositiveAffirmation() : GregTheSpireCard(0,
         DynamicVars.Power<ConfidencePower>().UpgradeValueBy(1);
     }
 }
+ 
