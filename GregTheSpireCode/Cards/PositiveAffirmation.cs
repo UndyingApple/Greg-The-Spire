@@ -23,7 +23,7 @@ public class PositiveAffirmation() : GregTheSpireCard(0,
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
         HoverTipFactory.FromPower<ConfidencePower>(),
-        HoverTipFactory.FromPower<WeakPower>(),
+        
     ];
 
     protected override async Task OnPlay(
