@@ -20,7 +20,7 @@ public class There_Is_No_Accident() : GregTheSpireCard(0,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(9, ValueProp.Move),
-        (DynamicVar) new PowerVar<ConfidencePower>(-2)
+        (DynamicVar) new PowerVar<ConfidencePower>(1)
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [

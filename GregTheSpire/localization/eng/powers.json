@@ -59,8 +59,8 @@
   "GREGTHESPIRE-FLY_SWATTER_POWER.smartDescription": "[gold]Flies[/gold] do {Amount} additional damage.",
   "GREGTHESPIRE-FLY_SWATTER_POWER.title": "Fly Swatter",
   
-  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.description": "When you play a [gold]Cheese[/gold], draw card.",
-  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.smartDescription": "When you play a [gold]Cheese[/gold], draw {Amount} {Amount:plural:card|cards}.",
+  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.description": "When you play a [gold]Snack[/gold], draw card.",
+  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.smartDescription": "When you play a [gold]Snack[/gold], draw {Amount} {Amount:plural:card|cards}.",
   "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.title": "Dont You LIKE Gorgonzola?",
   
   "GREGTHESPIRE-FRESH_STRAWBERRIES_POWER.description": "At the start of your next turns, add a [gold]Strawberry[/gold] to your hand.",

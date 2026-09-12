@@ -263,7 +263,7 @@
   "GREGTHESPIRE-IMPROVISED_ARMOR.description": "Gain {CalculationExtra:diff()} [gold]Block[/gold] for each card in your [gold]Stash[/gold].{InCombat:\n(gain {CalculatedBlock:diff()} [gold]Block[/gold]])|}",
   "GREGTHESPIRE-IMPROVISED_ARMOR.title": "Improvised Armor",
 
-  "GREGTHESPIRE-SALIVATE.description": "Gain {CalculatedBlock:diff()} [gold]Block[/gold].\nGain {CalculationExtra:diff()} additional [gold]Block[/gold] for every unique [gold]Snack[/gold] in your [gold]Exhaust Pile[/gold].",
+  "GREGTHESPIRE-SALIVATE.description": "Add 1 [gold]Cracker[/gold] to your [gold]Hand[/gold].\nGain {CalculationExtra:diff()} [gold]Block[/gold] for every unique [gold]Snack[/gold] in your [gold]Exhaust Pile[/gold].{InCombat:show:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold].|}",
   "GREGTHESPIRE-SALIVATE.title": "Salivate",
 
   "GREGTHESPIRE-DUMP.description": "Discard your [gold]Stash[/gold].\nDeal {Damage:diff()} damage for every card Discarded.",

@@ -22,7 +22,7 @@ public class DontYouLIKEGorgonzolaPower() : GregTheSpirePower
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
-        HoverTipFactory.FromCard<Cheese>()
+
     ];
 
     public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
