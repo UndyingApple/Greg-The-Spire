@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpep6xr5w4qiw"
-path="res://.godot/imported/card.png-ef6ff10e91c756bc501f35a8be0df160.ctex"
+uid="uid://btb8dbjkhassn"
+path="res://.godot/imported/positive_affirmation.png-0db10e69f07e6145525d2d96a6a2791b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/card_portraits/big/card.png"
-dest_files=["res://.godot/imported/card.png-ef6ff10e91c756bc501f35a8be0df160.ctex"]
+source_file="res://GregTheSpire/images/card_portraits/big/positive_affirmation.png"
+dest_files=["res://.godot/imported/positive_affirmation.png-0db10e69f07e6145525d2d96a6a2791b.ctex"]
 
 [params]
 

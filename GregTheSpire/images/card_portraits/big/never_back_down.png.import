@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpep6xr5w4qiw"
-path="res://.godot/imported/card.png-ef6ff10e91c756bc501f35a8be0df160.ctex"
+uid="uid://cdnn4ru2fved6"
+path="res://.godot/imported/never_back_down.png-c68837311f5789b6e742c48595c8be39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/card_portraits/big/card.png"
-dest_files=["res://.godot/imported/card.png-ef6ff10e91c756bc501f35a8be0df160.ctex"]
+source_file="res://GregTheSpire/images/card_portraits/big/never_back_down.png"
+dest_files=["res://.godot/imported/never_back_down.png-c68837311f5789b6e742c48595c8be39.ctex"]
 
 [params]
 

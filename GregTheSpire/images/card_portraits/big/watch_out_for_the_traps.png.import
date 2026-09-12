@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpep6xr5w4qiw"
-path="res://.godot/imported/card.png-ef6ff10e91c756bc501f35a8be0df160.ctex"
+uid="uid://csqq22oej8ep6"
+path="res://.godot/imported/watch_out_for_the_traps.png-bf709550f05ad741821777f0bf6d15b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/card_portraits/big/card.png"
-dest_files=["res://.godot/imported/card.png-ef6ff10e91c756bc501f35a8be0df160.ctex"]
+source_file="res://GregTheSpire/images/card_portraits/big/watch_out_for_the_traps.png"
+dest_files=["res://.godot/imported/watch_out_for_the_traps.png-bf709550f05ad741821777f0bf6d15b5.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpep6xr5w4qiw"
-path="res://.godot/imported/card.png-ef6ff10e91c756bc501f35a8be0df160.ctex"
+uid="uid://1p6ikniyxj6y"
+path="res://.godot/imported/powlos_revenge.png-8cbfbf35dee55ea01c95f46d44c1e010.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/card_portraits/big/card.png"
-dest_files=["res://.godot/imported/card.png-ef6ff10e91c756bc501f35a8be0df160.ctex"]
+source_file="res://GregTheSpire/images/card_portraits/big/powlos_revenge.png"
+dest_files=["res://.godot/imported/powlos_revenge.png-8cbfbf35dee55ea01c95f46d44c1e010.ctex"]
 
 [params]
 

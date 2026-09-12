@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpep6xr5w4qiw"
-path="res://.godot/imported/card.png-ef6ff10e91c756bc501f35a8be0df160.ctex"
+uid="uid://c0mk8ci5cpkd8"
+path="res://.godot/imported/swallow.png-ba0d6ff3e424748b03ae7c49ccacd76c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/card_portraits/big/card.png"
-dest_files=["res://.godot/imported/card.png-ef6ff10e91c756bc501f35a8be0df160.ctex"]
+source_file="res://GregTheSpire/images/card_portraits/big/swallow.png"
+dest_files=["res://.godot/imported/swallow.png-ba0d6ff3e424748b03ae7c49ccacd76c.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpep6xr5w4qiw"
-path="res://.godot/imported/card.png-ef6ff10e91c756bc501f35a8be0df160.ctex"
+uid="uid://cpl6fdt5f18k1"
+path="res://.godot/imported/cracker.png-4495affba01d7bb52f48e3dfc33efc74.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/card_portraits/big/card.png"
-dest_files=["res://.godot/imported/card.png-ef6ff10e91c756bc501f35a8be0df160.ctex"]
+source_file="res://GregTheSpire/images/card_portraits/big/cracker.png"
+dest_files=["res://.godot/imported/cracker.png-4495affba01d7bb52f48e3dfc33efc74.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpep6xr5w4qiw"
-path="res://.godot/imported/card.png-ef6ff10e91c756bc501f35a8be0df160.ctex"
+uid="uid://b8acmqyrva1eq"
+path="res://.godot/imported/bag_of_tricks.png-a1895a205b4b5498a7925576caa1ab8d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/card_portraits/big/card.png"
-dest_files=["res://.godot/imported/card.png-ef6ff10e91c756bc501f35a8be0df160.ctex"]
+source_file="res://GregTheSpire/images/card_portraits/big/bag_of_tricks.png"
+dest_files=["res://.godot/imported/bag_of_tricks.png-a1895a205b4b5498a7925576caa1ab8d.ctex"]
 
 [params]
 

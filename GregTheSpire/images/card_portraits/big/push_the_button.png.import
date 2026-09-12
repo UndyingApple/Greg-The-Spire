@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpep6xr5w4qiw"
-path="res://.godot/imported/card.png-ef6ff10e91c756bc501f35a8be0df160.ctex"
+uid="uid://46b13hy8t456"
+path="res://.godot/imported/push_the_button.png-0c5dd30e9ef964c1329f8e5c568d5e8b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/card_portraits/big/card.png"
-dest_files=["res://.godot/imported/card.png-ef6ff10e91c756bc501f35a8be0df160.ctex"]
+source_file="res://GregTheSpire/images/card_portraits/big/push_the_button.png"
+dest_files=["res://.godot/imported/push_the_button.png-0c5dd30e9ef964c1329f8e5c568d5e8b.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpep6xr5w4qiw"
-path="res://.godot/imported/card.png-ef6ff10e91c756bc501f35a8be0df160.ctex"
+uid="uid://druvieekfcu46"
+path="res://.godot/imported/stow.png-9f3c9153651a041ddb1e27fedb49d8f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/card_portraits/big/card.png"
-dest_files=["res://.godot/imported/card.png-ef6ff10e91c756bc501f35a8be0df160.ctex"]
+source_file="res://GregTheSpire/images/card_portraits/big/stow.png"
+dest_files=["res://.godot/imported/stow.png-9f3c9153651a041ddb1e27fedb49d8f8.ctex"]
 
 [params]
 
