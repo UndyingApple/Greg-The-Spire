@@ -248,7 +248,7 @@
   "GREGTHESPIRE-OBLIVIOUS.description": "Apply 2 [gold]Weak[/gold] to ALL enemies.\nYou can not lose [gold]Confidence[/gold] by taking damage this turn.",
   "GREGTHESPIRE-OBLIVIOUS.title": "Oblivious",
 
-  "GREGTHESPIRE-POSITIVE_AFFIRMATION.description": "If you end your turn with [gold]Weak[/gold], gain {PositiveAffirmationPower:diff()} [gold]Confidence[/gold] at the start of your next turn.",
+  "GREGTHESPIRE-POSITIVE_AFFIRMATION.description": "Gain {ConfidencePower:diff()} [gold]Confidence[/gold] X times.",
   "GREGTHESPIRE-POSITIVE_AFFIRMATION.title": "Positive Affirmation",
 
   "GREGTHESPIRE-RATATOINGING_IT.description": "Give every card in your deck [gold]Replay[/gold] {Replay:diff()}.\nYou can no longer play Skills this combat. ",
