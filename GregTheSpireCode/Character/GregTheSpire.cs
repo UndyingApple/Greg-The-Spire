@@ -66,14 +66,15 @@ public class GregTheSpire : PlaceholderCharacterModel
 
     public override string CustomIconTexturePath => "character_icon_greg.png".GregPath();
     public override string CustomIconOutlineTexturePath => "character_icon_greg_outline.png".GregPath();
-    public override string CustomCharacterSelectIconPath => "char_select_char_name.png".CharacterUiPath();
-    public override string CustomCharacterSelectLockedIconPath => "char_select_char_name_locked.png".CharacterUiPath();
+    public override string CustomCharacterSelectIconPath => "char_select_greg.png".CharacterUiPath();
+    //public override string CustomCharacterSelectLockedIconPath => "char_select_char_name_locked.png".CharacterUiPath();
     public override string CustomMapMarkerPath => "map_marker_greg.png".GregPath();
     public override string CustomArmPointingTexturePath => "multiplayer_hand_greg_point.png".GregPath();
     public override string CustomArmRockTexturePath => "multiplayer_hand_greg_rock.png".GregPath();
     public override string CustomArmPaperTexturePath => "multiplayer_hand_greg_paper.png".GregPath();
     public override string CustomArmScissorsTexturePath => "multiplayer_hand_greg_scissors.png".GregPath();
-    
+    public override string CustomEnergyCounterPath => "res://GregTheSpire/scenes/energy_counter.tscn";
+
     //public override string CustomIconPath => "res://GregTheSpire/scenes/greg_icon.tscn"; needs to be made
     //public override string CustomCharacterSelectIconPath => "char_select_regent.png".GregPath();
 }
