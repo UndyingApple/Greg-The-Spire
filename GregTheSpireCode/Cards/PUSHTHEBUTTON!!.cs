@@ -38,7 +38,7 @@ public class PushTheButton() : GregTheSpireCard(2,
         CardPlay play)
     {
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
-
+    
         CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat((CardModel) this.CombatState.CreateCard<Dazed>(this.Owner), PileType.Draw, this.Owner));
         await Cmd.Wait(0.5f);
     }

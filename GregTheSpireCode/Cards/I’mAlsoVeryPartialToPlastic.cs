@@ -28,7 +28,7 @@ public class I_mAlsoVeryPartialToPlastic() : GregTheSpireCard(1,
         IEnumerable<Olive> cards = Olive.Create(this.Owner, (int) 3, this.CombatState);
         await CardPileCmd.AddGeneratedCardsToCombat((IEnumerable<CardModel>)cards, PileType.Hand, this.Owner,
             CardPilePosition.Top);
-        
+        await Cmd.Wait(0.1f);
         await CardPileCmd.Draw(choiceContext, this.DynamicVars.Cards.BaseValue, this.Owner);
     }
 

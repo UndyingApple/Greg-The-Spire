@@ -26,25 +26,25 @@ public class Greglogabgalab() : GregTheSpireCard(3,
         CardPlay play)
     {
         IEnumerable<CardModel> cardModels = await CardPileCmd.Draw(choiceContext, 1, this.Owner);
-        await Cmd.Wait(0.1f);
+        await Cmd.Wait(0.2f);
         
         CardModel stashedCard =
             this.Owner.RunState.Rng.CombatCardSelection.NextItem<CardModel>(
                 (IEnumerable<CardModel>)PileType.Hand.GetPile(this.Owner).Cards);
         if (stashedCard != null) await StashCmd.StashAsync(choiceContext, this.Owner, stashedCard);
-        await Cmd.Wait(0.1f);
+        await Cmd.Wait(0.2f);
         
         CardModel autoPlayedCard =
             this.Owner.RunState.Rng.CombatCardSelection.NextItem<CardModel>(
                 (IEnumerable<CardModel>)PileType.Hand.GetPile(this.Owner).Cards);
         if (autoPlayedCard != null) await CardCmd.AutoPlay(choiceContext, autoPlayedCard, null);
-        await Cmd.Wait(0.1f);
+        await Cmd.Wait(0.2f);
         
         await PlayRandFromStashCmd.PlayRandFromStashCmdAsync(choiceContext, this.Owner);
-        await Cmd.Wait(0.1f);
+        await Cmd.Wait(0.2f);
         
         await StealCmd.StealAsync(choiceContext, this.Owner, 1);
-        await Cmd.Wait(0.1f);
+        await Cmd.Wait(0.2f);
         
         //PlayerCmd.EndTurn(Owner, false);
     }

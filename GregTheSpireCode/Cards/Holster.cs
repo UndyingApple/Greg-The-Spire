@@ -33,6 +33,7 @@ public class Holster() : GregTheSpireCard(1,
         CardPlay play)
     {
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
+        await Cmd.Wait(0.1f);
         await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, Owner, 1, 1, null);
     }
 

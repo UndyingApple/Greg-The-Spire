@@ -42,13 +42,15 @@ public class Buffet() : GregTheSpireCard(2,
         int num = CardPile.MaxCardsInHand - CardPile.GetCards(this.Owner, PileType.Hand).Count<CardModel>();
         List<CardModel> cards = new List<CardModel>();
         for (int index = 0; index < num; ++index)
+        {
             await CardPileCmd.AddGeneratedCardsToCombat(
-                (IEnumerable<CardModel>)CardFactory
-                    .GetDistinctForCombat(this.Owner, SnackTokens, 1, Owner.RunState.Rng.CombatCardGeneration)
-                    .ToList<CardModel>(), PileType.Hand, this.Owner);
+            (IEnumerable<CardModel>)CardFactory
+                .GetDistinctForCombat(this.Owner, SnackTokens, 1, Owner.RunState.Rng.CombatCardGeneration)
+                .ToList<CardModel>(), PileType.Hand, this.Owner);
+            await Cmd.Wait(0.1f);
+        }
 
 
 
-
-    }
+}
 }

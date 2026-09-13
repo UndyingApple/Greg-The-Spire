@@ -41,6 +41,8 @@ public class ItsSoBeautifulHere() : GregTheSpireCard(2,
         {
             CardPileAddResult? nullable = await CardCmd.Exhaust(choiceContext, card);
         }
+        
+        await Cmd.Wait(0.1f);
         List<CardModel> list2 = CardFactory.GetForCombat(this.Owner, this.Owner.Character.CardPool.GetUnlockedCards(this.Owner.UnlockState, this.Owner.RunState.CardMultiplayerConstraint), Owner.Creature.GetPowerAmount<StoragePower>(), this.Owner.RunState.Rng.CombatCardGeneration).ToList<CardModel>();
             if (this.IsUpgraded)
               CardCmd.Upgrade((IEnumerable<CardModel>) list2, CardPreviewStyle.None);
