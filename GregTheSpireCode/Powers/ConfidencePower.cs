@@ -45,7 +45,7 @@ public class ConfidencePower() : GregTheSpirePower
             return;
         };
         this.Flash(); 
-        await PowerCmd.Apply<ConfidencePower>(choiceContext, this.Owner, (int) (-0.5 - (Amount/2)), this.Owner,null); 
-        await PowerCmd.Apply<WeakPower>(choiceContext, this.Owner,(int) (this.Amount / 5), this.Owner, null);
+        await PowerCmd.Apply<ConfidencePower>(choiceContext, this.Owner, (int) ((-(Amount+1)/2)), this.Owner,null);
+        await PowerCmd.Apply<WeakPower>(choiceContext, this.Owner, (int)(1 + (Amount / 5)), this.Owner, null);
     }
 }

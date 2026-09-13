@@ -4,7 +4,7 @@
   "GREGTHESPIRE-STORAGE_POWER.title": "Storage",
 
   "GREGTHESPIRE-CONFIDENCE_POWER.description": "Increases attack damage by. When you take unblocked attack damage, remove all [gold]Confidence[/gold] and gain 1 [gold]Weak[/gold] plus 1 additional [gold]Weak[/gold] for every 5 [gold]Confidence[/gold] lost.",
-  "GREGTHESPIRE-CONFIDENCE_POWER.smartDescription": "Increases attack damage by {Amount}. When you take unblocked attack damage, remove all [gold]Confidence[/gold] and gain 1 [gold]Weak[/gold] plus 1 additional [gold]Weak[/gold] for every 5 [gold]Confidence[/gold] lost.",
+  "GREGTHESPIRE-CONFIDENCE_POWER.smartDescription": "Increases attack damage by {Amount}. When you take unblocked attack damage, lose half of your [gold]Confidence[/gold] and gain 1 [gold]Weak[/gold] plus 1 additional [gold]Weak[/gold] for every 5 [gold]Confidence[/gold] lost.",
   "GREGTHESPIRE-CONFIDENCE_POWER.title": "Confidence",
 
   "GREGTHESPIRE-SECONDS_POWER.description": "The next time you play a [gold]Snack[/gold], add a copy of it to your hand.",

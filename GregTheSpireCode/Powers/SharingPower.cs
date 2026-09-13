@@ -30,11 +30,11 @@ public class SharingPower() : GregTheSpirePower
 
     public override async Task AfterCardGeneratedForCombat(CardModel card, Player? creator)
     {
-        if (creator == null || creator.Creature != this.Applier || !card.Keywords.Contains(GregTheSpireKeywords.Snack) || this.IsAddingSnack)
+        if (creator == null || creator.Creature != this.Applier || !card.Keywords.Contains(GregTheSpireKeywords.Snack) || IsAddingSnack)
             return;
-        this.IsAddingSnack = true;
-        this.Flash();
-        CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat(card.CreateCloneForPlayer(this.Owner.Player), PileType.Draw, this.Owner.Player, CardPilePosition.Random));
-        this.IsAddingSnack = false;
+        IsAddingSnack = true;
+        Flash();
+        CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat(card.CreateCloneForPlayer(Owner.Player), PileType.Draw, Owner.Player, CardPilePosition.Random));
+        IsAddingSnack = false;
     }
 }

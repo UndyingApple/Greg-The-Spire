@@ -38,7 +38,7 @@ public class EGOMANIAPower() : GregTheSpirePower
             return;
         this.Flash();
         var confidenceAmount = this.Owner.Player.Creature.GetPowerAmount<ConfidencePower>();
-        await PowerCmd.Apply<VulnerablePower>(choiceContext, this.Owner, 1 + (int) (confidenceAmount / 5), this.Owner, null);
+        await PowerCmd.Apply<VulnerablePower>(choiceContext, this.Owner, 1 + (int) (confidenceAmount / 10), this.Owner, null);
 
     }
 }
