@@ -33,6 +33,7 @@ public class DeviousLittleRat() : GregTheSpireCard(2,
         var player = this.Owner;
         await StealCmd.StealAsync(choiceContext, this.Owner, 1);
         //play stash
+        await Cmd.Wait(0.1f); 
         if (this.IsUpgraded)
         {
             await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 0, 999,(c => c.Type == CardType.Attack));
@@ -41,6 +42,7 @@ public class DeviousLittleRat() : GregTheSpireCard(2,
         {
             await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 0, 1,(c => c.Type == CardType.Attack));
         }
+        await Cmd.Wait(0.1f); 
         await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).Execute(choiceContext);
 
     }
