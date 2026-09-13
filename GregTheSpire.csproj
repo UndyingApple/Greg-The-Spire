@@ -68,7 +68,6 @@
         <Folder Include="GregTheSpire\images\greg\char_select\" />
         <Folder Include="GregTheSpire\images\greg\merchant\" />
         <Folder Include="GregTheSpire\images\greg\rest_site\" />
-        <Folder Include="GregTheSpire\images\relics\big\"/>
     </ItemGroup>
 
     <Target Name="CheckDependencyPaths">
