@@ -38,7 +38,7 @@ public class Picnic() : GregTheSpireCard(2,
         
         foreach (Creature creature in (IEnumerable<Creature>) this.CombatState.PlayerCreatures.Where<Creature>((Func<Creature, bool>) (c => c != null && c.IsAlive)).ToList<Creature>())
         {
-            for (int index = 0; index < DynamicVars["StealAmount"].IntValue; ++index)
+            for (int index = 0; index < DynamicVars["snackAmount"].IntValue; ++index)
                 await CardPileCmd.AddGeneratedCardsToCombat(
                     (IEnumerable<CardModel>)CardFactory
                         .GetDistinctForCombat(creature.Player, SnackTokens, 1, Owner.RunState.Rng.CombatCardGeneration)

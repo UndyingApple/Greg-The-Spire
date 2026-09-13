@@ -303,7 +303,10 @@
   "GREGTHESPIRE-PICNIC.title": "Picnic",
 
   "GREGTHESPIRE-SHARING.description": "Choose an ally.\nWhenever you create a [gold]Snack[/gold], add a copy to their [gold]Draw Pile[/gold].",
-  "GREGTHESPIRE-SHARING.title": "Sharing"
+  "GREGTHESPIRE-SHARING.title": "Sharing",
+
+  "GREGTHESPIRE-SWARM.description": "Another player [gold]Enchants[/gold] ALL cards in their [gold]Hand[/gold] with [purple]Infested[/purple].",
+  "GREGTHESPIRE-SWARM.title": "Swarm"
 }
   
   

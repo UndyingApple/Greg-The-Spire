@@ -34,7 +34,7 @@ public class SharingPower() : GregTheSpirePower
             return;
         this.IsAddingSnack = true;
         this.Flash();
-        CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat(card.CreateClone(), PileType.Draw, this.Owner.Player, CardPilePosition.Random));
+        CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat(card.CreateCloneForPlayer(this.Owner.Player), PileType.Draw, this.Owner.Player, CardPilePosition.Random));
         this.IsAddingSnack = false;
     }
 }
