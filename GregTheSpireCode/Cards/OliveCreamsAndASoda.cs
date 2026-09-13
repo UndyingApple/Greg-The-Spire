@@ -7,46 +7,47 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 
+
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
-public class OliveCreamsAndASoda() : GregTheSpire.GregTheSpireCode.Cards.GregTheSpireCard(2,
+public class OliveCreamsAndASoda() : GregTheSpireCard(2,
     CardType.Skill, CardRarity.Rare,
     TargetType.Self) {
-protected override IEnumerable<DynamicVar> CanonicalVars => [];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [];
 
-protected override IEnumerable<IHoverTip> ExtraHoverTips =>
-[
-    HoverTipFactory.FromCard<Soda>(IsUpgraded),
-    HoverTipFactory.FromCard<Olive>(),
-];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips =>
+    [
+        HoverTipFactory.FromCard<Soda>(IsUpgraded),
+        HoverTipFactory.FromCard<Olive>(),
+    ];
 
-protected override async Task OnPlay(
-    PlayerChoiceContext choiceContext,
-    CardPlay play)
-{
+    protected override async Task OnPlay(
+        PlayerChoiceContext choiceContext,
+        CardPlay play)
+    {
 
-    IEnumerable<Soda> soda = Soda.Create(this.Owner, 1, this.CombatState);
-    CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardsToCombat((IEnumerable<CardModel>)soda, PileType.Draw, this.Owner,
-        CardPilePosition.Random));
-   if (IsUpgraded)
-        {
-            foreach (CardModel card in soda)
+        IEnumerable<Soda> soda = Soda.Create(this.Owner, 1, this.CombatState);
+        CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardsToCombat((IEnumerable<CardModel>)soda, PileType.Draw, this.Owner,
+            CardPilePosition.Random));
+       if (IsUpgraded)
             {
-                CardCmd.Upgrade(card);
+                foreach (CardModel card in soda)
+                {
+                    CardCmd.Upgrade(card);
+                }
             }
-        }
-   
-   
-    await Cmd.Wait(0.1f);
-    int num = CardPile.MaxCardsInHand - CardPile.GetCards(this.Owner, PileType.Hand).Count<CardModel>();
-    List<CardModel> cards = new List<CardModel>();
-    for (int index = 0; index < num; ++index)
-         cards.Add((CardModel) this.CombatState.CreateCard<Olive>(this.Owner));
-    IReadOnlyList<CardPileAddResult> combat = await CardPileCmd.AddGeneratedCardsToCombat((IEnumerable<CardModel>) cards, PileType.Hand, this.Owner);
-}
+       
+       
+        await Cmd.Wait(0.1f);
+        int num = CardPile.MaxCardsInHand - CardPile.GetCards(this.Owner, PileType.Hand).Count<CardModel>();
+        List<CardModel> cards = new List<CardModel>();
+        for (int index = 0; index < num; ++index)
+             cards.Add((CardModel) this.CombatState.CreateCard<Olive>(this.Owner));
+        IReadOnlyList<CardPileAddResult> combat = await CardPileCmd.AddGeneratedCardsToCombat((IEnumerable<CardModel>) cards, PileType.Hand, this.Owner);
+    }
 
-protected override void OnUpgrade()
-{
+    protected override void OnUpgrade()
+    {
 
-}
+    }
 }

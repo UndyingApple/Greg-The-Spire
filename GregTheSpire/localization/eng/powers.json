@@ -130,6 +130,10 @@
   "GREGTHESPIRE-TUMBLE_POWER.description": "Cards played from your [gold]Stash[/gold] are played an additional time.",
   "GREGTHESPIRE-TUMBLE_POWER.smartDescription": "Cards played from your [gold]Stash[/gold] are played {Amount:plural:an additional time|{Amount}additional times}.",
   "GREGTHESPIRE-TUMBLE_POWER.title": "Tumble",
+
+  "GREGTHESPIRE-STARVATION_POWER.description": "",
+  "GREGTHESPIRE-STARVATION_POWER.smartDescription": "",
+  "GREGTHESPIRE-STARVATION_POWER.title": "Starvation",
   
   "GREGTHESPIRE-SHARING_POWER.description": "",
   "GREGTHESPIRE-SHARING_POWER.smartDescription": "",

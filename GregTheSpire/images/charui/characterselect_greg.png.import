@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7fsw5jk1h7wk"
-path="res://.godot/imported/oblivious.png-08b5c04249444e40463ad5ab7312c8b3.ctex"
+uid="uid://b2y0chp34ph2o"
+path="res://.godot/imported/characterselect_greg.png-f7d04442ee8bd5107c0668ec55c08aa7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/card_portraits/big/oblivious.png"
-dest_files=["res://.godot/imported/oblivious.png-08b5c04249444e40463ad5ab7312c8b3.ctex"]
+source_file="res://GregTheSpire/images/charui/characterselect_greg.png"
+dest_files=["res://.godot/imported/characterselect_greg.png-f7d04442ee8bd5107c0668ec55c08aa7.ctex"]
 
 [params]
 

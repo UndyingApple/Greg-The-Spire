@@ -1,0 +1,933 @@
+[gd_scene load_steps=6 format=3 uid="uid://b4xm5dcr4je58"]
+
+[ext_resource type="Texture2D" uid="uid://b62ywjgdk20a" path="res://GregTheSpire/images/charui/character_select_greg_bg.png" id="1_muf1f"]
+[ext_resource type="Texture2D" uid="uid://b2y0chp34ph2o" path="res://GregTheSpire/images/charui/characterselect_greg.png" id="2_mcu3d"]
+
+[sub_resource type="Animation" id="Animation_epypp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(359, -141)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR/ElbowR:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(202, 269)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR/ElbowR/WristR:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(101, -174)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR/ElbowR/WristR/HandR:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-115, -122)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/Head:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(102, -389)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/Head/Nose:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-288, -47)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegR:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-206, 145)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegR/KneeR:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-242, 211)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegR/KneeR/CalfR:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(215, 208)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegL:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(130, 214)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegL/KneeL:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(137, 358)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/TailLower:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmL:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-304, 62)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmL/WristL:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-170, -37)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmL/WristL/HandL:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-89, -93)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/Body:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR:rotation")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR/ElbowR:rotation")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR/ElbowR/WristR:rotation")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR/ElbowR/WristR/HandR:rotation")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/Head:rotation")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/Head/Nose:rotation")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegR:rotation")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegR/KneeR:rotation")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegR/KneeR/CalfR:rotation")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegL:rotation")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegL/KneeL:rotation")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/TailLower:rotation")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmL:rotation")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmL/WristL:rotation")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmL/WristL/HandL:rotation")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/Body:rotation")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("CharacterSelectGregBg:texture")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_muf1f")]
+}
+
+[sub_resource type="Animation" id="Animation_0e48y"]
+resource_name = "new_animation"
+length = 5.07
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5.0667),
+"transitions": PackedFloat32Array(-2, 1),
+"update": 0,
+"values": [Vector2(359, -141), Vector2(399.485, -168.18)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR/ElbowR:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [Vector2(202, 269), Vector2(202, 269)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR/ElbowR/WristR:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [Vector2(101, -174), Vector2(104.778, -178.047)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR/ElbowR/WristR/HandR:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [Vector2(-115, -122), Vector2(-115, -122)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/Head:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [Vector2(102, -389), Vector2(121, -410)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/Head/Nose:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [Vector2(-288, -47), Vector2(-284.762, -54.0677)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegR:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [Vector2(-206, 145), Vector2(-195, 136)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegR/KneeR:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [Vector2(-242, 211), Vector2(-234.775, 225.283)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegR/KneeR/CalfR:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [Vector2(215, 208), Vector2(215, 208)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegL:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [Vector2(130, 214), Vector2(168, 236)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegL/KneeL:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [Vector2(137, 358), Vector2(137, 358)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/TailLower:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 5.07),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(51.8932, 24.7011)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmL:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [Vector2(-304, 62), Vector2(-297, 60)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmL/WristL:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [Vector2(-170, -37), Vector2(-170, -37)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmL/WristL/HandL:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [Vector2(-89, -93), Vector2(-89, -93)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/Body:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(14, -17)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR:rotation")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 5.0667),
+"transitions": PackedFloat32Array(-2, 1),
+"update": 0,
+"values": [0.0, -0.0644708]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR/ElbowR:rotation")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR/ElbowR/WristR:rotation")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [0.0, -0.0774574]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR/ElbowR/WristR/HandR:rotation")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/Head:rotation")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/Head/Nose:rotation")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegR:rotation")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegR/KneeR:rotation")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegR/KneeR/CalfR:rotation")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = false
+tracks/25/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegL:rotation")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [0.0, 0.0671655]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegL/KneeL:rotation")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/TailLower:rotation")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0, 5.07),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [0.0, 0.0599942]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmL:rotation")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmL/WristL:rotation")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmL/WristL/HandL:rotation")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/Body:rotation")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0, 5.06667),
+"transitions": PackedFloat32Array(-2, -1.31951),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D:position")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(5.06667),
+"transitions": PackedFloat32Array(-1.31951),
+"update": 0,
+"values": [Vector2(1747, 1086)]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("CharacterSelectGregBg/CharacterselectGreg/Skeleton2D:rotation")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(5.06667),
+"transitions": PackedFloat32Array(-1.31951),
+"update": 0,
+"values": [0.0]
+}
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("CharacterSelectGregBg:texture")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_muf1f")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0hol4"]
+_data = {
+&"RESET": SubResource("Animation_epypp"),
+&"new_animation": SubResource("Animation_0e48y")
+}
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterSelectGregBg" type="Sprite2D" parent="."]
+position = Vector2(1149, 619)
+scale = Vector2(0.8308374, 0.8308374)
+texture = ExtResource("1_muf1f")
+
+[node name="CharacterselectGreg" type="Polygon2D" parent="CharacterSelectGregBg"]
+position = Vector2(-1180.897, -602)
+texture = ExtResource("2_mcu3d")
+skeleton = NodePath("Skeleton2D")
+polygon = PackedVector2Array(1768, 8, 1584, 8, 1576, 8, 1566, 71.3, 1566, 74.8, 1584, 111.8, 1584, 115.7, 1612.1, 139.9, 1598.9, 171.6, 1512, 168, 1450.1, 163, 1409.2, 184, 1384, 200, 1372, 238.8, 1384, 296, 1400, 312, 1464, 344, 1570, 405, 1571, 405, 1607.3, 436.1, 1558.8, 450, 1555.3, 450, 1498.3, 493, 1494.9, 493, 1379.1, 655, 1228.4, 629.1, 1186, 562.7, 1186, 557.7, 1127.7, 543.3, 1120, 539.6, 1014.3, 622, 1010.4, 622, 1001.4, 647, 1000, 656, 1007, 688.1, 1007, 701.5, 1036, 728.5, 1036, 730.4, 1071, 752.4, 1128, 760, 1174.3, 774, 1175.9, 774, 1225.4, 802.9, 1135, 881, 1132.4, 881, 1088, 928, 1034, 988, 1024, 1024, 1022, 1064.9, 1034, 1116.9, 1034, 1122.6, 1126.8, 1204, 1584.9, 1204, 1525, 1080.1, 1525, 1076.9, 1493.9, 1043, 1551.6, 970, 1559.9, 973.9, 1586, 1114.9, 1586, 1120.3, 1614, 1203.4, 1614, 1204, 2188.5, 1204, 2149.4, 1106.1, 2203, 1124.7, 2232, 1128, 2272, 1136, 2347.5, 1151, 2424, 1144, 2488.9, 1135, 2564, 1096.4, 2564, 973.8, 2450.5, 997.5, 2339.5, 984, 2232, 960, 2200, 952, 2177.08, 939.161, 2136.51, 923.17, 2179.15, 923.547, 2225.09, 928.165, 2259.6, 936, 2292.62, 922.321, 2315.7, 914, 2337.82, 897.487, 2356.5, 888, 2379.65, 854.533, 2399.6, 821, 2424.42, 777.842, 2464.8, 699, 2466.6, 699, 2511.6, 578, 2515.9, 578, 2508, 505.1, 2469.66, 443.299, 2385.29, 395.966, 2324.03, 366.781, 2284.76, 339.037, 2215.94, 340.478, 2179.59, 355.963, 2125.68, 398.769, 2095.4, 451.5, 2057, 423.8, 2024.46, 412.341, 1976.8, 410, 1973.9, 406.5, 2003.7, 372, 2007.4, 372, 2019, 319.9, 2019, 314.5, 2014, 276, 1984, 216, 1971.3, 162.1, 2008, 144, 2035.5, 119, 2059.7, 65, 2076.62, 38.4963, 2056, 8, 1896, 8, 1824, 8, 1816, 40, 1791.9, 42, 1800, 8, 2424, 368, 2504, 424, 2408, 352, 2392, 336, 2416, 344, 2496, 1072, 2392, 1080, 2240, 1040, 2112, 992, 2104, 904, 2048, 872, 1992, 856, 1976, 784, 1992, 808, 1992, 824, 1984, 768, 2040, 808, 2096, 880, 2128, 776, 2084.77, 702.429, 2008, 632, 2016, 496, 2104, 472, 2096, 496, 2064.71, 486.28, 2080, 504, 2021.33, 549.453, 2043.42, 592.996, 2080.79, 636.373, 2100.96, 667.641, 2124.63, 688.681, 2162.33, 739.812, 2149.54, 735.707, 2192.8, 728.104, 2208, 696, 2231.35, 724.262, 2237.2, 711.51, 2352, 432, 2248, 712, 2290.61, 759.411, 2334.15, 763.21, 2351.66, 783.977, 2433.56, 751.136, 2420.38, 725.742, 2231.26, 650.206, 2157.14, 632.768, 2156.75, 551.518, 2368.45, 647.234, 2436.92, 527.692, 2374.87, 414.51, 2151.44, 444.968, 2226.55, 482.858, 2310.43, 572.012, 2261.61, 375.397, 2126.69, 1082.48, 2093.9, 1039.63, 2076.43, 1011.08, 2038.99, 962.19, 2025, 938.081, 2059.72, 991.086, 2012.15, 908.383, 1996.52, 876.443, 2072.14, 836.053, 2011.87, 751.543, 2115.83, 898.629, 2138.69, 908.21, 2155.88, 915.613, 1320.75, 1147.32, 1158.48, 1070, 1353.89, 911.971, 1248.61, 799.091, 1259.59, 785.057, 1276.68, 772.04, 1297.63, 753.938, 1324.07, 729.936, 1343.39, 713.664, 1363.12, 693.325, 1386.72, 668.919, 1263.31, 789.859, 1279.11, 775.237, 1298.27, 756.243, 1325.18, 732.617, 1345.05, 717.031, 1365.5, 697.15, 1387.72, 670.061, 1574.62, 746.539, 1390.85, 715.647, 1441.92, 790.97, 1498.73, 843.951, 1544.05, 919.912, 1547.85, 952.953, 1572.68, 961.902, 1636.89, 926.444, 1745.44, 827.94, 1890.97, 838.154, 1841.95, 832.65, 1703.49, 866.177, 1947.22, 844.945, 1995.83, 860.571, 2000.15, 876.786, 2014.56, 903.81, 2028.91, 937.253, 2041.69, 958.872, 2061.99, 989.336, 2078.05, 1009.32, 2097.05, 1037.16, 2129.15, 1080.4, 2077.54, 583.144, 2067.94, 536.437, 2050.3, 508.038, 2072.07, 496.504, 2098.45, 488.177, 2066.54, 472.539, 2094.39, 624.777, 2118.26, 632.652, 2147.8, 665.138, 2168.58, 699.756, 2197.38, 704.176, 2212.24, 723.154, 2214.67, 691.447, 2219.41, 681.864, 2249.81, 700.514, 2298.86, 735.741, 2334.86, 744.893, 2358.5, 738.431, 2431.53, 694.561, 2447.29, 727.629, 2407.11, 759.452, 2098.81, 449.183, 1779.84, 656.876, 1528.35, 558.321, 1832.51, 520.089, 1673.64, 494.6, 1977.51, 702.608, 1979.34, 697.117, 1967.75, 696.507, 1973.65, 688.371, 1960.02, 686.744, 1966.73, 672.71, 1942.53, 663.556, 1943.75, 645.047, 1930.53, 641.386, 1936.43, 634.674, 1918.33, 624.708, 1923.41, 615.352, 1907.19, 603.551, 1916.36, 595.05, 1899.13, 585.429, 1907.64, 573.795, 1894.88, 552.541, 1902.49, 542.92, 1892.87, 528.377, 1901.6, 519.652, 1890.6, 507.949, 1894.62, 503.922, 1889.48, 487.813, 1896.64, 491.617, 1900.66, 476.627, 1906.26, 478.193, 1912.52, 462.084, 1920.13, 462.979, 1927.74, 447.318, 1936.46, 448.884, 1942.95, 438.593, 1949.89, 442.62, 1959.06, 430.986, 1965.1, 436.803, 1972.48, 425.84, 1979.86, 433, 1961.74, 414.206, 1951.45, 410.852, 1947.65, 404.14, 1941.16, 421.815, 1937.13, 415.326, 1929.08, 426.96, 1921.47, 421.591, 1912.75, 434.12, 1907.15, 426.513, 1895.07, 438.371, 1892.16, 432.33, 1878.07, 442.398, 1877.17, 437.476, 1858.95, 449.742, 1856.81, 444.24, 1841.53, 451.575, 1838.62, 447.449, 1822.12, 456.314, 1817.54, 451.883, 1809.28, 458.148, 1807.6, 452.647, 1790.34, 461.51, 1788.81, 457.231, 1769.07, 464.982, 1767.55, 460.183, 1755.3, 467.129, 1755.43, 458.415, 1726.38, 469.023, 1726.76, 458.92, 1695.44, 462.205, 1693.67, 454.88, 1659.45, 452.732, 1658.56, 441.113, 1641.25, 443.243, 1635.95, 432.635, 1632.46, 440.933, 1630.8, 429.819, 1622.32, 433.848, 1621.49, 424.957, 1604.82, 420.511, 1584.96, 396.433, 1585.14, 390.701, 1573.87, 393.659, 1570.17, 388.112, 1599.01, 394.769, 1600.31, 398.652, 1623.42, 398.467, 1626.75, 406.602, 1658.92, 387.003, 1664.84, 390.146, 1695.71, 363.52, 1698.49, 366.478, 1718.27, 343.921, 1724.74, 348.544, 1730.81, 328.094, 1734.67, 330.941, 1735.89, 311.416, 1741.59, 314.467, 1736.68, 301.681, 1744.82, 302.421, 1739.82, 292.251, 1747.41, 293.176, 1738.48, 282.978, 1749.04, 280.478, 1736.68, 271.308, 1746.82, 264.917, 1728.76, 260.055, 1731.95, 252.693, 1716.67, 248.802, 1722.09, 238.384, 1701.11, 237.411, 1705.14, 223.242, 1687.22, 229.214, 1686.53, 211.711, 1669.02, 217.545, 1669.86, 205.876, 1647.63, 203.097, 1645.55, 195.595, 1621.37, 194.623, 1625.82, 190.038, 1609.71, 189.343, 1609.84, 183.925, 1602.06, 181.981, 1597.06, 186.563, 1632, 8, 1645.73, 62.2934, 1735.06, 40.8824, 1696, 8, 1688, 32, 1928, 8, 1984, 8, 2024, 8, 2034.26, 43.2761, 2008, 8, 2037.11, 20.0789, 2008, 8, 1998.79, 51.6809, 1987.19, 75.5505, 1967.86, 42.2676, 1960, 8, 1832, 24, 1824, 8, 1941.97, 17.5575, 1384, 728, 1432, 800, 1488, 864, 1528, 912, 1536, 952, 1998.28, 30.3328, 1915.04, 33.7915, 1296, 1056, 1088, 1112, 1088, 1104, 1160, 1088, 1304, 1080, 1416, 1056, 1416, 1080, 1488, 1032, 1400, 992, 1568, 952, 1648.01, 938.852, 1717.98, 889.473, 1752, 840, 1840, 848, 1888, 848, 1952, 856, 1744, 992, 1992, 1080, 1800, 1152, 1888, 952, 1216, 960, 1648, 640, 1872, 728, 1488, 656, 1264, 720, 1152, 728, 1152, 736, 1183.09, 691.388, 1189.25, 695.326, 1216, 640, 1216, 648, 1223.78, 622.759, 1122, 756.275, 1959.27, 741.796, 1982.65, 722.89, 1981.43, 750.518, 1540.8, 892.518, 1371.86, 659.334, 1990.18, 719.766, 1222.2, 813.403, 2147.17, 1110.22, 1434.32, 298.899)
+uv = PackedVector2Array(1768, 8, 1584, 8, 1576, 8, 1566, 71.3, 1566, 74.8, 1584, 111.8, 1584, 115.7, 1612.1, 139.9, 1598.9, 171.6, 1512, 168, 1450.1, 163, 1409.2, 184, 1384, 200, 1372, 238.8, 1384, 296, 1400, 312, 1464, 344, 1570, 405, 1571, 405, 1607.3, 436.1, 1558.8, 450, 1555.3, 450, 1498.3, 493, 1494.9, 493, 1379.1, 655, 1228.4, 629.1, 1186, 562.7, 1186, 557.7, 1127.7, 543.3, 1120, 539.6, 1014.3, 622, 1010.4, 622, 1001.4, 647, 1000, 656, 1007, 688.1, 1007, 701.5, 1036, 728.5, 1036, 730.4, 1071, 752.4, 1128, 760, 1174.3, 774, 1175.9, 774, 1225.4, 802.9, 1135, 881, 1132.4, 881, 1088, 928, 1034, 988, 1024, 1024, 1022, 1064.9, 1034, 1116.9, 1034, 1122.6, 1126.8, 1204, 1584.9, 1204, 1525, 1080.1, 1525, 1076.9, 1493.9, 1043, 1551.6, 970, 1559.9, 973.9, 1586, 1114.9, 1586, 1120.3, 1614, 1203.4, 1614, 1204, 2188.5, 1204, 2149.4, 1106.1, 2203, 1124.7, 2232, 1128, 2272, 1136, 2347.5, 1151, 2424, 1144, 2488.9, 1135, 2564, 1096.4, 2564, 973.8, 2450.5, 997.5, 2339.5, 984, 2232, 960, 2200, 952, 2177.08, 939.161, 2136.51, 923.17, 2179.15, 923.547, 2225.09, 928.165, 2259.6, 936, 2292.62, 922.321, 2315.7, 914, 2337.82, 897.487, 2356.5, 888, 2379.65, 854.533, 2399.6, 821, 2424.42, 777.842, 2464.8, 699, 2466.6, 699, 2511.6, 578, 2515.9, 578, 2508, 505.1, 2469.66, 443.299, 2385.29, 395.966, 2324.03, 366.781, 2284.76, 339.037, 2215.94, 340.478, 2179.59, 355.963, 2125.68, 398.769, 2095.4, 451.5, 2057, 423.8, 2024.46, 412.341, 1976.8, 410, 1973.9, 406.5, 2003.7, 372, 2007.4, 372, 2019, 319.9, 2019, 314.5, 2014, 276, 1984, 216, 1971.3, 162.1, 2008, 144, 2035.5, 119, 2059.7, 65, 2076.62, 38.4963, 2056, 8, 1896, 8, 1824, 8, 1816, 40, 1791.9, 42, 1800, 8, 2424, 368, 2504, 424, 2408, 352, 2392, 336, 2416, 344, 2496, 1072, 2392, 1080, 2240, 1040, 2112, 992, 2104, 904, 2048, 872, 1992, 856, 1976, 784, 1992, 808, 1992, 824, 1984, 768, 2040, 808, 2096, 880, 2128, 776, 2084.77, 702.429, 2008, 632, 2016, 496, 2104, 472, 2096, 496, 2064.71, 486.28, 2080, 504, 2021.33, 549.453, 2043.42, 592.996, 2080.79, 636.373, 2100.96, 667.641, 2124.63, 688.681, 2162.33, 739.812, 2149.54, 735.707, 2192.8, 728.104, 2208, 696, 2231.35, 724.262, 2237.2, 711.51, 2352, 432, 2248, 712, 2290.61, 759.411, 2334.15, 763.21, 2351.66, 783.977, 2433.56, 751.136, 2420.38, 725.742, 2231.26, 650.206, 2157.14, 632.768, 2156.75, 551.518, 2368.45, 647.234, 2436.92, 527.692, 2374.87, 414.51, 2151.44, 444.968, 2226.55, 482.858, 2310.43, 572.012, 2261.61, 375.397, 2126.69, 1082.48, 2093.9, 1039.63, 2076.43, 1011.08, 2038.99, 962.19, 2025, 938.081, 2059.72, 991.086, 2012.15, 908.383, 1996.52, 876.443, 2072.14, 836.053, 2011.87, 751.543, 2115.83, 898.629, 2138.69, 908.21, 2155.88, 915.613, 1320.75, 1147.32, 1158.48, 1070, 1353.89, 911.971, 1248.61, 799.091, 1259.59, 785.057, 1276.68, 772.04, 1297.63, 753.938, 1324.07, 729.936, 1343.39, 713.664, 1363.12, 693.325, 1386.72, 668.919, 1263.31, 789.859, 1279.11, 775.237, 1298.27, 756.243, 1325.18, 732.617, 1345.05, 717.031, 1365.5, 697.15, 1387.72, 670.061, 1574.62, 746.539, 1390.85, 715.647, 1441.92, 790.97, 1498.73, 843.951, 1544.05, 919.912, 1547.85, 952.953, 1572.68, 961.902, 1636.89, 926.444, 1745.44, 827.94, 1890.97, 838.154, 1841.95, 832.65, 1703.49, 866.177, 1947.22, 844.945, 1995.83, 860.571, 2000.15, 876.786, 2014.56, 903.81, 2028.91, 937.253, 2041.69, 958.872, 2061.99, 989.336, 2078.05, 1009.32, 2097.05, 1037.16, 2129.15, 1080.4, 2077.54, 583.144, 2067.94, 536.437, 2050.3, 508.038, 2072.07, 496.504, 2098.45, 488.177, 2066.54, 472.539, 2094.39, 624.777, 2118.26, 632.652, 2147.8, 665.138, 2168.58, 699.756, 2197.38, 704.176, 2212.24, 723.154, 2214.67, 691.447, 2219.41, 681.864, 2249.81, 700.514, 2298.86, 735.741, 2334.86, 744.893, 2358.5, 738.431, 2431.53, 694.561, 2447.29, 727.629, 2407.11, 759.452, 2098.81, 449.183, 1779.84, 656.876, 1528.35, 558.321, 1832.51, 520.089, 1673.64, 494.6, 1977.51, 702.608, 1979.34, 697.117, 1967.75, 696.507, 1973.65, 688.371, 1960.02, 686.744, 1966.73, 672.71, 1942.53, 663.556, 1943.75, 645.047, 1930.53, 641.386, 1936.43, 634.674, 1918.33, 624.708, 1923.41, 615.352, 1907.19, 603.551, 1916.36, 595.05, 1899.13, 585.429, 1907.64, 573.795, 1894.88, 552.541, 1902.49, 542.92, 1892.87, 528.377, 1901.6, 519.652, 1890.6, 507.949, 1894.62, 503.922, 1889.48, 487.813, 1896.64, 491.617, 1900.66, 476.627, 1906.26, 478.193, 1912.52, 462.084, 1920.13, 462.979, 1927.74, 447.318, 1936.46, 448.884, 1942.95, 438.593, 1949.89, 442.62, 1959.06, 430.986, 1965.1, 436.803, 1972.48, 425.84, 1979.86, 433, 1961.74, 414.206, 1951.45, 410.852, 1947.65, 404.14, 1941.16, 421.815, 1937.13, 415.326, 1929.08, 426.96, 1921.47, 421.591, 1912.75, 434.12, 1907.15, 426.513, 1895.07, 438.371, 1892.16, 432.33, 1878.07, 442.398, 1877.17, 437.476, 1858.95, 449.742, 1856.81, 444.24, 1841.53, 451.575, 1838.62, 447.449, 1822.12, 456.314, 1817.54, 451.883, 1809.28, 458.148, 1807.6, 452.647, 1790.34, 461.51, 1788.81, 457.231, 1769.07, 464.982, 1767.55, 460.183, 1755.3, 467.129, 1755.43, 458.415, 1726.38, 469.023, 1726.76, 458.92, 1695.44, 462.205, 1693.67, 454.88, 1659.45, 452.732, 1658.56, 441.113, 1641.25, 443.243, 1635.95, 432.635, 1632.46, 440.933, 1630.8, 429.819, 1622.32, 433.848, 1621.49, 424.957, 1604.82, 420.511, 1584.96, 396.433, 1585.14, 390.701, 1573.87, 393.659, 1570.17, 388.112, 1599.01, 394.769, 1600.31, 398.652, 1623.42, 398.467, 1626.75, 406.602, 1658.92, 387.003, 1664.84, 390.146, 1695.71, 363.52, 1698.49, 366.478, 1718.27, 343.921, 1724.74, 348.544, 1730.81, 328.094, 1734.67, 330.941, 1735.89, 311.416, 1741.59, 314.467, 1736.68, 301.681, 1744.82, 302.421, 1739.82, 292.251, 1747.41, 293.176, 1738.48, 282.978, 1749.04, 280.478, 1736.68, 271.308, 1746.82, 264.917, 1728.76, 260.055, 1731.95, 252.693, 1716.67, 248.802, 1722.09, 238.384, 1701.11, 237.411, 1705.14, 223.242, 1687.22, 229.214, 1686.53, 211.711, 1669.02, 217.545, 1669.86, 205.876, 1647.63, 203.097, 1645.55, 195.595, 1621.37, 194.623, 1625.82, 190.038, 1609.71, 189.343, 1609.84, 183.925, 1602.06, 181.981, 1597.06, 186.563, 1632, 8, 1645.73, 62.2934, 1735.06, 40.8824, 1696, 8, 1688, 32, 1928, 8, 1984, 8, 2024, 8, 2034.26, 43.2761, 2008, 8, 2037.11, 20.0789, 2008, 8, 1998.79, 51.6809, 1987.19, 75.5505, 1967.86, 42.2676, 1960, 8, 1832, 24, 1824, 8, 1941.97, 17.5575, 1384, 728, 1432, 800, 1488, 864, 1528, 912, 1536, 952, 1998.28, 30.3328, 1915.04, 33.7915, 1296, 1056, 1088, 1112, 1088, 1104, 1160, 1088, 1304, 1080, 1416, 1056, 1416, 1080, 1488, 1032, 1400, 992, 1568, 952, 1648.01, 938.852, 1717.98, 889.473, 1752, 840, 1840, 848, 1888, 848, 1952, 856, 1744, 992, 1992, 1080, 1800, 1152, 1888, 952, 1216, 960, 1648, 640, 1872, 728, 1488, 656, 1264, 720, 1152, 728, 1152, 736, 1183.09, 691.388, 1189.25, 695.326, 1216, 640, 1216, 648, 1223.78, 622.759, 1122, 756.275, 1959.27, 741.796, 1982.65, 722.89, 1981.43, 750.518, 1540.8, 892.518, 1371.86, 659.334, 1990.18, 719.766, 1222.2, 813.403, 2147.17, 1110.22, 1434.32, 298.899)
+polygons = [[1, 2, 3], [5, 6, 7], [11, 12, 13], [26, 27, 28], [27, 28, 29], [28, 29, 30], [29, 30, 31], [30, 31, 32], [30, 32, 34], [32, 33, 34], [33, 34, 35], [34, 35, 36], [30, 34, 36], [35, 36, 37], [36, 37, 38], [43, 44, 45], [48, 49, 50], [53, 54, 55], [79, 80, 81], [88, 89, 90], [90, 91, 92], [105, 106, 107], [0, 117, 118], [0, 120, 121], [68, 69, 127], [70, 71, 127], [71, 72, 127], [69, 70, 127], [72, 127, 128], [68, 127, 128], [72, 73, 128], [67, 68, 128], [66, 67, 128], [73, 128, 129], [66, 128, 129], [74, 75, 129], [73, 74, 129], [65, 66, 129], [63, 64, 129], [64, 65, 129], [75, 129, 130], [76, 77, 130], [75, 76, 130], [77, 130, 131], [134, 135, 137], [135, 136, 138], [131, 132, 139], [78, 79, 140], [138, 140, 141], [142, 148, 149], [141, 142, 150], [142, 149, 150], [141, 150, 151], [141, 151, 152], [140, 153, 154], [140, 141, 154], [141, 152, 154], [140, 153, 155], [157, 158, 160], [157, 160, 161], [155, 157, 161], [79, 81, 161], [79, 140, 161], [140, 155, 161], [81, 82, 161], [82, 83, 161], [85, 86, 163], [83, 161, 163], [161, 162, 163], [83, 84, 163], [84, 85, 163], [166, 167, 168], [90, 92, 170], [90, 169, 170], [92, 93, 170], [159, 170, 171], [93, 170, 171], [93, 94, 171], [94, 95, 171], [95, 159, 171], [98, 99, 172], [168, 172, 173], [166, 168, 174], [168, 173, 174], [159, 173, 174], [166, 169, 174], [169, 170, 174], [159, 170, 174], [96, 97, 175], [95, 96, 175], [98, 172, 175], [172, 173, 175], [97, 98, 175], [95, 159, 175], [159, 173, 175], [139, 140, 184], [138, 140, 184], [132, 138, 184], [132, 139, 184], [138, 141, 185], [135, 137, 185], [135, 138, 185], [139, 140, 186], [77, 131, 186], [131, 139, 186], [77, 186, 187], [140, 186, 187], [78, 140, 188], [140, 187, 188], [77, 187, 188], [76, 77, 188], [51, 52, 189], [45, 46, 190], [46, 47, 190], [41, 42, 193], [42, 192, 193], [192, 193, 200], [191, 192, 200], [191, 200, 201], [193, 194, 201], [193, 200, 201], [191, 201, 202], [194, 195, 202], [194, 201, 202], [195, 196, 203], [195, 202, 203], [196, 197, 204], [196, 203, 204], [197, 198, 205], [197, 204, 205], [198, 199, 206], [198, 205, 206], [24, 199, 206], [205, 206, 208], [207, 209, 210], [56, 57, 213], [57, 58, 213], [207, 215, 218], [133, 136, 219], [134, 216, 219], [134, 135, 219], [135, 136, 219], [133, 183, 220], [133, 136, 220], [136, 138, 220], [132, 138, 220], [183, 220, 221], [132, 220, 221], [182, 183, 222], [183, 221, 222], [132, 221, 222], [180, 182, 223], [182, 222, 223], [132, 222, 223], [131, 132, 223], [179, 180, 224], [180, 223, 224], [131, 223, 224], [130, 131, 225], [131, 224, 225], [179, 181, 225], [179, 224, 225], [178, 181, 226], [181, 225, 226], [130, 225, 226], [177, 178, 227], [178, 226, 227], [130, 226, 227], [176, 177, 228], [177, 227, 228], [130, 227, 228], [129, 130, 228], [63, 129, 228], [63, 176, 228], [149, 150, 229], [148, 149, 230], [149, 229, 230], [168, 229, 230], [145, 147, 230], [145, 168, 230], [147, 230, 231], [143, 146, 231], [143, 148, 231], [148, 230, 231], [147, 231, 232], [146, 231, 232], [145, 147, 232], [146, 232, 233], [145, 232, 233], [168, 172, 233], [144, 172, 233], [145, 168, 233], [146, 233, 234], [144, 233, 234], [143, 146, 234], [100, 101, 234], [100, 144, 234], [101, 102, 234], [102, 143, 234], [150, 229, 235], [150, 151, 235], [151, 235, 236], [168, 229, 236], [229, 235, 236], [167, 168, 236], [167, 236, 237], [151, 152, 237], [151, 236, 237], [152, 154, 238], [152, 237, 238], [156, 237, 238], [153, 154, 238], [153, 155, 238], [156, 238, 239], [155, 238, 239], [155, 157, 240], [155, 239, 240], [156, 239, 240], [157, 158, 240], [156, 158, 240], [156, 158, 241], [158, 241, 242], [166, 167, 242], [156, 237, 242], [156, 241, 242], [167, 237, 242], [158, 160, 243], [158, 242, 243], [166, 242, 243], [166, 169, 243], [160, 161, 244], [160, 243, 244], [169, 243, 244], [161, 162, 244], [169, 244, 245], [162, 244, 245], [162, 163, 246], [162, 245, 246], [165, 169, 246], [169, 245, 246], [165, 169, 247], [88, 90, 247], [90, 169, 247], [165, 247, 248], [88, 247, 248], [164, 165, 248], [87, 164, 248], [165, 246, 249], [163, 246, 249], [87, 164, 249], [164, 165, 249], [86, 87, 249], [86, 163, 249], [100, 144, 250], [144, 172, 250], [99, 172, 250], [100, 101, 250], [22, 23, 252], [23, 24, 252], [20, 21, 252], [21, 22, 252], [19, 20, 254], [20, 252, 254], [141, 142, 256], [255, 256, 257], [142, 256, 258], [256, 257, 258], [257, 258, 259], [142, 258, 260], [258, 259, 260], [259, 260, 261], [142, 260, 262], [260, 261, 262], [261, 262, 263], [262, 263, 264], [142, 262, 264], [263, 264, 265], [264, 265, 266], [142, 264, 266], [265, 266, 267], [251, 265, 267], [266, 267, 268], [142, 148, 268], [142, 266, 268], [267, 268, 269], [251, 253, 269], [251, 267, 269], [268, 269, 270], [148, 268, 270], [253, 269, 271], [269, 270, 271], [148, 270, 272], [270, 271, 272], [253, 271, 273], [271, 272, 273], [272, 273, 274], [143, 148, 274], [148, 272, 274], [253, 273, 275], [273, 274, 275], [274, 275, 276], [253, 275, 277], [275, 276, 277], [276, 277, 278], [274, 276, 278], [277, 278, 279], [274, 278, 280], [278, 279, 280], [279, 280, 281], [280, 281, 282], [143, 274, 282], [274, 280, 282], [281, 282, 283], [143, 282, 284], [282, 283, 284], [283, 284, 285], [143, 284, 286], [284, 285, 286], [285, 286, 287], [143, 286, 288], [286, 287, 288], [287, 288, 289], [143, 288, 290], [288, 289, 290], [102, 143, 290], [102, 103, 290], [103, 289, 290], [287, 289, 291], [103, 104, 291], [103, 289, 291], [287, 291, 292], [107, 108, 293], [105, 107, 293], [109, 110, 293], [108, 109, 293], [104, 291, 293], [291, 292, 293], [104, 105, 293], [285, 287, 294], [287, 292, 294], [292, 293, 295], [292, 294, 295], [294, 295, 296], [283, 285, 296], [285, 294, 296], [295, 296, 297], [293, 295, 297], [283, 296, 298], [296, 297, 298], [281, 283, 298], [297, 298, 299], [293, 297, 299], [281, 298, 300], [298, 299, 300], [279, 281, 300], [299, 300, 301], [300, 301, 302], [277, 279, 302], [279, 300, 302], [301, 302, 303], [277, 302, 304], [302, 303, 305], [302, 304, 305], [304, 305, 306], [253, 277, 306], [277, 304, 306], [305, 306, 307], [253, 306, 308], [306, 307, 308], [307, 308, 309], [253, 308, 310], [308, 309, 310], [309, 310, 311], [310, 311, 312], [253, 310, 312], [311, 312, 313], [312, 313, 314], [253, 312, 314], [313, 314, 315], [314, 315, 316], [253, 314, 316], [315, 316, 317], [313, 315, 317], [251, 254, 318], [251, 253, 318], [253, 316, 318], [316, 317, 319], [316, 318, 319], [254, 318, 320], [318, 319, 320], [319, 320, 321], [254, 320, 322], [320, 321, 322], [321, 322, 323], [322, 323, 324], [254, 322, 324], [323, 324, 325], [324, 325, 326], [19, 254, 326], [254, 324, 326], [325, 326, 327], [19, 326, 328], [326, 327, 328], [327, 328, 329], [19, 328, 329], [19, 329, 330], [19, 20, 330], [18, 330, 331], [18, 331, 333], [331, 332, 333], [17, 18, 333], [332, 333, 334], [16, 17, 334], [17, 333, 334], [331, 332, 335], [330, 331, 336], [331, 335, 336], [335, 336, 337], [330, 336, 337], [327, 329, 338], [325, 327, 338], [329, 330, 338], [330, 337, 338], [337, 338, 339], [335, 337, 339], [332, 335, 339], [321, 323, 340], [325, 338, 340], [338, 339, 340], [323, 325, 340], [339, 340, 341], [321, 340, 342], [340, 341, 342], [319, 321, 342], [317, 319, 342], [341, 342, 343], [317, 342, 344], [342, 343, 344], [313, 317, 344], [311, 313, 344], [343, 344, 346], [343, 345, 346], [307, 309, 346], [309, 311, 346], [311, 344, 346], [343, 345, 347], [345, 346, 348], [345, 347, 348], [303, 305, 348], [305, 307, 348], [307, 346, 348], [343, 347, 349], [347, 348, 350], [347, 349, 350], [301, 303, 350], [303, 348, 350], [349, 350, 351], [350, 351, 352], [299, 301, 352], [301, 350, 352], [293, 299, 352], [351, 352, 353], [349, 351, 353], [352, 353, 354], [110, 293, 354], [293, 352, 354], [353, 354, 355], [354, 355, 356], [110, 111, 356], [110, 354, 356], [111, 119, 356], [355, 356, 357], [349, 353, 357], [353, 355, 357], [356, 357, 358], [357, 358, 359], [349, 357, 359], [358, 359, 360], [119, 356, 360], [356, 358, 360], [119, 120, 360], [359, 360, 361], [341, 343, 361], [343, 349, 361], [349, 359, 361], [360, 361, 362], [120, 360, 362], [361, 362, 363], [339, 341, 363], [341, 361, 363], [362, 363, 364], [363, 364, 365], [332, 339, 365], [339, 363, 365], [364, 365, 366], [365, 366, 367], [7, 366, 368], [366, 367, 368], [367, 368, 369], [332, 365, 369], [365, 367, 369], [332, 334, 369], [7, 368, 370], [368, 369, 370], [369, 370, 372], [369, 371, 372], [7, 8, 372], [7, 370, 372], [371, 372, 373], [8, 372, 373], [371, 373, 374], [8, 9, 374], [8, 373, 374], [334, 369, 374], [369, 371, 374], [16, 334, 374], [9, 16, 374], [1, 3, 376], [1, 375, 376], [5, 7, 376], [364, 366, 376], [7, 366, 376], [3, 4, 376], [4, 5, 376], [364, 376, 377], [0, 120, 377], [120, 362, 377], [362, 364, 377], [0, 377, 378], [376, 377, 379], [377, 378, 379], [375, 376, 379], [375, 378, 379], [116, 381, 382], [114, 115, 383], [381, 382, 384], [115, 116, 385], [115, 383, 385], [116, 382, 385], [111, 112, 388], [114, 383, 388], [383, 387, 388], [113, 114, 388], [112, 113, 388], [387, 388, 389], [380, 381, 390], [381, 389, 390], [117, 118, 391], [119, 391, 392], [118, 391, 392], [389, 390, 393], [380, 390, 393], [208, 209, 394], [203, 204, 394], [204, 205, 394], [205, 208, 394], [209, 394, 395], [202, 203, 395], [203, 394, 395], [209, 210, 395], [191, 202, 395], [210, 395, 396], [191, 395, 396], [211, 212, 398], [211, 397, 398], [56, 212, 398], [387, 389, 399], [381, 389, 399], [381, 384, 399], [383, 387, 399], [383, 385, 399], [382, 385, 399], [382, 384, 399], [118, 392, 400], [389, 393, 400], [117, 380, 400], [380, 393, 400], [119, 391, 400], [117, 391, 400], [111, 388, 400], [388, 389, 400], [111, 119, 400], [50, 51, 402], [49, 50, 402], [48, 49, 403], [49, 402, 403], [47, 190, 403], [47, 48, 403], [402, 403, 404], [190, 403, 404], [51, 402, 404], [190, 401, 404], [51, 189, 404], [401, 404, 405], [189, 404, 405], [401, 405, 406], [53, 55, 407], [55, 406, 407], [189, 405, 407], [405, 406, 407], [52, 53, 407], [52, 189, 407], [55, 406, 408], [55, 56, 408], [56, 398, 408], [397, 398, 409], [398, 408, 409], [406, 408, 409], [191, 401, 409], [401, 406, 409], [191, 396, 409], [396, 397, 409], [213, 214, 410], [211, 214, 410], [56, 212, 410], [56, 213, 410], [211, 212, 410], [58, 213, 411], [213, 214, 411], [214, 218, 412], [214, 411, 412], [215, 218, 413], [218, 412, 413], [215, 217, 413], [412, 413, 414], [217, 413, 414], [216, 217, 415], [217, 414, 415], [216, 219, 415], [219, 415, 416], [133, 183, 416], [133, 219, 416], [182, 183, 416], [412, 414, 417], [411, 412, 417], [58, 411, 417], [179, 181, 418], [177, 178, 418], [178, 181, 418], [176, 177, 418], [61, 62, 419], [62, 418, 419], [60, 61, 419], [59, 60, 419], [58, 59, 419], [58, 417, 419], [418, 419, 420], [417, 419, 420], [179, 180, 420], [179, 418, 420], [414, 415, 420], [414, 417, 420], [415, 416, 420], [182, 416, 420], [180, 182, 420], [191, 401, 421], [190, 401, 421], [43, 45, 421], [45, 190, 421], [252, 254, 422], [251, 254, 422], [207, 215, 422], [215, 251, 422], [263, 265, 423], [251, 265, 423], [261, 263, 423], [259, 261, 423], [216, 217, 423], [215, 217, 423], [215, 251, 423], [252, 422, 424], [207, 422, 424], [24, 206, 424], [24, 252, 424], [208, 209, 424], [207, 209, 424], [206, 208, 424], [196, 197, 425], [195, 196, 425], [194, 195, 425], [41, 193, 425], [193, 194, 425], [30, 36, 426], [36, 38, 426], [39, 40, 427], [40, 41, 427], [26, 28, 428], [28, 30, 428], [30, 426, 428], [41, 425, 429], [41, 427, 429], [426, 427, 429], [426, 428, 429], [26, 428, 430], [425, 429, 431], [25, 425, 431], [25, 430, 431], [428, 429, 431], [428, 430, 431], [26, 430, 432], [25, 430, 432], [24, 25, 432], [426, 427, 433], [39, 427, 433], [38, 39, 433], [38, 426, 433], [134, 216, 434], [216, 423, 434], [134, 137, 434], [257, 259, 434], [259, 423, 434], [255, 257, 435], [257, 434, 435], [137, 434, 436], [434, 435, 436], [137, 185, 436], [210, 396, 437], [396, 397, 437], [211, 397, 437], [214, 218, 437], [207, 218, 437], [211, 214, 437], [207, 210, 437], [197, 425, 438], [25, 425, 438], [198, 199, 438], [24, 199, 438], [197, 198, 438], [24, 25, 438], [435, 436, 439], [185, 436, 439], [255, 256, 439], [255, 435, 439], [141, 185, 439], [141, 256, 439], [43, 421, 440], [42, 192, 440], [191, 192, 440], [191, 421, 440], [63, 176, 441], [176, 418, 441], [62, 418, 441], [15, 16, 442], [10, 11, 442], [9, 10, 442], [9, 16, 442], [13, 14, 442], [14, 15, 442], [11, 13, 442]]
+bones = ["ArmR", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0.5, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0), "ArmR/ElbowR", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0, 0.5, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ArmR/ElbowR/WristR", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0.5, 0.5, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0, 0, 0.5, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ArmR/ElbowR/WristR/HandR", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "Head", PackedFloat32Array(0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 1, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 1, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0, 0.5, 1, 1, 1, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "Head/Nose", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0.5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 1, 0, 1, 0, 1, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5), "LegR", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0.5, 0, 0.5, 0, 0, 0.5, 0, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0), "LegR/KneeR", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0.5, 0.5, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "LegR/KneeR/CalfR", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "LegL", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0), "LegL/KneeL", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "TailLower", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ArmL", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0), "ArmL/WristL", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0), "ArmL/WristL/HandL", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "Body", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0)]
+internal_vertex_count = 321
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterSelectGregBg/CharacterselectGreg"]
+root_node = NodePath("../../..")
+libraries = {
+&"": SubResource("AnimationLibrary_0hol4")
+}
+autoplay = "new_animation"
+
+[node name="Skeleton2D" type="Skeleton2D" parent="CharacterSelectGregBg/CharacterselectGreg"]
+position = Vector2(1747, 1086)
+
+[node name="ArmR" type="Bone2D" parent="CharacterSelectGregBg/CharacterselectGreg/Skeleton2D"]
+position = Vector2(359, -141)
+rest = Transform2D(1, 0, 0, 1, 359, -141)
+
+[node name="ElbowR" type="Bone2D" parent="CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR"]
+position = Vector2(202, 269)
+rest = Transform2D(1, 0, 0, 1, 202, 269)
+
+[node name="WristR" type="Bone2D" parent="CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR/ElbowR"]
+position = Vector2(101, -174)
+scale = Vector2(0.9999988, 0.9999988)
+rest = Transform2D(1, 0, 0, 1, 101, -174)
+
+[node name="HandR" type="Bone2D" parent="CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmR/ElbowR/WristR"]
+position = Vector2(-115, -122)
+rest = Transform2D(1, 0, 0, 1, -115, -122)
+
+[node name="Head" type="Bone2D" parent="CharacterSelectGregBg/CharacterselectGreg/Skeleton2D"]
+position = Vector2(102, -389)
+rest = Transform2D(1, 0, 0, 1, 102, -389)
+
+[node name="Nose" type="Bone2D" parent="CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/Head"]
+position = Vector2(-288, -47)
+rest = Transform2D(1, 0, 0, 1, -288, -47)
+
+[node name="LegR" type="Bone2D" parent="CharacterSelectGregBg/CharacterselectGreg/Skeleton2D"]
+position = Vector2(-206, 145)
+rest = Transform2D(1, 0, 0, 1, -206, 145)
+
+[node name="KneeR" type="Bone2D" parent="CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegR"]
+position = Vector2(-242, 211)
+rest = Transform2D(1, 0, 0, 1, -242, 211)
+
+[node name="CalfR" type="Bone2D" parent="CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegR/KneeR"]
+position = Vector2(215, 208)
+rest = Transform2D(1, 0, 0, 1, 215, 208)
+
+[node name="LegL" type="Bone2D" parent="CharacterSelectGregBg/CharacterselectGreg/Skeleton2D"]
+position = Vector2(130, 214)
+scale = Vector2(0.999999, 0.999999)
+rest = Transform2D(1, 0, 0, 1, 130, 214)
+
+[node name="KneeL" type="Bone2D" parent="CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/LegL"]
+position = Vector2(137, 358)
+rest = Transform2D(1, 0, 0, 1, 137, 358)
+
+[node name="TailLower" type="Bone2D" parent="CharacterSelectGregBg/CharacterselectGreg/Skeleton2D"]
+scale = Vector2(0.9999999, 0.9999999)
+rest = Transform2D(1, 0, 0, 1, 0, 0)
+
+[node name="ArmL" type="Bone2D" parent="CharacterSelectGregBg/CharacterselectGreg/Skeleton2D"]
+position = Vector2(-304, 62)
+rest = Transform2D(1, 0, 0, 1, -304, 62)
+
+[node name="WristL" type="Bone2D" parent="CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmL"]
+position = Vector2(-170, -37)
+rest = Transform2D(1, 0, 0, 1, -170, -37)
+
+[node name="HandL" type="Bone2D" parent="CharacterSelectGregBg/CharacterselectGreg/Skeleton2D/ArmL/WristL"]
+position = Vector2(-89, -93)
+rest = Transform2D(1, 0, 0, 1, -89, -93)
+
+[node name="Body" type="Bone2D" parent="CharacterSelectGregBg/CharacterselectGreg/Skeleton2D"]
+rest = Transform2D(1, 0, 0, 1, 0, 0)
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(2214, 121)
+
+[node name="Node2D2" type="Node2D" parent="."]
+position = Vector2(1260.0001, 1121)
+scale = Vector2(0.18034919, 1.1690414)

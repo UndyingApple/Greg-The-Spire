@@ -1,12 +1,12 @@
-﻿using GregTheSpire.GregTheSpireCode.Powers;
+﻿using GregTheSpire.GregTheSpireCode.Character;
+using GregTheSpire.GregTheSpireCode.Commands;
+using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace GregTheSpire.GregTheSpireCode.Potions;
 using BaseLib.Utils;
 using Godot;
-using GregTheSpire.GregTheSpireCode.Character;
-using GregTheSpire.GregTheSpireCode.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Potions;

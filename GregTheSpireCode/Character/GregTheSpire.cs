@@ -18,10 +18,13 @@ public class GregTheSpire : PlaceholderCharacterModel
     public const string CharacterId = "GregTheSpire";
 
     public static readonly Color Color = new("00a86b");
+    
+    public override Color MapDrawingColor => new Color("00a86b");
 
     public override Color NameColor => new("00a86b");
     public override CharacterGender Gender => CharacterGender.Masculine;
     public override int StartingHp => 68;
+    public override int StartingGold => 99;
 
 
     
@@ -74,6 +77,8 @@ public class GregTheSpire : PlaceholderCharacterModel
     public override string CustomArmPaperTexturePath => "multiplayer_hand_greg_paper.png".GregPath();
     public override string CustomArmScissorsTexturePath => "multiplayer_hand_greg_scissors.png".GregPath();
     public override string CustomEnergyCounterPath => "res://GregTheSpire/scenes/energy_counter.tscn";
+    public override string CustomCharacterSelectBg => "res://GregTheSpire/scenes/screens/char_select/greg_charselect.tscn";
+
 
     //public override string CustomIconPath => "res://GregTheSpire/scenes/greg_icon.tscn"; needs to be made
     //public override string CustomCharacterSelectIconPath => "char_select_regent.png".GregPath();
