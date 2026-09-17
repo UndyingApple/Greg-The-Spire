@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5w6kqs66yu4a"
-path="res://.godot/imported/cheese.png-f13848d118aadbafbcd730c5bd370812.ctex"
+uid="uid://bwujwh7p8qd7w"
+path="res://.godot/imported/greg_blunt_attack.png-c821c3183f209468ff544be234f76e59.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/card_portraits/cheese.png"
-dest_files=["res://.godot/imported/cheese.png-f13848d118aadbafbcd730c5bd370812.ctex"]
+source_file="res://GregTheSpire/scenes/greg_blunt_attack.png"
+dest_files=["res://.godot/imported/greg_blunt_attack.png-c821c3183f209468ff544be234f76e59.ctex"]
 
 [params]
 

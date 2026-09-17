@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5w6kqs66yu4a"
-path="res://.godot/imported/cheese.png-f13848d118aadbafbcd730c5bd370812.ctex"
+uid="uid://db8yvym1uxwfa"
+path="res://.godot/imported/greg_idle.png-c414ab3c55b7a5956b0cd3e23ec3305d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/card_portraits/cheese.png"
-dest_files=["res://.godot/imported/cheese.png-f13848d118aadbafbcd730c5bd370812.ctex"]
+source_file="res://GregTheSpire/scenes/greg_idle.png"
+dest_files=["res://.godot/imported/greg_idle.png-c414ab3c55b7a5956b0cd3e23ec3305d.ctex"]
 
 [params]
 

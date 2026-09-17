@@ -8,6 +8,7 @@ using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Relics;
+using MegaCrit.Sts2.Core.Nodes.Combat;
 
 namespace GregTheSpire.GregTheSpireCode.Character;
 
@@ -82,4 +83,11 @@ public class GregTheSpire : PlaceholderCharacterModel
 
     //public override string CustomIconPath => "res://GregTheSpire/scenes/greg_icon.tscn"; needs to be made
     //public override string CustomCharacterSelectIconPath => "char_select_regent.png".GregPath();
+
+    //public override NCreatureVisuals CreateCustomVisuals() => NodeFactory<NCreatureVisuals>.CreateFromScene("res://GregTheSpire/scenes/combat.tscn");
+    public override NCreatureVisuals CreateCustomVisuals()
+    {
+        return NodeFactory<NCreatureVisuals>.CreateFromResource("res://GregTheSpire/scenes/greg_idle.png");
+    }
+   
 }
