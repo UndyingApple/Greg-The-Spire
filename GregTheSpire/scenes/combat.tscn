@@ -1,24 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://bwg2s4sotpydh"]
+[gd_scene load_steps=2 format=3 uid="uid://bwg2s4sotpydh"]
 
 [ext_resource type="PackedScene" uid="uid://bw0vc2bobijsq" path="res://GregTheSpire/scenes/greg.tscn" id="1_ufl7y"]
-[ext_resource type="Script" path="res://src/Core/Nodes/Combat/NCreatureVisuals.cs" id="hoasudfhoaisudfhoaiudfh"]
-[ext_resource type="Image" path="res://GregTheSpire/scenes/greg_idle.png" id="gaioeufhoaisudfhiksadjlfn"]
 
 [node name="Combat" type="Node2D"]
-script = ExtResource("hoasudfhoaisudfhoaiudfh")
 
-[node name="Visuals" parent="." instance=ExtResource("gaioeufhoaisudfhiksadjlfn")]
+[node name="Visuals" parent="." instance=ExtResource("1_ufl7y")]
+position = Vector2(0, -123)
 
 [node name="Bounds" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_left = -74.0
-offset_top = -117.0
-offset_right = 78.0
-offset_bottom = 107.0
+offset_left = -84.0
+offset_top = -254.0
+offset_right = 82.0
 
 [node name="IntentPos" type="Marker2D" parent="."]
-position = Vector2(-3, -137)
+position = Vector2(-3, -290)
 
 [node name="CenterPos" type="Marker2D" parent="."]
-position = Vector2(-5, -26)
+position = Vector2(-1, -146)

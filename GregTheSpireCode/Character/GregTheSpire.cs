@@ -87,7 +87,7 @@ public class GregTheSpire : PlaceholderCharacterModel
     //public override NCreatureVisuals CreateCustomVisuals() => NodeFactory<NCreatureVisuals>.CreateFromScene("res://GregTheSpire/scenes/combat.tscn");
     public override NCreatureVisuals CreateCustomVisuals()
     {
-        return NodeFactory<NCreatureVisuals>.CreateFromResource("res://GregTheSpire/scenes/greg_idle.png");
+        return NodeFactory<NCreatureVisuals>.CreateFromScene("res://GregTheSpire/scenes/combat.tscn");
     }
    
 }
