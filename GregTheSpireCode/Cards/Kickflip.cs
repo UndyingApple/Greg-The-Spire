@@ -24,22 +24,20 @@ public class Kickflip() : GregTheSpireCard(2,
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new CalculationBaseVar(8),
         new ExtraDamageVar(1),
-        new CalculatedDamageVar(ValueProp.Move).WithMultiplier((Func<CardModel, Creature, Decimal>) ((card, target) => (Decimal) (card != null ? card.Owner.Creature.GetPowerAmount<ConfidencePower>() : 0)))
+        new CalculatedDamageVar(ValueProp.Move).WithMultiplier((Func<CardModel, Creature, Decimal>) ((card, _) => (Decimal)card.Owner.Creature.GetPowerAmount<ConfidencePower>()))
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromPower<ConfidencePower>()
     ];
-
-    private int _extraEffect = 1;
+    
     
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
-        CardPlay play)
+        CardPlay cardPlay)
     {
-        ArgumentNullException.ThrowIfNull((object) play.Target, "play.Target");
-        AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.CalculatedDamage).FromCard((CardModel) this, play).Targeting(play.Target).WithHitFx("vfx/vfx_attack_blunt", tmpSfx: "blunt_attack.mp3").Execute(choiceContext);
-
+        ArgumentNullException.ThrowIfNull((object) cardPlay.Target, "play.Target");
+        AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.CalculatedDamage).FromCard((CardModel) this, cardPlay).Targeting(cardPlay.Target).WithHitFx("vfx/vfx_attack_slash", tmpSfx: "blunt_attack.mp3").Execute(choiceContext);
     }
 
     protected override void OnUpgrade()

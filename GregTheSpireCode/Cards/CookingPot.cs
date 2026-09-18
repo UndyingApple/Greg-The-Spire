@@ -30,7 +30,8 @@ public class CookingPot() : GregTheSpireCard(2,
     {
         Decimal num = await CreatureCmd.GainBlock(this.Owner.Creature, this.DynamicVars.Block, cardPlay);
         AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, cardPlay).Targeting(cardPlay.Target).Execute(choiceContext);
-        IEnumerable<CardModel> soup = await Soup.CreateInHand(Owner, 1, CombatState);
+        await Cmd.Wait(0.1f);
+        await Soup.CreateInHand(Owner, 1, CombatState);
     }
 
     protected override void OnUpgrade()

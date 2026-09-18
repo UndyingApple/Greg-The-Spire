@@ -4,7 +4,7 @@
   "GREGTHESPIRE-STORAGE_POWER.title": "Storage",
 
   "GREGTHESPIRE-CONFIDENCE_POWER.description": "Increases attack damage by. When you take unblocked attack damage, remove all [gold]Confidence[/gold] and gain 1 [gold]Weak[/gold] plus 1 additional [gold]Weak[/gold] for every 5 [gold]Confidence[/gold] lost.",
-  "GREGTHESPIRE-CONFIDENCE_POWER.smartDescription": "Increases attack damage by {Amount}. When you take unblocked attack damage, remove all [gold]Confidence[/gold] and gain 1 [gold]Weak[/gold] plus 1 additional [gold]Weak[/gold] for every 5 [gold]Confidence[/gold] lost.",
+  "GREGTHESPIRE-CONFIDENCE_POWER.smartDescription": "Increases attack damage by {Amount}. When you take unblocked attack damage, lose half of your [gold]Confidence[/gold] and gain 1 [gold]Weak[/gold] plus 1 additional [gold]Weak[/gold] for every 5 [gold]Confidence[/gold] lost.",
   "GREGTHESPIRE-CONFIDENCE_POWER.title": "Confidence",
 
   "GREGTHESPIRE-SECONDS_POWER.description": "The next time you play a [gold]Snack[/gold], add a copy of it to your hand.",
@@ -59,8 +59,8 @@
   "GREGTHESPIRE-FLY_SWATTER_POWER.smartDescription": "[gold]Flies[/gold] do {Amount} additional damage.",
   "GREGTHESPIRE-FLY_SWATTER_POWER.title": "Fly Swatter",
   
-  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.description": "When you play a [gold]Cheese[/gold], draw card.",
-  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.smartDescription": "When you play a [gold]Cheese[/gold], draw {Amount} {Amount:plural:card|cards}.",
+  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.description": "When you play a [gold]Snack[/gold], draw card.",
+  "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.smartDescription": "When you play a [gold]Snack[/gold], draw {Amount} {Amount:plural:card|cards}.",
   "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.title": "Dont You LIKE Gorgonzola?",
   
   "GREGTHESPIRE-FRESH_STRAWBERRIES_POWER.description": "At the start of your next turns, add a [gold]Strawberry[/gold] to your hand.",
@@ -129,5 +129,13 @@
 
   "GREGTHESPIRE-TUMBLE_POWER.description": "Cards played from your [gold]Stash[/gold] are played an additional time.",
   "GREGTHESPIRE-TUMBLE_POWER.smartDescription": "Cards played from your [gold]Stash[/gold] are played {Amount:plural:an additional time|{Amount}additional times}.",
-  "GREGTHESPIRE-TUMBLE_POWER.title": "Tumble"
+  "GREGTHESPIRE-TUMBLE_POWER.title": "Tumble",
+
+  "GREGTHESPIRE-STARVATION_POWER.description": "",
+  "GREGTHESPIRE-STARVATION_POWER.smartDescription": "",
+  "GREGTHESPIRE-STARVATION_POWER.title": "Starvation",
+  
+  "GREGTHESPIRE-SHARING_POWER.description": "",
+  "GREGTHESPIRE-SHARING_POWER.smartDescription": "",
+  "GREGTHESPIRE-SHARING_POWER.title": "Sharing"
 }

@@ -30,7 +30,7 @@ public class CheeseAndCrackers() : GregTheSpireCard(1,
         CardPlay play)
     {
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
-        IEnumerable<CardModel> cheese = await Cheese.CreateInHand(Owner, 1, CombatState);
+        await Cheese.CreateInHand(Owner, 1, CombatState);
         
         await Cmd.Wait(0.1f);
         await Cracker.CreateInHand(Owner,  DynamicVars["CrackerAmt"].IntValue, CombatState);

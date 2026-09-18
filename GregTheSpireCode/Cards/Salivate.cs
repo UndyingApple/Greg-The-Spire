@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using BaseLib.Utils;
 using GregTheSpire.GregTheSpireCode.Cards;
+using GregTheSpire.GregTheSpireCode.Cards.Colorless;
 using GregTheSpire.GregTheSpireCode.Keywords;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Combat.History.Entries;
@@ -8,6 +9,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
@@ -20,15 +22,18 @@ public class Salivate() : GregTheSpireCard(1,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-    new BlockVar(3, ValueProp.Move),
-    new CalculationBaseVar(3),
+    new BlockVar(0, ValueProp.Move),
+    new CalculationBaseVar(0),
     new CalculationExtraVar(3),
     (DynamicVar) new CalculatedBlockVar(ValueProp.Move).WithMultiplier(
         (Func<CardModel, Creature, Decimal>) ((card, _) => (Decimal) PileType.Exhaust.GetPile(card.Owner).Cards.DistinctBy<CardModel, String>((Func<CardModel, String>) (c => c.Id.Entry)).Count<CardModel>((Func<CardModel, bool>)(c => c.Keywords.Contains(GregTheSpireKeywords.Snack)))))
                 ];//so, this is a monstrosity. Here's what it does: gets the card owner's exhaust pile, then narrows it down into a subset of cards with distinct Ids (effectively their titles) and returns a decimal count of the number of unique cards in the exhaust pile with the custom Keyword "Snack", 
 
     public override bool GainsBlock => true;
-    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips =>
+    [
+        HoverTipFactory.FromCard<Cracker>()
+    ];
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
@@ -60,13 +65,15 @@ public class Salivate() : GregTheSpireCard(1,
         */
         
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
+        await Cracker.CreateInHand(Owner, 1, CombatState);
+        await Cmd.Wait(0.1f);
         await CreatureCmd.GainBlock(this.Owner.Creature, this.DynamicVars.CalculatedBlock.Calculate(play.Target), this.DynamicVars.CalculatedBlock.Props, play);
 
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.CalculationBase.UpgradeValueBy(1);
+        
         DynamicVars.CalculationExtra.UpgradeValueBy(1);
     }
 }

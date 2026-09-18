@@ -16,6 +16,7 @@ public class ConfidencePower() : GregTheSpirePower
 
     public override PowerStackType StackType =>
         PowerStackType.Counter;
+    
 
     public override bool AllowNegative => true;
     
@@ -31,13 +32,20 @@ public class ConfidencePower() : GregTheSpirePower
     public override async Task AfterDamageReceived(PlayerChoiceContext choiceContext, Creature target, DamageResult result, ValueProp props,
         Creature? dealer, CardModel? cardSource)
     {
-        if (!CombatManager.Instance.IsInProgress || target != this.Owner || result.UnblockedDamage <= 0)
+        if (!CombatManager.Instance.IsInProgress || target != this.Owner || result.UnblockedDamage <= 0 )
             return;
         if (Owner.GetPowerAmount<ObliviousPower>() > 0)
             return;
-        this.Flash();
-        await PowerCmd.Apply<WeakPower>(choiceContext, this.Owner, 1 + (int) (this.Amount / 5), this.Owner, null);
-        await PowerCmd.Apply<ConfidencePower>(choiceContext, this.Owner, -Amount, this.Owner,null);
-        
+        if (this.Amount<=1)
+        {
+            this.Flash();
+            await PowerCmd.Apply<ConfidencePower>(choiceContext, this.Owner, -Amount, this.Owner,null);
+            await PowerCmd.Apply<WeakPower>(choiceContext, this.Owner,(int) (1), this.Owner, null);
+                
+            return;
+        };
+        this.Flash(); 
+        await PowerCmd.Apply<ConfidencePower>(choiceContext, this.Owner, (int) ((-(Amount+1)/2)), this.Owner,null);
+        await PowerCmd.Apply<WeakPower>(choiceContext, this.Owner, (int)(1 + (Amount / 5)), this.Owner, null);
     }
 }

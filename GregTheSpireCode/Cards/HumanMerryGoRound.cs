@@ -29,7 +29,7 @@ public class HumanMerryGoRound() : GregTheSpireCard(1,
         CardPlay play)
     {
         AttackCommand attackCommand = await DamageCmd.Attack(DynamicVars.Damage.BaseValue).WithHitCount(this.DynamicVars.Repeat.IntValue).FromCard((CardModel) this, play).TargetingRandomOpponents(this.CombatState).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
-        
+        await Cmd.Wait(0.1f);
         var confidenceAmount = this.Owner.Creature.GetPowerAmount<ConfidencePower>();
         if (confidenceAmount != null)
         {

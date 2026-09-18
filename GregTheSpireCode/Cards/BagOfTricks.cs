@@ -34,6 +34,8 @@ public class BagOfTricks() : GregTheSpireCard(
 		
 		await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 1, 1,null);
 		
+		await Cmd.Wait(0.1f); 
+		
 		await StashCmd.StashAsync(choiceContext, this.Owner, 0, IsUpgraded ? 2 : 1, this);
 	}
 

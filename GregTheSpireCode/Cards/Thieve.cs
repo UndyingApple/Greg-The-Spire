@@ -26,7 +26,7 @@ public class Thieve() : GregTheSpireCard(2,
     ];
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new BlockVar(7, ValueProp.Move),
+        new BlockVar(8, ValueProp.Move),
         new IntVar("StealAmount", 1)
     ];
 

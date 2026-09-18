@@ -248,7 +248,7 @@
   "GREGTHESPIRE-OBLIVIOUS.description": "Apply 2 [gold]Weak[/gold] to ALL enemies.\nYou can not lose [gold]Confidence[/gold] by taking damage this turn.",
   "GREGTHESPIRE-OBLIVIOUS.title": "Oblivious",
 
-  "GREGTHESPIRE-POSITIVE_AFFIRMATION.description": "If you end your turn with [gold]Weak[/gold], gain {PositiveAffirmationPower:diff()} [gold]Confidence[/gold] at the start of your next turn.",
+  "GREGTHESPIRE-POSITIVE_AFFIRMATION.description": "Gain {ConfidencePower:diff()} [gold]Confidence[/gold] X times.",
   "GREGTHESPIRE-POSITIVE_AFFIRMATION.title": "Positive Affirmation",
 
   "GREGTHESPIRE-RATATOINGING_IT.description": "Give every card in your deck [gold]Replay[/gold] {Replay:diff()}.\nYou can no longer play Skills this combat. ",
@@ -263,7 +263,7 @@
   "GREGTHESPIRE-IMPROVISED_ARMOR.description": "Add a Cracker to your [gold]Hand[/gold]. [gold]Block[/gold] for each card in your [gold]Stash[/gold].{InCombat:\n(gain {CalculatedBlock:diff()} [gold]Block[/gold])|}",
   "GREGTHESPIRE-IMPROVISED_ARMOR.title": "Improvised Armor",
 
-  "GREGTHESPIRE-SALIVATE.description": "Gain {CalculatedBlock:diff()} [gold]Block[/gold].\nGain {CalculationExtra:diff()} additional [gold]Block[/gold] for every unique [gold]Snack[/gold] in your [gold]Exhaust Pile[/gold].",
+  "GREGTHESPIRE-SALIVATE.description": "Add 1 [gold]Cracker[/gold] to your [gold]Hand[/gold].\nGain {CalculationExtra:diff()} [gold]Block[/gold] for every unique [gold]Snack[/gold] in your [gold]Exhaust Pile[/gold].{InCombat:show:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold].|}",
   "GREGTHESPIRE-SALIVATE.title": "Salivate",
 
   "GREGTHESPIRE-DUMP.description": "Discard your [gold]Stash[/gold].\nDeal {Damage:diff()} damage for every card Discarded.",
@@ -293,9 +293,20 @@
   "GREGTHESPIRE-HOLSTER.description": "Gain {Block:diff()} [gold]Block[/gold].\nPlay a card from your [gold]Stash[/gold].",
   "GREGTHESPIRE-HOLSTER.title": "Holster",
 
-
   "GREGTHESPIRE-CHEESE_BALL.description": "Gain {ConfidencePower:diff()} [gold]Confidence[/gold].\nIf you play a [gold]Cheese[/gold] while this card is in your [gold]Hand[/gold], increase the [gold]Confidence[/gold] gained by this card by {IfUpgraded:show:2|1} instead of gaining [gold]Confidence[/gold].",
-  "GREGTHESPIRE-CHEESE_BALL.title": "Cheese Ball"
+  "GREGTHESPIRE-CHEESE_BALL.title": "Cheese Ball",
+
+  "GREGTHESPIRE-THURSDAY_NIGHT.description": "ALL players [gold]Steal[/gold] 2.",
+  "GREGTHESPIRE-THURSDAY_NIGHT.title": "Thursday Night",
+
+  "GREGTHESPIRE-PICNIC.description": "ALL players add {snackAmount:diff()} random [gold]Snacks[/gold] to their [gold]Hand[/gold].",
+  "GREGTHESPIRE-PICNIC.title": "Picnic",
+
+  "GREGTHESPIRE-SHARING.description": "Choose an ally.\nWhenever you create a [gold]Snack[/gold], add a copy to their [gold]Draw Pile[/gold].",
+  "GREGTHESPIRE-SHARING.title": "Sharing",
+
+  "GREGTHESPIRE-SWARM.description": "Another player [gold]Enchants[/gold] ALL cards in their [gold]Hand[/gold] with [purple]Infested[/purple].",
+  "GREGTHESPIRE-SWARM.title": "Swarm"
 }
   
   

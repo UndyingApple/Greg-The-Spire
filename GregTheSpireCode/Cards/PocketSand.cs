@@ -15,7 +15,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
 public class PocketSand() : GregTheSpireCard(1,
-    CardType.Skill, CardRarity.Common,
+    CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
@@ -34,7 +34,7 @@ public class PocketSand() : GregTheSpireCard(1,
     {
         await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).Execute(choiceContext);
         await PowerCmd.Apply<WeakPower>(choiceContext, play.Target, this.DynamicVars.Weak.BaseValue, this.Owner.Creature, (CardModel) this);
-
+        await Cmd.Wait(0.1f);
         if (Stolen.IsStolen.Get(this))
         {
             await StealCmd.StealAsync(choiceContext, this.Owner, 1);

@@ -31,7 +31,7 @@ public class Stinky() : GregTheSpireCard(1,
     {
         await CreatureCmd.TriggerAnim(this.Owner.Creature, "Attack", this.Owner.Character.AttackAnimDelay);
         AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).TargetingAllOpponents(this.CombatState).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
-        
+        await Cmd.Wait(0.1f);
         IEnumerable<Fly> cards = Fly.Create(this.Owner, (int) this.DynamicVars["flies"].BaseValue, this.CombatState);
         await CardPileCmd.AddGeneratedCardsToCombat((IEnumerable<CardModel>)cards, PileType.Hand, this.Owner,
             CardPilePosition.Top);

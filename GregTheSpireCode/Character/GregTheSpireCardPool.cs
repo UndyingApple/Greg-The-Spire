@@ -8,8 +8,8 @@ public class GregTheSpireCardPool : CustomCardPoolModel
 {
     public override string Title => GregTheSpire.CharacterId; //This is not a display name.
 
-    public override string BigEnergyIconPath => "charui/big_energy.png".ImagePath();
-    public override string TextEnergyIconPath => "charui/text_energy.png".ImagePath();
+    public override string BigEnergyIconPath => "charui/greg_energy.png".ImagePath();
+    public override string TextEnergyIconPath => "charui/small_greg_energy.png".ImagePath();
 
 
     /* These HSV values will determine the color of your card back.
