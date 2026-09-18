@@ -131,11 +131,11 @@
   "GREGTHESPIRE-TUMBLE_POWER.smartDescription": "Cards played from your [gold]Stash[/gold] are played {Amount:plural:an additional time|{Amount}additional times}.",
   "GREGTHESPIRE-TUMBLE_POWER.title": "Tumble",
 
-  "GREGTHESPIRE-STARVATION_POWER.description": "",
-  "GREGTHESPIRE-STARVATION_POWER.smartDescription": "",
+  "GREGTHESPIRE-STARVATION_POWER.description": "The first card you play each turn gains [gold]Snack[/gold].",
+  "GREGTHESPIRE-STARVATION_POWER.smartDescription": "The first {Amount:plural:card|{Amount} cards} you play each turn gains [gold]Snack[/gold].",
   "GREGTHESPIRE-STARVATION_POWER.title": "Starvation",
   
-  "GREGTHESPIRE-SHARING_POWER.description": "",
-  "GREGTHESPIRE-SHARING_POWER.smartDescription": "",
+  "GREGTHESPIRE-SHARING_POWER.description": "Whenever {ApplierName} creates a [gold]Snack[/gold], add a copy to your [gold]Draw Pile[/gold].",
+  "GREGTHESPIRE-SHARING_POWER.smartDescription": "Whenever {ApplierName} creates a [gold]Snack[/gold], add {Amount:plural:a copy|{Amount} copies} to your [gold]Draw Pile[/gold].",
   "GREGTHESPIRE-SHARING_POWER.title": "Sharing"
 }
