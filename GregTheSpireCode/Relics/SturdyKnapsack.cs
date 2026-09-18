@@ -1,6 +1,7 @@
 ﻿using BaseLib.Extensions;
 using Godot;
 using GregTheSpire.GregTheSpireCode.Enchantments;
+using GregTheSpire.GregTheSpireCode.Keywords;
 using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Combat;
@@ -24,11 +25,10 @@ public class SturdyKnapsack() : GregTheSpireRelic
        RelicRarity.Ancient;
 
 
-   protected override IEnumerable<IHoverTip> ExtraHoverTips =>
-       [
+   protected override IEnumerable<IHoverTip> ExtraHoverTips => [
            HoverTipFactory.FromPower<StoragePower>(),
-           //HoverTipFactory.
-       ];
+         
+   ];
 
 
 

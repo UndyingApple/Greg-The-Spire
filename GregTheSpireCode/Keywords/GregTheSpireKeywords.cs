@@ -24,4 +24,7 @@ public class GregTheSpireKeywords
     
     [CustomEnum] [KeywordProperties(AutoKeywordPosition.None)]
     public static CardKeyword Steal;
+    
+    [CustomEnum] [KeywordProperties(AutoKeywordPosition.None)]
+    public static CardKeyword Store;
 }

@@ -1,10 +1,10 @@
 {
-  "GREGTHESPIRE-TRUSTY_BACKPACK.description": "At the start of each combat, gain 3 [gold]Storage[/gold].",
+  "GREGTHESPIRE-TRUSTY_BACKPACK.description": "At the start of each combat, gain [blue]3[/blue] [gold]Storage[/gold].",
   "GREGTHESPIRE-TRUSTY_BACKPACK.flavor": "",
   "GREGTHESPIRE-TRUSTY_BACKPACK.title": "Trusty Backpack",
   
   
-  "GREGTHESPIRE-FANNY_PACK.description": "At the start of each combat, gain 1 [gold]Storage[/gold].",
+  "GREGTHESPIRE-FANNY_PACK.description": "At the start of each combat, gain [blue]1[/blue] [gold]Storage[/gold].",
   "GREGTHESPIRE-FANNY_PACK.flavor": "",
   "GREGTHESPIRE-FANNY_PACK.title": "Fanny Pack",
 
@@ -16,7 +16,7 @@
   "GREGTHESPIRE-MOLDY_SANDWICH.flavor": "",
   "GREGTHESPIRE-MOLDY_SANDWICH.title": "Moldy Sandwich",
 
-  "GREGTHESPIRE-THICK_WALLET.description": "Whenever you [gold]Steal[/gold], gain 3 [gold]Block[/gold]",
+  "GREGTHESPIRE-THICK_WALLET.description": "Whenever you [gold]Steal[/gold], gain [blue]3[/blue] [gold]Block[/gold]",
   "GREGTHESPIRE-THICK_WALLET.flavor": "",
   "GREGTHESPIRE-THICK_WALLET.title": "Thick Wallet",
 
@@ -28,11 +28,11 @@
   "GREGTHESPIRE-MAGNIFYING_GLASS.flavor": "",
   "GREGTHESPIRE-MAGNIFYING_GLASS.title": "Magnifying Glass",
   
-  "GREGTHESPIRE-DEAD_RINGER.description": "If you take no unblocked attack damage during the enemy turn, gain 2 [gold]Confidence[/gold] at the start of your turn",
+  "GREGTHESPIRE-DEAD_RINGER.description": "If you take no unblocked attack damage during the enemy turn, gain [blue]2[/blue] [gold]Confidence[/gold] at the start of your turn",
   "GREGTHESPIRE-DEAD_RINGER.flavor": "",
   "GREGTHESPIRE-DEAD_RINGER.title": "Dead Ringer",
 
-  "GREGTHESPIRE-STURDY_KNAPSACK.description": "At the start of each combat, gain 5 [gold]Storage[/gold]. \nYou may now [gold]Store[/gold] at rest sites.",
+  "GREGTHESPIRE-STURDY_KNAPSACK.description": "At the start of each combat, gain [blue]5[/blue] [gold]Storage[/gold]. \nYou may now [gold]Store[/gold] at rest sites.",
   "GREGTHESPIRE-STURDY_KNAPSACK.flavor": "",
   "GREGTHESPIRE-STURDY_KNAPSACK.title": "Sturdy Knapsack"
 }

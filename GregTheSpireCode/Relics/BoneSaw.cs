@@ -1,8 +1,10 @@
 ﻿using GregTheSpire.GregTheSpireCode.Commands;
+using GregTheSpire.GregTheSpireCode.Keywords;
 using GregTheSpire.GregTheSpireCode.Relics;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 
 namespace GregTheSpire.GregTheSpireCode.Relics;
 
@@ -11,6 +13,9 @@ public class BoneSaw() : GregTheSpireRelic
 {
     public override RelicRarity Rarity =>
         RelicRarity.Uncommon;
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+     
+    ];
 
     
     

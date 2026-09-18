@@ -1,9 +1,11 @@
 ﻿using GregTheSpire.GregTheSpireCode.Enchantments;
+using GregTheSpire.GregTheSpireCode.Keywords;
 using GregTheSpire.GregTheSpireCode.Relics;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 
 namespace GregTheSpire.GregTheSpireCode.Relics;
 
@@ -12,6 +14,12 @@ public class MoldySandwich() : GregTheSpireRelic
 {
     public override RelicRarity Rarity =>
         RelicRarity.Rare;
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        
+      
+    ];
+
     
     public override Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
