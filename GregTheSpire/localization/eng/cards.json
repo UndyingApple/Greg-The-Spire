@@ -44,7 +44,7 @@
   "GREGTHESPIRE-INFLATED_EGO.description": "Gain {ConfidencePower:diff()} [gold]Confidence[/gold].",
   "GREGTHESPIRE-INFLATED_EGO.title": "Inflated Ego",
   
-  "GREGTHESPIRE-THERE_IS_NO_ACCIDENT.description": "Deal {Damage:diff()} damage.\nLose 2 [gold]Confidence[/gold].",
+  "GREGTHESPIRE-THERE_IS_NO_ACCIDENT.description": "Deal {Damage:diff()} damage.\nGain 1 [gold]Confidence[/gold].",
   "GREGTHESPIRE-THERE_IS_NO_ACCIDENT.title": "There Is (No) Accident!",
   
   "GREGTHESPIRE-SMUG.description": "Gain {ConfidencePower:diff()} [gold]Confidence[/gold].\nAdd a copy of this card into your [gold]Discard Pile[/gold].",
@@ -263,7 +263,7 @@
   "GREGTHESPIRE-IMPROVISED_ARMOR.description": "Add a Cracker to your [gold]Hand[/gold]. [gold]Block[/gold] for each card in your [gold]Stash[/gold].{InCombat:\n(gain {CalculatedBlock:diff()} [gold]Block[/gold])|}",
   "GREGTHESPIRE-IMPROVISED_ARMOR.title": "Improvised Armor",
 
-  "GREGTHESPIRE-SALIVATE.description": "Add 1 [gold]Cracker[/gold] to your [gold]Hand[/gold].\nGain {CalculationExtra:diff()} [gold]Block[/gold] for every unique [gold]Snack[/gold] in your [gold]Exhaust Pile[/gold].{InCombat:show:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold].|}",
+  "GREGTHESPIRE-SALIVATE.description": "Add 1 [gold]Cracker[/gold] to your [gold]Hand[/gold].\nGain {IfUpgraded:show:4|3} [gold]Block[/gold] for every unique [gold]Snack[/gold] in your [gold]Exhaust Pile[/gold].{InCombat:show:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold].|}",
   "GREGTHESPIRE-SALIVATE.title": "Salivate",
 
   "GREGTHESPIRE-DUMP.description": "Discard your [gold]Stash[/gold].\nDeal {Damage:diff()} damage for every card Discarded.",

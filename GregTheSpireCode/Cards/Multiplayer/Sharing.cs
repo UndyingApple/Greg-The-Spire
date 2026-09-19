@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Models;
 namespace GregTheSpire.GregTheSpireCode.Cards.Multiplayer;
 
 public class Sharing() : GregTheSpireCard(1,
-    CardType.Power, CardRarity.Uncommon,
+    CardType.Power, CardRarity.Rare,
     TargetType.AnyAlly)
 {
 

@@ -22,7 +22,8 @@ public class EGOMANIA() : GregTheSpireCard(1,
        HoverTipFactory.FromPower<VulnerablePower>(),
        HoverTipFactory.FromPower<WeakPower>()
    ];
-
+   
+   public override bool CanBeGeneratedInCombat => false;
 
    protected override async Task OnPlay(
        PlayerChoiceContext choiceContext,

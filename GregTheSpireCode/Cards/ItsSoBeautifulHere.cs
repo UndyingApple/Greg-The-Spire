@@ -28,6 +28,8 @@ public class ItsSoBeautifulHere() : GregTheSpireCard(2,
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(GregTheSpireKeywords.Stash)
     ];
+    
+    public override bool CanBeGeneratedInCombat => false;
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

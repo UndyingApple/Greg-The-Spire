@@ -25,6 +25,8 @@ public class SpyMaster() : GregTheSpireCard(1,
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromKeyword(GregTheSpireKeywords.Steal)
     ];
+    
+    public override bool CanBeGeneratedInCombat => false;
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

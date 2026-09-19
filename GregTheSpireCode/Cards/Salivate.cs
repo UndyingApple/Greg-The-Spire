@@ -22,7 +22,7 @@ public class Salivate() : GregTheSpireCard(1,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-    new BlockVar(0, ValueProp.Move),
+    new BlockVar(3, ValueProp.Move),
     new CalculationBaseVar(0),
     new CalculationExtraVar(3),
     (DynamicVar) new CalculatedBlockVar(ValueProp.Move).WithMultiplier(
@@ -75,5 +75,6 @@ public class Salivate() : GregTheSpireCard(1,
     {
         
         DynamicVars.CalculationExtra.UpgradeValueBy(1);
+        DynamicVars.Block.UpgradeValueBy(1);
     }
 }
