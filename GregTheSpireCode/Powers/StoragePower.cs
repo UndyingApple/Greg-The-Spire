@@ -39,11 +39,13 @@ public class StoragePower() : GregTheSpirePower
     public override Task AfterPowerAmountChanged(PlayerChoiceContext choiceContext, PowerModel power, decimal amount, Creature? applier,
         CardModel? cardSource)
     {
-        if (power is StoragePower)
+        if (power is StoragePower && power.Owner == this.Owner)
         {
             var stashPile = GetStashPile();
-            if (stashPile is { Initialized: false }) 
-                stashPile.Initialize(Owner.Player);
+            if (stashPile._localPlayer == this.Owner.Player)
+            {
+                stashPile.Visible = true;
+            }
             StorageChanged?.Invoke(this.Owner.Player, GetInternalData<Data>().storage + (int) amount + StashCardPile.StashPileType.GetPile(this.Owner.Player).Cards.Where<CardModel>((Func<CardModel, bool>)(c =>
                 c.Enchantment is Stowaway)).Count());
             GetInternalData<Data>().storage += (int) amount;

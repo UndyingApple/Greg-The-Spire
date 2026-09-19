@@ -90,11 +90,11 @@ public partial class NStashPile : NCombatCardPile
 	public override void Initialize(Player player)
 	{
 		base.Initialize(player);
-		_currentStorage = player.Creature.GetPowerAmount<StoragePower>();
 		_storageLabel.SetTextAutoSize(_currentStorage.ToString());
 		_localPlayer = player;
 		_pile = Pile.GetPile(_localPlayer);
-		Visible = true;
+		_currentStorage = _localPlayer.Creature.GetPowerAmount<StoragePower>();
+		Visible = false;
 		_initialized = true;
 	}
 	
