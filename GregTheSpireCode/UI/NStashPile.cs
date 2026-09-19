@@ -93,6 +93,8 @@ public partial class NStashPile : NCombatCardPile
 		base.Initialize(player);
 		_currentStorage = player.Creature.GetPowerAmount<StoragePower>();
 		_storageLabel.SetTextAutoSize(_currentStorage.ToString());
+		_player = player;
+		_pile = Pile.GetPile(_player);
 		Visible = true;
 		_initialized = true;
 	}
@@ -133,8 +135,9 @@ public partial class NStashPile : NCombatCardPile
 			NInputManager.Instance.InputRebound -= OnControllerChanged;
 	}
 	
-	private void OnStorageChanged(PlayerCombatState pcs, int newVal)
+	private void OnStorageChanged(Player player, int newVal)
 	{
+		if (player != _player) return;
 		_currentStorage = newVal;
 		_storageLabel.Text = _currentStorage.ToString();
 	}
