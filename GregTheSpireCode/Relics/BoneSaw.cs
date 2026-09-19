@@ -13,11 +13,10 @@ public class BoneSaw() : GregTheSpireRelic
 {
     public override RelicRarity Rarity =>
         RelicRarity.Uncommon;
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-     
-    ];
 
-    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+      HoverTipFactory.FromKeyword(GregTheSpireKeywords.Stash),
+    ];
     
       public override async Task AfterDeath(
         PlayerChoiceContext choiceContext,

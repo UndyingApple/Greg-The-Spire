@@ -16,10 +16,8 @@ public class MoldySandwich() : GregTheSpireRelic
         RelicRarity.Rare;
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        
-      
+        ..HoverTipFactory.FromEnchantment<Infested>(),
     ];
-
     
     public override Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {

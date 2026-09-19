@@ -15,11 +15,6 @@ public class Cloche() : GregTheSpireRelic
 {
     public override RelicRarity Rarity =>
         RelicRarity.Rare;
-    
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-      
-       
-    ];
 
 
     public override int ModifyCardPlayCount(CardModel card, Creature? target, int playCount)

@@ -17,15 +17,15 @@ public class ThickWallet() : GregTheSpireRelic
 {
     public override RelicRarity Rarity =>
         RelicRarity.Uncommon;
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(GregTheSpireKeywords.Steal),
+        HoverTipFactory.Static(StaticHoverTip.Block)
+    ];
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         new BlockVar(3, ValueProp.Unpowered)
-    ];
-
-    protected override IEnumerable<IHoverTip> ExtraHoverTips =>
-    [
-       
     ];
 
     public override async Task AfterCardChangedPiles(CardModel card, PileType oldPileType, AbstractModel? clonedBy)

@@ -15,7 +15,7 @@ using MegaCrit.Sts2.Core.Models;
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
 public class Starvation() : GregTheSpireCard(1,
-    CardType.Skill, CardRarity.Uncommon,
+    CardType.Power, CardRarity.Uncommon,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("numCards", 1)];

@@ -1,5 +1,6 @@
 ﻿using BaseLib.Extensions;
 using Godot;
+using GregTheSpire.GregTheSpireCode.Character;
 using GregTheSpire.GregTheSpireCode.Enchantments;
 using GregTheSpire.GregTheSpireCode.Keywords;
 using GregTheSpire.GregTheSpireCode.Powers;
@@ -25,15 +26,15 @@ public class SturdyKnapsack() : GregTheSpireRelic
        RelicRarity.Ancient;
 
 
+
    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-           HoverTipFactory.FromPower<StoragePower>(),
-         
+       HoverTipFactory.FromPower<StoragePower>(),
+       HoverTipFactory.FromKeyword(GregTheSpireKeywords.Stash),
+       ..HoverTipFactory.FromEnchantment<Stowaway>(1)
    ];
 
 
-
-
-       protected override IEnumerable<DynamicVar> CanonicalVars =>
+   protected override IEnumerable<DynamicVar> CanonicalVars =>
        [
            new IntVar("Rounds", 1),
            new PowerVar<StoragePower>(5),

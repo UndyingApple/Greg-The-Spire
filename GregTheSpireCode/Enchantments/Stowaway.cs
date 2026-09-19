@@ -28,15 +28,11 @@ public sealed class Stowaway : GregTheSpireEnchantment
 
    protected override IEnumerable<IHoverTip> ExtraHoverTips =>
    [
-       
    ];
-
 
    protected override IEnumerable<DynamicVar> CanonicalVars =>
    [
-      
    ];
-
 
     public override async Task BeforeHandDrawLate(Player player, PlayerChoiceContext choiceContext, ICombatState combatState)
     {
