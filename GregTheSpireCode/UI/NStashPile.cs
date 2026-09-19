@@ -64,7 +64,7 @@ public partial class NStashPile : NCombatCardPile
 	public override void _Ready()
 	{
 		ConnectSignals();
-		_emptyPileMessage = new LocString("combat_messages", "OPEN_EMPTY_STASH");
+		_emptyPileMessage = new LocString("combat_messages", "EMPTY_STASH_PILE");
 		/*
 		 Screw controller support until we can actually get it working
 		_comboIcons = new ComboControllerIcons(
