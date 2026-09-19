@@ -19,7 +19,6 @@ namespace GregTheSpire.GregTheSpireCode.ui;
 
 public partial class NStashPile : NCombatCardPile
 {
-	private Player? _player;
 	private ComboControllerIcons? _comboIcons;
 	private GregTheSpireMegaLabel _storageLabel;
 	private int _currentStorage;
@@ -93,8 +92,8 @@ public partial class NStashPile : NCombatCardPile
 		base.Initialize(player);
 		_currentStorage = player.Creature.GetPowerAmount<StoragePower>();
 		_storageLabel.SetTextAutoSize(_currentStorage.ToString());
-		_player = player;
-		_pile = Pile.GetPile(_player);
+		_localPlayer = player;
+		_pile = Pile.GetPile(_localPlayer);
 		Visible = true;
 		_initialized = true;
 	}
@@ -137,7 +136,7 @@ public partial class NStashPile : NCombatCardPile
 	
 	private void OnStorageChanged(Player player, int newVal)
 	{
-		if (player != _player) return;
+		if (player != _localPlayer) return;
 		_currentStorage = newVal;
 		_storageLabel.Text = _currentStorage.ToString();
 	}
