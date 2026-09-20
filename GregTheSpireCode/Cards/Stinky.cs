@@ -1,9 +1,11 @@
 using GregTheSpire.GregTheSpireCode.Cards;
 using GregTheSpire.GregTheSpireCode.Cards.Colorless;
+using GregTheSpire.GregTheSpireCode.Keywords;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
@@ -15,8 +17,12 @@ public class Stinky() : GregTheSpireCard(1,
     TargetType.AllEnemies)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DamageVar(5, ValueProp.Move),
+        new DamageVar(4, ValueProp.Move),
         new DynamicVar("flies", 1)
+    ];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromCard<Fly>()
     ];
 
     protected override async Task OnPlay(
@@ -25,7 +31,7 @@ public class Stinky() : GregTheSpireCard(1,
     {
         await CreatureCmd.TriggerAnim(this.Owner.Creature, "Attack", this.Owner.Character.AttackAnimDelay);
         AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).TargetingAllOpponents(this.CombatState).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
-        
+        await Cmd.Wait(0.1f);
         IEnumerable<Fly> cards = Fly.Create(this.Owner, (int) this.DynamicVars["flies"].BaseValue, this.CombatState);
         await CardPileCmd.AddGeneratedCardsToCombat((IEnumerable<CardModel>)cards, PileType.Hand, this.Owner,
             CardPilePosition.Top);
@@ -33,6 +39,6 @@ public class Stinky() : GregTheSpireCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars["flies"].UpgradeValueBy(1);
+           DynamicVars.Damage.UpgradeValueBy(3M); 
     }
 }

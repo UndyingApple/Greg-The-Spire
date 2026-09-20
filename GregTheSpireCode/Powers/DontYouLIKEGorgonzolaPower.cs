@@ -1,4 +1,5 @@
 ﻿using GregTheSpire.GregTheSpireCode.Cards.Colorless;
+using GregTheSpire.GregTheSpireCode.Keywords;
 using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -21,12 +22,12 @@ public class DontYouLIKEGorgonzolaPower() : GregTheSpirePower
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
-        HoverTipFactory.FromCard<Cheese>()
+
     ];
 
     public override async Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        if (!(cardPlay.Card is Cheese) || cardPlay.Card.Owner.Creature != this.Owner)
+        if (!cardPlay.Card.Keywords.Contains(GregTheSpireKeywords.Snack) || cardPlay.Card.Owner.Creature != this.Owner)
             return;
         this.Flash();
         IEnumerable<CardModel> cardModels =

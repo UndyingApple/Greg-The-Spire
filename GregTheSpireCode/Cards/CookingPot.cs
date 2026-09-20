@@ -4,6 +4,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
@@ -18,6 +19,10 @@ public class CookingPot() : GregTheSpireCard(2,
         new DamageVar(9, ValueProp.Move),
         new BlockVar(9, ValueProp.Move)
     ];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromCard<Soup>()
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -25,7 +30,8 @@ public class CookingPot() : GregTheSpireCard(2,
     {
         Decimal num = await CreatureCmd.GainBlock(this.Owner.Creature, this.DynamicVars.Block, cardPlay);
         AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, cardPlay).Targeting(cardPlay.Target).Execute(choiceContext);
-        IEnumerable<CardModel> soup = await Soup.CreateInHand(Owner, 1, CombatState);
+        await Cmd.Wait(0.1f);
+        await Soup.CreateInHand(Owner, 1, CombatState);
     }
 
     protected override void OnUpgrade()

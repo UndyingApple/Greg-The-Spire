@@ -1,5 +1,7 @@
 using System.Reflection;
+using BaseLib.Config;
 using Godot;
+using GregTheSpire.GregTheSpireCode.Data;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Modding;
 
@@ -22,5 +24,8 @@ public partial class MainFile : Node
         Harmony harmony = new(ModId);
 
         harmony.PatchAll();
+        
+        ModManager.OnMetricsUpload += GregTheSpireMetrics.OnMetricsUpload;
+        ModConfigRegistry.Register(ModId, new GregTheSpireConfig());
     }
 }

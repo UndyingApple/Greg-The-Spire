@@ -2,10 +2,12 @@
 using Godot;
 using GregTheSpire.GregTheSpireCode.Character;
 using GregTheSpire.GregTheSpireCode.Commands;
+using GregTheSpire.GregTheSpireCode.Keywords;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Potions;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
 
 namespace GregTheSpire.GregTheSpireCode.Potions;
@@ -20,6 +22,10 @@ public sealed class StealPotion : GregTheSpirePotion
     public override PotionUsage Usage => PotionUsage.CombatOnly;
 
     public override TargetType TargetType => TargetType.AnyPlayer;
+    
+    public override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(GregTheSpireKeywords.Steal),
+    ];
 
 
     protected override async Task OnUse(PlayerChoiceContext choiceContext, Creature? target)

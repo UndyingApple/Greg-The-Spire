@@ -8,6 +8,7 @@ using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Relics;
+using MegaCrit.Sts2.Core.Nodes.Combat;
 
 namespace GregTheSpire.GregTheSpireCode.Character;
 
@@ -18,11 +19,17 @@ public class GregTheSpire : PlaceholderCharacterModel
     public const string CharacterId = "GregTheSpire";
 
     public static readonly Color Color = new("00a86b");
+    
+    public override Color MapDrawingColor => new Color("00a86b");
 
-    public override Color NameColor => Color;
-    public override CharacterGender Gender => CharacterGender.Neutral;
+    public override Color NameColor => new("00a86b");
+    public override CharacterGender Gender => CharacterGender.Masculine;
     public override int StartingHp => 68;
+    public override int StartingGold => 99;
 
+
+    
+    
     public override IEnumerable<CardModel> StartingDeck =>
     [
         ModelDb.Card<StrikeGreg>(),
@@ -61,8 +68,26 @@ public class GregTheSpire : PlaceholderCharacterModel
         }
     }
 
-    public override string CustomIconTexturePath => "character_icon_char_name.png".CharacterUiPath();
-    public override string CustomCharacterSelectIconPath => "char_select_char_name.png".CharacterUiPath();
-    public override string CustomCharacterSelectLockedIconPath => "char_select_char_name_locked.png".CharacterUiPath();
-    public override string CustomMapMarkerPath => "map_marker_char_name.png".CharacterUiPath();
+    public override string CustomIconTexturePath => "character_icon_greg.png".GregPath();
+    public override string CustomIconOutlineTexturePath => "character_icon_greg_outline.png".GregPath();
+    public override string CustomCharacterSelectIconPath => "char_select_greg.png".CharacterUiPath();
+    //public override string CustomCharacterSelectLockedIconPath => "char_select_char_name_locked.png".CharacterUiPath();
+    public override string CustomMapMarkerPath => "map_marker_greg.png".GregPath();
+    public override string CustomArmPointingTexturePath => "multiplayer_hand_greg_point.png".GregPath();
+    public override string CustomArmRockTexturePath => "multiplayer_hand_greg_rock.png".GregPath();
+    public override string CustomArmPaperTexturePath => "multiplayer_hand_greg_paper.png".GregPath();
+    public override string CustomArmScissorsTexturePath => "multiplayer_hand_greg_scissors.png".GregPath();
+    public override string CustomEnergyCounterPath => "res://GregTheSpire/scenes/energy_counter.tscn";
+    public override string CustomCharacterSelectBg => "res://GregTheSpire/scenes/screens/char_select/greg_charselect.tscn";
+
+
+    //public override string CustomIconPath => "res://GregTheSpire/scenes/greg_icon.tscn"; needs to be made
+    //public override string CustomCharacterSelectIconPath => "char_select_regent.png".GregPath();
+
+    //public override NCreatureVisuals CreateCustomVisuals() => NodeFactory<NCreatureVisuals>.CreateFromScene("res://GregTheSpire/scenes/combat.tscn");
+    public override NCreatureVisuals CreateCustomVisuals()
+    {
+        return NodeFactory<NCreatureVisuals>.CreateFromScene("res://GregTheSpire/scenes/combat.tscn");
+    }
+   
 }

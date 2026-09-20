@@ -1,0 +1,8 @@
+﻿{
+  "GREGTHESPIRE-METRICS_FTUE_PROMPT.header": "Help improve Greg The Spire?",
+  "GREGTHESPIRE-METRICS_FTUE_PROMPT.body": "Do you consent to share gameplay data?",
+  "GREGTHESPIRE-METRICS_FTUE_ENABLED.header": "Enabled",
+  "GREGTHESPIRE-METRICS_FTUE_ENABLED.body": "Thank you! Metrics are enabled.\n\nYou can disable this any time in the Mod settings.",
+  "GREGTHESPIRE-METRICS_FTUE_DISABLED.header": "Disabled",
+  "GREGTHESPIRE-METRICS_FTUE_DISABLED.body": "Metrics are disabled.\n\nYou can enable this any time in the Mod settings."
+}

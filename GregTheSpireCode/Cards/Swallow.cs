@@ -21,8 +21,8 @@ public class Swallow() : GregTheSpireCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
-        await PowerCmd.Apply<SwallowPower>(choiceContext, this.Owner.Creature, 1M, this.Owner.Creature, (CardModel) this);
+        Decimal amount = await CreatureCmd.GainBlock(this.Owner.Creature, this.DynamicVars.Block, play);
+        await PowerCmd.Apply<SwallowPower>(choiceContext, this.Owner.Creature, (decimal) amount, this.Owner.Creature, (CardModel) this);
     }
 
     protected override void OnUpgrade()

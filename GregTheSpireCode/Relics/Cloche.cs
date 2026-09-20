@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models;
 
 namespace GregTheSpire.GregTheSpireCode.Relics;
@@ -14,6 +15,7 @@ public class Cloche() : GregTheSpireRelic
 {
     public override RelicRarity Rarity =>
         RelicRarity.Rare;
+
 
     public override int ModifyCardPlayCount(CardModel card, Creature? target, int playCount)
     {

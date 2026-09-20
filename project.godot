@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="GregTheSpire"
+run/main_scene="uid://cttbi2t800jhc"
 config/features=PackedStringArray("4.5", "C#", "Mobile")
 config/icon="res://GregTheSpire/mod_image.png"
 

@@ -15,7 +15,9 @@ public class CheeseAndCrackers() : GregTheSpireCard(1,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new IntVar("CrackerAmt", 1)
+    ];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
@@ -28,27 +30,15 @@ public class CheeseAndCrackers() : GregTheSpireCard(1,
         CardPlay play)
     {
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
-        IEnumerable<CardModel> cheese = await Cheese.CreateInHand(Owner, 1, CombatState);
-        if (IsUpgraded)
-        {
-            foreach (CardModel card in cheese)
-            {
-                CardCmd.Upgrade(card);
-            }
-        }
+        await Cheese.CreateInHand(Owner, 1, CombatState);
+        
         await Cmd.Wait(0.1f);
-        IEnumerable<CardModel> cracker = await Cracker.CreateInHand(Owner, 1, CombatState);
-        if (IsUpgraded)
-        {
-            foreach (CardModel card in cracker)
-            {
-                CardCmd.Upgrade(card);
-            }
-        }
+        await Cracker.CreateInHand(Owner,  DynamicVars["CrackerAmt"].IntValue, CombatState);
+
     }
 
     protected override void OnUpgrade()
     {
-        
+        DynamicVars["CrackerAmt"].UpgradeValueBy(1);
     }
 }

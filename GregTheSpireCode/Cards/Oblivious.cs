@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
 public class Oblivious() : GregTheSpireCard(1,
-    CardType.Skill, CardRarity.Uncommon,
+    CardType.Skill, CardRarity.Common,
     TargetType.AllEnemies)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
@@ -23,8 +23,8 @@ public class Oblivious() : GregTheSpireCard(1,
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
-
         HoverTipFactory.FromPower<WeakPower>(),
+        HoverTipFactory.FromPower<ConfidencePower>()
     ];
     
     protected override async Task OnPlay(

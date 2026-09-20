@@ -3,6 +3,7 @@ using GregTheSpire.GregTheSpireCode.Cards.Colorless;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 
@@ -15,6 +16,10 @@ public class I_mAlsoVeryPartialToPlastic() : GregTheSpireCard(1,
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new CardsVar(1)
         ];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromCard<Olive>()
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -23,7 +28,7 @@ public class I_mAlsoVeryPartialToPlastic() : GregTheSpireCard(1,
         IEnumerable<Olive> cards = Olive.Create(this.Owner, (int) 3, this.CombatState);
         await CardPileCmd.AddGeneratedCardsToCombat((IEnumerable<CardModel>)cards, PileType.Hand, this.Owner,
             CardPilePosition.Top);
-        
+        await Cmd.Wait(0.1f);
         await CardPileCmd.Draw(choiceContext, this.DynamicVars.Cards.BaseValue, this.Owner);
     }
 

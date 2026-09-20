@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
-public class TheCity() : GregTheSpireCard(3,
+public class TheCity() : GregTheSpireCard(2,
     CardType.Power, CardRarity.Rare,
     TargetType.Self)
 {
@@ -23,9 +23,7 @@ public class TheCity() : GregTheSpireCard(3,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
-        TheCityPower theCityPower = await PowerCmd.Apply<TheCityPower>(choiceContext, this.Owner.Creature, DynamicVars.Power<TheCityPower>().BaseValue, this.Owner.Creature, (CardModel) this);
-    }
+            }
 
     protected override void OnUpgrade()
     {

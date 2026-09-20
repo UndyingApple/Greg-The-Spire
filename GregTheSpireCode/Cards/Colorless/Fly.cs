@@ -38,7 +38,7 @@ public class Fly() : GregTheSpireCard(0,
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar("Played", 3, ValueProp.Move),
-        new DamageVar("Retained", 2, ValueProp.Move)
+        new DamageVar("Retained", 1, ValueProp.Move)
     ];
 
     public static async Task<IEnumerable<Fly>> CreateInHand(

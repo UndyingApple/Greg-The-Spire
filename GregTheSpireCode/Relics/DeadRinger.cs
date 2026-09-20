@@ -1,4 +1,5 @@
 using BaseLib.Extensions;
+using GregTheSpire.GregTheSpireCode.Keywords;
 using GregTheSpire.GregTheSpireCode.Powers;
 using GregTheSpire.GregTheSpireCode.Relics;
 using MegaCrit.Sts2.Core.Combat;
@@ -7,6 +8,7 @@ using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
@@ -22,6 +24,10 @@ public class DeadRinger() : GregTheSpireRelic
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         (DynamicVar) new PowerVar<ConfidencePower>(2)
+    ];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromPower<ConfidencePower>()
     ];
     
 

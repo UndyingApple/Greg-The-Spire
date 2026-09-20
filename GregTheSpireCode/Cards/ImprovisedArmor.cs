@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
-public class ImprovisedArmor() : GregTheSpireCard(2,
+public class ImprovisedArmor() : GregTheSpireCard(1,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {

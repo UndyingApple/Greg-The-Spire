@@ -1,12 +1,14 @@
 using BaseLib.Extensions;
 using GregTheSpire.GregTheSpireCode.Cards;
 using GregTheSpire.GregTheSpireCode.Commands;
+using GregTheSpire.GregTheSpireCode.Keywords;
 using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Combat.History.Entries;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
@@ -27,6 +29,10 @@ public class GrapplingHook() : GregTheSpireCard(0,
     protected override bool ShouldGlowGoldInternal => !this.HasBeenPlayedThisTurn;
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(GregTheSpireKeywords.Steal)
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -34,8 +40,13 @@ public class GrapplingHook() : GregTheSpireCard(0,
     {
         if (this.HasBeenPlayedThisTurn)
             return;
-        await StealCmd.StealAsync(choiceContext, this.Owner, 1);
+        if (IsUpgraded)
+        {
+            await StealCmd.StealAsync(choiceContext, this.Owner, 2);
+        }
+        
+        else await StealCmd.StealAsync(choiceContext, this.Owner, 1);
     }
 
-    protected override void OnUpgrade() => this.AddKeyword(CardKeyword.Innate);
-}
+
+}  

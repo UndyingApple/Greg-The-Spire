@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwg2s4sotpydh"]
+
+[ext_resource type="PackedScene" uid="uid://bw0vc2bobijsq" path="res://GregTheSpire/scenes/greg.tscn" id="1_ufl7y"]
+
+[node name="Combat" type="Node2D"]
+
+[node name="Visuals" parent="." instance=ExtResource("1_ufl7y")]
+position = Vector2(0, -123)
+
+[node name="Bounds" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -84.0
+offset_top = -254.0
+offset_right = 82.0
+
+[node name="IntentPos" type="Marker2D" parent="."]
+position = Vector2(-3, -290)
+
+[node name="CenterPos" type="Marker2D" parent="."]
+position = Vector2(-1, -146)

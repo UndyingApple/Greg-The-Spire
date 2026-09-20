@@ -10,29 +10,34 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
-public class PositiveAffirmation() : GregTheSpireCard(1,
-    CardType.Power, CardRarity.Uncommon,
+public class PositiveAffirmation() : GregTheSpireCard(0,
+    CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        (DynamicVar) new PowerVar<PositiveAffirmationPower>(3)
+        (DynamicVar) new PowerVar<ConfidencePower>(2)
     ];
+    
+        protected override bool HasEnergyCostX => true;
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
         HoverTipFactory.FromPower<ConfidencePower>(),
-        HoverTipFactory.FromPower<WeakPower>(),
+        
     ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await PowerCmd.Apply<PositiveAffirmationPower>(choiceContext, Owner.Creature, DynamicVars.Power<PositiveAffirmationPower>().BaseValue, Owner.Creature, this);
+        int count = this.ResolveEnergyXValue();
+        for (int i = 0; i < count; ++i)
+            await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature, DynamicVars.Power<ConfidencePower>().BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Power<PositiveAffirmationPower>().UpgradeValueBy(2);
+        DynamicVars.Power<ConfidencePower>().UpgradeValueBy(1);
     }
 }
+ 

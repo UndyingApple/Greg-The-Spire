@@ -4,6 +4,7 @@ using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
@@ -13,7 +14,11 @@ public class Smug() : GregTheSpireCard(0,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        (DynamicVar) new PowerVar<ConfidencePower>(1)
+        (DynamicVar) new PowerVar<ConfidencePower>(2)
+    ];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromPower<ConfidencePower>()
     ];
 
     protected override async Task OnPlay(

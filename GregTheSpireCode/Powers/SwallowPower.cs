@@ -22,7 +22,7 @@ public class SwallowPower() : GregTheSpirePower
         PowerStackType.Counter;
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new BlockVar(0, ValueProp.Move)
+        new BlockVar(9, ValueProp.Move)
     ];
     
     public override async Task AfterDamageReceived(
@@ -38,26 +38,16 @@ public class SwallowPower() : GregTheSpirePower
         if (result.UnblockedDamage > 0)
         {
             this.Flash();
-            DynamicVars.Block.BaseValue = 0;
-        }
-        else
-        {
-            DynamicVars.Block.BaseValue += result.BlockedDamage;
+            await PowerCmd.Remove((PowerModel) this);
         }
     }
-
-    public override async Task AfterSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
+    
+    public override async Task AfterBlockCleared(Creature creature)
     {
-        if (side == CombatSide.Enemy)
-        {
-            Flash();
-            await PowerCmd.Apply<BlockNextTurnPower>(choiceContext, this.Owner, DynamicVars.Block.BaseValue, this.Owner, null);
-        }
-    }
-
-    public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
-    {
-        DynamicVars.Block.BaseValue = 0;
-        await PowerCmd.Decrement(this);
+        if (creature != this.Owner)
+            return;
+        this.Flash();
+        Decimal num = await CreatureCmd.GainBlock(this.Owner, (Decimal) this.Amount, ValueProp.Unpowered, (CardPlay) null);
+        await PowerCmd.Remove((PowerModel) this);
     }
 }

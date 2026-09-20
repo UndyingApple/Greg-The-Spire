@@ -27,6 +27,8 @@ public class CamembertWheel() : GregTheSpireCard(1,
     private int _increasedDamage;
     private bool hasPlayedCheeseThisTurn = false;
     
+    public override bool CanBeGeneratedInCombat => false;
+    
     [SavedProperty]
     public int CurrentDamage
     {

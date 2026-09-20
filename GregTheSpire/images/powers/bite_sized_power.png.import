@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bec5p2tjr472a"
-path="res://.godot/imported/stash_pile.png-9211fe5a1d85c29414bbd858cae38a26.ctex"
+uid="uid://cmpc7hl2s08qe"
+path="res://.godot/imported/bite_sized_power.png-60897c92632e6482ba7188a8d1cd6236.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GregTheSpire/images/combat_ui/stash_pile.png"
-dest_files=["res://.godot/imported/stash_pile.png-9211fe5a1d85c29414bbd858cae38a26.ctex"]
+source_file="res://GregTheSpire/images/powers/bite_sized_power.png"
+dest_files=["res://.godot/imported/bite_sized_power.png-60897c92632e6482ba7188a8d1cd6236.ctex"]
 
 [params]
 

@@ -1,17 +1,20 @@
 ﻿using GregTheSpire.GregTheSpireCode.CardPiles;
 using GregTheSpire.GregTheSpireCode.Cards;
 using GregTheSpire.GregTheSpireCode.Commands;
+using GregTheSpire.GregTheSpireCode.Keywords;
+using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
 public class BagOfTricks() : GregTheSpireCard(
-	1,
+	0,
 	CardType.Skill, CardRarity.Basic,
 	TargetType.Self)
 {
@@ -19,6 +22,10 @@ public class BagOfTricks() : GregTheSpireCard(
 		new CardsVar(1)
 	];
 
+	protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+		HoverTipFactory.FromKeyword(GregTheSpireKeywords.Stash)
+	];
+	
 	protected override async Task OnPlay(
 		PlayerChoiceContext choiceContext,
 		CardPlay play)
@@ -27,12 +34,9 @@ public class BagOfTricks() : GregTheSpireCard(
 		
 		await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, this.Owner, 1, 1,null);
 		
-		var stashedCards = (await CardSelectCmd.FromHand(choiceContext, Owner, 
-			new CardSelectorPrefs(StashSelectorPrefs.ToStashSelectionPrompt, 1, DynamicVars.Cards.IntValue),
-			null,
-			this)).ToList();
+		await Cmd.Wait(0.1f); 
 		
-		await CardPileCmd.Add(stashedCards, StashCardPile.StashPileType);
+		await StashCmd.StashAsync(choiceContext, this.Owner, 0, IsUpgraded ? 2 : 1, this);
 	}
 
 	protected override void OnUpgrade()

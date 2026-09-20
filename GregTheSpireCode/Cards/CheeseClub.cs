@@ -21,16 +21,19 @@ public class CheeseClub() : GregTheSpireCard(1,
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => 
     [
-        HoverTipFactory.FromCard<Cheese>()
+        HoverTipFactory.FromCard<Cheese>(),
+        HoverTipFactory.FromCard<CheeseBall>()
     ];
+
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
         await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
+        await CheeseBall.CreateInHand(this.Owner, 1, CombatState);
         await PowerCmd.Apply<CheeseClubPower>(choiceContext, this.Owner.Creature, DynamicVars.Power<CheeseClubPower>().BaseValue, this.Owner.Creature, (CardModel) this);
     }
 
-    protected override void OnUpgrade() =>  DynamicVars.Power<CheeseClubPower>().UpgradeValueBy(1);
+    protected override void OnUpgrade() => this.AddKeyword(CardKeyword.Innate);
 }

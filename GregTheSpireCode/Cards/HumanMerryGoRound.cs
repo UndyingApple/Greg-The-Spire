@@ -4,6 +4,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
@@ -18,13 +19,17 @@ public class HumanMerryGoRound() : GregTheSpireCard(1,
         new DamageVar(2, ValueProp.Move),  
         new RepeatVar(5)
     ];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromPower<ConfidencePower>()
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
         AttackCommand attackCommand = await DamageCmd.Attack(DynamicVars.Damage.BaseValue).WithHitCount(this.DynamicVars.Repeat.IntValue).FromCard((CardModel) this, play).TargetingRandomOpponents(this.CombatState).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
-        
+        await Cmd.Wait(0.1f);
         var confidenceAmount = this.Owner.Creature.GetPowerAmount<ConfidencePower>();
         if (confidenceAmount != null)
         {

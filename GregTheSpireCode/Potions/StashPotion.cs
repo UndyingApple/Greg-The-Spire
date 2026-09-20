@@ -1,12 +1,14 @@
-﻿using GregTheSpire.GregTheSpireCode.Powers;
+﻿using GregTheSpire.GregTheSpireCode.Character;
+using GregTheSpire.GregTheSpireCode.Commands;
+using GregTheSpire.GregTheSpireCode.Keywords;
+using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace GregTheSpire.GregTheSpireCode.Potions;
 using BaseLib.Utils;
 using Godot;
-using GregTheSpire.GregTheSpireCode.Character;
-using GregTheSpire.GregTheSpireCode.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Potions;
@@ -20,6 +22,10 @@ using MegaCrit.Sts2.Core.Nodes.Rooms;
 
 public sealed class StashPotion : GregTheSpirePotion
 {
+    public override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(GregTheSpireKeywords.Stash),
+    ];
+    
     public override PotionRarity Rarity => PotionRarity.Rare;
 
     public override PotionUsage Usage => PotionUsage.CombatOnly;

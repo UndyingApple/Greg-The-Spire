@@ -1,6 +1,7 @@
 ﻿using GregTheSpire.GregTheSpireCode.Cards.Colorless;
 using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.Combat;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -22,14 +23,18 @@ public class CheeseClubPower() : GregTheSpirePower
         HoverTipFactory.FromCard<Cheese>()
     ];
 
-    public override async Task BeforeHandDraw(
+    public async Task AfterPlayerTurnStart(
         Player player,
         PlayerChoiceContext choiceContext,
         ICombatState combatState)
     {
-        if (player != this.Owner.Player)
+        if (player != this.Owner.Player || player.PlayerCombatState.AllCards.OfType<CheeseBall>().Where<CheeseBall>(
+                (Func<CheeseBall, bool>)(c =>
+                {
+                    CardPile pile = c.Pile;
+                    return pile != null && pile.Type == PileType.Hand;
+                })).ToList<CheeseBall>().Count > 0)
             return;
-        this.Flash();
-        IEnumerable<CardModel> inHand = await Cheese.CreateInHand(this.Owner.Player, this.Amount, combatState);
+        IEnumerable<CardModel> inHand = await CheeseBall.CreateInHand(this.Owner.Player, this.Amount, combatState);
     }
 }

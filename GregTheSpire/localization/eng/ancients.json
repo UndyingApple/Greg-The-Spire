@@ -1,6 +1,83 @@
 {
-  "THE_ARCHITECT.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-0r.char": "I am angry at the architect",
+  "THE_ARCHITECT.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-0r.char": "Hi",
   "THE_ARCHITECT.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-0r.next": "Continue",
-  "THE_ARCHITECT.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-1r.ancient": "You die",
-  "THE_ARCHITECT.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-attack": "Both"
+  "THE_ARCHITECT.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-1r.ancient": "What do you want, foul vermin?",
+  "THE_ARCHITECT.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-1r.next": "Reply",
+  "THE_ARCHITECT.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-2r.char": "Your finest ingredients!",
+  "THE_ARCHITECT.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-2r.next": "Continue",
+  "THE_ARCHITECT.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-3r.ancient": "The very finest? Why waste them on you?",
+  "THE_ARCHITECT.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-attack": "Both",
+
+
+  "DARV.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-0r.ancient": "You lookin’ to get some cheese?",
+  "DARV.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-0r.next": "Reply",
+  "DARV.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-1r.char": "[i][b]Precisely![/b][/i]",
+  "DARV.talk.GREGTHESPIRE-GREG_THE_SPIRE.1-0r.ancient": "Still keeping at it, I see... Let’s see if we can upgrade ya!",
+  "DARV.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-0r.ancient": "So what are ya, some kinda rat?",
+  "DARV.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-0r.next": "Respond",
+  "DARV.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-1r.char": "[i][b]Precisely![/b][/i]",
+  "DARV.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-1r.next": "Continue",
+  "DARV.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-2r.ancient": "Well, a customer’s a customer...",
+
+
+  "NEOW.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-0r.ancient": "[sine]...rat.. go...\n....kill.. [jitter][red]him[/red][/jitter]...?[/sine]",
+  "NEOW.talk.GREGTHESPIRE-GREG_THE_SPIRE.1-0r.ancient": "[sine]...he.. can...\n....feed.. you.. ...anything....[/sine]",
+  "NEOW.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-0r.ancient": "[sine]...rat.. why... ..are...\n...you.. back....?[/sine]",
+  "NEOW.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-0r.next": "Respond",
+  "NEOW.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-1r.char": "[i][b]Precisely![/b][/i]",
+  "NEOW.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-1r.next": "Continue",
+  "NEOW.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-2r.ancient": "[sine]...that.. is not...\nan.. answer....[/sine]",
+
+
+  "NONUPEIPE.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-0r.ancient": "Could a rat truly be worthy of my blessings?\nCome forward, GREG, You will be the most beautiful of all rodents.",
+  "NONUPEIPE.talk.GREGTHESPIRE-GREG_THE_SPIRE.1-0r.ancient": "My dearest thief, let me spoil you.",
+  "NONUPEIPE.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-0r.ancient": "I wouldn’t typically grant vermin an audience...\nThough I suppose you deserve an exception.",
+  "NONUPEIPE.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-0r.next": "Reply",
+  "NONUPEIPE.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-1r.char": "Thanks a lot! :D",
+
+
+  "OROBAS.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-0r.ancient": "What! Clothed rodent?!!! So small!! Why not bigger??",
+  "OROBAS.talk.GREGTHESPIRE-GREG_THE_SPIRE.1-0r.ancient": "Big pack! What inside? Treasure??",
+  "OROBAS.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-0r.ancient": "Hungry? No snack??\nStarving???",
+  "OROBAS.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-0r.next": "Reply",
+  "OROBAS.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-1r.char": "[i]Precisely...?[/i]",
+  "OROBAS.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-1r.next": "Continue",
+  "OROBAS.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-2r.ancient": "Liar!!!!",
+
+
+  "PAEL.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-0r.ancient": "[thinky_dots]Small thief, searching for treasure? No, just food...[/thinky_dots]",
+  "PAEL.talk.GREGTHESPIRE-GREG_THE_SPIRE.1-0r.ancient": "[thinky_dots]What is it like, being another’s prey?\nMust be tiring...[/thinky_dots]",
+  "PAEL.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-0r.ancient": "[thinky_dots]There is no more food for you here...\nPerhaps Father can feed you...[/thinky_dots]",
+
+
+  "TANX.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-0r.ancient": "YOU!! TINY WARRIOR!!\nFROM WHERE DOES YOUR [jitter]CONFIDENCE[/jitter] SPRING!?",
+  "TANX.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-0r.next": "Reply",
+  "TANX.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-1r.char": "The City!",
+  "TANX.talk.GREGTHESPIRE-GREG_THE_SPIRE.1-0r.ancient": "YOUR PACK IS SO BIG!!\nIT MUST FIT MANY WEAPONS!!",
+  "TANX.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-0r.ancient": "FIGHT ME, GREG!!",
+  "TANX.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-0r.next": "Fight",
+  "TANX.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-1r.char": "[i][font_size=22]The GREG boasts his strength, but fails miserably.[/font_size][/i]",
+  "TANX.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-1r.next": "Continue",
+  "TANX.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-2r.ancient": "[jitter]HOW[/jitter] DID YOU MAKE IT THIS FAR!?",
+
+
+  "TEZCATARA.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-0r.char": "[i]Hi![/i]",
+  "TEZCATARA.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-0r.next": "Continue",
+  "TEZCATARA.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-1r.ancient": "A rat? What is one of [jitter][b]you[/b][/jitter] doing here?",
+  "TEZCATARA.talk.GREGTHESPIRE-GREG_THE_SPIRE.1-0r.ancient": "Now how silly would it be if he were unmade by one so unassuming?",
+  "TEZCATARA.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-0r.ancient": "You look like you  could use a treat, dearie",
+  "TEZCATARA.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-0r.next": "Reply",
+  "TEZCATARA.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-1r.char": "[i][b]Precisely![/b][/i]",
+  "TEZCATARA.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-1r.next": "Continue",
+  "TEZCATARA.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-2r.ancient": "Well, don’t be shy.\nI have [jitter][b]plenty[/b][/jitter] to spare.",
+
+
+  "VAKUU.talk.GREGTHESPIRE-GREG_THE_SPIRE.0-0r.ancient": "Thief, allow me to sate your [sine]gluttony[/sine].",
+  "VAKUU.talk.GREGTHESPIRE-GREG_THE_SPIRE.1-0r.ancient": "How horrid must it be, possessing such [sine]vast[/sine] hunger with so [jitter]small[/jitter] a stomach?",
+  "VAKUU.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-0r.ancient": "Bring me the Architect’s heart, and all the world’s snacks are yours to keep.",
+  "VAKUU.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-0r.next": "Reply",
+  "VAKUU.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-1r.char": "I don’t know about that...",
+  "VAKUU.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-1r.next": "Continue",
+  "VAKUU.talk.GREGTHESPIRE-GREG_THE_SPIRE.2-2r.ancient": "Come, now. Why not give in to your [sine][gold]greed[/gold][/sine], just this once?"
+
 }

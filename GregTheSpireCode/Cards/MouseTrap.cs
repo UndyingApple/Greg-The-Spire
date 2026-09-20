@@ -8,6 +8,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
@@ -22,7 +23,7 @@ public class MouseTrap() : GregTheSpireCard(1,
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         new BlockVar(7, ValueProp.Move),
-        (DynamicVar)new PowerVar<CheeseNextTurnPower>(1)
+        
     ];
     
         protected override IEnumerable<IHoverTip> ExtraHoverTips =>
@@ -35,17 +36,17 @@ public class MouseTrap() : GregTheSpireCard(1,
         CardPlay play)
     {
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
-
+        
         if (!play.Target.Monster.IntendsToAttack)
             return;
         CheeseNextTurnPower? cheeseNextTurnPower = await PowerCmd.Apply<CheeseNextTurnPower>(choiceContext,
-            this.Owner.Creature, DynamicVars.Power<CheeseNextTurnPower>().BaseValue, this.Owner.Creature,
+            this.Owner.Creature,1, this.Owner.Creature,
             (CardModel)this);
     }
 
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Power<CheeseNextTurnPower>().UpgradeValueBy(1);
+        DynamicVars.Block.UpgradeValueBy(3);
     }
 }

@@ -8,6 +8,7 @@ using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
@@ -22,6 +23,10 @@ public class CatBurglar() : GregTheSpireCard(2,
         new DamageVar(5, ValueProp.Move),
         new IntVar("HitCount", 0)
     ];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromKeyword(GregTheSpireKeywords.Steal)
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -31,12 +36,18 @@ public class CatBurglar() : GregTheSpireCard(2,
         AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).WithHitCount(DynamicVars["HitCount"].IntValue).FromCard((CardModel) this, play).Targeting(play.Target).Execute(choiceContext);
     }
     
-    public override async Task AfterCardChangedPiles(CardModel card, PileType oldPileType, AbstractModel? clonedBy)
+    public override Task AfterCardEnteredCombat(CardModel card)
     {
-        if (Stolen.IsStolen.Get(card) && oldPileType == PileType.Draw)
-        {
-            DynamicVars["HitCount"].BaseValue += 1;
-        }
+        if (card != this || this.IsClone)
+            return Task.CompletedTask;
+        DynamicVars["HitCount"].BaseValue = Stolen.NumStolenCombat.Get(card.Owner);
+        return Task.CompletedTask;
+    }
+    
+    public override Task AfterCardChangedPiles(CardModel card, PileType oldPileType, AbstractModel? clonedBy)
+    {
+        DynamicVars["HitCount"].BaseValue = Stolen.NumStolenCombat.Get(card.Owner);
+        return Task.CompletedTask;
     }
 
     protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(2);

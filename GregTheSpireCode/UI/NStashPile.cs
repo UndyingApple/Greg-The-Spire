@@ -19,13 +19,14 @@ namespace GregTheSpire.GregTheSpireCode.ui;
 
 public partial class NStashPile : NCombatCardPile
 {
-	private Player? _player;
 	private ComboControllerIcons? _comboIcons;
 	private GregTheSpireMegaLabel _storageLabel;
 	private int _currentStorage;
 	private const float HideOffsetX = -150f;
 	protected override PileType Pile => StashCardPile.StashPileType;
 	private static readonly string _scenePath = GregTheSpireResources.StashPileScene;
+	protected bool _initialized;
+	public bool Initialized => _initialized;
 	
 	/*
 	 * 
@@ -62,7 +63,7 @@ public partial class NStashPile : NCombatCardPile
 	public override void _Ready()
 	{
 		ConnectSignals();
-		_emptyPileMessage = new LocString("combat_messages", "OPEN_EMPTY_STASH");
+		_emptyPileMessage = new LocString("combat_messages", "EMPTY_STASH_PILE");
 		/*
 		 Screw controller support until we can actually get it working
 		_comboIcons = new ComboControllerIcons(
@@ -74,6 +75,7 @@ public partial class NStashPile : NCombatCardPile
 		_comboIcons.Refresh();
 		*/
 		SetAnimInOutPositions();
+		Visible = false;
 	}
 	
 	protected override void ConnectSignals()
@@ -88,8 +90,12 @@ public partial class NStashPile : NCombatCardPile
 	public override void Initialize(Player player)
 	{
 		base.Initialize(player);
-		_currentStorage = player.Creature.GetPowerAmount<StoragePower>();
 		_storageLabel.SetTextAutoSize(_currentStorage.ToString());
+		_localPlayer = player;
+		_pile = Pile.GetPile(_localPlayer);
+		_currentStorage = _localPlayer.Creature.GetPowerAmount<StoragePower>();
+		Visible = false;
+		_initialized = true;
 	}
 	
 	protected override void SetAnimInOutPositions()
@@ -128,8 +134,9 @@ public partial class NStashPile : NCombatCardPile
 			NInputManager.Instance.InputRebound -= OnControllerChanged;
 	}
 	
-	private void OnStorageChanged(PlayerCombatState pcs, int newVal)
+	private void OnStorageChanged(Player player, int newVal)
 	{
+		if (player != _localPlayer) return;
 		_currentStorage = newVal;
 		_storageLabel.Text = _currentStorage.ToString();
 	}

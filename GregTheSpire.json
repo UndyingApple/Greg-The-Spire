@@ -1,14 +1,14 @@
 ﻿{
   "id": "GregTheSpire",
-  "name": "GregTheSpire",
-  "author": "Vespallion",
-  "description": "Slay the Spire 2 character mod created from a template for use with BaseLib",
-  "version": "v0.0.0",
-  "min_game_version": "0.107.0",
+  "name": "Greg the Spire",
+  "author": "sniveeey, RotaValkyire, sockswithafox, Vespallion",
+  "description": "Greg from hit film Ratatoing (2009) has hit the Spire as a new playable character! He has heard the Architect has some fine ingredients and is here to claim all of the Spire’s rewards. With unwavering Confidence, he is here to Steal, Stash and Snack away! This Thursday Night, travel with Greg and his Trusty Backpack all the way to the top of the Slay the Spire… TWO!!",
+  "version": "v1.0.0",
+  "min_game_version": "0.111.0",
   "has_pck": true,
   "has_dll": true,
   "dependencies": [
-    {"id": "BaseLib", "min_version": "3.4.5"}
+    {"id": "BaseLib", "min_version": "3.4.7"}
   ],
   "affects_gameplay": true
 }

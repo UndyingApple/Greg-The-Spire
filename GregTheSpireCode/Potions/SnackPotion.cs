@@ -1,6 +1,9 @@
 ﻿using BaseLib.Utils;
 using GregTheSpire.GregTheSpireCode.Cards.Colorless;
 using GregTheSpire.GregTheSpireCode.Character;
+using GregTheSpire.GregTheSpireCode.Enchantments;
+using GregTheSpire.GregTheSpireCode.Keywords;
+using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -8,6 +11,7 @@ using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Potions;
 using MegaCrit.Sts2.Core.Factories;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models;
 
 namespace GregTheSpire.GregTheSpireCode.Potions;
@@ -22,6 +26,10 @@ public sealed class SnackPotion : GregTheSpirePotion
     public override PotionUsage Usage => PotionUsage.CombatOnly;
 
     public override TargetType TargetType => TargetType.AnyPlayer;
+    
+   public override IEnumerable<IHoverTip> ExtraHoverTips => [
+       HoverTipFactory.FromKeyword(GregTheSpireKeywords.Snack),
+    ];
 
     private static IReadOnlyList<CardModel> SnackTokens =>
     [
