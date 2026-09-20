@@ -1,4 +1,5 @@
-﻿using GregTheSpire.GregTheSpireCode.Cards;
+﻿using BaseLib.Extensions;
+using GregTheSpire.GregTheSpireCode.Cards;
 using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -13,7 +14,7 @@ public class Precisely() : GregTheSpireCard(1,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DynamicVar("DivideAmt", 2)
+        new PowerVar<ConfidencePower>(1)
     ];
     
     
@@ -30,9 +31,9 @@ public class Precisely() : GregTheSpireCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
+        await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature, DynamicVars.Power<ConfidencePower>().BaseValue, Owner.Creature, this);
         var confidenceAmount = this.Owner.Creature.GetPowerAmount<ConfidencePower>();
-        await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature, (int)(confidenceAmount / ((int) this.DynamicVars["DivideAmt"].BaseValue)), Owner.Creature, this);
+        await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature, (int)(Math.Abs(confidenceAmount)), Owner.Creature, this);
     }
 
     protected override void OnUpgrade()

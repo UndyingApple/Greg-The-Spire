@@ -1,4 +1,5 @@
 using GregTheSpire.GregTheSpireCode.CardPiles;
+using GregTheSpire.GregTheSpireCode.Cards;
 using GregTheSpire.GregTheSpireCode.Enchantments;
 using GregTheSpire.GregTheSpireCode.Keywords;
 using GregTheSpire.GregTheSpireCode.Powers;
@@ -41,12 +42,13 @@ public static class StashCmd
         {
             if (i + totalStashed <= storage)
             {
-                await CardPileCmd.Add(stashedCards[i - 1], StashCardPile.StashPileType);
+                if (stashedCards[i - 1] is not DarkenedChocolate)
+                {
+                    await CardPileCmd.Add(stashedCards[i - 1], StashCardPile.StashPileType);
+                    continue;
+                }
             }
-            else
-            {
-                await CardCmd.Discard(choiceContext, stashedCards[i - 1]);
-            }
+            await CardCmd.Discard(choiceContext, stashedCards[i - 1]);
         }
     }
     
@@ -72,7 +74,8 @@ public static class StashCmd
 
         if (totalStashed < storage)
         {
-            await CardPileCmd.Add(card, StashCardPile.StashPileType);
+            if (card is not DarkenedChocolate)
+                await CardPileCmd.Add(card, StashCardPile.StashPileType);
         }
     
         else

@@ -39,5 +39,5 @@ public class There_Is_No_Accident() : GregTheSpireCard(0,
         await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature, DynamicVars.Power<ConfidencePower>().BaseValue, this.Owner.Creature, this);
     }
 
-    protected override void OnUpgrade() => this.DynamicVars.Damage.UpgradeValueBy(3);
+    protected override void OnUpgrade() => this.DynamicVars.Power<ConfidencePower>().UpgradeValueBy(1);
 }

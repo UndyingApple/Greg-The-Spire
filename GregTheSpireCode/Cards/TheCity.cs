@@ -23,7 +23,8 @@ public class TheCity() : GregTheSpireCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-            }
+        await PowerCmd.Apply<TheCityPower>(choiceContext, this.Owner.Creature, DynamicVars.Power<TheCityPower>().BaseValue, this.Owner.Creature, this);
+    }
 
     protected override void OnUpgrade()
     {

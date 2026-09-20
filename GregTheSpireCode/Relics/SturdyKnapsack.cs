@@ -37,7 +37,7 @@ public class SturdyKnapsack() : GregTheSpireRelic
    protected override IEnumerable<DynamicVar> CanonicalVars =>
        [
            new IntVar("Rounds", 1),
-           new PowerVar<StoragePower>(5),
+           new PowerVar<StoragePower>(6),
            new CardsVar(3)
        ];
 

@@ -21,8 +21,8 @@ public class CheeseAndCrackers() : GregTheSpireCard(1,
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
-        HoverTipFactory.FromCard<Cheese>(IsUpgraded),
-        HoverTipFactory.FromCard<Cracker>(IsUpgraded)
+        HoverTipFactory.FromCard<Cheese>(),
+        HoverTipFactory.FromCard<Cracker>()
     ];
 
     protected override async Task OnPlay(
