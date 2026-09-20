@@ -1,4 +1,5 @@
 ﻿using GregTheSpire.GregTheSpireCode.CardPiles;
+using GregTheSpire.GregTheSpireCode.Enchantments;
 using GregTheSpire.GregTheSpireCode.Keywords;
 using GregTheSpire.GregTheSpireCode.Powers;
 using MegaCrit.Sts2.Core.Commands;
@@ -25,6 +26,18 @@ public class LeftoverPower() : GregTheSpirePower
         for (int i = 0; i < this.Amount; ++i)
         {
             this.Flash();
+            int totalStashed;
+            if (Owner.GetPowerAmount<BiteSizedPower>() == 1)
+            {
+                totalStashed = StashCardPile.StashPileType.GetPile(Owner.Player).Cards.Where<CardModel>((Func<CardModel, bool>)(c =>
+                    !c.Keywords.Contains(GregTheSpireKeywords.Snack) || (c.Enchantment is not Stowaway) )).Count();
+            }
+            else
+            {
+                totalStashed = StashCardPile.StashPileType.GetPile(Owner.Player).Cards.Where<CardModel>((Func<CardModel, bool>)(c => c.Enchantment is not Stowaway)).Count();
+            }
+
+            if (totalStashed >= Owner.GetPowerAmount<StoragePower>()) return;
             CardCmd.PreviewCardPileAdd(
                 await CardPileCmd.AddGeneratedCardToCombat(cardPlay.Card.CreateClone(), StashCardPile.StashPileType,
                     cardPlay.Card.Owner), 0.2f);

@@ -87,8 +87,8 @@
   "GREGTHESPIRE-E_GO_MA_NI_A_POWER.smartDescription": "At the start of your turn, gain [blue]{Amount}[/blue] [gold]Confidence[/gold]. When you lose [gold]Confidence[/gold] from taking attack damage, gain [blue]1[/blue] [gold]Vulnerable[/gold] for every [blue]5[/blue] [gold]Confidence[/gold] lost.",
   "GREGTHESPIRE-E_GO_MA_NI_A_POWER.title": "EGOMANIA",
   
-  "GREGTHESPIRE-LEFTOVER_POWER.description": "Whenever you play a [gold]Snack[/gold] from your hand, add a copy of it to your [gold]Stash[/gold].",
-  "GREGTHESPIRE-LEFTOVER_POWER.smartDescription": "Whenever you play a [gold]Snack[/gold] from your hand, add {Amount:plural:a copy|[blue]{Amount}[/blue] copies} of it to your [gold]Stash[/gold].",
+  "GREGTHESPIRE-LEFTOVER_POWER.description": "Whenever you play a [gold]Snack[/gold] from your hand, if there is room in your [gold]Stash[/gold], add a copy of it to your [gold]Stash[/gold].",
+  "GREGTHESPIRE-LEFTOVER_POWER.smartDescription": "Whenever you play a [gold]Snack[/gold] from your hand, if there is room in your [gold]Stash[/gold], add {Amount:plural:a copy|[blue]{Amount}[/blue] copies} of it to your [gold]Stash[/gold].",
   "GREGTHESPIRE-LEFTOVER_POWER.title": "Leftovers",
   
   "GREGTHESPIRE-RECKLESSNESS_POWER.description": "Double the effects of [gold]Confidence[/gold]. Take double damage from enemies.",

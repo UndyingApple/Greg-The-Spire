@@ -191,7 +191,7 @@
   "GREGTHESPIRE-E_GO_MA_NI_A.description": "{IfUpgraded:show:Gain 8 [gold]Confidence[/gold].\n|}At the start of your turn gain 4 [gold]Confidence[/gold].\nWhen you lose [gold]Confidence[/gold], gain [gold]Vulnerable[/gold] equal to the amount of [gold]Weak[/gold] gained.",
   "GREGTHESPIRE-E_GO_MA_NI_A.title": "EGOMANIA",
 
-  "GREGTHESPIRE-LEFTOVER.description": "Whenever you play a [gold]Snack[/gold] from your [gold]Hand[/gold], add a copy of that [gold]Snack[/gold] to your [gold]Stash[/gold].",
+  "GREGTHESPIRE-LEFTOVER.description": "Whenever you play a [gold]Snack[/gold] from your [gold]Hand[/gold], if there is room in your [gold]Stash[/gold], add a copy of that [gold]Snack[/gold] to your [gold]Stash[/gold].",
   "GREGTHESPIRE-LEFTOVER.title": "Leftovers",
 
   "GREGTHESPIRE-R_AN_DO_MB_UL_L____G_O.description": "Gain {Energy:energyIcons()}.\n[gold]Steal[/gold] {IfUpgraded:show:X+1|X}.",
