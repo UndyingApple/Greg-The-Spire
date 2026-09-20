@@ -21,7 +21,7 @@ public class Starvation() : GregTheSpireCard(1,
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("numCards", 1)];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [
-        CardKeyword.Exhaust
+
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [

@@ -128,7 +128,7 @@
   "GREGTHESPIRE-OLIVE.description": "Deal {Damage:diff()} damage.",
   "GREGTHESPIRE-OLIVE.title": "Olive",
   
-  "GREGTHESPIRE-STARVATION.description": "Add [gold]Snack[/gold] to {numCards:diff()} {numCards:plural:card|cards} in your [gold]Hand[/gold].",
+  "GREGTHESPIRE-STARVATION.description": "The first {numCards:diff()} {numCards:plural:card|cards} you play each turn gains [gold]Snack[/gold].",
   "GREGTHESPIRE-STARVATION.title": "Starvation",
   
   "GREGTHESPIRE-HONDA_CIVIC.description": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals {IfUpgraded:show:2|3} less damage for each enemy.",
@@ -263,7 +263,7 @@
   "GREGTHESPIRE-IMPROVISED_ARMOR.description": "Add a Cracker to your [gold]Hand[/gold]. [gold]Block[/gold] for each card in your [gold]Stash[/gold].{InCombat:\n(gain {CalculatedBlock:diff()} [gold]Block[/gold])|}",
   "GREGTHESPIRE-IMPROVISED_ARMOR.title": "Improvised Armor",
 
-  "GREGTHESPIRE-SALIVATE.description": "Add 1 [gold]Cracker[/gold] to your [gold]Hand[/gold].\nGain {IfUpgraded:show:4|3} [gold]Block[/gold] for every unique [gold]Snack[/gold] in your [gold]Exhaust Pile[/gold].{InCombat:show:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold].|}",
+  "GREGTHESPIRE-SALIVATE.description": "Add 1 [gold]Cracker[/gold] to your [gold]Hand[/gold].\nGain {IfUpgraded:show:4|3} [gold]Block[/gold] for every unique [gold]Snack[/gold] in your [gold]Exhaust Pile[/gold].{InCombat:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold].|}",
   "GREGTHESPIRE-SALIVATE.title": "Salivate",
 
   "GREGTHESPIRE-DUMP.description": "Discard your [gold]Stash[/gold].\nDeal {Damage:diff()} damage for every card Discarded.",
