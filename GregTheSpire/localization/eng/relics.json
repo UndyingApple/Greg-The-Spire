@@ -32,7 +32,7 @@
   "GREGTHESPIRE-DEAD_RINGER.flavor": "The bell tolls for rats and men alike.",
   "GREGTHESPIRE-DEAD_RINGER.title": "Dead Ringer",
 
-  "GREGTHESPIRE-STURDY_KNAPSACK.description": "At the start of each combat, gain [blue]5[/blue] [gold]Storage[/gold]. \nYou may now [gold]Store[/gold] at rest sites.",
-  "GREGTHESPIRE-STURDY_KNAPSACK.flavor": "An improvement on the classics, with just as much style.",
+  "GREGTHESPIRE-STURDY_KNAPSACK.description": "At the start of each combat, gain 6 [gold]Storage[/gold]. \nYou may now [gold]Store[/gold] at rest sites.",
+  "GREGTHESPIRE-STURDY_KNAPSACK.flavor": "",
   "GREGTHESPIRE-STURDY_KNAPSACK.title": "Sturdy Knapsack"
 }

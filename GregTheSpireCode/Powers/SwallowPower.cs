@@ -21,10 +21,6 @@ public class SwallowPower() : GregTheSpirePower
     public override PowerStackType StackType =>
         PowerStackType.Counter;
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new BlockVar(9, ValueProp.Move)
-    ];
-    
     public override async Task AfterDamageReceived(
         PlayerChoiceContext choiceContext,
         Creature target,

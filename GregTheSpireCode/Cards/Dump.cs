@@ -29,7 +29,7 @@ public class Dump() : GregTheSpireCard(1,
     ];
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DamageVar(5, ValueProp.Move)
+        new DamageVar(10, ValueProp.Move)
     ];
 
     protected override async Task OnPlay(

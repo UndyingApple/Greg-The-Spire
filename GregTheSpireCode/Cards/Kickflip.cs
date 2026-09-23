@@ -23,7 +23,7 @@ public class Kickflip() : GregTheSpireCard(2,
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new CalculationBaseVar(8),
-        new ExtraDamageVar(1),
+        new ExtraDamageVar(2),
         new CalculatedDamageVar(ValueProp.Move).WithMultiplier((Func<CardModel, Creature, Decimal>) ((card, _) => (Decimal)card.Owner.Creature.GetPowerAmount<ConfidencePower>()))
     ];
     
@@ -43,6 +43,6 @@ public class Kickflip() : GregTheSpireCard(2,
     protected override void OnUpgrade()
     {
         DynamicVars.CalculationBase.UpgradeValueBy(3);
-        DynamicVars.ExtraDamage.UpgradeValueBy(1);
+        DynamicVars.ExtraDamage.UpgradeValueBy(2);
     }
 }

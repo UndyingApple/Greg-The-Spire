@@ -35,11 +35,8 @@ public class GregJump() : GregTheSpireCard(0,
         {
             await CardPileCmd.Add(card, PileType.Hand);
         }
-        if(IsUpgraded) await CardPileCmd.Draw(choiceContext, 1, this.Owner);
+        //if(IsUpgraded) await CardPileCmd.Draw(choiceContext, 1, this.Owner);
     }
 
-    protected override void OnUpgrade()
-    {
-
-    }
+    protected override void OnUpgrade() => AddKeyword(CardKeyword.Retain);
 }

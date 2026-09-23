@@ -116,7 +116,7 @@
   "GREGTHESPIRE-EXTRA_POCKETS.description": "Gain 2 [gold]Storage[/gold]",
   "GREGTHESPIRE-EXTRA_POCKETS.title": "Extra Pockets",
   
-  "GREGTHESPIRE-KICKFLIP.description": "Deal {CalculatedDamage:diff()} damage.\n[gold]Confidence[/gold] affects this card {IfUpgraded:show:3|2} times.",
+  "GREGTHESPIRE-KICKFLIP.description": "Deal {CalculatedDamage:diff()} damage.\n[gold]Confidence[/gold] affects this card {IfUpgraded:show:5|3} times.",
   "GREGTHESPIRE-KICKFLIP.title": "Kickflip",
   
   "GREGTHESPIRE-SOMETIMES_BACK_DOWN.description": "Whenever you lose [gold]Confidence[/gold], deal 2 damage to ALL enemies for every {IfUpgraded:show:1|2} [gold]Confidence[/gold] lost.",
@@ -224,7 +224,7 @@
   "GREGTHESPIRE-I_M_ALSO_VERY_PARTIAL_TO_PLASTIC.description": "Add 3 [gold]Olives[/gold] to your [gold]Hand[/gold].\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
   "GREGTHESPIRE-I_M_ALSO_VERY_PARTIAL_TO_PLASTIC.title": "I'm Also Very Partial To Plastic",
 
-  "GREGTHESPIRE-SWALLOW.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you don’t take any unblocked damage this turn, gain {Block:diff()} [gold]Block[/gold] at the start of your next turn.",
+  "GREGTHESPIRE-SWALLOW.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you don’t take any unblocked damage this turn, gain {SwallowPower:diff()} [gold]Block[/gold] at the start of your next turn.",
   "GREGTHESPIRE-SWALLOW.title": "Swallow",
 
   "GREGTHESPIRE-FUMBLE.description": "Draw cards until your [gold]Hand[/gold] is full.\nDeals 3 damage for each card drawn.\nAdd a {IfUpgraded:show:Tumble+|Tumble} to your [gold]Draw Pile[/gold].",
