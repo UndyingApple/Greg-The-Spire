@@ -16,8 +16,8 @@ public class NeverBackDown() : GregTheSpireCard(1,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new PowerVar<NeverBackDownPower>(1),
-        new PowerVar<NeverBackDownUpgradedPower>(2)
     ];
+    
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.FromPower<ConfidencePower>()
@@ -27,14 +27,11 @@ public class NeverBackDown() : GregTheSpireCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        if (this.IsUpgraded)
-        {
-            await PowerCmd.Apply<NeverBackDownUpgradedPower>(choiceContext, Owner.Creature, DynamicVars.Power<NeverBackDownUpgradedPower>().BaseValue, Owner.Creature, this);
-        }
-        else
-        {
-            await PowerCmd.Apply<NeverBackDownPower>(choiceContext, Owner.Creature,
-                DynamicVars.Power<NeverBackDownPower>().BaseValue, Owner.Creature, this);
-        }
+            await PowerCmd.Apply<NeverBackDownPower>(choiceContext, Owner.Creature, DynamicVars.Power<NeverBackDownPower>().BaseValue, Owner.Creature, this);
+        
+
     }
+
+    protected override void OnUpgrade() => DynamicVars.Power<NeverBackDownPower>().UpgradeValueBy(1);
+
 }

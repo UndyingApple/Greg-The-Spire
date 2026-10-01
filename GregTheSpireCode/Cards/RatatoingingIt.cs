@@ -36,9 +36,8 @@ public class RatatoingingIt() : GregTheSpireCard(2,
         await PowerCmd.Apply<RatationgingItPower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
             foreach (CardModel allCard in this.Owner.PlayerCombatState.AllCards)
             {
-                if (allCard.Type != CardType.Attack)
-                    return;
-                allCard.BaseReplayCount += this.DynamicVars["Replay"].IntValue;
+                if (allCard.Type == CardType.Attack)
+                    allCard.BaseReplayCount += this.DynamicVars["Replay"].IntValue;
             }
     }
 
