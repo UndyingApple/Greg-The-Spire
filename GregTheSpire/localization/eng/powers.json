@@ -137,5 +137,9 @@
   
   "GREGTHESPIRE-SHARING_POWER.description": "Whenever {ApplierName} creates a [gold]Snack[/gold], add a copy to your [gold]Draw Pile[/gold].",
   "GREGTHESPIRE-SHARING_POWER.smartDescription": "Whenever {ApplierName} creates a [gold]Snack[/gold], add {Amount:plural:a copy|[blue]{Amount}[/blue] copies} to your [gold]Draw Pile[/gold].",
-  "GREGTHESPIRE-SHARING_POWER.title": "Sharing"
+  "GREGTHESPIRE-SHARING_POWER.title": "Sharing",
+
+  "GREGTHESPIRE-RATATIONGING_IT_POWER.description": "All Attacks gain Replay 1.\nWhenever you play an Attack, [gold]Exhaust[/gold] it.",
+  "GREGTHESPIRE-RATATIONGING_IT_POWER.smartDescription": "All Attacks gain Replay 1.\nWhenever you play an Attack, [gold]Exhaust[/gold] it.",
+  "GREGTHESPIRE-RATATIONGING_IT_POWER.title": "Ratationg-ing It"
 }

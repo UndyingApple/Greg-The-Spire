@@ -33,7 +33,7 @@ public class RatatoingingIt() : GregTheSpireCard(2,
         CardPlay play)
     {
       
-        await PowerCmd.Apply<NoSkillsPlayed>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
+        await PowerCmd.Apply<RatationgingItPower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
             foreach (CardModel allCard in this.Owner.PlayerCombatState.AllCards)
             {
                 allCard.BaseReplayCount += this.DynamicVars["Replay"].IntValue;
@@ -44,6 +44,6 @@ public class RatatoingingIt() : GregTheSpireCard(2,
 
     protected override void OnUpgrade()
     {
-        this.DynamicVars["Replay"].UpgradeValueBy(1);
+        
     }
 }

@@ -306,7 +306,13 @@
   "GREGTHESPIRE-SHARING.title": "Sharing",
 
   "GREGTHESPIRE-SWARM.description": "Another player [gold]Enchants[/gold] ALL cards in their [gold]Hand[/gold] with [purple]Infested[/purple].",
-  "GREGTHESPIRE-SWARM.title": "Swarm"
+  "GREGTHESPIRE-SWARM.title": "Swarm",
+
+  "GREGTHESPIRE-FRUIT_BASKET.description": "[gold]Steal[/gold] 1.\nAdd a [gold]{IfUpgraded:show:Strawberry+|Strawberry}[/gold] into your [gold]Hand[/gold].",
+  "GREGTHESPIRE-FRUIT_BASKET.title": "Fruit Basket",
+
+  "GREGTHESPIRE-REFRESHMENTS.description": "Gain {Block:diff()} [gold]Block[/gold].\nAdd a [gold]{IfUpgraded:show:Soda+|Soda}[/gold] into your [gold]Hand[/gold].",
+  "GREGTHESPIRE-REFRESHMENTS.title": "Refreshments"
 }
   
   

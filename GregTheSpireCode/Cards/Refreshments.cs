@@ -1,36 +1,44 @@
-using BaseLib.Extensions;
 using GregTheSpire.GregTheSpireCode.Cards;
-using GregTheSpire.GregTheSpireCode.Powers;
+using GregTheSpire.GregTheSpireCode.Cards.Colorless;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
-public class SometimesBackDown() : GregTheSpireCard(1,
-    CardType.Power, CardRarity.Uncommon,
+public class Refreshments() : GregTheSpireCard(1,
+    CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new PowerVar<SometimesBackDownPower>(2)
-    ];
-    
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        HoverTipFactory.FromPower<ConfidencePower>()
+        new BlockVar(7, ValueProp.Move)
     ];
 
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromCard<Soda>(IsUpgraded)
+    ];
+    
+    public override bool GainsBlock => true;
+    
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await PowerCmd.Apply<SometimesBackDownPower>(choiceContext, Owner.Creature, DynamicVars.Power<SometimesBackDownPower>().BaseValue, Owner.Creature, this);
+        await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
+        
+        IEnumerable<CardModel> inHand = await Soda.CreateInHand(this.Owner, 1, this.CombatState);
+        if (!this.IsUpgraded)
+            return;
+        foreach (CardModel card in inHand)
+            CardCmd.Upgrade(card);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Power<SometimesBackDownPower>().UpgradeValueBy(1);
+        DynamicVars.Block.UpgradeValueBy(2);
     }
 }
