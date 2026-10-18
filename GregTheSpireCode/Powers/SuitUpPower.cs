@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 namespace GregTheSpire.GregTheSpireCode.Powers;
 
 
-public class HatFormPower() : GregTheSpirePower
+public class SuitUpPower() : GregTheSpirePower
 {
     public override PowerType Type =>
         PowerType.Buff;

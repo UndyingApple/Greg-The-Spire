@@ -37,7 +37,7 @@ public class NeverBackDownPower() : GregTheSpirePower
                 this.Amount))
         {
             this.Flash();
-            await CardPileCmd.Draw(choiceContext, 1, power.Owner.Player);
+            await CardPileCmd.Draw(choiceContext, 1, Owner.Player);
         }
     }
 }

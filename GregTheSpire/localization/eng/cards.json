@@ -101,17 +101,17 @@
   "GREGTHESPIRE-BITE_SIZED.description": "[gold]Snacks[/gold] don't count towards your [gold]Storage[/gold].",
   "GREGTHESPIRE-BITE_SIZED.title": "Bite-Sized",
   
-  "GREGTHESPIRE-WOWIE_ZOWIE.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you don’t play this card again in exactly 3 turns, gain [gold]Doom[/gold] equal to your Max HP",
+  "GREGTHESPIRE-WOWIE_ZOWIE.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you don’t play this card again in exactly 3 turns, gain [gold]Doom[/gold] equal to your Max HP.\nPut this card into your draw pile.",
   "GREGTHESPIRE-WOWIE_ZOWIE.title": "Wowie Zowie!",
   
   "GREGTHESPIRE-RUMMAGE.description": "Draw {Cards:diff()}.\n[gold]Stash[/gold] 1.",
   "GREGTHESPIRE-RUMMAGE.title": "Rummage",
   
-  "GREGTHESPIRE-POCKET_KNIFE.description": "Deal {Damage:diff()} damage.\nPut this card into your [gold]Stash[/gold]",
-  "GREGTHESPIRE-POCKET_KNIFE.title": "Pocket Knife",
+  "GREGTHESPIRE-POCKET_STRIKE.description": "Deal {Damage:diff()} damage.\nPut this card into your [gold]Stash[/gold]",
+  "GREGTHESPIRE-POCKET_STRIKE.title": "Pocket Strike",
   
-  "GREGTHESPIRE-HAT_FORM.description": "At the start of each turn, [gold]Steal[/gold] {IfUpgraded:show:2|1}.",
-  "GREGTHESPIRE-HAT_FORM.title": "Hat Form",
+  "GREGTHESPIRE-SUIT_UP.description": "At the start of each turn, [gold]Steal[/gold] {IfUpgraded:show:2|1}.",
+  "GREGTHESPIRE-SUIT_UP.title": "Suit Up",
   
   "GREGTHESPIRE-EXTRA_POCKETS.description": "Gain 2 [gold]Storage[/gold]",
   "GREGTHESPIRE-EXTRA_POCKETS.title": "Extra Pockets",
@@ -155,10 +155,10 @@
   "GREGTHESPIRE-OLIVE_CREAMS_AND_A_SODA.description": "Add 1 [gold]{IfUpgraded:show:Soda+|Soda}[/gold] to your [gold]Draw Pile[/gold].\nFill your [gold]Hand[/gold] with [gold]Olives[/gold].",
   "GREGTHESPIRE-OLIVE_CREAMS_AND_A_SODA.title": "12 Olive Creams And A Soda",
   
-  "GREGTHESPIRE-TOUCH_OF_CHEESE.description": "Deal {Damage:diff()} damage.\nAdd a [gold]Cheese[/gold] to your [gold]Draw Pile[/gold].",
+  "GREGTHESPIRE-TOUCH_OF_CHEESE.description": "Deal {Damage:diff()} damage.\nAdd a [gold]Cheese[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-TOUCH_OF_CHEESE.title": "Touch Of Cheese",
   
-  "GREGTHESPIRE-MOUSE_TRAP.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf the enemy intends to attack, gain 1 [gold]Cheese[/gold] next turn.",
+  "GREGTHESPIRE-MOUSE_TRAP.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf the enemy intends to attack, gain {CheeseAmount:diff()} [gold]Cheese[/gold] next turn.",
   "GREGTHESPIRE-MOUSE_TRAP.title": "Mouse Trap",
   
   "GREGTHESPIRE-FLY_SWATTER.description": "[gold]Flies[/gold] deal {FlySwatterPower:diff()} additional damage.\nAdd a [gold]Fly[/gold] to your [gold]Hand[/gold].",

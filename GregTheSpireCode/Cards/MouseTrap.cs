@@ -22,14 +22,14 @@ public class MouseTrap() : GregTheSpireCard(1,
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new BlockVar(7, ValueProp.Move),
-        
+        new BlockVar(8, ValueProp.Move),
+        new IntVar("CheeseAmount", 1)
     ];
     
-        protected override IEnumerable<IHoverTip> ExtraHoverTips =>
-        [
-            HoverTipFactory.FromCard<Cheese>()
-        ];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips =>
+    [
+        HoverTipFactory.FromCard<Cheese>()
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -40,7 +40,7 @@ public class MouseTrap() : GregTheSpireCard(1,
         if (!play.Target.Monster.IntendsToAttack)
             return;
         CheeseNextTurnPower? cheeseNextTurnPower = await PowerCmd.Apply<CheeseNextTurnPower>(choiceContext,
-            this.Owner.Creature,1, this.Owner.Creature,
+            this.Owner.Creature, DynamicVars["CheeseAmount"].IntValue, this.Owner.Creature,
             (CardModel)this);
     }
 
@@ -48,5 +48,6 @@ public class MouseTrap() : GregTheSpireCard(1,
     protected override void OnUpgrade()
     {
         DynamicVars.Block.UpgradeValueBy(3);
+        DynamicVars["CheeseAmount"].UpgradeValueBy(1);
     }
 }

@@ -15,7 +15,7 @@ public class PositiveAffirmation() : GregTheSpireCard(0,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        (DynamicVar) new PowerVar<ConfidencePower>(2)
+        (DynamicVar) new PowerVar<ConfidencePower>(3)
     ];
     
         protected override bool HasEnergyCostX => true;

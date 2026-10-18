@@ -24,19 +24,18 @@ public class RANDOMBULL____GO() : GregTheSpireCard(0,
         this.EnergyHoverTip
     ];
 
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [
+        CardKeyword.Exhaust
+    ];
+
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
         int count = this.ResolveEnergyXValue();
         await PlayerCmd.GainEnergy(DynamicVars.Energy.BaseValue, Owner);
-        if (this.IsUpgraded)
-            ++count;
         await StealCmd.StealAsync(choiceContext, this.Owner, count);
     }
 
-    protected override void OnUpgrade()
-    {
-
-    }
+    protected override void OnUpgrade() => this.RemoveKeyword(CardKeyword.Exhaust);
 }

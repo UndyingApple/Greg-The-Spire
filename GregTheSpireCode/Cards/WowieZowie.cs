@@ -35,7 +35,19 @@ public class WowieZowie() : GregTheSpireCard(1,
         }
         await PowerCmd.Apply<WowieZowiePower>(choiceContext, Owner.Creature, 3-timeTilZowie, Owner.Creature, this);
     }
-    
+
+    protected override CardLocation GetResultLocationForCardPlay()
+    {
+        CardLocation locationForCardPlay = base.GetResultLocationForCardPlay();
+        if (locationForCardPlay.pileType == PileType.Discard)
+        {
+            locationForCardPlay.pileType = PileType.Draw;
+            locationForCardPlay.position = CardPilePosition.Random;
+        }
+
+        return locationForCardPlay;
+    }
+
     protected override void OnUpgrade()
     {
         DynamicVars.Block.UpgradeValueBy(9);

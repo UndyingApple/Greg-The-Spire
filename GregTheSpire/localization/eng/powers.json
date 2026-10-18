@@ -3,8 +3,8 @@
   "GREGTHESPIRE-STORAGE_POWER.smartDescription": "The maximum amount of cards that can be held in your [gold]Stash[/gold].",
   "GREGTHESPIRE-STORAGE_POWER.title": "Storage",
 
-  "GREGTHESPIRE-CONFIDENCE_POWER.description": "Increases attack damage by X. When you take unblocked attack damage, remove all [gold]Confidence[/gold] and gain [blue]1[/blue] [gold]Weak[/gold] plus [blue]1[/blue]  additional [gold]Weak[/gold] for every [blue]5[/blue]  [gold]Confidence[/gold] lost.",
-  "GREGTHESPIRE-CONFIDENCE_POWER.smartDescription": "{Amount:cond:<0?Decreases|Increases} attack damage by {Amount:abs()}. When you take unblocked attack damage, lose half of your [gold]Confidence[/gold] and gain [blue]1[/blue]  [gold]Weak[/gold] plus [blue]1[/blue]  additional [gold]Weak[/gold] for every [blue]5[/blue]  [gold]Confidence[/gold] lost.",
+  "GREGTHESPIRE-CONFIDENCE_POWER.description": "Increases attack damage by X. The first time you take unblocked attack damage each turn, lose half of your [gold]Confidence[/gold].",
+  "GREGTHESPIRE-CONFIDENCE_POWER.smartDescription": "{Amount:cond:<0?Decreases|Increases} attack damage by {Amount:abs()}. The first time you take unblocked attack damage each turn, lose half of your [gold]Confidence[/gold].",
   "GREGTHESPIRE-CONFIDENCE_POWER.title": "Confidence",
 
   "GREGTHESPIRE-SECONDS_POWER.description": "The next time you play a [gold]Snack[/gold], add a copy of it to your hand.",
@@ -23,9 +23,9 @@
   "GREGTHESPIRE-WOWIE_ZOWIE_POWER.smartDescription": "If you don’t play [gold]Wowie Zowie[/gold] {Amount:plural:this turn|again in [blue]{Amount}[/blue] turns}, gain [gold]Doom[/gold] equal to your [gold]Max HP[/gold].",
   "GREGTHESPIRE-WOWIE_ZOWIE_POWER.title": "Wowie Zowie!",
 
-  "GREGTHESPIRE-HAT_FORM_POWER.description": "At the start of your turn, [gold]Steal[/gold].",
-  "GREGTHESPIRE-HAT_FORM_POWER.smartDescription": "At the start of your turn, [gold]Steal[/gold] [blue]{Amount}[/blue].",
-  "GREGTHESPIRE-HAT_FORM_POWER.title": "Hat Form",
+  "GREGTHESPIRE-SUIT_UP_POWER.description": "At the start of your turn, [gold]Steal[/gold].",
+  "GREGTHESPIRE-SUIT_UP_POWER.smartDescription": "At the start of your turn, [gold]Steal[/gold] [blue]{Amount}[/blue].",
+  "GREGTHESPIRE-SUIT_UP_POWER.title": "Suit Up",
 
   "GREGTHESPIRE-RAT_FORM_POWER.description": "At the start of your turn, play every card in your [gold]Stash[/gold].",
   "GREGTHESPIRE-RAT_FORM_POWER.smartDescription": "At the start of your turn, play every card in your [gold]Stash[/gold].",

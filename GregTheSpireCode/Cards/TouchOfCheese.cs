@@ -30,8 +30,7 @@ public class TouchOfCheese() : GregTheSpireCard(1,
     {
         AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).Execute(choiceContext);
         await Cmd.Wait(0.1f);
-        IEnumerable<Cheese> cards = Cheese.Create(this.Owner, 1, this.CombatState);
-        await CardPileCmd.AddGeneratedCardsToCombat((IEnumerable<CardModel>)cards, PileType.Hand, this.Owner);
+        await Cheese.CreateInHand(this.Owner, 1, this.CombatState);
     }
 
     protected override void OnUpgrade()

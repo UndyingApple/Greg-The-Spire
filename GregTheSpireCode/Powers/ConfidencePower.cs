@@ -16,9 +16,10 @@ public class ConfidencePower() : GregTheSpirePower
 
     public override PowerStackType StackType =>
         PowerStackType.Counter;
-    
 
     public override bool AllowNegative => true;
+
+    public bool DamageThisTurn = false;
     
     public override async Task AfterPowerAmountChanged(PlayerChoiceContext choiceContext, PowerModel power, Decimal amount, Creature? applier, CardModel? cardSource)
     {
@@ -32,20 +33,30 @@ public class ConfidencePower() : GregTheSpirePower
     public override async Task AfterDamageReceived(PlayerChoiceContext choiceContext, Creature target, DamageResult result, ValueProp props,
         Creature? dealer, CardModel? cardSource)
     {
-        if (!CombatManager.Instance.IsInProgress || target != this.Owner || result.UnblockedDamage <= 0 )
+        if (!CombatManager.Instance.IsInProgress || target != this.Owner || result.UnblockedDamage <= 0 || DamageThisTurn == true)
             return;
         if (Owner.GetPowerAmount<ObliviousPower>() > 0)
             return;
+        DamageThisTurn = true;
         if (this.Amount<=1)
         {
             this.Flash();
             await PowerCmd.Apply<ConfidencePower>(choiceContext, this.Owner, -Amount, this.Owner,null);
-            await PowerCmd.Apply<WeakPower>(choiceContext, this.Owner,(int) (1), this.Owner, null);
+            // await PowerCmd.Apply<WeakPower>(choiceContext, this.Owner,(int) (1), this.Owner, null);
                 
             return;
         };
         this.Flash(); 
         await PowerCmd.Apply<ConfidencePower>(choiceContext, this.Owner, (int) ((-(Amount+1)/2)), this.Owner,null);
-        await PowerCmd.Apply<WeakPower>(choiceContext, this.Owner, (int)(1 + (Amount / 5)), this.Owner, null);
+        // await PowerCmd.Apply<WeakPower>(choiceContext, this.Owner, (int)(1 + (Amount / 5)), this.Owner, null);
+    }
+
+    public override Task BeforeSideTurnStart(PlayerChoiceContext choiceContext, CombatSide side, IReadOnlyList<Creature> participants,
+        ICombatState combatState)
+    {
+        if (!participants.Contains<Creature>(Owner))
+            return Task.CompletedTask;
+        DamageThisTurn = false;
+        return Task.CompletedTask;
     }
 }

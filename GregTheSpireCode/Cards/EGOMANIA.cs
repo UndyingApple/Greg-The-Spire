@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
 
-public class EGOMANIA() : GregTheSpireCard(1,
+public class EGOMANIA() : GregTheSpireCard(2,
    CardType.Power, CardRarity.Ancient,
    TargetType.Self)
 {
@@ -34,7 +34,7 @@ public class EGOMANIA() : GregTheSpireCard(1,
        
 
             await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature,
-           8, Owner.Creature, this);
+           4, Owner.Creature, this);
        };
 
    await PowerCmd.Apply<EGOMANIAPower>(choiceContext, Owner.Creature,

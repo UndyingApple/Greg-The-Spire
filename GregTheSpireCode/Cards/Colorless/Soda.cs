@@ -26,7 +26,7 @@ public class Soda() : GregTheSpireCard(0,
     ];
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        (DynamicVar) new CardsVar(1)
+        (DynamicVar) new CardsVar(2)
     ];
     
     public static async Task<IEnumerable<Soda>> CreateInHand(
@@ -57,8 +57,5 @@ public class Soda() : GregTheSpireCard(0,
         IEnumerable<CardModel> cardModels = await CardPileCmd.Draw(choiceContext, this.DynamicVars.Cards.BaseValue, this.Owner);
     }
 
-    protected override void OnUpgrade()
-    {
-        DynamicVars.Cards.UpgradeValueBy(1);
-    }
+    protected override void OnUpgrade() => AddKeyword(CardKeyword.Retain);
 }

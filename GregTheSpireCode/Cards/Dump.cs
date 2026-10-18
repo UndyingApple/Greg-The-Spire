@@ -17,7 +17,7 @@ namespace GregTheSpire.GregTheSpireCode.Cards;
 
 
 public class Dump() : GregTheSpireCard(1,
-    CardType.Attack, CardRarity.Rare,
+    CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [
@@ -29,7 +29,7 @@ public class Dump() : GregTheSpireCard(1,
     ];
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DamageVar(10, ValueProp.Move)
+        new DamageVar(8, ValueProp.Move)
     ];
 
     protected override async Task OnPlay(

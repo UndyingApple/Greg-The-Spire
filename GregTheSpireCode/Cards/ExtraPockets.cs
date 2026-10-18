@@ -31,5 +31,5 @@ public class ExtraPockets() : GregTheSpireCard(1,
        StoragePower StoragePower = await PowerCmd.Apply<StoragePower>(choiceContext, this.Owner.Creature, this.DynamicVars["StoragePower"].BaseValue, this.Owner.Creature, (CardModel) this);
    }
   
-protected override void OnUpgrade() => this.AddKeyword(CardKeyword.Innate);
+protected override void OnUpgrade() => EnergyCost.UpgradeBy(-1);
 }

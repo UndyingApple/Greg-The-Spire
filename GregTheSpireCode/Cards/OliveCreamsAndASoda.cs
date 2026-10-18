@@ -29,13 +29,12 @@ public class OliveCreamsAndASoda() : GregTheSpireCard(2,
         IEnumerable<Soda> soda = Soda.Create(this.Owner, 1, this.CombatState);
         CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardsToCombat((IEnumerable<CardModel>)soda, PileType.Draw, this.Owner,
             CardPilePosition.Random));
-       if (IsUpgraded)
-            {
-                foreach (CardModel card in soda)
-                {
-                    CardCmd.Upgrade(card);
-                }
-            }
+       if (IsUpgraded) {
+           foreach (CardModel card in soda)
+           {
+               CardCmd.Upgrade(card);
+           }
+       }
        
        
         await Cmd.Wait(0.1f);

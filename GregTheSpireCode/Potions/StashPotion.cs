@@ -26,7 +26,7 @@ public sealed class StashPotion : GregTheSpirePotion
         HoverTipFactory.FromKeyword(GregTheSpireKeywords.Stash),
     ];
     
-    public override PotionRarity Rarity => PotionRarity.Rare;
+    public override PotionRarity Rarity => PotionRarity.Uncommon;
 
     public override PotionUsage Usage => PotionUsage.CombatOnly;
 

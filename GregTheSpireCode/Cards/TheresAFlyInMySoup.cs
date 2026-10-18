@@ -32,5 +32,5 @@ public class TheresAFlyInMySoup() : GregTheSpireCard(2,
         TheresAFlyInMySoupPower theresAFlyInMySoupPower = await PowerCmd.Apply<TheresAFlyInMySoupPower>(choiceContext, this.Owner.Creature, 1, this.Owner.Creature, (CardModel) this);
     }
 
-    protected override void OnUpgrade() => AddKeyword(CardKeyword.Retain);
+    protected override void OnUpgrade() => EnergyCost.UpgradeBy(-1);
 }

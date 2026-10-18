@@ -17,7 +17,7 @@ namespace GregTheSpire.GregTheSpireCode.Potions;
 
 public sealed class StealPotion : GregTheSpirePotion
 {
-    public override PotionRarity Rarity => PotionRarity.Uncommon;
+    public override PotionRarity Rarity => PotionRarity.Rare;
 
     public override PotionUsage Usage => PotionUsage.CombatOnly;
 
@@ -32,6 +32,6 @@ public sealed class StealPotion : GregTheSpirePotion
     {
         GregTheSpirePotion.AssertValidForTargetedPotion(target);
         NCombatRoom.Instance?.PlaySplashVfx(target, new Color("45e6d0"));
-        if (target.Player != null) await StealCmd.StealAsync(choiceContext, target.Player, 2);
+        if (target.Player != null) await StealCmd.StealAsync(choiceContext, target.Player, 3);
     }
 }
