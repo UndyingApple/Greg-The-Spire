@@ -8,12 +8,14 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Hooks;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
+using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.Saves.Runs;
 using MegaCrit.Sts2.Core.ValueProps;
 
@@ -54,7 +56,8 @@ public class CamembertWheel() : GregTheSpireCard(1,
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(2, ValueProp.Move),
-        new IntVar("Increase", 1)
+        new IntVar("Increase", 1),
+        new IntVar("MaxIncrease", 4)
     ];
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => [
@@ -69,9 +72,45 @@ public class CamembertWheel() : GregTheSpireCard(1,
     {
         Decimal damage = Hook.ModifyDamage(this.RunState, this.CombatState, cardPlay.Target, this.Owner.Creature, DynamicVars.Damage.BaseValue, DynamicVars.Damage.Props, (CardModel) this, cardPlay, ModifyDamageHookType.All, CardPreviewMode.MultiCreatureTargeting, out IEnumerable<AbstractModel> _);
         await PowerCmd.Apply<CamembertWheelPower>(choiceContext, Owner.Creature, damage, Owner.Creature, this);
+
+        
+        //checks number of Cheese in your e><haust pile. If it's more than the Ma><Increase dynamicvar, just uses the dynamicvar
+        int cheeseAmount = this.Owner.PlayerCombatState != null
+            ? this.Owner.PlayerCombatState.ExhaustPile.Cards.Count<CardModel>((Func<CardModel, bool>)(c => c is Cheese))
+            : 0;
+       
+
+        if (cheeseAmount > DynamicVars["MaxIncrease"].IntValue)
+        {
+            cheeseAmount = (int) DynamicVars["MaxIncrease"].IntValue;
+        } 
+        
+        //buffs the card
+        int increaseValue = DynamicVars["Increase"].IntValue;
+        /*
+        if (cheeseAmount != 0 && cheeseAmount != null) await PowerCmd.Apply<TemporaryStrengthPower>(choiceContext, Owner.Creature,
+            cheeseAmount, Owner.Creature, this);
+        if (increaseValue != 0) await PowerCmd.Apply<TemporaryDexterityPower>(choiceContext, Owner.Creature,
+            increaseValue, Owner.Creature, this);
+        */
+        this.BuffFromPlay(cheeseAmount * increaseValue);
+        if (this.DeckVersion is CamembertWheel deckVersion)
+        {
+            deckVersion.BuffFromPlay(cheeseAmount * increaseValue);
+        }
+        /*
+        if (cheeseAmount != 0) await PowerCmd.Apply<TemporaryFocusPower>(choiceContext, Owner.Creature,
+            cheeseAmount, Owner.Creature, this);
+        if (increaseValue != 0) await PowerCmd.Apply<VigorPower>(choiceContext, Owner.Creature,
+            increaseValue, Owner.Creature, this);
+        */
+        
+        
+        
     }
 
-    public override Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
+    /*
+     public override Task AfterCardPlayed(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         if (cardPlay.Card is Cheese && !hasPlayedCheeseThisTurn) {
             hasPlayedCheeseThisTurn = true;
@@ -93,10 +132,12 @@ public class CamembertWheel() : GregTheSpireCard(1,
         }
         return Task.CompletedTask;
     }
+    */
 
     protected override void OnUpgrade()
     {
         this.DynamicVars["Increase"].UpgradeValueBy(1);
+        this.DynamicVars["MaxIncrease"].UpgradeValueBy(4);
         this.UpdateDamage();
     }
 
@@ -107,6 +148,6 @@ public class CamembertWheel() : GregTheSpireCard(1,
         this.IncreasedDamage += extraDamage;
         this.UpdateDamage();
     }
-
-    private void UpdateDamage() => this.CurrentDamage = (int) DynamicVars.Damage.BaseValue + this.IncreasedDamage;
+ 
+    private void UpdateDamage() => this.CurrentDamage = 2 + this.IncreasedDamage;
 }

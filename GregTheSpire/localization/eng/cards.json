@@ -41,7 +41,7 @@
   "GREGTHESPIRE-WATCH_OUT_FOR_THE_TRAPS.description": "ALL enemies lose {IfUpgraded:show:7|5} [gold]Confidence[/gold].",
   "GREGTHESPIRE-WATCH_OUT_FOR_THE_TRAPS.title": "Watch Out For The Traps!",
   
-  "GREGTHESPIRE-INFLATED_EGO.description": "Gain {ConfidencePower:diff()} [gold]Confidence[/gold].",
+  "GREGTHESPIRE-INFLATED_EGO.description": "Gain {ConfidencePower:diff()} [gold]Confidence[/gold]. If you take unblocked damage this turn, lose all of your [gold]Confidence[/gold].",
   "GREGTHESPIRE-INFLATED_EGO.title": "Inflated Ego",
   
   "GREGTHESPIRE-THERE_IS_NO_ACCIDENT.description": "Deal {Damage:diff()} damage.\nGain {ConfidencePower:diff()} [gold]Confidence[/gold].",
@@ -272,7 +272,7 @@
   "GREGTHESPIRE-SWEET_LOOT.description": "Deal {Damage:diff()} damage.\nPlace a card in your [gold]Draw Pile[/gold] into your [gold]Stash[/gold].",
   "GREGTHESPIRE-SWEET_LOOT.title": "Sweet Loot",
 
-  "GREGTHESPIRE-CAMEMBERT_WHEEL.description": "At the start of your next turn, deal {Damage:diff()} damage to ALL enemies.\nThe first time you play a [gold]Cheese[/gold] each turn, permanently increase this card’s damage by {IfUpgraded:show:2|1}.",
+  "GREGTHESPIRE-CAMEMBERT_WHEEL.description": "At the start of your next turn, deal {Damage:diff()} damage to ALL enemies.\nPermanently increase this card’s damage by {IfUpgraded:show:2|1} for every [gold]Cheese[/gold] in your [gold]Exhaust Pile[/gold] to a max of {IfUpgraded:show:8|4}.",
   "GREGTHESPIRE-CAMEMBERT_WHEEL.title": "Camembert Wheel",
 
   "GREGTHESPIRE-CAT_BURGLAR.description": "Deal {Damage:diff()} damage for each card played using [gold]Steal[/gold] this combat.\n{InCombat:(Hits {HitCount:diff()} times)|}",

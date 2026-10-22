@@ -1,0 +1,39 @@
+using GregTheSpire.GregTheSpireCode.Powers;
+using MegaCrit.Sts2.Core.Combat;
+using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.Entities.Powers;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
+using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.ValueProps;
+
+namespace GregTheSpire.GregTheSpireCode.Powers;
+
+public class InflatedEgoPower() : GregTheSpirePower
+{
+    public override PowerType Type =>
+        PowerType.Buff;
+
+    public override PowerStackType StackType =>
+        PowerStackType.Single;
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromPower<ConfidencePower>()
+    ];
+    
+    public override async Task AfterDamageReceived(PlayerChoiceContext choiceContext, Creature target, DamageResult result, ValueProp props,
+        Creature? dealer, CardModel? cardSource)
+    {
+        if (!CombatManager.Instance.IsInProgress || target != this.Owner || result.UnblockedDamage <= 0 )
+            return;
+        if (Owner.GetPowerAmount<ObliviousPower>() > 0)
+            return;
+        this.Flash();
+    }
+
+    public override async Task AfterSideTurnStart(CombatSide side, IReadOnlyList<Creature> participants, ICombatState combatState)
+    {
+        await PowerCmd.Remove(this);
+    }
+}

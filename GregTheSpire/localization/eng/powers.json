@@ -43,13 +43,9 @@
   "GREGTHESPIRE-SOMETIMES_BACK_DOWN_UPGRADED_POWER.smartDescription": "Whenever you lose [gold]Confidence[/gold], deal [blue]{Amount}[/blue] damage to ALL enemies for every [gold]Confidence[/gold] lost.",
   "GREGTHESPIRE-SOMETIMES_BACK_DOWN_UPGRADED_POWER.title": "Sometimes Back Down+",
 
-  "GREGTHESPIRE-NEVER_BACK_DOWN_POWER.description": "Whenever you lose confidence, gain Confidence for every lost.",
-  "GREGTHESPIRE-NEVER_BACK_DOWN_POWER.smartDescription": "Whenever you lose confidence, gain [blue]{Amount}[/blue] Confidence for every 2 lost.",
+  "GREGTHESPIRE-NEVER_BACK_DOWN_POWER.description": "Whenever you lose [gold]Confidence[/gold], gain [gold]Confidence[/gold] for every lost.",
+  "GREGTHESPIRE-NEVER_BACK_DOWN_POWER.smartDescription": "Whenever you lose [gold]Confidence[/gold], gain [blue]{Amount}[/blue] [gold]Confidence[/gold] for every 2 lost.",
   "GREGTHESPIRE-NEVER_BACK_DOWN_POWER.title": "Never Back Down",
-
-  "GREGTHESPIRE-NEVER_BACK_DOWN_UPGRADED_POWER.description": "Whenever you lose confidence, gain Confidence for every lost.",
-  "GREGTHESPIRE-NEVER_BACK_DOWN_UPGRADED_POWER.smartDescription": "Whenever you lose confidence, gain [blue]{Amount}[/blue] Confidence for every 3 lost.",
-  "GREGTHESPIRE-NEVER_BACK_DOWN_UPGRADED_POWER.title": "Never Back Down+",
   
   "GREGTHESPIRE-CHEESE_NEXT_TURN_POWER.description": "At the start of your next turns, add a [gold]Cheese[/gold] to your hand.",
   "GREGTHESPIRE-CHEESE_NEXT_TURN_POWER.smartDescription": "At the start of your next {Amount:plural:turn|[blue]{Amount}[/blue] turns}, add a [gold]Cheese[/gold] to your hand",
@@ -141,5 +137,9 @@
 
   "GREGTHESPIRE-RATATIONGING_IT_POWER.description": "All Attacks gain Replay 1.\nWhenever you play an Attack, [gold]Exhaust[/gold] it.",
   "GREGTHESPIRE-RATATIONGING_IT_POWER.smartDescription": "All Attacks gain Replay 1.\nWhenever you play an Attack, [gold]Exhaust[/gold] it.",
-  "GREGTHESPIRE-RATATIONGING_IT_POWER.title": "Ratatoing-ing It"
+  "GREGTHESPIRE-RATATIONGING_IT_POWER.title": "Ratatoing-ing It",
+
+  "GREGTHESPIRE-INFLATED_EGO_POWER.description": "If you take unblocked damage this turn, lose all of your [gold]Confidence[/gold].",
+  "GREGTHESPIRE-INFLATED_EGO_POWER.smartDescription": "If you take unblocked damage this turn, lose all of your [gold]Confidence[/gold].",
+  "GREGTHESPIRE-INFLATED_EGO_POWER.title": "Inflated Ego"
 }

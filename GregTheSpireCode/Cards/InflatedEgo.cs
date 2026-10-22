@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace GregTheSpire.GregTheSpireCode.Cards;
 
-public class InflatedEgo() : GregTheSpireCard(2,
+public class InflatedEgo() : GregTheSpireCard(1,
     CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
@@ -31,12 +31,15 @@ public class InflatedEgo() : GregTheSpireCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-      await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature,
+        
+        await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature,
             DynamicVars.Power<ConfidencePower>().BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<InflatedEgoPower>(choiceContext, Owner.Creature,
+            1, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Power<ConfidencePower>().UpgradeValueBy(2);
+        DynamicVars.Power<ConfidencePower>().UpgradeValueBy(3);
     } 
 }    
