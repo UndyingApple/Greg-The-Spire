@@ -28,7 +28,7 @@ public class SlipUp() : GregTheSpireCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-         AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).Execute(choiceContext);
+         AttackCommand attackCommand = await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
         
          CardModel? card = this.Owner.RunState.Rng.CombatCardSelection.NextItem<CardModel>((IEnumerable<CardModel>) StashCardPile.StashPileType.GetPile(this.Owner).Cards);
          if (card == null)

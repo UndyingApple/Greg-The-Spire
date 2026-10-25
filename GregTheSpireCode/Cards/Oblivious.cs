@@ -31,6 +31,7 @@ public class Oblivious() : GregTheSpireCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
         
         foreach (Creature enemy in (IEnumerable<Creature>)this.CombatState.HittableEnemies)
         {

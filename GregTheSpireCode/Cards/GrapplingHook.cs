@@ -40,6 +40,8 @@ public class GrapplingHook() : GregTheSpireCard(0,
     {
         if (this.HasBeenPlayedThisTurn)
             return;
+        
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
         if (IsUpgraded)
         {
             await StealCmd.StealAsync(choiceContext, this.Owner, 2);

@@ -23,6 +23,7 @@ public class FruitBasket() : GregTheSpireCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
         await StealCmd.StealAsync(choiceContext, this.Owner, 1);
         
         IEnumerable<CardModel> inHand = await Strawberry.CreateInHand(this.Owner, 1, this.CombatState);

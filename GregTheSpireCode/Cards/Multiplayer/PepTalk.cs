@@ -36,6 +36,8 @@ public class PepTalk() : GregTheSpireCard(0,
     {
   
         ArgumentNullException.ThrowIfNull((object) cardPlay.Target, "cardPlay.Target");
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
+        await CreatureCmd.TriggerAnim(cardPlay.Target, "PowerUp", cardPlay.Target.Player.Character.PowerUpAnimDelay);
         await PowerCmd.Apply<ConfidencePower>(choiceContext, cardPlay.Target, DynamicVars.Power<ConfidencePower>().BaseValue, this.Owner.Creature, (CardModel) this);
     
     }

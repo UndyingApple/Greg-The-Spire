@@ -23,6 +23,7 @@ public class TheCity() : GregTheSpireCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
         await PowerCmd.Apply<TheCityPower>(choiceContext, this.Owner.Creature, DynamicVars.Power<TheCityPower>().BaseValue, this.Owner.Creature, this);
     }
 

@@ -32,6 +32,8 @@ public class SpyMaster() : GregTheSpireCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
+
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
         //public static async Task StealAsync(PlayerChoiceContext choiceContext, Player player, int amount, CardModel card_initial)
         await StealCmd.StealAsync(choiceContext, this.Owner, DynamicVars["StealAmount"].IntValue);

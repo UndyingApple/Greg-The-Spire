@@ -29,6 +29,8 @@ public class EGOMANIA() : GregTheSpireCard(2,
        PlayerChoiceContext choiceContext,
        CardPlay play)
    {
+       await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
+
        if (this.IsUpgraded)
        {
        

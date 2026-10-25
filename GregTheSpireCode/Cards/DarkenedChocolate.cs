@@ -33,6 +33,9 @@ public class DarkenedChocolate() : GregTheSpireCard(10,
         CardPlay play)
     {
         if (CombatState == null) return;
+        
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
+
         foreach (Creature enemy in CombatState.HittableEnemies)
         {
             await PowerCmd.Apply<WeakPower>(choiceContext, enemy, 3, this.Owner.Creature, this);

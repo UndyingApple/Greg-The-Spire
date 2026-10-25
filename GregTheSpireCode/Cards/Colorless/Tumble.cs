@@ -51,6 +51,8 @@ public class Tumble() : GregTheSpireCard(3,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
+
         await PowerCmd.Apply<TumblePower>(choiceContext, this.Owner.Creature, 1, this.Owner.Creature, (CardModel) this);
     }
 

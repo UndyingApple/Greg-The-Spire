@@ -32,7 +32,8 @@ public class RatatoingingIt() : GregTheSpireCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-      
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
+
         await PowerCmd.Apply<RatationgingItPower>(choiceContext, Owner.Creature, 1, Owner.Creature, this);
             foreach (CardModel allCard in this.Owner.PlayerCombatState.AllCards)
             {

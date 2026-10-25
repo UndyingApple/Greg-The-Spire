@@ -27,9 +27,8 @@ public class NeverBackDown() : GregTheSpireCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-            await PowerCmd.Apply<NeverBackDownPower>(choiceContext, Owner.Creature, DynamicVars.Power<NeverBackDownPower>().BaseValue, Owner.Creature, this);
-        
-
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
+        await PowerCmd.Apply<NeverBackDownPower>(choiceContext, Owner.Creature, DynamicVars.Power<NeverBackDownPower>().BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade() => DynamicVars.Power<NeverBackDownPower>().UpgradeValueBy(1);

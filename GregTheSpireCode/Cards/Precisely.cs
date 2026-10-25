@@ -31,6 +31,7 @@ public class Precisely() : GregTheSpireCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
         await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature, DynamicVars.Power<ConfidencePower>().BaseValue, Owner.Creature, this);
         var confidenceAmount = this.Owner.Creature.GetPowerAmount<ConfidencePower>();
         await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature, (int)(Math.Abs(confidenceAmount)), Owner.Creature, this);

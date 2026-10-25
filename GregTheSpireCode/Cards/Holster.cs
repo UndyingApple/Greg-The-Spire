@@ -32,6 +32,8 @@ public class Holster() : GregTheSpireCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
+        
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
         await Cmd.Wait(0.1f);
         await PlayFromStashCmd.PlayFromStashCmdAsync(choiceContext, Owner, 1, 1, null);

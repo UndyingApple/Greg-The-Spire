@@ -65,6 +65,8 @@ public class CheeseBall() : GregTheSpireCard(0,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
+
         await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature,
             DynamicVars.Power<ConfidencePower>().BaseValue, Owner.Creature, this);
     }

@@ -24,6 +24,7 @@ public class RatForm() : GregTheSpireCard(3,
         CardPlay play)
     {
         await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
+        
         if (this.IsUpgraded)
             await PowerCmd.Apply<StoragePower>(choiceContext, this.Owner.Creature, 3, this.Owner.Creature, (CardModel) this);
         await PowerCmd.Apply<RatFormPower>(choiceContext, this.Owner.Creature, 1, this.Owner.Creature, (CardModel) this);

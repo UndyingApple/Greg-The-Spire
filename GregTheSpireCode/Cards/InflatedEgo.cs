@@ -31,7 +31,7 @@ public class InflatedEgo() : GregTheSpireCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
         await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature,
             DynamicVars.Power<ConfidencePower>().BaseValue, Owner.Creature, this);
         await PowerCmd.Apply<InflatedEgoPower>(choiceContext, Owner.Creature,

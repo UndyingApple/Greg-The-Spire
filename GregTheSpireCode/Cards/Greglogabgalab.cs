@@ -25,6 +25,7 @@ public class Greglogabgalab() : GregTheSpireCard(3,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
         IEnumerable<CardModel> cardModels = await CardPileCmd.Draw(choiceContext, 1, this.Owner);
         await Cmd.Wait(0.2f);
         

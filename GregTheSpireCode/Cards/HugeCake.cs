@@ -32,6 +32,8 @@ public class HugeCake() : GregTheSpireCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
+
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
         DynamicVars.Block.BaseValue += PileType.Discard.GetPile(Owner).Cards.Count;
     }

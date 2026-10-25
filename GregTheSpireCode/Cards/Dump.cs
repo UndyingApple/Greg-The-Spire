@@ -45,7 +45,7 @@ public class Dump() : GregTheSpireCard(1,
 
         float scale = 0.8f;
         await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).WithHitCount(cardCount)
-            .FromCard((CardModel)this, play).Targeting(play.Target).Execute(choiceContext);
+            .FromCard((CardModel)this, play).Targeting(play.Target).WithHitFx("vfx/vfx_attack_blunt", tmpSfx: "blunt_attack.mp3").Execute(choiceContext);
     }
 
     protected override void OnUpgrade()

@@ -36,10 +36,13 @@ public class SnackOVision() : GregTheSpireCard(0,
             StashCardPile.StashPileType
         })).FirstOrDefault<CardModel>();
 
+        
         if (card == null)
         {
             return;
         }
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
+
         CardPileAddResult cardPileAddResult = await CardPileCmd.Add(card, PileType.Draw,  CardPilePosition.Top);
         
         EnergyCost.AddThisCombat(1);

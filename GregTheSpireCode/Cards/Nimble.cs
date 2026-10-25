@@ -32,10 +32,9 @@ public class Nimble() : GregTheSpireCard(2,
         {
             await PowerCmd.Apply<NimbleUpgradedPower>(choiceContext, this.Owner.Creature,1, this.Owner.Creature, (CardModel) this);
         }
-        else
-                {
-                    await PowerCmd.Apply<NimblePower>(choiceContext, this.Owner.Creature,1, this.Owner.Creature, (CardModel) this);
-                }
+        else {
+            await PowerCmd.Apply<NimblePower>(choiceContext, this.Owner.Creature,1, this.Owner.Creature, (CardModel) this);
+        }
         
     }
 

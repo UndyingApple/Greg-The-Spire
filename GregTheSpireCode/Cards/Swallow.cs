@@ -25,6 +25,9 @@ public class Swallow() : GregTheSpireCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
+
+
         Decimal amount = await CreatureCmd.GainBlock(this.Owner.Creature, this.DynamicVars.Block, play);
         await PowerCmd.Apply<SwallowPower>(choiceContext, this.Owner.Creature, DynamicVars.Power<SwallowPower>().BaseValue, this.Owner.Creature, (CardModel) this);
     }

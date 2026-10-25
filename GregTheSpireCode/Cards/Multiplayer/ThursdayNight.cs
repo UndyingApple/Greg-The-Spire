@@ -1,6 +1,7 @@
 ﻿using GregTheSpire.GregTheSpireCode.Cards;
 using GregTheSpire.GregTheSpireCode.Commands;
 using GregTheSpire.GregTheSpireCode.Keywords;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -26,9 +27,11 @@ public class ThursdayNight() : GregTheSpireCard(3,
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
         
         foreach (Creature creature in (IEnumerable<Creature>) this.CombatState.PlayerCreatures.Where<Creature>((Func<Creature, bool>) (c => c != null && c.IsAlive)).ToList<Creature>())
         {
+            await CreatureCmd.TriggerAnim(cardPlay.Target, "Cast", cardPlay.Target.Player.Character.PowerUpAnimDelay);
             await StealCmd.StealAsync(choiceContext, creature.Player, 2);
         }
     }

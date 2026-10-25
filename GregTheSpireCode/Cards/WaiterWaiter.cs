@@ -28,6 +28,8 @@ public class WaiterWaiter() : GregTheSpireCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
+
         CardModel card;
         if (IsUpgraded)
         {

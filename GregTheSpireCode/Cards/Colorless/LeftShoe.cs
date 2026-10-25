@@ -63,7 +63,7 @@ public class LeftShoe() : GregTheSpireCard(0,
         CardPlay play)
     {
         ArgumentNullException.ThrowIfNull((object) play.Target, "play.Target");
-        await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).Execute(choiceContext);
+        await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).FromCard((CardModel) this, play).Targeting(play.Target).WithHitFx("vfx/vfx_attack_blunt", tmpSfx: "blunt_attack.mp3").Execute(choiceContext);
         await PowerCmd.Apply<VulnerablePower>(choiceContext, play.Target, this.DynamicVars.Vulnerable.BaseValue, this.Owner.Creature, (CardModel) this);
         
         IReadOnlyList<CardPileAddResult> cardPileAddResultList = await CardPileCmd.Add((IEnumerable<CardModel>) this.Owner.PlayerCombatState.AllCards.OfType<RightShoe>().Where<RightShoe>((Func<RightShoe, bool>) (c => true)), PileType.Draw, CardPilePosition.Top);

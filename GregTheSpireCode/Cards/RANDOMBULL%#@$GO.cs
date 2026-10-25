@@ -33,6 +33,7 @@ public class RANDOMBULL____GO() : GregTheSpireCard(0,
         CardPlay play)
     {
         int count = this.ResolveEnergyXValue();
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
         await PlayerCmd.GainEnergy(DynamicVars.Energy.BaseValue, Owner);
         await StealCmd.StealAsync(choiceContext, this.Owner, count);
     }

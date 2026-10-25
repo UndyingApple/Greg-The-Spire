@@ -31,6 +31,7 @@ public class GregJump() : GregTheSpireCard(0,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
         foreach (CardModel card in StashCardPile.StashPileType.GetPile(Owner).Cards.ToList<CardModel>())
         {
             await CardPileCmd.Add(card, PileType.Hand);

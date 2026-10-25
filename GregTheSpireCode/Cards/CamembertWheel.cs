@@ -71,8 +71,9 @@ public class CamembertWheel() : GregTheSpireCard(1,
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         Decimal damage = Hook.ModifyDamage(this.RunState, this.CombatState, cardPlay.Target, this.Owner.Creature, DynamicVars.Damage.BaseValue, DynamicVars.Damage.Props, (CardModel) this, cardPlay, ModifyDamageHookType.All, CardPreviewMode.MultiCreatureTargeting, out IEnumerable<AbstractModel> _);
+        
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
         await PowerCmd.Apply<CamembertWheelPower>(choiceContext, Owner.Creature, damage, Owner.Creature, this);
-
         
         //checks number of Cheese in your e><haust pile. If it's more than the Ma><Increase dynamicvar, just uses the dynamicvar
         int cheeseAmount = this.Owner.PlayerCombatState != null
@@ -87,25 +88,12 @@ public class CamembertWheel() : GregTheSpireCard(1,
         
         //buffs the card
         int increaseValue = DynamicVars["Increase"].IntValue;
-        /*
-        if (cheeseAmount != 0 && cheeseAmount != null) await PowerCmd.Apply<TemporaryStrengthPower>(choiceContext, Owner.Creature,
-            cheeseAmount, Owner.Creature, this);
-        if (increaseValue != 0) await PowerCmd.Apply<TemporaryDexterityPower>(choiceContext, Owner.Creature,
-            increaseValue, Owner.Creature, this);
-        */
+        
         this.BuffFromPlay(cheeseAmount * increaseValue);
         if (this.DeckVersion is CamembertWheel deckVersion)
         {
             deckVersion.BuffFromPlay(cheeseAmount * increaseValue);
         }
-        /*
-        if (cheeseAmount != 0) await PowerCmd.Apply<TemporaryFocusPower>(choiceContext, Owner.Creature,
-            cheeseAmount, Owner.Creature, this);
-        if (increaseValue != 0) await PowerCmd.Apply<VigorPower>(choiceContext, Owner.Creature,
-            increaseValue, Owner.Creature, this);
-        */
-        
-        
         
     }
 

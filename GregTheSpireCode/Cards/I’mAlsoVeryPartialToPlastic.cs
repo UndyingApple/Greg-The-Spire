@@ -25,6 +25,7 @@ public class I_mAlsoVeryPartialToPlastic() : GregTheSpireCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
         IEnumerable<Olive> cards = Olive.Create(this.Owner, (int) 3, this.CombatState);
         await CardPileCmd.AddGeneratedCardsToCombat((IEnumerable<CardModel>)cards, PileType.Hand, this.Owner,
             CardPilePosition.Top);

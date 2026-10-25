@@ -23,6 +23,8 @@ public class Swarm() : GregTheSpireCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
+        
         foreach (CardModel card in PileType.Hand.GetPile(play.Target.Player).Cards
                      .Where<CardModel>((Func<CardModel, bool>)(c =>
                          c.Enchantment == null && !c.Keywords.Contains(CardKeyword.Unplayable))).ToList<CardModel>())

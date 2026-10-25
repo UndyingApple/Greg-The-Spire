@@ -25,6 +25,8 @@ public class EmergencyRations() : GregTheSpireCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
+
         IEnumerable<CardModel> list = (IEnumerable<CardModel>) PileType.Hand.GetPile(this.Owner).Cards.ToList<CardModel>();
         int handSize = list.Count<CardModel>();
         await CardCmd.Discard(choiceContext, list);

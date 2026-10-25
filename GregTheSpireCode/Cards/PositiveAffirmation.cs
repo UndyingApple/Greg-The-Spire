@@ -30,6 +30,7 @@ public class PositiveAffirmation() : GregTheSpireCard(0,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
         int count = this.ResolveEnergyXValue();
         for (int i = 0; i < count; ++i)
             await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature, DynamicVars.Power<ConfidencePower>().BaseValue, Owner.Creature, this);

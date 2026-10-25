@@ -25,7 +25,8 @@ public class OliveCreamsAndASoda() : GregTheSpireCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-
+        
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
         IEnumerable<Soda> soda = Soda.Create(this.Owner, 1, this.CombatState);
         CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardsToCombat((IEnumerable<CardModel>)soda, PileType.Draw, this.Owner,
             CardPilePosition.Random));

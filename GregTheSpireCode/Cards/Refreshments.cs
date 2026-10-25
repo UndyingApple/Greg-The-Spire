@@ -28,6 +28,7 @@ public class Refreshments() : GregTheSpireCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
         
         IEnumerable<CardModel> inHand = await Soda.CreateInHand(this.Owner, 1, this.CombatState);

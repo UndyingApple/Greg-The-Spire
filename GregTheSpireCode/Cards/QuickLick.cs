@@ -44,6 +44,7 @@ public class QuickLick() : GregTheSpireCard(0,
             totalStashed = StashCardPile.StashPileType.GetPile(Owner).Cards.Where<CardModel>((Func<CardModel, bool>)(c => c.Enchantment is not Stowaway)).Count();
         }
 
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
         foreach (CardModel card in PileType.Draw.GetPile(this.Owner).Cards.ToList<CardModel>().UnstableShuffle<CardModel>(this.Owner.RunState.Rng.CombatCardSelection).Take<CardModel>(storage - totalStashed))
         {
             await StashCmd.StashAsync(choiceContext, Owner, card);

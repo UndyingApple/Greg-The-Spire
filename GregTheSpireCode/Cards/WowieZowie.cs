@@ -27,6 +27,8 @@ public class WowieZowie() : GregTheSpireCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
+
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
         int timeTilZowie = Owner.Creature.GetPowerAmount<WowieZowiePower>();
         if (timeTilZowie == 2 || timeTilZowie == 3)

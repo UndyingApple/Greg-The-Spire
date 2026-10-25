@@ -33,6 +33,8 @@ public class Stumble() : GregTheSpireCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
+
         await CreatureCmd.GainBlock(this.Owner.Creature, this.DynamicVars.Block, play);
         IEnumerable<CardModel> cards = await Fumble.CreateInDraw(Owner, 1, CombatState);
         if (IsUpgraded)

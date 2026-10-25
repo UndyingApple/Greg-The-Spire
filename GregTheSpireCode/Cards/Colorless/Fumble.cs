@@ -61,7 +61,7 @@ public class Fumble() : GregTheSpireCard(2,
     {
         int cardsDrawn = CardPile.MaxCardsInHand - this.Owner.PlayerCombatState.Hand.Cards.Count;
         await CardPileCmd.Draw(choiceContext, cardsDrawn, this.Owner);
-        await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).WithHitCount(cardsDrawn).FromCard((CardModel) this, play).Targeting(play.Target).Execute(choiceContext);
+        await DamageCmd.Attack(this.DynamicVars.Damage.BaseValue).WithHitCount(cardsDrawn).FromCard((CardModel) this, play).Targeting(play.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
         IEnumerable<CardModel> cards = await Tumble.CreateInDraw(Owner, 1, CombatState);
         if (IsUpgraded)
         {

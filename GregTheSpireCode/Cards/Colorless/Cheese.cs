@@ -76,11 +76,15 @@ public class Cheese() : GregTheSpireCard(0,
         {
             foreach(CheeseBall cheeseBall in cheeseBallsInHand)
             {
+                await CreatureCmd.TriggerAnim(this.Owner.Creature, "Cast", this.Owner.Character.CastAnimDelay);
+
                 cheeseBall.IncreaseConfidence();
             }
         }
         else
         {
+            await CreatureCmd.TriggerAnim(this.Owner.Creature, "PowerUp", this.Owner.Character.PowerUpAnimDelay);
+
             await PowerCmd.Apply<ConfidencePower>(choiceContext, Owner.Creature,
                 DynamicVars.Power<ConfidencePower>().BaseValue, Owner.Creature, this);
         }
