@@ -34,6 +34,8 @@ public class InflatedEgoPower() : GregTheSpirePower
 
     public override async Task AfterSideTurnStart(CombatSide side, IReadOnlyList<Creature> participants, ICombatState combatState)
     {
+        if (!participants.Contains<Creature>(this.Owner))
+            return;
         await PowerCmd.Remove(this);
     }
 }

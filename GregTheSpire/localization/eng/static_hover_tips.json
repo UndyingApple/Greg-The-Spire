@@ -1,6 +1,6 @@
 {
   "STASH.title": "Stash",
-  "STASH.description": "Cards in your [gold]Stash[/gold] stay in your [gold]Stash[/gold] between turns. \nIf a card would be placed in your [gold]Stash[/gold] while it's full, [gold]Discard[/gold] it instead.",
+  "STASH.description": "Cards in your [gold]Stash[/gold] stay in your [gold]Stash[/gold] between turns, with your [gold]Stash[/gold] size being equal to your [gold]Storage[/gold].\nIf a card would be placed in your [gold]Stash[/gold] while it's full, Discard it instead.",
   "STEAL.title": "Steal",
   "STEAL.description": "Play the top card of your [gold]Draw Pile[/gold] if you have [gold]Energy[/gold] equal to or greater than its cost. \nIf you don't have enough [gold]Energy[/gold], place it into your [gold]Stash[/gold]. \nCards played this way don't [gold]Exhaust[/gold]. \nIf your [gold]Draw Pile[/gold] is empty, you can't [gold]Steal[/gold]."
  

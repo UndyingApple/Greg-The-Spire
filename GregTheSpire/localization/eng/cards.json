@@ -20,13 +20,13 @@
   "GREGTHESPIRE-HARDTACK.description": "Deal {CalculatedDamage:diff()} damage.\nDeals 2 additional damage for every [gold]Cracker[/gold] played this combat.",
   "GREGTHESPIRE-HARDTACK.title": "Hardtack",
   
-  "GREGTHESPIRE-THE_LAST_SUPPER.description": "{IfUpgraded:show:Upgrade and |}Play every [gold]Snack[/gold] in your [gold]Exahust Pile[/gold]",
+  "GREGTHESPIRE-THE_LAST_SUPPER.description": "{IfUpgraded:show:Upgrade and |}Play every [gold]Snack[/gold] in your [gold]Exhaust Pile[/gold]",
   "GREGTHESPIRE-THE_LAST_SUPPER.title": "The Last Supper",
   
   "GREGTHESPIRE-SHOE_TOSS.description": "Deal {Damage:diff()} damage.\nAdd a [gold]{IfUpgraded:show:Left Shoe+|Left Shoe}[/gold] and a [gold]{IfUpgraded:show:Right Shoe+|Right Shoe}[/gold] to your [gold]Hand[/gold].",
   "GREGTHESPIRE-SHOE_TOSS.title": "Shoe Toss",
   
-  "GREGTHESPIRE-GREG_JUMP.description": "Move all cards from your [gold]Stash[/gold] to your [gold]Hand[/gold].{IfUpgraded:show:\nDraw 1.|}",
+  "GREGTHESPIRE-GREG_JUMP.description": "Move all cards from your [gold]Stash[/gold] to your [gold]Hand[/gold].{IfUpgraded:show:\nDraw 1 card.|}",
   "GREGTHESPIRE-GREG_JUMP.title": "Greg Jump",
   
   "GREGTHESPIRE-LEFT_SHOE.description": "Deal {Damage:diff()} damage.\nApply {VulnerablePower:diff()} [gold]Vulnerable[/gold].\nPlace [gold]Right Shoe[/gold] on top of your [gold]Draw Pile[/gold] from anywhere.",
@@ -101,10 +101,10 @@
   "GREGTHESPIRE-BITE_SIZED.description": "[gold]Snacks[/gold] don't count towards your [gold]Storage[/gold].",
   "GREGTHESPIRE-BITE_SIZED.title": "Bite-Sized",
   
-  "GREGTHESPIRE-WOWIE_ZOWIE.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you don’t play this card again in exactly 3 turns, gain [gold]Doom[/gold] equal to your Max HP.\nPut this card into your draw pile.",
+  "GREGTHESPIRE-WOWIE_ZOWIE.description": "Gain {Block:diff()} [gold]Block[/gold].\nIf you don’t play this card again in exactly 3 turns, gain [gold]Doom[/gold] equal to your Max HP.\nPut this card into your [gold]Draw Pile[/gold].",
   "GREGTHESPIRE-WOWIE_ZOWIE.title": "Wowie Zowie!",
   
-  "GREGTHESPIRE-RUMMAGE.description": "Draw {Cards:diff()}.\n[gold]Stash[/gold] 1.",
+  "GREGTHESPIRE-RUMMAGE.description": "Draw {Cards:diff()} cards.\n[gold]Stash[/gold] 1 card.",
   "GREGTHESPIRE-RUMMAGE.title": "Rummage",
   
   "GREGTHESPIRE-POCKET_STRIKE.description": "Deal {Damage:diff()} damage.\nPut this card into your [gold]Stash[/gold]",
@@ -122,7 +122,7 @@
   "GREGTHESPIRE-SOMETIMES_BACK_DOWN.description": "Whenever you lose [gold]Confidence[/gold], deal 2 damage to ALL enemies for every {IfUpgraded:show:1|2} [gold]Confidence[/gold] lost.",
   "GREGTHESPIRE-SOMETIMES_BACK_DOWN.title": "Sometimes Back Down",
   
-  "GREGTHESPIRE-NEVER_BACK_DOWN.description": "Whenever you lose [gold]Confidence[/gold], gain {IfUpgraded:show:2|1} [gold]Confidence[/gold] for every {IfUpgraded:show:3|2} lost.",
+  "GREGTHESPIRE-NEVER_BACK_DOWN.description": "The first {NeverBackDownPower:diff()} {NeverBackDownPower:plural:time|times} you gain [gold]Confidence[/gold] each turn, draw 1 card.",
   "GREGTHESPIRE-NEVER_BACK_DOWN.title": "Never Back Down",
   
   "GREGTHESPIRE-OLIVE.description": "Deal {Damage:diff()} damage.",
@@ -281,7 +281,7 @@
   "GREGTHESPIRE-GREGLOGABGALAB.description": "Draw 1 card.\n[gold]Stash[/gold] a random card in your [gold]Hand[/gold].\nPlay a random card in your [gold]Hand[/gold].\nPlay a random card in your [gold]Stash[/gold].\n[gold]Steal[/gold] 1.",
   "GREGTHESPIRE-GREGLOGABGALAB.title": "Greglogabgalab",
 
-  "GREGTHESPIRE-DARKENED_CHOCOLATE.description": "Apply 3 [gold]Weak[/gold] and [gold]Vulnerable[/gold] to ALL enemies.\nCosts {Energy:energyIcons()} less for each card played using [gold]Steal[/gold] this combat.\n[gold]Discard[/gold] this card instead if it would be [gold]Stashed[/gold].",
+  "GREGTHESPIRE-DARKENED_CHOCOLATE.description": "Apply 3 [gold]Weak[/gold] and [gold]Vulnerable[/gold] to ALL enemies.\nCosts {Energy:energyIcons()} less for each card played using [gold]Steal[/gold] this combat.\nIf this card would be [gold]Stashed[/gold], Discard it instead.",
   "GREGTHESPIRE-DARKENED_CHOCOLATE.title": "Darkened Chocolate",
 
   "GREGTHESPIRE-LINT_BALL.description": "Deal {Damage:diff()} damage.\nIf this is in your [gold]Stash[/gold] at the end of your turn, increase this card's damage by {Increase:diff()} this combat.",

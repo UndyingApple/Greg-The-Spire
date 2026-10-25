@@ -3,6 +3,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace GregTheSpire.GregTheSpireCode.Powers;
@@ -14,6 +15,10 @@ public class PositiveAffirmationPower() : GregTheSpirePower
 
     public override PowerStackType StackType =>
         PowerStackType.Counter;
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromPower<ConfidencePower>()
+    ];
 
     public override async Task AfterAutoPostPlayPhaseEntered(
         PlayerChoiceContext choiceContext,
