@@ -48,7 +48,7 @@
   "GREGTHESPIRE-NEVER_BACK_DOWN_POWER.title": "Never Back Down",
   
   "GREGTHESPIRE-CHEESE_NEXT_TURN_POWER.description": "At the start of your next turns, add a [gold]Cheese[/gold] to your hand.",
-  "GREGTHESPIRE-CHEESE_NEXT_TURN_POWER.smartDescription": "At the start of your next {Amount:plural:turn|[blue]{Amount}[/blue] turns}, add a [gold]Cheese[/gold] to your hand",
+  "GREGTHESPIRE-CHEESE_NEXT_TURN_POWER.smartDescription": "At the start of your next {Amount:plural:turn|[blue]{Amount}[/blue] turns}, add a [gold]Cheese[/gold] to your hand.",
   "GREGTHESPIRE-CHEESE_NEXT_TURN_POWER.title": "Cheese Next Turn",
 
   "GREGTHESPIRE-FLY_SWATTER_POWER.description": "[gold]Flies[/gold] do additional damage.",
@@ -60,15 +60,15 @@
   "GREGTHESPIRE-DONT_YOU_LI_KE_GORGONZOLA_POWER.title": "Dont You LIKE Gorgonzola?",
   
   "GREGTHESPIRE-FRESH_STRAWBERRIES_POWER.description": "At the start of your next turns, add a [gold]Strawberry[/gold] to your hand.",
-  "GREGTHESPIRE-FRESH_STRAWBERRIES_POWER.smartDescription": "At the start of your next {Amount:plural:turn|[blue]{Amount}[/blue] turns}, add a [gold]Strawberry[/gold] to your hand",
+  "GREGTHESPIRE-FRESH_STRAWBERRIES_POWER.smartDescription": "At the start of your next {Amount:plural:turn|[blue]{Amount}[/blue] turns}, add a [gold]Strawberry[/gold] to your hand.",
   "GREGTHESPIRE-FRESH_STRAWBERRIES_POWER.title": "Fresh Strawberries",
 
   "GREGTHESPIRE-NIMBLE_POWER.description": "Whenever you play a card that costs 3 or more Energy, [gold]Steal[/gold].",
-  "GREGTHESPIRE-NIMBLE_POWER.smartDescription": "Whenever you play a card that costs {energyPrefix:energyIcons(3)} or more, [gold]Steal[/gold] [blue]{Amount}[/blue]",
+  "GREGTHESPIRE-NIMBLE_POWER.smartDescription": "Whenever you play a card that costs {energyPrefix:energyIcons(3)} or more, [gold]Steal[/gold] [blue]{Amount}[/blue].",
   "GREGTHESPIRE-NIMBLE_POWER.title": "Nimble",
 
   "GREGTHESPIRE-NIMBLE_UPGRADED_POWER.description": "Whenever you play a card that costs 2 or more Energy, [gold]Steal[/gold].",
-  "GREGTHESPIRE-NIMBLE_UPGRADED_POWER.smartDescription": "Whenever you play a card that costs {energyPrefix:energyIcons(2)} or more, [gold]Steal[/gold] [blue]{Amount}[/blue]",
+  "GREGTHESPIRE-NIMBLE_UPGRADED_POWER.smartDescription": "Whenever you play a card that costs {energyPrefix:energyIcons(2)} or more, [gold]Steal[/gold] [blue]{Amount}[/blue].",
   "GREGTHESPIRE-NIMBLE_UPGRADED_POWER.title": "Nimble+",
 
   "GREGTHESPIRE-STEAL_NEXT_TURN.description": "[gold]Steal[/gold] at the start of your next turn.",
@@ -103,11 +103,11 @@
   "GREGTHESPIRE-CHILL_PILL_POWER.smartDescription": "Lose all of your [gold]Confidence[/gold] at the end of this turn.",
   "GREGTHESPIRE-CHILL_PILL_POWER.title": "Chill Pill",
 
-  "GREGTHESPIRE-OBLIVIOUS_POWER.description": "You can't lose [gold]Confidence[/gold] through damage this turn",
-  "GREGTHESPIRE-OBLIVIOUS_POWER.smartDescription": "You can't lose [gold]Confidence[/gold] through damage {Amount:plural:this turn|for [blue]{Amount}[/blue] turns}",
+  "GREGTHESPIRE-OBLIVIOUS_POWER.description": "You can't lose [gold]Confidence[/gold] through damage this turn.",
+  "GREGTHESPIRE-OBLIVIOUS_POWER.smartDescription": "You can't lose [gold]Confidence[/gold] through damage {Amount:plural:this turn|for [blue]{Amount}[/blue] turns}.",
   "GREGTHESPIRE-OBLIVIOUS_POWER.title": "Oblivious",
 
-  "GREGTHESPIRE-CONFIDENCE_NEXT_TURN_POWER.description": "Gain [gold]Confidence[/gold] at the start of your next turn",
+  "GREGTHESPIRE-CONFIDENCE_NEXT_TURN_POWER.description": "Gain [gold]Confidence[/gold] at the start of your next turn.",
   "GREGTHESPIRE-CONFIDENCE_NEXT_TURN_POWER.smartDescription": "Gain [blue]{Amount}[/blue] [gold]Confidence[/gold] at the start of your next turn",
   "GREGTHESPIRE-CONFIDENCE_NEXT_TURN_POWER.title": "Confidence Next Turn",
 
@@ -119,7 +119,7 @@
   "GREGTHESPIRE-NO_SKILLS_PLAYED.smartDescription": "You can no longer play Skills this combat.",
   "GREGTHESPIRE-NO_SKILLS_PLAYED.title": "No Skills Played",
 
-  "GREGTHESPIRE-CAMEMBERT_WHEEL_POWER.description": "Next turn, deal damage;",
+  "GREGTHESPIRE-CAMEMBERT_WHEEL_POWER.description": "Next turn, deal damage.",
   "GREGTHESPIRE-CAMEMBERT_WHEEL_POWER.smartDescription": "Next turn, deal [blue]{Amount}[/blue] damage.",
   "GREGTHESPIRE-CAMEMBERT_WHEEL_POWER.title": "Camembert Wheel",
 

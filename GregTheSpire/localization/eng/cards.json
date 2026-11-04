@@ -194,7 +194,7 @@
   "GREGTHESPIRE-LEFTOVER.description": "Whenever you play a [gold]Snack[/gold] from your [gold]Hand[/gold], if there is room in your [gold]Stash[/gold], add a copy of that [gold]Snack[/gold] to your [gold]Stash[/gold].",
   "GREGTHESPIRE-LEFTOVER.title": "Leftovers",
 
-  "GREGTHESPIRE-R_AN_DO_MB_UL_L____G_O.description": "Gain {Energy:energyIcons()}.\n[gold]Steal[/gold] {IfUpgraded:show:X+1|X}.",
+  "GREGTHESPIRE-R_AN_DO_MB_UL_L____G_O.description": "Gain {Energy:energyIcons()}.\n[gold]Steal[/gold] X.",
   "GREGTHESPIRE-R_AN_DO_MB_UL_L____G_O.title": "RANDOM BULL%#@$ GO!!!",
 
   "GREGTHESPIRE-PRECISELY.description": "Gain {ConfidencePower:diff()} [gold]Confidence[/gold].\nGain 1 [gold]Confidence[/gold] for every [gold]Confidence[/gold] you have",
